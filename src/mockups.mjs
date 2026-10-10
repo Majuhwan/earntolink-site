@@ -219,201 +219,48 @@ function rollFlick(lang) {
 function card(w, h, inner) { return R(0, 0, w, h, 'f-bg s-frame shadow', 14) + inner(w, h); }
 function pill(w, t, dark) { return R(0, 0, w, 36, dark ? 'f-ink shadow' : 'f-bg s-frame shadow', 18) + T(w / 2, 23, t, 12, dark ? 'tx-inv' : 'tx', 700, 'middle'); }
 
-// ---------- Shopify ----------
-function admin(title, lang, body) {
-  const nav = lang === 'ko' ? ['홈', '주문', '상품', '고객', '앱'] : ['Home', 'Orders', 'Products', 'Customers', 'Apps'];
-  const side = (sw) => {
-    let s = '';
-    nav.forEach((t, i) => {
-      const y = 14 + i * 26;
-      if (i === 4) s += R(8, y - 4, sw - 16, 22, 'f-acc3', 6);
-      s += R(16, y + 1, 11, 11, i === 4 ? 'f-acc' : 'f-t3', 3) + T(34, y + 11, t, 10, i === 4 ? 'tx' : 'tx2', i === 4 ? 600 : 500);
-    });
-    s += `<path d="M14 ${14 + 5 * 26 + 2}H${sw - 14}" class="s-line"/>`;
-    s += R(16, 14 + 5 * 26 + 14, 11, 11, 'f-ink', 3) + T(34, 14 + 5 * 26 + 24, title, 9.5, 'tx', 600);
-    return s;
-  };
-  return desktop('', side, (w, h) => T(18, 30, title, 14, 'tx', 700) + G(0, 44, body(w, h - 44)), { sideW: 124, url: 'admin.shopify.com' });
-}
 
-const SHOP_BODIES = {
-  labels: (lang) => (w, h) => {
-    let s = R(16, 4, w - 32, h - 20, 'f-chrome', 8);
-    const cols = 3, rows = 5, pw = w - 56, ph = h - 40, lw = (pw - (cols - 1) * 8) / cols, lh = (ph - (rows - 1) * 8) / rows;
-    for (let r = 0; r < rows; r++) for (let c = 0; c < cols; c++) {
-      const x = 28 + c * (lw + 8), y = 14 + r * (lh + 8);
-      const used = r === 0 && c < 2;
-      s += R(x, y, lw, lh, used ? 'f-chrome s-dash' : 'f-bg s-line', 4);
-      if (!used) {
-        s += L(x + 8, y + 7, lw * 0.55, 'f-t2', 4) + L(x + lw - 34, y + 7, 26, 'f-ink', 4);
-        let bx = x + 8; const bars = [2, 1, 1, 3, 1, 2, 1, 1, 2, 3, 1, 2, 1, 1, 3, 1, 2, 1, 2, 1];
-        bars.forEach((b, i) => { if (i % 2 === 0) s += R(bx, y + 17, b, lh - 24, 'f-ink'); bx += b + 1.2; });
-      }
-    }
-    return s;
-  },
-  stockscan: (lang) => (w, h) => {
-    let s = R(16, 4, w - 32, 44, 'f-ok', 10) + check(30, 18, 1.2, 's-white') + T(52, 31, lang === 'ko' ? '스캔 완료' : 'Scanned', 13, 'tx-white', 700);
-    s += R(w - 120, 14, 88, 24, 'f-white-a', 12) + L(w - 104, 23, 56, 'f-on', 5);
-    const rows = [['ok', 12, 12], ['short', 7, 9], ['ok', 4, 4], ['over', 15, 14], ['ok', 20, 20]];
-    s += R(16, 60, w - 32, h - 76, 'f-bg s-line', 8);
-    rows.forEach(([k, a, b], i) => {
-      const y = 74 + i * 40;
-      if (i) s += `<path d="M28 ${y - 8}H${w - 28}" class="s-line"/>`;
-      s += photo(28, y - 2, 26, 26, i % 3) + L(64, y + 2, 140 - i * 10, 'f-t2', 5) + L(64, y + 14, 70, 'f-t3', 5);
-      s += R(w - 140, y + 1, 50, 20, k === 'ok' ? 'f-ok-soft' : 'f-warn-soft', 10) + C(w - 128, y + 11, 3.5, k === 'ok' ? 'f-ok' : 'f-warn') + L(w - 120, y + 8, 22, 'f-t2', 5);
-      s += T(w - 46, y + 15, `${a} / ${b}`, 11, 'tx', 600, 'middle');
-    });
-    return s;
-  },
-  kitsync: (lang) => (w, h) => {
-    const kx = 30, ky = 20;
-    let s = R(kx, ky + 90, 150, 110, 'f-bg s-frame', 10) + photo(kx + 12, ky + 102, 50, 50, 0) + T(kx + 72, ky + 120, lang === 'ko' ? '선물 세트' : 'Gift kit', 12, 'tx', 700) + L(kx + 72, ky + 132, 50, 'f-t3', 5) + R(kx + 12, ky + 164, 126, 26, 'f-acc3', 6) + T(kx + 75, ky + 181, lang === 'ko' ? '재고 4' : 'Available 4', 11, 'tx-acc', 700, 'middle');
-    const comps = [['× 1', 9, 0.9], ['× 2', 8, 0.5], ['× 1', 4, 0.4]];
-    comps.forEach(([q, n, p], i) => {
-      const y = ky + i * 106;
-      s += `<path d="M${kx + 150} ${ky + 145} C ${kx + 200} ${ky + 145}, ${kx + 190} ${y + 40}, ${kx + 236} ${y + 40}" class="s-strong" fill="none"/>`;
-      s += R(kx + 236, y, w - kx - 266, 80, 'f-bg s-line', 10) + photo(kx + 248, y + 14, 40, 40, i + 1) + L(kx + 298, y + 18, 90, 'f-t2', 5) + L(kx + 298, y + 32, 50, 'f-t3', 5);
-      s += R(kx + 298, y + 52, 110, 5, 'f-chrome', 2.5) + R(kx + 298, y + 52, 110 * p, 5, i === 2 ? 'f-acc' : 'f-g3', 2.5);
-      s += R(w - 92, y + 14, 34, 20, 'f-chrome', 10) + T(w - 75, y + 28, q, 10, 'tx', 700, 'middle');
-    });
-    return s;
-  },
-  autotag: (lang) => (w, h) => {
-    let s = R(16, 4, w - 32, 150, 'f-bg s-line', 10);
-    const rows = lang === 'ko' ? [['주문 금액', '≥', '200,000'], ['배송 국가', '다음 중', 'JP, US']] : [['Order total', '≥', '200'], ['Ship country', 'is one of', 'JP, US']];
-    rows.forEach(([a, b, c], i) => {
-      const y = 18 + i * 44;
-      if (i) s += R(30, y - 14, 36, 16, 'f-acc3', 8) + T(48, y - 3, 'AND', 9, 'tx-acc', 700, 'middle');
-      s += R(30, y + 6, 130, 28, 'f-chrome', 6) + T(42, y + 24, a, 11, 'tx', 600);
-      s += R(168, y + 6, 80, 28, 'f-chrome', 6) + T(180, y + 24, b, 11, 'tx2', 500);
-      s += R(256, y + 6, w - 302, 28, 'f-bg s-strong', 6) + T(268, y + 24, c, 11, 'tx', 600);
-    });
-    s += L(30, 120, 60, 'f-t3', 5) + R(98, 112, 54, 22, 'f-acc', 11) + T(125, 127, '+ VIP', 10, 'tx-inv', 700, 'middle') + R(158, 112, 76, 22, 'f-acc3', 11) + T(196, 127, '+ export', 10, 'tx-acc', 700, 'middle');
-    s += R(16, 166, w - 32, h - 182, 'f-chrome', 10) + T(30, 188, lang === 'ko' ? '미리보기' : 'Dry run', 11, 'tx', 700);
-    for (let i = 0; i < 4; i++) { const y = 202 + i * 26; s += L(30, y, 90, 'f-t3', 5) + R(140, y - 5, 16, 16, i % 3 === 0 ? 'f-ok' : 'f-g2', 8) + L(166, y, 120 - i * 14, 'f-t2', 5); }
-    return s;
-  },
-  mailcraft: (lang) => (w, h) => {
-    let s = R(16, 4, 128, h - 20, 'f-bg s-line', 10) + L(28, 18, 50, 'f-t3', 5);
-    ['f-ink', 'f-acc', 'f-ok', 'f-warn', 'f-g3', 'f-acc2'].forEach((c, i) => { s += C(36 + (i % 3) * 28, 44 + Math.floor(i / 3) * 28, 10, c); });
-    s += R(26, 34, 20, 20, 's-acc-ring', 10);
-    for (let i = 0; i < 4; i++) s += L(28, 112 + i * 34, 50, 'f-t3', 5) + R(28, 122 + i * 34, 104, 16, 'f-chrome', 4);
-    const ex = 156, ew = w - ex - 16;
-    s += R(ex, 4, ew, h - 20, 'f-chrome', 10) + R(ex + 26, 16, ew - 52, h - 44, 'f-bg s-line', 6);
-    const x = ex + 42, iw = ew - 84;
-    s += R(x, 30, 54, 14, 'f-ink', 3) + L(x + iw - 50, 34, 50, 'f-t3', 5);
-    s += T(x, 72, lang === 'ko' ? '주문해 주셔서 감사합니다' : 'Thanks for your order', 13, 'tx', 700) + L(x, 84, iw * 0.8, 'f-t3', 5) + L(x, 96, iw * 0.6, 'f-t3', 5);
-    s += R(x, 112, 110, 28, 'f-ink', 6) + L(x + 22, 123, 66, 'f-inv', 5);
-    for (let i = 0; i < 2; i++) { const y = 156 + i * 46; s += `<path d="M${x} ${y - 6}H${x + iw}" class="s-line"/>` + photo(x, y, 36, 36, i) + L(x + 46, y + 8, 100, 'f-t2', 5) + L(x + 46, y + 22, 60, 'f-t3', 5) + L(x + iw - 40, y + 8, 40, 'f-t2', 5); }
-    return s;
-  },
-  xerosync: (lang) => (w, h) => {
-    const cw = (w - 92) / 2;
-    let s = T(16 + cw / 2, 16, 'Shopify', 11, 'tx2', 700, 'middle') + T(w - 16 - cw / 2, 16, 'Xero', 11, 'tx2', 700, 'middle');
-    const rows = [['#1042', 'SH-1042', 'ok'], ['#1043', 'SH-1043', 'ok'], [lang === 'ko' ? '환불 #1038' : 'Refund #1038', 'CN-1038', 'ok'], ['#1044', '', 'fail']];
-    rows.forEach(([a, b, k], i) => {
-      const y = 28 + i * 60;
-      s += R(16, y, cw, 46, 'f-bg s-line', 8) + T(30, y + 20, a, 12, 'tx', 700) + L(30, y + 30, 70, 'f-t3', 5);
-      s += `<path d="M${16 + cw + 10} ${y + 23}H${w - 16 - cw - 14}" class="${k === 'fail' ? 's-warn' : 's-strong'}" stroke-dasharray="${k === 'fail' ? '3 3' : '0'}"/><path d="M${w - 16 - cw - 18} ${y + 19}l4 4-4 4" class="${k === 'fail' ? 's-warn' : 's-strong'}" fill="none"/>`;
-      if (k === 'fail') s += R(w - 16 - cw, y, cw, 46, 'f-warn-soft', 8) + T(w - 16 - cw + 14, y + 20, lang === 'ko' ? '실패 · 재시도' : 'Failed · retry', 11, 'tx-warn', 700) + L(w - 16 - cw + 14, y + 30, 110, 'f-t3', 5);
-      else s += R(w - 16 - cw, y, cw, 46, 'f-bg s-line', 8) + T(w - 16 - cw + 14, y + 20, b, 12, 'tx', 700) + R(w - 16 - 62, y + 13, 48, 18, 'f-ok-soft', 9) + C(w - 16 - 50, y + 22, 3.5, 'f-ok') + L(w - 16 - 42, y + 19, 22, 'f-t2', 5);
-    });
-    return s;
-  },
-  clickdrop: (lang) => (w, h) => {
-    let s = R(16, 4, w - 32, 34, 'f-warn-soft', 8) + C(32, 21, 4, 'f-warn') + T(44, 25, lang === 'ko' ? '전송 실패 1건' : '1 order failed', 11, 'tx-warn', 700) + R(w - 100, 10, 72, 22, 'f-ink', 6) + T(w - 64, 25, lang === 'ko' ? '재시도' : 'Retry', 10, 'tx-inv', 700, 'middle');
-    s += R(16, 50, w - 32, h - 66, 'f-bg s-line', 8);
-    s += L(30, 64, 40, 'f-t3', 5) + L(120, 64, 50, 'f-t3', 5) + L(w - 200, 64, 40, 'f-t3', 5) + L(w - 100, 64, 50, 'f-t3', 5);
-    const st = ['ok', 'ok', 'fail', 'ok', 'wait'];
-    st.forEach((k, i) => {
-      const y = 86 + i * 40;
-      s += `<path d="M30 ${y - 6}H${w - 30}" class="s-line"/>` + T(30, y + 14, `#${1201 + i}`, 11, 'tx', 700) + L(120, y + 8, 90, 'f-t2', 5) + L(w - 200, y + 8, 60, 'f-t3', 5);
-      const c = k === 'ok' ? ['f-ok-soft', 'f-ok'] : k === 'fail' ? ['f-warn-soft', 'f-warn'] : ['f-chrome', 'f-t3'];
-      s += R(w - 100, y + 1, 64, 20, c[0], 10) + C(w - 88, y + 11, 3.5, c[1]) + L(w - 80, y + 8, 32, 'f-t2', 5);
-    });
-    return s;
-  },
-  sizechart: (lang) => (w, h) => {
-    let s = photo(16, 4, 170, 200, 1) + L(200, 10, 120, 'f-t2', 7) + L(200, 28, 70, 'f-t3', 5);
-    ['S', 'M', 'L'].forEach((t, i) => { s += R(200 + i * 40, 46, 32, 26, i === 1 ? 'f-ink' : 'f-bg s-strong', 6) + T(216 + i * 40, 63, t, 11, i === 1 ? 'tx-inv' : 'tx', 700, 'middle'); });
-    s += T(200, 92, lang === 'ko' ? '사이즈 표' : 'Size chart', 11, 'tx-acc', 700) + `<path d="M200 96h${lang === 'ko' ? 50 : 56}" class="s-acc"/>`;
-    const mx = 92, my = 106, mw = w - 118, mh = h - 112;
-    s += R(mx, my, mw, mh, 'f-bg s-frame shadow', 12) + T(mx + 16, my + 26, lang === 'ko' ? '사이즈 표' : 'Size chart', 13, 'tx', 700);
-    s += R(mx + mw - 96, my + 12, 80, 22, 'f-chrome', 11) + R(mx + mw - 94, my + 14, 38, 18, 'f-bg', 9) + T(mx + mw - 75, my + 27, 'cm', 9.5, 'tx', 700, 'middle') + T(mx + mw - 36, my + 27, 'in', 9.5, 'tx2', 600, 'middle');
-    const cols = ['', lang === 'ko' ? '가슴' : 'Chest', lang === 'ko' ? '허리' : 'Waist', lang === 'ko' ? '길이' : 'Length'];
-    const data = [['S', '88', '72', '66'], ['M', '94', '78', '68'], ['L', '100', '84', '70']];
-    const cw = (mw - 32) / 4;
-    cols.forEach((c, i) => { s += T(mx + 16 + i * cw + 6, my + 58, c, 10, 'tx2', 700); });
-    data.forEach((r, ri) => {
-      const y = my + 68 + ri * 26;
-      if (ri === 1) s += R(mx + 12, y, mw - 24, 24, 'f-acc3', 5);
-      r.forEach((c, i) => { s += T(mx + 16 + i * cw + 6, y + 16, c, 11, i ? 'tx' : 'tx', i ? 500 : 700); });
-    });
-    return s;
-  },
-  giftwrap: (lang) => (w, h) => {
-    let s = photo(16, 4, 160, 190, 2) + L(190, 10, 140, 'f-t2', 7) + L(190, 28, 60, 'f-t3', 5);
-    s += R(190, 48, w - 206, 48, 'f-acc3', 10) + R(202, 62, 18, 18, 'f-acc', 5) + check(205, 64.5, 1) + T(230, 76, lang === 'ko' ? '선물 포장 추가' : 'Add gift wrap', 12, 'tx', 700) + L(w - 70, 68, 40, 'f-t2', 5);
-    s += R(190, 106, w - 206, 30, 'f-bg s-strong', 6) + L(202, 118, 120, 'f-t2', 5);
-    s += R(190, 146, w - 206, 70, 'f-bg s-strong', 6) + T(202, 166, lang === 'ko' ? '생일 축하해!' : 'Happy birthday!', 12, 'tx', 500) + L(202, 180, 80, 'f-t3', 5) + L(w - 70, 200, 40, 'f-t3', 5);
-    s += R(190, 228, w - 206, 34, 'f-ink', 8) + L(w / 2 + 40, 242, 80, 'f-inv', 6);
-    s += G(16, 206, R(0, 0, 160, 92, 'f-bg s-line', 8) + `<path d="M0 30h160M80 0v92" class="s-acc"/>` + L(92, 44, 54, 'f-t3', 5) + L(92, 58, 40, 'f-t3', 5) + L(14, 44, 54, 'f-t2', 5));
-    return s;
-  },
-  idealofeed: (lang) => (w, h) => {
-    let s = R(16, 4, w - 32, 36, 'f-chrome', 8) + T(28, 26, '/feeds/•••/de.csv', 11, 'tx2', 600) + R(w - 96, 10, 66, 24, 'f-ink', 6) + T(w - 63, 26, lang === 'ko' ? '복사' : 'Copy', 10, 'tx-inv', 700, 'middle');
-    const mk = ['DE', 'AT', 'FR', 'IT', 'ES', 'UK'];
-    mk.forEach((m, i) => { s += R(16 + i * 46, 50, 40, 22, i === 0 ? 'f-ink' : 'f-chrome', 11) + T(36 + i * 46, 65, m, 10, i === 0 ? 'tx-inv' : 'tx2', 700, 'middle'); });
-    s += R(16, 84, w - 32, h - 100, 'f-bg s-line', 8);
-    const head = ['sku', 'price', 'formerPrice', 'ean', 'deliveryCosts'];
-    const cw = (w - 60) / 5;
-    head.forEach((t, i) => { s += T(30 + i * cw, 104, t, 10, 'tx-mono', 600); });
-    for (let r = 0; r < 5; r++) {
-      const y = 116 + r * 28;
-      s += `<path d="M30 ${y}H${w - 30}" class="s-line"/>`;
-      for (let c = 0; c < 5; c++) s += L(30 + c * cw, y + 11, cw * (c === 2 && r % 2 ? 0 : 0.6), c === 1 ? 'f-t2' : 'f-t3', 5);
-      if (r === 3) s += R(30 + 3 * cw - 6, y + 5, cw * 0.75, 18, 'f-warn-soft', 4) + L(30 + 3 * cw, y + 11, cw * 0.5, 'f-warn', 5);
-    }
-    return s;
-  },
-};
-
-function thously(lang) {
-  const body = (w, h) => {
-    let s = R(0, 0, w, 40, 'f-bg') + R(18, 13, 14, 14, 'f-ink', 4) + T(38, 25, 'Thously', 12, 'tx', 700);
-    s += L(w - 210, 18, 40, 'f-t3', 5) + L(w - 160, 18, 40, 'f-t3', 5) + L(w - 110, 18, 40, 'f-t3', 5) + `<path d="M0 40H${w}" class="s-line"/>`;
-    s += T(28, 76, lang === 'ko' ? '대출 계산기' : 'Loan calculator', 18, 'tx', 700) + L(28, 88, 200, 'f-t3', 5);
-    for (let i = 0; i < 4; i++) { const y = 108 + i * 50; s += L(28, y, 60, 'f-t2', 5) + R(28, y + 12, 240, 30, 'f-bg s-strong', 7) + L(40, y + 24, 80 - i * 10, 'f-t2', 5); }
-    const rx = 296, rw = w - rx - 24;
-    s += R(rx, 104, rw, 210, 'f-chrome', 12) + L(rx + 18, 122, 70, 'f-t3', 5) + R(rx + 18, 136, 140, 22, 'f-ink', 5);
-    const bars = [0.35, 0.5, 0.42, 0.62, 0.55, 0.75, 0.68, 0.88];
-    const bw = (rw - 36 - 7 * 8) / 8;
-    bars.forEach((b, i) => { s += R(rx + 18 + i * (bw + 8), 300 - 110 * b, bw, 110 * b, i === 7 ? 'f-acc' : 'f-acc2', 3); });
-    return s;
-  };
-  return desktop('', null, body, { url: 'thously.com' });
-}
-
-export function productMockup(p, lang) {
-  const label = (lang === 'ko' ? '제품 화면 예시: ' : 'Product illustration: ') + p[lang].name;
-  let inner;
-  if (p.mock === 'spaceMap') inner = G(24, 24, spaceMap(lang));
-  else if (p.mock === 'dupeless') inner = G(24, 24, dupeless(lang));
-  else if (p.mock === 'archiveFix') inner = G(24, 24, archiveFix(lang));
-  else if (p.mock === 'rollTidy') inner = rollTidy(lang);
-  else if (p.mock === 'rollFlick') inner = rollFlick(lang);
-  else if (p.mock === 'thously') inner = G(24, 24, thously(lang));
-  else if (p.mock.startsWith('shop_')) {
-    const h = p.mock.slice(5);
-    const short = { labels: 'Labels', stockscan: 'Stock Scan', kitsync: 'Kit Inventory', autotag: 'Auto Tagger', mailcraft: 'Email Designer', xerosync: 'Xero Sync', clickdrop: 'Click & Drop', sizechart: 'Size Charts', giftwrap: 'Gift Wrap', idealofeed: 'idealo Feed' }[h];
-    inner = G(24, 24, admin(short, lang, SHOP_BODIES[h](lang)));
-  }
+// Product mockup. lang 'ko' gets Korean UI labels, everything else English labels.
+export function productMockup(p, lang, name) {
+  const L2 = lang === 'ko' ? 'ko' : 'en';
+  const label = (lang === 'ko' ? '제품 화면 예시: ' : 'Product illustration: ') + name;
+  let inner = '';
+  if (p.mock === 'spaceMap') inner = G(24, 24, spaceMap(L2));
+  else if (p.mock === 'dupeless') inner = G(24, 24, dupeless(L2));
+  else if (p.mock === 'archiveFix') inner = G(24, 24, archiveFix(L2));
+  else if (p.mock === 'rollTidy') inner = rollTidy(L2);
+  else if (p.mock === 'rollFlick') inner = rollFlick(L2);
   return svg(inner, 640, 440, label);
 }
 
-export function heroMockup(lang) {
-  const label = lang === 'ko' ? '용량 지도와 정리 싹 화면 예시' : 'Illustration of Space Map and Roll Tidy';
-  const inner = G(4, 8, spaceMap(lang)) + G(520, 150, phone(rollTidyScreen(lang)), 0.86) + G(20, 382, pill(170, lang === 'ko' ? '기기 안 처리' : 'On device', true));
-  return svg(inner, 720, 520, label);
+// Hero: one company in the middle, markets (languages) around it.
+// chips: [[label, lang]] in display order; center: [brand, sub]
+export function heroMockup(label, chips, center) {
+  const W = 720, H = 520, cx = 360, cy = 262;
+  let s = '';
+  // globe lines
+  s += `<g fill="none" class="s-line" stroke-width="1">`;
+  s += `<circle cx="${cx}" cy="${cy}" r="170"/><circle cx="${cx}" cy="${cy}" r="118" opacity=".7"/>`;
+  s += `<ellipse cx="${cx}" cy="${cy}" rx="70" ry="170"/><ellipse cx="${cx}" cy="${cy}" rx="130" ry="170" opacity=".7"/>`;
+  s += `<path d="M${cx - 170} ${cy}H${cx + 170}M${cx - 150} ${cy - 80}H${cx + 150}M${cx - 150} ${cy + 80}H${cx + 150}" opacity=".7"/></g>`;
+  // chips on an ellipse
+  const n = chips.length, rx = 300, ry = 222;
+  const pos = chips.map((c, i) => {
+    const a = -Math.PI / 2 + (i * 2 * Math.PI) / n;
+    return [cx + rx * Math.cos(a), cy + ry * Math.sin(a), c];
+  });
+  pos.forEach(([x, y]) => { s += `<path d="M${cx} ${cy}L${x.toFixed(1)} ${y.toFixed(1)}" class="s-line" stroke-dasharray="3 5" fill="none"/>`; });
+  pos.forEach(([x0, y, [t, lg]], i) => {
+    let x = x0;
+    const w = Math.max(54, 16 + [...t].length * (/[\u3040-\u9fff\uac00-\ud7a3]/.test(t) ? 14 : 8.2));
+    const on = i % 4 === 0;
+    x = Math.min(Math.max(x, w / 2 + 6), W - w / 2 - 6);
+    s += `<g transform="translate(${(x - w / 2).toFixed(1)} ${(y - 17).toFixed(1)})">${R(0, 0, w, 34, on ? 'f-ink shadow' : 'f-bg s-frame shadow', 17)}<text x="${w / 2}" y="22" font-size="13" font-weight="650" class="${on ? 'tx-inv' : 'tx'}" text-anchor="middle"${lg ? ` lang="${lg}"` : ''}>${esc(t)}</text></g>`;
+  });
+  // center card
+  s += G(cx - 92, cy - 62, R(0, 0, 184, 124, 'f-bg s-frame shadow', 22)
+    + R(68, 16, 48, 48, 'f-ink', 12)
+    + `<g fill="none" class="s-inv" stroke-width="3.4" stroke-linecap="round" transform="translate(68 16) scale(1.5)"><path d="M13.6 18.4a4.2 4.2 0 0 1 0-5.9l2.6-2.6a4.2 4.2 0 0 1 5.9 5.9l-1.3 1.3"/><path d="M18.4 13.6a4.2 4.2 0 0 1 0 5.9l-2.6 2.6a4.2 4.2 0 0 1-5.9-5.9l1.3-1.3"/></g>`
+    + T(92, 88, center[0], 16, 'tx', 750, 'middle') + T(92, 108, center[1], 11.5, 'tx2', 550, 'middle'));
+  return svg(s, W, H, label);
 }

@@ -35,32 +35,32 @@ for (const [name, size, pad] of [['favicon-32.png', 32, 0], ['apple-touch-icon.p
   await page.screenshot({ path: join(IMG, name), omitBackground: true, clip: { x: 0, y: 0, width: size, height: size } });
 }
 
-// OG images
-const og = {
-  ko: { name: '언투링크', alt: 'EarnToLink', h: '필요한 일만, 정확하게.', s: '사진 · 파일 정리 앱, 압축 도구,<br>Shopify 쇼핑몰 앱, 웹 도구', tags: ['Android · iOS', 'macOS · Windows', 'Shopify', 'Web'] },
-  en: { name: 'EarnToLink', alt: '언투링크', h: 'Software that does one job well.', s: 'Photo and file cleanup apps, an archive tool,<br>Shopify apps and web tools', tags: ['Android · iOS', 'macOS · Windows', 'Shopify', 'Web'] },
-};
+// OG images, one per language (text from src/i18n/<code>.mjs)
+const { LANGS } = await import('../src/data.mjs');
 await page.setViewportSize({ width: 1200, height: 630 });
-for (const lang of ['ko', 'en']) {
-  const o = og[lang];
-  await page.setContent(`<!doctype html><html lang="${lang}"><head><link rel="stylesheet" href="${FONT}"><style>${css}
-  body{margin:0;width:1200px;height:630px;overflow:hidden;background:#fff;word-break:keep-all}
-  .og{position:relative;display:grid;grid-template-columns:600px 1fr;height:630px}
+for (const l of LANGS) {
+  let L; try { L = (await import(pathToFileURL(join(ROOT, 'src/i18n', l.code + '.mjs')).href)).default; } catch { continue; }
+  const o = { name: L.brand, alt: L.brandAlt, h: L.home.h1, s: L.og.s, tags: L.og.tags };
+  const chips = LANGS.map((x) => [x.label, x.html]);
+  const long = Math.max(...o.h.split("<br>").map((x) => [...x].length)) > 18;
+  await page.setContent(`<!doctype html><html lang="${l.html}"><head><link rel="stylesheet" href="${FONT}"><style>${css}
+  body{margin:0;width:1200px;height:630px;overflow:hidden;background:#fff;word-break:${["ja","zh-cn","zh-tw","th"].includes(l.code) ? "normal" : "keep-all"}}
+  .og{position:relative;display:grid;grid-template-columns:620px 1fr;height:630px}
   .l{padding:64px 0 56px 72px;display:flex;flex-direction:column}
   .b{display:flex;align-items:center;gap:14px;font-size:28px;font-weight:700;letter-spacing:-.02em}
   .b small{font-size:20px;color:#636a77;font-weight:500}
-  .h{font-size:${lang === 'ko' ? 64 : 58}px;line-height:1.1;letter-spacing:-.045em;font-weight:750;margin-top:auto}
-  .s{font-size:24px;color:#3b404c;margin-top:20px;line-height:1.45;max-width:500px}
-  .t{display:flex;flex-wrap:wrap;gap:8px;margin-top:32px}
+  .h{font-size:${long ? 50 : 62}px;line-height:1.14;letter-spacing:-.035em;font-weight:750;margin-top:auto;max-width:540px}
+  .s{font-size:22px;color:#3b404c;margin-top:20px;line-height:1.45;max-width:520px}
+  .t{display:flex;flex-wrap:wrap;gap:8px;margin-top:30px}
   .t span{border:1px solid #e7e8ec;border-radius:999px;padding:6px 14px;font-size:16px;font-weight:600;color:#3b404c}
-  .r{position:relative;overflow:hidden;background:#f6f7f9;border-left:1px solid #e7e8ec;display:flex;align-items:center;justify-content:center;padding:0 24px 30px}
-  .r svg{width:552px;max-width:none;height:auto}
-  .u{position:absolute;right:36px;bottom:28px;font-size:18px;font-weight:600;color:#636a77}
+  .r{position:relative;overflow:hidden;background:#f6f7f9;border-left:1px solid #e7e8ec;display:flex;align-items:center;justify-content:center;padding:0 10px 30px}
+  .r svg{width:600px;max-width:none;height:auto}
+  .u{position:absolute;right:36px;bottom:24px;font-size:18px;font-weight:600;color:#636a77}
   </style></head><body><div class="og"><div class="l"><div class="b">${MARK().replace('<svg ', '<svg width="44" height="44" ')}<span>${o.name}</span><small>${o.alt}</small></div>
   <div class="h">${o.h}</div><div class="s">${o.s}</div><div class="t">${o.tags.map((t) => `<span>${t}</span>`).join('')}</div></div>
-  <div class="r">${heroMockup(lang)}<div class="u">earntolink.com</div></div></div></body></html>`, { waitUntil: 'networkidle' });
+  <div class="r">${heroMockup('', chips, [L.brand, L.brandAlt])}<div class="u">earntolink.com</div></div></div></body></html>`, { waitUntil: 'networkidle' });
   await page.evaluate(() => document.fonts.ready);
-  await page.screenshot({ path: join(IMG, `og-${lang}.png`), clip: { x: 0, y: 0, width: 1200, height: 630 } });
+  await page.screenshot({ path: join(IMG, `og-${l.code}.png`), clip: { x: 0, y: 0, width: 1200, height: 630 } });
 }
 await browser.close();
 console.log('assets rendered to assets/img');
