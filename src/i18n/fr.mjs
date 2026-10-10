@@ -1,5 +1,5 @@
 // Français. Même structure que en.mjs. Apostrophes typographiques (’), pas de tiret cadratin.
-const EMAIL = 'earn2link@gmail.com';
+const EMAIL = 'hello@earntolink.com';
 const mail = `<a href="mailto:${EMAIL}">${EMAIL}</a>`;
 
 const APP_LANGS = '10 langues (anglais, coréen, japonais, chinois simplifié et traditionnel, allemand, français, espagnol, portugais, italien)';
@@ -295,7 +295,7 @@ export default {
 
   news: {
     'business-areas': { title: 'Nos domaines de service', summary: 'Développement de produits, transformation par l’IA, localisation, lancement en boutique d’applications, e-commerce, exploitation.',
-      body: ['Présentation des domaines de service d’EarnToLink.', 'Ils sont au nombre de six : développement de produits, transformation par l’IA et automatisation, localisation et expansion internationale, lancement sur les boutiques d’applications mondiales, e-commerce et vente transfrontalière, exploitation et croissance.', 'Les demandes de projet sont à envoyer à earn2link@gmail.com.'] },
+      body: ['Présentation des domaines de service d’EarnToLink.', 'Ils sont au nombre de six : développement de produits, transformation par l’IA et automatisation, localisation et expansion internationale, lancement sur les boutiques d’applications mondiales, e-commerce et vente transfrontalière, exploitation et croissance.', 'Les demandes de projet sont à envoyer à hello@earntolink.com.'] },
     'earntolink-com-launch': { title: 'earntolink.com est en ligne', summary: 'Le site d’EarnToLink est en ligne en 14 langues.',
       body: ['Le site d’EarnToLink, earntolink.com, est désormais en ligne.', 'Il présente nos domaines de service, nos produits maison, les informations sur l’entreprise, la politique de confidentialité et les coordonnées.', 'Il est disponible en coréen, anglais, japonais, chinois (simplifié et traditionnel), espagnol, français, allemand, portugais, italien, vietnamien, indonésien, thaï et russe.'] },
     'product-lineup': { title: 'Nos produits maison', summary: 'Deux applications mobiles et trois applications de bureau.',

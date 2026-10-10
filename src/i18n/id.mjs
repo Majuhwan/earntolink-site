@@ -1,5 +1,5 @@
 // Bahasa Indonesia. Struktur sama dengan ko.mjs / en.mjs.
-const EMAIL = 'earn2link@gmail.com';
+const EMAIL = 'hello@earntolink.com';
 const mail = `<a href="mailto:${EMAIL}">${EMAIL}</a>`;
 
 const APP_LANGS = '10 bahasa (Inggris, Korea, Jepang, Mandarin Sederhana dan Tradisional, Jerman, Prancis, Spanyol, Portugis, Italia)';
@@ -295,7 +295,7 @@ export default {
 
   news: {
     'business-areas': { title: 'Bidang layanan kami', summary: 'Pengembangan produk, transformasi AI, lokalisasi, peluncuran di toko aplikasi, e-commerce, operasional.',
-      body: ['Gambaran umum bidang layanan EarnToLink.', 'Ada enam: pengembangan produk, transformasi AI dan otomatisasi, lokalisasi dan ekspansi global, peluncuran di toko aplikasi global, e-commerce dan penjualan lintas negara, serta operasional dan pertumbuhan.', 'Pertanyaan proyek dikirim ke earn2link@gmail.com.'] },
+      body: ['Gambaran umum bidang layanan EarnToLink.', 'Ada enam: pengembangan produk, transformasi AI dan otomatisasi, lokalisasi dan ekspansi global, peluncuran di toko aplikasi global, e-commerce dan penjualan lintas negara, serta operasional dan pertumbuhan.', 'Pertanyaan proyek dikirim ke hello@earntolink.com.'] },
     'earntolink-com-launch': { title: 'earntolink.com telah tayang', summary: 'Situs web EarnToLink telah tayang dalam 14 bahasa.',
       body: ['Situs web EarnToLink, earntolink.com, kini telah tayang.', 'Situs ini memuat bidang layanan, produk buatan sendiri, rincian perusahaan, kebijakan privasi dan informasi kontak.', 'Tersedia dalam bahasa Korea, Inggris, Jepang, Mandarin (Sederhana dan Tradisional), Spanyol, Prancis, Jerman, Portugis, Italia, Vietnam, Indonesia, Thai dan Rusia.'] },
     'product-lineup': { title: 'Produk buatan sendiri', summary: 'Dua aplikasi seluler dan tiga aplikasi desktop.',

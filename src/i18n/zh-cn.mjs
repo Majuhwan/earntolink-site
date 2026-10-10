@@ -1,5 +1,5 @@
 // 简体中文。结构与 ko.mjs / en.mjs 相同。
-const EMAIL = 'earn2link@gmail.com';
+const EMAIL = 'hello@earntolink.com';
 const mail = `<a href="mailto:${EMAIL}">${EMAIL}</a>`;
 
 const APP_LANGS = '10种语言(英语、韩语、日语、简体中文和繁体中文、德语、法语、西班牙语、葡萄牙语、意大利语)';
@@ -295,7 +295,7 @@ export default {
 
   news: {
     'business-areas': { title: '我们的服务领域', summary: '产品开发、AI转型、本地化、应用商店上架、电商、运营。',
-      body: ['EarnToLink 服务领域概览。', '共有六个:产品开发、AI转型与自动化、本地化与全球拓展、全球应用商店上架、电商与跨境销售,以及运营与增长。', '项目咨询请发送至 earn2link@gmail.com。'] },
+      body: ['EarnToLink 服务领域概览。', '共有六个:产品开发、AI转型与自动化、本地化与全球拓展、全球应用商店上架、电商与跨境销售,以及运营与增长。', '项目咨询请发送至 hello@earntolink.com。'] },
     'earntolink-com-launch': { title: 'earntolink.com 正式上线', summary: 'EarnToLink 网站以14种语言上线。',
       body: ['EarnToLink 网站 earntolink.com 现已上线。', '网站介绍了我们的服务领域、自研产品、公司信息、隐私政策和联系方式。', '提供韩语、英语、日语、中文(简体和繁体)、西班牙语、法语、德语、葡萄牙语、意大利语、越南语、印度尼西亚语、泰语和俄语版本。'] },
     'product-lineup': { title: '我们的自研产品', summary: '两款移动应用和三款桌面应用。',

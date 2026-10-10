@@ -535,3 +535,7 @@ h1, h2, h3, .lead { overflow-wrap: break-word; hyphens: auto; }
 .tnote { padding: 12px 16px; border: 1px solid var(--line); border-radius: 10px; background: var(--bg-soft); font-size: 14px; color: var(--ink-3); }
 html:lang(ja) body, html:lang(zh-Hans) body, html:lang(zh-Hant) body, html:lang(th) body { word-break: normal; line-break: strict; }
 h1, h2, h3, .h-display, .h-1, .h-2 { hyphens: manual; }
+.app-head { display: flex; align-items: center; gap: 18px; margin-top: 16px; }
+.app-head img { border-radius: 22px; box-shadow: var(--shadow); }
+.app-head .h-1 { margin: 0; }
+.cat.svc img { border-radius: 14px; }

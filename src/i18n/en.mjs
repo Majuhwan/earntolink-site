@@ -1,5 +1,5 @@
 // English. Same structure as ko.mjs. Facts only, no em dashes.
-const EMAIL = 'earn2link@gmail.com';
+const EMAIL = 'hello@earntolink.com';
 const mail = `<a href="mailto:${EMAIL}">${EMAIL}</a>`;
 
 const APP_LANGS = '10 languages (English, Korean, Japanese, Chinese Simplified and Traditional, German, French, Spanish, Portuguese, Italian)';
@@ -295,7 +295,7 @@ export default {
 
   news: {
     'business-areas': { title: 'Our service areas', summary: 'Product development, AI transformation, localization, app store launch, commerce, operations.',
-      body: ['An overview of EarnToLink service areas.', 'There are six: product development, AI transformation and automation, localization and global expansion, global app store launch, commerce and cross-border sales, and operations and growth.', 'Project inquiries go to earn2link@gmail.com.'] },
+      body: ['An overview of EarnToLink service areas.', 'There are six: product development, AI transformation and automation, localization and global expansion, global app store launch, commerce and cross-border sales, and operations and growth.', 'Project inquiries go to hello@earntolink.com.'] },
     'earntolink-com-launch': { title: 'earntolink.com is live', summary: 'The EarnToLink website is live in 14 languages.',
       body: ['The EarnToLink website, earntolink.com, is now live.', 'It covers our service areas, in-house products, company details, privacy policy and contact information.', 'It is available in Korean, English, Japanese, Chinese (Simplified and Traditional), Spanish, French, German, Portuguese, Italian, Vietnamese, Indonesian, Thai and Russian.'] },
     'product-lineup': { title: 'Our in-house products', summary: 'Two mobile apps and three desktop apps.',

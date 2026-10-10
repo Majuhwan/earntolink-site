@@ -1,5 +1,5 @@
 // Tiếng Việt. Cùng cấu trúc với ko.mjs / en.mjs.
-const EMAIL = 'earn2link@gmail.com';
+const EMAIL = 'hello@earntolink.com';
 const mail = `<a href="mailto:${EMAIL}">${EMAIL}</a>`;
 
 const APP_LANGS = '10 ngôn ngữ (tiếng Anh, Hàn, Nhật, Trung giản thể và phồn thể, Đức, Pháp, Tây Ban Nha, Bồ Đào Nha, Ý)';
@@ -295,7 +295,7 @@ export default {
 
   news: {
     'business-areas': { title: 'Các lĩnh vực dịch vụ của chúng tôi', summary: 'Phát triển sản phẩm, chuyển đổi AI, bản địa hóa, ra mắt trên kho ứng dụng, thương mại, vận hành.',
-      body: ['Tổng quan về các lĩnh vực dịch vụ của EarnToLink.', 'Có sáu lĩnh vực: phát triển sản phẩm, chuyển đổi AI và tự động hóa, bản địa hóa và mở rộng toàn cầu, ra mắt trên kho ứng dụng toàn cầu, thương mại và bán hàng xuyên biên giới, vận hành và tăng trưởng.', 'Yêu cầu về dự án xin gửi đến earn2link@gmail.com.'] },
+      body: ['Tổng quan về các lĩnh vực dịch vụ của EarnToLink.', 'Có sáu lĩnh vực: phát triển sản phẩm, chuyển đổi AI và tự động hóa, bản địa hóa và mở rộng toàn cầu, ra mắt trên kho ứng dụng toàn cầu, thương mại và bán hàng xuyên biên giới, vận hành và tăng trưởng.', 'Yêu cầu về dự án xin gửi đến hello@earntolink.com.'] },
     'earntolink-com-launch': { title: 'earntolink.com đã hoạt động', summary: 'Website EarnToLink đã hoạt động với 14 ngôn ngữ.',
       body: ['Website EarnToLink, earntolink.com, đã chính thức hoạt động.', 'Website giới thiệu các lĩnh vực dịch vụ, sản phẩm tự phát triển, thông tin công ty, chính sách quyền riêng tư và thông tin liên hệ.', 'Website có các ngôn ngữ: tiếng Hàn, Anh, Nhật, Trung (giản thể và phồn thể), Tây Ban Nha, Pháp, Đức, Bồ Đào Nha, Ý, Việt, Indonesia, Thái và Nga.'] },
     'product-lineup': { title: 'Sản phẩm tự phát triển của chúng tôi', summary: 'Hai ứng dụng di động và ba ứng dụng máy tính.',

@@ -1,5 +1,5 @@
 // 日本語。ko.mjs / en.mjs と同じ構造。
-const EMAIL = 'earn2link@gmail.com';
+const EMAIL = 'hello@earntolink.com';
 const mail = `<a href="mailto:${EMAIL}">${EMAIL}</a>`;
 
 const APP_LANGS = '10言語(英語、韓国語、日本語、中国語(簡体字・繁体字)、ドイツ語、フランス語、スペイン語、ポルトガル語、イタリア語)';
@@ -295,7 +295,7 @@ export default {
 
   news: {
     'business-areas': { title: 'サービス領域のご紹介', summary: 'プロダクト開発、AI変革、ローカライズ、アプリストア公開、コマース、運用。',
-      body: ['EarnToLinkのサービス領域の概要です。', '領域は6つです。プロダクト開発、AI変革と自動化、ローカライズとグローバル展開、グローバルなアプリストア公開、コマースと越境販売、運用と成長支援。', 'プロジェクトのご相談は earn2link@gmail.com までお寄せください。'] },
+      body: ['EarnToLinkのサービス領域の概要です。', '領域は6つです。プロダクト開発、AI変革と自動化、ローカライズとグローバル展開、グローバルなアプリストア公開、コマースと越境販売、運用と成長支援。', 'プロジェクトのご相談は hello@earntolink.com までお寄せください。'] },
     'earntolink-com-launch': { title: 'earntolink.comを公開しました', summary: 'EarnToLinkのウェブサイトを14言語で公開しました。',
       body: ['EarnToLinkのウェブサイト earntolink.com を公開しました。', 'サービス領域、自社プロダクト、会社情報、プライバシーポリシー、お問い合わせ先を掲載しています。', '韓国語、英語、日本語、中国語(簡体字・繁体字)、スペイン語、フランス語、ドイツ語、ポルトガル語、イタリア語、ベトナム語、インドネシア語、タイ語、ロシア語でご覧いただけます。'] },
     'product-lineup': { title: '自社プロダクト', summary: 'モバイルアプリ2本とデスクトップアプリ3本。',

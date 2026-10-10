@@ -1,5 +1,5 @@
 // Español (neutro internacional). Misma estructura que ko.mjs / en.mjs. Sin rayas largas.
-const EMAIL = 'earn2link@gmail.com';
+const EMAIL = 'hello@earntolink.com';
 const mail = `<a href="mailto:${EMAIL}">${EMAIL}</a>`;
 
 const APP_LANGS = '10 idiomas (inglés, coreano, japonés, chino simplificado y tradicional, alemán, francés, español, portugués, italiano)';
@@ -295,7 +295,7 @@ export default {
 
   news: {
     'business-areas': { title: 'Nuestras áreas de servicio', summary: 'Desarrollo de productos, transformación con IA, localización, lanzamiento en tiendas de apps, comercio, operación.',
-      body: ['Una visión general de las áreas de servicio de EarnToLink.', 'Son seis: desarrollo de productos, transformación con IA y automatización, localización y expansión global, lanzamiento en tiendas de apps globales, comercio y venta transfronteriza, y operación y crecimiento.', 'Las consultas sobre proyectos se envían a earn2link@gmail.com.'] },
+      body: ['Una visión general de las áreas de servicio de EarnToLink.', 'Son seis: desarrollo de productos, transformación con IA y automatización, localización y expansión global, lanzamiento en tiendas de apps globales, comercio y venta transfronteriza, y operación y crecimiento.', 'Las consultas sobre proyectos se envían a hello@earntolink.com.'] },
     'earntolink-com-launch': { title: 'earntolink.com ya está en línea', summary: 'El sitio web de EarnToLink ya está disponible en 14 idiomas.',
       body: ['El sitio web de EarnToLink, earntolink.com, ya está en línea.', 'Incluye nuestras áreas de servicio, productos propios, datos de la empresa, política de privacidad e información de contacto.', 'Está disponible en coreano, inglés, japonés, chino (simplificado y tradicional), español, francés, alemán, portugués, italiano, vietnamita, indonesio, tailandés y ruso.'] },
     'product-lineup': { title: 'Nuestros productos propios', summary: 'Dos apps móviles y tres apps de escritorio.',

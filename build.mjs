@@ -1,9 +1,10 @@
 // Static site build: node build.mjs  ->  ./site
 // Text: src/i18n/<code>.mjs (ko is the original, at the site root). Structure: src/data.mjs.
 import { mkdir, rm, writeFile, cp, readFile, readdir, access } from 'node:fs/promises';
+import { readFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
-import { SITE, LANGS as ALL_LANGS, DEFAULT_LANG, SERVICES, WHY_ICONS, PRIN_ICONS, CATEGORIES, PRODUCTS, NEWS } from './src/data.mjs';
+import { SITE, LANGS as ALL_LANGS, DEFAULT_LANG, SERVICES, WHY_ICONS, PRIN_ICONS, CATEGORIES, PRODUCTS, NEWS, APP_PAGES } from './src/data.mjs';
 import { icon, LOGO_MARK } from './src/icons.mjs';
 import { productMockup, heroMockup } from './src/mockups.mjs';
 
@@ -35,7 +36,7 @@ const mailto = `mailto:${SITE.email}`;
 // ---------------------------------------------------------------- layout
 function langMenu(lang, page) {
   const cur = LM[lang];
-  const items = LANGS.map((l) => `<a href="${P(l.code, page.noindex ? '/' : page.path)}" hreflang="${l.hreflang}" lang="${l.html}"${l.code === lang ? ' aria-current="true"' : ''}>${l.label}</a>`).join('');
+  const items = LANGS.map((l) => `<a href="${P(l.code, page.noindex || page.single ? '/' : page.path)}" hreflang="${l.hreflang}" lang="${l.html}"${l.code === lang ? ' aria-current="true"' : ''}>${l.label}</a>`).join('');
   return `<details class="lsw"><summary class="lang" aria-label="${esc(T[lang].ui.language)}">${icon('globe')}<span>${cur.label}</span></summary><div class="lsw-menu">${items}</div></details>`;
 }
 
@@ -43,14 +44,14 @@ function layout(lang, page, body) {
   const L = T[lang];
   const u = L.ui;
   const meta = LM[lang];
-  const url = abs(P(lang, page.path));
+  const url = abs(page.single ? page.path : P(lang, page.path));
   const og = abs(`/assets/img/og-${lang}.png`);
   const title = page.title(lang);
   const desc = strip(page.desc(lang));
   const navKeys = ['services', 'products', 'about', 'principles', 'news', 'contact'];
   const navHtml = navKeys.map((k) => `<a href="${P(lang, `/${k}/`)}"${page.section === k ? ' aria-current="page"' : ''}>${u.nav[k]}</a>`).join('');
   const ld = (page.jsonld ? page.jsonld(lang) : []).map((o) => `<script type="application/ld+json">${JSON.stringify(o)}</script>`).join('\n');
-  const alt = page.noindex ? '' : LANGS.map((l) => `<link rel="alternate" hreflang="${l.hreflang}" href="${abs(P(l.code, page.path))}">`).join('\n')
+  const alt = page.noindex || page.single ? '' : LANGS.map((l) => `<link rel="alternate" hreflang="${l.hreflang}" href="${abs(P(l.code, page.path))}">`).join('\n')
     + `\n<link rel="alternate" hreflang="x-default" href="${abs(P(DEF, page.path))}">`;
   const ogAlt = LANGS.filter((l) => l.code !== lang).map((l) => `<meta property="og:locale:alternate" content="${l.og}">`).join('\n');
   return `<!doctype html>
@@ -118,7 +119,7 @@ function footer(lang, page) {
   const c = L.company;
   const svc = SERVICES.map((s) => `<li><a href="${P(lang, `/services/${s.id}/`)}">${L.services.items[s.id].name}</a></li>`).join('');
   const prod = CATEGORIES.map((k) => `<li><a href="${P(lang, '/products/')}#${k.id}">${L.categories[k.id].name}</a></li>`).join('');
-  const langs = LANGS.map((l) => `<a href="${P(l.code, page.noindex ? '/' : page.path)}" hreflang="${l.hreflang}" lang="${l.html}"${l.code === lang ? ' aria-current="true"' : ''}>${l.label}</a>`).join('');
+  const langs = LANGS.map((l) => `<a href="${P(l.code, page.noindex || page.single ? '/' : page.path)}" hreflang="${l.hreflang}" lang="${l.html}"${l.code === lang ? ' aria-current="true"' : ''}>${l.label}</a>`).join('');
   return `<footer class="ftr">
   <div class="wrap">
     <div class="ftr-top">
@@ -576,6 +577,64 @@ for (const key of ['privacy', 'terms']) {
   });
 }
 
+
+// ---------------------------------------------------------------- app pages (/apps/<slug>/, English + Korean summary)
+function listing(key) {
+  try {
+    const t = readFileSync(join(ROOT, '..', 'untolink-apps', 'apps', key, 'store', 'listing_en-us.txt'), 'utf8');
+    const sec = (name) => (t.split(`[${name}]`)[1] || '').split(/\n\[/)[0].trim();
+    return { short: sec('짧은 설명'), feats: sec('제품 기능').split('\n').map((x) => x.trim()).filter(Boolean) };
+  } catch { return null; }
+}
+const appPages = [];
+for (const p of PRODUCTS) {
+  const a = APP_PAGES[p.slug]; if (!a) continue;
+  const en = T.en.products.items[p.slug], ko = T.ko.products.items[p.slug];
+  const lst = listing(a.key);
+  const short = lst?.short || `${en.summary}.`;
+  const feats = lst?.feats?.length ? lst.feats : en.features.slice(0, 5).map(([h]) => h);
+  appPages.push({ p, a, en, ko, short, feats });
+  add({
+    key: 'app-' + p.slug, section: 'products', path: `/apps/${p.slug}/`, single: true,
+    title: () => `${en.name} | EarnToLink`,
+    desc: () => `${en.name}: ${short} ${a.price ? `One-time purchase ${a.price}. ` : ''}${a.store}.`,
+    jsonld: () => [{ '@context': 'https://schema.org', '@type': 'SoftwareApplication', name: en.name, alternateName: ko.name, description: short, applicationCategory: 'UtilitiesApplication', operatingSystem: a.os, ...(a.price ? { offers: { '@type': 'Offer', price: a.price.replace('$', ''), priceCurrency: 'USD' } } : {}), url: abs(`/apps/${p.slug}/`), publisher: { '@id': ORG_ID } }],
+    render() {
+      const rows = [['Platform', a.os], ['Price', a.price ? `${a.price} · one-time purchase, no subscription` : 'To be announced'], ['Availability', a.store], ['Privacy', 'No internet connection. No personal data collected or sent.'], ['Support', `<a class="link-u" href="mailto:${SITE.email}">${SITE.email}</a>`]];
+      return `<section class="pd-hero"><div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><a href="/en/">Home</a><span aria-hidden="true">/</span><a href="/apps/">Apps</a><span aria-hidden="true">/</span><span aria-current="page">${esc(en.name)}</span></nav>
+  <div class="pd-grid"><div>
+    <span class="badge soon">${esc(a.store)}</span>
+    <div class="app-head"><img src="/assets/img/apps/${p.slug}.png" width="96" height="96" alt="${esc(en.name)} icon"><div><h1 class="h-1">${esc(en.name)}</h1><p class="pd-alt">${esc(ko.name)}</p></div></div>
+    <p class="lead">${esc(short)}</p>
+    <div class="btns"><a class="btn btn-primary" href="mailto:${SITE.email}?subject=${encodeURIComponent(en.name)}">${icon('mail')}Contact support</a><a class="btn btn-secondary" href="/en/privacy/#apps">Privacy Policy</a></div>
+  </div><div class="pd-art">${productMockup(p, 'en', en.name)}</div></div>
+</div></section>
+<section class="sec sec-soft" aria-labelledby="h-af"><div class="wrap split">
+  <div><p class="eyebrow">Features</p><h2 class="h-2" id="h-af" style="margin-top:14px">What it does</h2></div>
+  <ul class="checks">${feats.map((f) => `<li>${icon('check')}<span>${esc(f)}</span></li>`).join('')}</ul>
+</div></section>
+<section class="sec" aria-labelledby="h-ad"><div class="wrap split">
+  <div><p class="eyebrow">Details</p><h2 class="h-2" id="h-ad" style="margin-top:14px">Details</h2></div>
+  <table class="info">${rows.map(([k, v]) => `<tr><th scope="row">${k}</th><td>${v}</td></tr>`).join('')}</table>
+</div></section>
+<section class="sec sec-soft" aria-labelledby="h-ako" lang="ko"><div class="wrap split">
+  <div><p class="eyebrow">한국어</p><h2 class="h-2" id="h-ako" style="margin-top:14px">${esc(ko.name)}</h2><p class="muted" style="margin-top:14px">${esc(ko.summary)}. ${esc(ko.lead)}</p></div>
+  <table class="info"><tr><th scope="row">지원 환경</th><td>${a.osKo}</td></tr><tr><th scope="row">가격</th><td>${a.price ? `${a.price} · 한 번 구매, 구독 없음` : '출시 때 안내'}</td></tr><tr><th scope="row">출시</th><td>${a.storeKo}</td></tr><tr><th scope="row">개인정보</th><td>인터넷 연결 없음. 개인정보를 수집하거나 전송하지 않음. <a class="link-u" href="/privacy/#apps">개인정보처리방침</a></td></tr><tr><th scope="row">문의</th><td><a class="link-u" href="mailto:${SITE.email}">${SITE.email}</a></td></tr></table>
+</div></section>`;
+    },
+  });
+}
+add({
+  key: 'apps', section: 'products', path: '/apps/', single: true,
+  title: () => 'Apps | EarnToLink', desc: () => 'Apps by EarnToLink: Space Map, Dupeless, Archive Fix for Windows, and Roll Tidy, Roll Flick for mobile. Offline, no account, no ads.',
+  jsonld: () => [],
+  render() {
+    return `${phead('EarnToLink', 'Apps', 'Offline utilities. No account, no ads, no tracking. One-time purchase.', '')}
+<section class="sec" style="padding-top:48px"><div class="wrap"><div class="cats three">${appPages.map(({ p, a, en, short }) => `<a class="cat svc" href="/apps/${p.slug}/"><img src="/assets/img/apps/${p.slug}.png" width="56" height="56" alt=""><h3>${esc(en.name)}</h3><p>${esc(short)}</p><span class="cat-foot"><span>${esc(a.store)}${a.price ? ` · ${a.price}` : ''}</span>${icon('arrowRight')}</span></a>`).join('')}</div>
+<p style="margin-top:28px" class="muted">Support: <a class="link-u" href="mailto:${SITE.email}">${SITE.email}</a> · <a class="link-u" href="/en/privacy/#apps">Privacy Policy</a></p></div></section>`;
+  },
+});
+
 // ---------------------------------------------------------------- write
 async function write(p, content) {
   const f = join(OUT, p.endsWith('/') ? p + 'index.html' : p);
@@ -590,7 +649,10 @@ for (const f of ['favicon.svg', 'favicon-32.png', 'apple-touch-icon.png', 'icon-
   await cp(join(ROOT, 'assets/img', f), join(OUT, f)).catch(() => console.warn('missing asset', f, '(run npm run assets)'));
 }
 let count = 0;
-for (const page of pages) for (const l of LANGS) { await write(P(l.code, page.path), layout(l.code, page, page.render(l.code))); count++; }
+for (const page of pages) {
+  if (page.single) { await write(page.path, layout('en', page, page.render('en'))); count++; continue; }
+  for (const l of LANGS) { await write(P(l.code, page.path), layout(l.code, page, page.render(l.code))); count++; }
+}
 
 // 404 (noindex): Korean + English + language list
 {
@@ -602,7 +664,7 @@ for (const page of pages) for (const l of LANGS) { await write(P(l.code, page.pa
 }
 
 // sitemap (path unchanged: /sitemap.xml)
-const sm = pages.map((pg) => LANGS.map((l) => `  <url>
+const sm = pages.map((pg) => pg.single ? `  <url>\n    <loc>${abs(pg.path)}</loc>\n    <lastmod>${SITE.updated}</lastmod>\n  </url>` : LANGS.map((l) => `  <url>
     <loc>${abs(P(l.code, pg.path))}</loc>
     <lastmod>${SITE.updated}</lastmod>
 ${LANGS.map((a) => `    <xhtml:link rel="alternate" hreflang="${a.hreflang}" href="${abs(P(a.code, pg.path))}"/>`).join('\n')}
