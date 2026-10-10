@@ -1,0 +1,15 @@
+{
+  "name": "earntolink-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static website for 언투링크 (EarnToLink), https://earntolink.com",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "assets": "node tools/render-assets.mjs",
+    "serve": "cd site && python3 -m http.server 8787",
+    "check": "node tools/check.mjs",
+    "shots": "node tools/screens.mjs"
+  },
+  "engines": { "node": ">=20" }
+}
