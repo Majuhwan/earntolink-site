@@ -597,10 +597,10 @@ for (const p of PRODUCTS) {
   add({
     key: 'app-' + p.slug, section: 'products', path: `/apps/${p.slug}/`, single: true,
     title: () => `${en.name} | EarnToLink`,
-    desc: () => `${en.name}: ${short} ${a.price ? `One-time purchase ${a.price}. ` : ''}${a.store}.`,
+    desc: () => `${en.name}: ${short} ${a.price ? `One-time purchase ${a.price}. ` : (a.priceText ? `${a.priceText}. ` : '')}${a.store}.`,
     jsonld: () => [{ '@context': 'https://schema.org', '@type': 'SoftwareApplication', name: en.name, alternateName: ko.name, description: short, applicationCategory: 'UtilitiesApplication', operatingSystem: a.os, ...(a.price ? { offers: { '@type': 'Offer', price: a.price.replace('$', ''), priceCurrency: 'USD' } } : {}), url: abs(`/apps/${p.slug}/`), publisher: { '@id': ORG_ID } }],
     render() {
-      const rows = [['Platform', a.os], ['Price', a.price ? `${a.price} · one-time purchase, no subscription` : 'To be announced'], ['Availability', a.store], ['Privacy', 'No internet connection. No personal data collected or sent.'], ['Support', `<a class="link-u" href="mailto:${SITE.email}">${SITE.email}</a>`]];
+      const rows = [['Platform', a.os], ['Price', a.price ? `${a.price} · one-time purchase, no subscription` : (a.priceText || 'To be announced')], ['Availability', a.store], ['Privacy', 'No internet connection. No personal data collected or sent.'], ['Support', `<a class="link-u" href="mailto:${SITE.email}">${SITE.email}</a>`]];
       return `<section class="pd-hero"><div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><a href="/en/">Home</a><span aria-hidden="true">/</span><a href="/apps/">Apps</a><span aria-hidden="true">/</span><span aria-current="page">${esc(en.name)}</span></nav>
   <div class="pd-grid"><div>
     <span class="badge soon">${esc(a.store)}</span>
@@ -619,7 +619,7 @@ for (const p of PRODUCTS) {
 </div></section>
 <section class="sec sec-soft" aria-labelledby="h-ako" lang="ko"><div class="wrap split">
   <div><p class="eyebrow">한국어</p><h2 class="h-2" id="h-ako" style="margin-top:14px">${esc(ko.name)}</h2><p class="muted" style="margin-top:14px">${esc(ko.summary)}. ${esc(ko.lead)}</p></div>
-  <table class="info"><tr><th scope="row">지원 환경</th><td>${a.osKo}</td></tr><tr><th scope="row">가격</th><td>${a.price ? `${a.price} · 한 번 구매, 구독 없음` : '출시 때 안내'}</td></tr><tr><th scope="row">출시</th><td>${a.storeKo}</td></tr><tr><th scope="row">개인정보</th><td>인터넷 연결 없음. 개인정보를 수집하거나 전송하지 않음. <a class="link-u" href="/privacy/#apps">개인정보처리방침</a></td></tr><tr><th scope="row">문의</th><td><a class="link-u" href="mailto:${SITE.email}">${SITE.email}</a></td></tr></table>
+  <table class="info"><tr><th scope="row">지원 환경</th><td>${a.osKo}</td></tr><tr><th scope="row">가격</th><td>${a.price ? `${a.price} · 한 번 구매, 구독 없음` : (a.priceKo || '출시 때 안내')}</td></tr><tr><th scope="row">출시</th><td>${a.storeKo}</td></tr><tr><th scope="row">개인정보</th><td>인터넷 연결 없음. 개인정보를 수집하거나 전송하지 않음. <a class="link-u" href="/privacy/#apps">개인정보처리방침</a></td></tr><tr><th scope="row">문의</th><td><a class="link-u" href="mailto:${SITE.email}">${SITE.email}</a></td></tr></table>
 </div></section>`;
     },
   });
@@ -630,7 +630,7 @@ add({
   jsonld: () => [],
   render() {
     return `${phead('EarnToLink', 'Apps', 'Offline utilities. No account, no ads, no tracking. One-time purchase.', '')}
-<section class="sec" style="padding-top:48px"><div class="wrap"><div class="cats three">${appPages.map(({ p, a, en, short }) => `<a class="cat svc" href="/apps/${p.slug}/"><img src="/assets/img/apps/${p.slug}.png" width="56" height="56" alt=""><h3>${esc(en.name)}</h3><p>${esc(short)}</p><span class="cat-foot"><span>${esc(a.store)}${a.price ? ` · ${a.price}` : ''}</span>${icon('arrowRight')}</span></a>`).join('')}</div>
+<section class="sec" style="padding-top:48px"><div class="wrap"><div class="cats three">${appPages.map(({ p, a, en, short }) => `<a class="cat svc" href="/apps/${p.slug}/"><img src="/assets/img/apps/${p.slug}.png" width="56" height="56" alt=""><h3>${esc(en.name)}</h3><p>${esc(short)}</p><span class="cat-foot"><span>${esc(a.store)}${a.price ? ` · ${a.price}` : (a.priceText ? ` · ${esc(a.priceText)}` : '')}</span>${icon('arrowRight')}</span></a>`).join('')}</div>
 <p style="margin-top:28px" class="muted">Support: <a class="link-u" href="mailto:${SITE.email}">${SITE.email}</a> · <a class="link-u" href="/en/privacy/#apps">Privacy Policy</a></p></div></section>`;
   },
 });

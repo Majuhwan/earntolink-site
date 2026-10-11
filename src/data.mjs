@@ -71,9 +71,9 @@ export const NEWS = [
 // App pages /apps/<slug>/ (English default + Korean summary) for store submissions.
 // listing: untolink-apps/apps/<key>/store/listing_en-us.txt (desktop only)
 export const APP_PAGES = {
-  'space-map': { key: 'disk_map', os: 'Windows 10 version 1809 or later (x64)', osKo: 'Windows 10 1809 이상 (x64)', price: '$4.99', store: 'Coming soon to Microsoft Store', storeKo: 'Microsoft Store 출시 예정' },
-  dupeless: { key: 'dupe_finder', os: 'Windows 10 version 1809 or later (x64)', osKo: 'Windows 10 1809 이상 (x64)', price: '$5.99', store: 'Coming soon to Microsoft Store', storeKo: 'Microsoft Store 출시 예정' },
+  'space-map': { key: 'disk_map', os: 'Windows 10 version 1809 or later (x64)', osKo: 'Windows 10 1809 이상 (x64)', price: '$3.99', store: 'Coming soon to Microsoft Store', storeKo: 'Microsoft Store 출시 예정' },
+  dupeless: { key: 'dupe_finder', os: 'Windows 10 version 1809 or later (x64)', osKo: 'Windows 10 1809 이상 (x64)', price: '$3.99', store: 'Coming soon to Microsoft Store', storeKo: 'Microsoft Store 출시 예정' },
   'archive-fix': { key: 'zip_ko', os: 'Windows 10 version 1809 or later (x64)', osKo: 'Windows 10 1809 이상 (x64)', price: '$2.99', store: 'Coming soon to Microsoft Store', storeKo: 'Microsoft Store 출시 예정' },
-  'roll-tidy': { key: 'photo_cleaner', os: 'Android · iOS (coming soon)', osKo: 'Android · iOS (출시 예정)', price: '', store: 'Coming soon', storeKo: '출시 예정' },
-  'roll-flick': { key: 'swipe_clean', os: 'Android · iOS (coming soon)', osKo: 'Android · iOS (출시 예정)', price: '', store: 'Coming soon', storeKo: '출시 예정' },
+  'roll-tidy': { key: 'photo_cleaner', os: 'Android · iOS (coming soon)', osKo: 'Android · iOS (출시 예정)', price: '', priceText: 'Free download · Pro $4.99 one-time', priceKo: '무료 다운로드 · Pro 한 번 결제 $4.99', store: 'Coming soon', storeKo: '출시 예정' },
+  'roll-flick': { key: 'swipe_clean', os: 'Android · iOS (coming soon)', osKo: 'Android · iOS (출시 예정)', price: '', priceText: 'Free download · Pro $4.99 one-time', priceKo: '무료 다운로드 · Pro 한 번 결제 $4.99', store: 'Coming soon', storeKo: '출시 예정' },
 };
