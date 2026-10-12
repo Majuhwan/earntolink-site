@@ -9,7 +9,7 @@ const ONE_TIME = 'Einmalkauf · ₩10.000 oder weniger';
 export default {
   brand: 'EarnToLink',
   brandAlt: '언투링크',
-  slogan: "Werbeeinnahmen mit System.",
+  slogan: "Ihr Wachstumspartner für Werbeeinnahmen",
   translationNote: 'Diese Seite ist eine Übersetzung. Bei Abweichungen vom koreanischen Original gilt das koreanische Original.',
 
   ui: {
@@ -44,7 +44,7 @@ export default {
     "title": "EarnToLink | Beratung für Werbeeinnahmen von Websites, Apps und Commerce-Plattformen",
     "desc": "EarnToLink ist eine Beratung für Werbeeinnahmen. Wir analysieren und gestalten, wie Websites, Apps und Commerce-Plattformen mit Werbung Geld verdienen: Plattformwahl und Einrichtung, Richtlinien- und Datenschutz-Compliance, Retail Media und laufender Werbebetrieb.",
     "eyebrow": "Beratung für Werbeeinnahmen von Unternehmen",
-    "h1": "Werbeeinnahmen<br>mit System.",
+    "h1": "Ihr Wachstumspartner<br>für Werbeeinnahmen",
     "lead": "Wir helfen Websites, Apps und Commerce-Plattformen, mit Werbung verlässlich zu verdienen. Wir analysieren Ihre Ausgangslage, wählen passende Werbeplattformen und Platzierungen aus und begleiten Sie bei Richtlinienprüfungen und im laufenden Betrieb.",
     "meta": [
       "Websites und Medien",
@@ -648,7 +648,7 @@ export default {
   },
 
   og: {
-    "h": "Werbeeinnahmen mit System.",
+    "h": "Ihr Wachstumspartner für Werbeeinnahmen",
     "s": "Erlösanalyse · Web- und App-Monetarisierung<br>Retail Media · Richtlinientreue · Betrieb",
     "tags": [
       "Websites und Medien",

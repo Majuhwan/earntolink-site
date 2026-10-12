@@ -23,3 +23,9 @@
 
 ## 배포
 GitHub Pages, 사용자 지정 도메인 earntolink.com (`site/CNAME`).
+
+## 사진 · 영상 (assets/media)
+홈 배경 영상과 사진은 Pexels 영상에서 잘라 다시 인코딩한 것 (Pexels License: 무료 사용·수정 가능, 출처 표기 의무 없음).
+- etl-hero-*: Pexels 7947507 (노트북 대시보드), 8.6초 이음매 없는 반복, 1600x900 · 854x480, WebM VP9 + MP4 H.264
+- etl-charts-*: Pexels 7580275, etl-desk-*: Pexels 3209211, 정지 사진 AVIF · WebP · JPEG 800/1600px
+- 영상은 페이지 로드 뒤 붙이고, 움직임 줄이기 · 데이터 절약 · 2G 에서는 포스터 사진만 보여 준다.

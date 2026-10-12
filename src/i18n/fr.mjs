@@ -9,7 +9,7 @@ const ONE_TIME = 'Achat unique · ₩10,000 maximum';
 export default {
   brand: 'EarnToLink',
   brandAlt: '언투링크',
-  slogan: "Vos revenus publicitaires, bien pensés.",
+  slogan: "Votre partenaire de croissance pour les revenus publicitaires",
   translationNote: 'Cette page est une traduction. En cas de divergence avec l’original coréen, l’original coréen prévaut.',
 
   ui: {
@@ -44,7 +44,7 @@ export default {
     "title": "EarnToLink | Conseil en revenus publicitaires pour sites web, applications et plateformes e-commerce",
     "desc": "EarnToLink est un cabinet de conseil en revenus publicitaires. Nous analysons et structurons la façon dont les sites web, les applications et les plateformes e-commerce gagnent de l’argent grâce à la publicité : choix et paramétrage des plateformes, conformité aux règles et à la vie privée, retail media et pilotage publicitaire au quotidien.",
     "eyebrow": "Conseil en revenus publicitaires pour les entreprises",
-    "h1": "Vos revenus publicitaires,<br>bien pensés.",
+    "h1": "Votre partenaire de croissance<br>pour les revenus publicitaires",
     "lead": "Nous aidons les sites web, les applications et les plateformes e-commerce à tirer des revenus réguliers de la publicité. Nous faisons le point sur votre situation, choisissons les plateformes et les emplacements publicitaires adaptés, puis restons à vos côtés pour les revues de conformité et le pilotage quotidien.",
     "meta": [
       "Sites web et médias",
@@ -648,7 +648,7 @@ export default {
   },
 
   og: {
-    "h": "Vos revenus publicitaires, bien pensés.",
+    "h": "Votre partenaire de croissance pour les revenus publicitaires",
     "s": "Diagnostic de revenus publicitaires · Monétisation web et applications<br>Retail media · Conformité · Pilotage",
     "tags": [
       "Sites web et médias",

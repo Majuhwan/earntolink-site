@@ -9,7 +9,7 @@ const ONE_TIME = 'One-time purchase · ₩10,000 or less';
 export default {
   brand: 'EarnToLink',
   brandAlt: '언투링크',
-  slogan: "Ad revenue, designed properly.",
+  slogan: "Your growth partner in advertising revenue",
   translationNote: 'This page is a translation. If it differs from the Korean original, the Korean original prevails.',
 
   ui: {
@@ -44,7 +44,7 @@ export default {
     "title": "EarnToLink | Ad revenue consulting for websites, apps and commerce platforms",
     "desc": "EarnToLink is an ad revenue consulting firm. We assess and design how websites, apps and commerce platforms earn from advertising: platform choice and setup, policy and privacy compliance, retail media and ongoing ad operations.",
     "eyebrow": "Ad revenue platform consulting for businesses",
-    "h1": "Ad revenue,<br>designed properly.",
+    "h1": "Your growth partner<br>in advertising revenue",
     "lead": "We help websites, apps and commerce platforms earn steady revenue from advertising. We assess what you have today, choose the right ad platforms and placements, and stay with you through policy reviews and day-to-day operations.",
     "meta": [
       "Websites and media",
@@ -648,7 +648,7 @@ export default {
   },
 
   og: {
-    "h": "Ad revenue, designed properly.",
+    "h": "Your growth partner in advertising revenue",
     "s": "Ad revenue assessment · Web and app monetization<br>Retail media · Policy compliance · Operations",
     "tags": [
       "Websites and media",

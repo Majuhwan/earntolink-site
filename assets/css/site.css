@@ -539,3 +539,23 @@ h1, h2, h3, .h-display, .h-1, .h-2 { hyphens: manual; }
 .app-head img { border-radius: 22px; box-shadow: var(--shadow); }
 .app-head .h-1 { margin: 0; }
 .cat.svc img { border-radius: 14px; }
+
+/* ---- home hero with background video (2026-10-12) */
+.hero-v { position: relative; padding: 0; min-height: min(78vh, 760px); display: flex; align-items: flex-end; color: #fff; background: #0b0d12; overflow: hidden; }
+.hero-media { position: absolute; inset: 0; }
+.hero-media picture, .hero-media img, .hero-vid { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.hero-vid { opacity: 0; transition: opacity 1.2s ease; } .hero-vid.on { opacity: 1; }
+.hero-v::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(8,10,16,.86) 0%, rgba(8,10,16,.62) 50%, rgba(8,10,16,.25) 100%), linear-gradient(to top, rgba(8,10,16,.55), transparent 45%); }
+.hero-in { position: relative; z-index: 1; width: 100%; padding-top: 120px; padding-bottom: 88px; }
+.hero-v .eyebrow { color: rgba(255,255,255,.86); }
+.hero-v .eyebrow::before { background: #8fb0ff; }
+.hero-title { font-size: clamp(30px, 3.8vw, 52px); line-height: 1.25; letter-spacing: -0.025em; font-weight: 700; margin: 18px 0 18px; max-width: 18em; word-break: keep-all; }
+.hero-v .lead { color: rgba(255,255,255,.88); max-width: 600px; margin-bottom: 32px; hyphens: manual; }
+.btn-light { background: #fff; color: #0b0d12; } .btn-light:hover { background: #e9ebf0; }
+.btn-ghost { background: rgba(255,255,255,.06); color: #fff; border: 1px solid rgba(255,255,255,.4); } .btn-ghost:hover { background: rgba(255,255,255,.14); }
+.hero-v .hero-meta { color: rgba(255,255,255,.8); } .hero-v .hero-meta .ic { color: #fff; }
+.hero-stats { padding: 40px 0 8px; }
+.sec-fig { display: block; margin: 0 0 40px; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); }
+.sec-fig img { display: block; width: 100%; height: auto; aspect-ratio: 21 / 8; object-fit: cover; }
+@media (max-width: 760px) { .hero-v { min-height: 88svh; } .hero-v::after { background: linear-gradient(to bottom, rgba(8,10,16,.5), rgba(8,10,16,.82) 60%); } .hero-in { padding-top: 96px; padding-bottom: 56px; } .sec-fig img { aspect-ratio: 16 / 9; } }
+@media (prefers-color-scheme: dark) { .sec-fig { border-color: var(--line); } }

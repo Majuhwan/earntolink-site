@@ -9,7 +9,7 @@ const ONE_TIME = 'Compra única · ₩10,000 ou menos';
 export default {
   brand: 'EarnToLink',
   brandAlt: '언투링크',
-  slogan: "Receita com publicidade, bem planejada.",
+  slogan: "Seu parceiro de crescimento em receita publicitária",
   translationNote: 'Esta página é uma tradução. Se houver diferença em relação ao original em coreano, prevalece o original em coreano.',
 
   ui: {
@@ -44,7 +44,7 @@ export default {
     "title": "EarnToLink | Consultoria de receita publicitária para sites, apps e plataformas de e-commerce",
     "desc": "A EarnToLink é uma consultoria de receita publicitária. Avaliamos e estruturamos como sites, apps e plataformas de e-commerce geram receita com anúncios: escolha e configuração de plataformas, conformidade com políticas e privacidade, retail media e operação publicitária contínua.",
     "eyebrow": "Consultoria de receita publicitária para empresas",
-    "h1": "Receita com publicidade,<br>bem planejada.",
+    "h1": "Seu parceiro de crescimento<br>em receita publicitária",
     "lead": "Ajudamos sites, apps e plataformas de e-commerce a ter receita constante com publicidade. Analisamos o cenário atual, escolhemos as plataformas e os espaços de anúncio mais adequados e acompanhamos sua empresa nas revisões de políticas e na operação do dia a dia.",
     "meta": [
       "Sites e portais de mídia",
@@ -648,7 +648,7 @@ export default {
   },
 
   og: {
-    "h": "Receita com publicidade, bem planejada.",
+    "h": "Seu parceiro de crescimento em receita publicitária",
     "s": "Diagnóstico de receita publicitária · Monetização de sites e apps<br>Retail media · Conformidade com políticas · Operação",
     "tags": [
       "Sites e portais de mídia",

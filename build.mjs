@@ -90,6 +90,7 @@ ${ogAlt}
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="${FONT_CSS}">
 <link rel="stylesheet" href="/assets/css/site.css?v=${V}">
+${page.key === 'home' ? `<link rel="preload" as="image" type="image/avif" imagesrcset="${MV('etl-hero-poster-800.avif')} 800w, ${MV('etl-hero-poster-1600.avif')} 1600w" imagesizes="100vw">` : ''}
 ${ld}
 </head>
 <body>
@@ -252,6 +253,9 @@ function serviceLd(lang, s) {
   return { '@context': 'https://schema.org', '@type': 'Service', name: d.name, description: d.short, serviceType: d.name, provider: { '@id': ORG_ID }, areaServed: 'Worldwide', availableLanguage: LANGS.map((l) => l.hreflang), url: abs(P(lang, `/services/${s.id}/`)) };
 }
 const home = (lang) => [T[lang].ui.home, P(lang, '/')];
+// Optimized media (assets/media): AVIF/WebP/JPEG at 800/1600 px; hero video attached by site.js after load
+const MV = (f) => `/assets/media/${f}?v=${V}`;
+const pic = (n, cls, sizes, eager) => `<picture class="${cls}"><source type="image/avif" srcset="${MV(n + '-800.avif')} 800w, ${MV(n + '-1600.avif')} 1600w" sizes="${sizes}"><source type="image/webp" srcset="${MV(n + '-800.webp')} 800w, ${MV(n + '-1600.webp')} 1600w" sizes="${sizes}"><img src="${MV(n + '-1600.jpg')}" srcset="${MV(n + '-800.jpg')} 800w, ${MV(n + '-1600.jpg')} 1600w" sizes="${sizes}" width="1600" height="${n === 'etl-charts' ? 844 : 900}" alt=""${eager ? ' fetchpriority="high"' : ' loading="lazy"'} decoding="async"></picture>`;
 
 // ---------------------------------------------------------------- pages
 const pages = [];
@@ -270,18 +274,15 @@ add({
     const u = L.ui;
     const chips = ALL_LANGS.map((l) => [l.label, l.html]);
     return `
-<section class="hero"><div class="wrap hero-grid">
-  <div>
-    <p class="eyebrow">${c.eyebrow}</p>
-    <h1 class="h-display">${c.h1}</h1>
-    <p class="lead">${c.lead}</p>
-    <div class="btns"><a class="btn btn-primary" href="${P(lang, '/services/')}">${u.nav.services}${icon('arrowRight')}</a><a class="btn btn-secondary" href="${P(lang, '/contact/')}">${u.projectBtn}</a></div>
-    <div class="hero-meta">${c.meta.map((t, i) => `<span>${icon(['monitor', 'smartphone', 'store'][i])}${t}</span>`).join('')}</div>
-  </div>
-  <div class="hero-art">${heroAdMockup(u.heroLabel, c.meta, [L.brand, L.brandAlt])}</div>
-</div>
-<div class="wrap" style="margin-top:72px"><div class="stats">${c.stats.map(([b, s]) => `<div class="stat"><b>${b}</b><span>${s}</span></div>`).join('')}</div></div>
-</section>
+<section class="hero hero-v"><div class="hero-media" aria-hidden="true">${pic('etl-hero-poster', 'hero-poster', '100vw', true)}<video class="hero-vid" muted loop playsinline preload="none" data-d-webm="${MV('etl-hero-d.webm')}" data-d-mp4="${MV('etl-hero-d.mp4')}" data-m-webm="${MV('etl-hero-m.webm')}" data-m-mp4="${MV('etl-hero-m.mp4')}"></video></div>
+<div class="wrap hero-in">
+  <p class="eyebrow">${c.eyebrow}</p>
+  <h1 class="hero-title">${c.h1}</h1>
+  <p class="lead">${c.lead}</p>
+  <div class="btns"><a class="btn btn-light" href="${P(lang, '/services/')}">${u.nav.services}${icon('arrowRight')}</a><a class="btn btn-ghost" href="${P(lang, '/contact/')}">${u.projectBtn}</a></div>
+  <div class="hero-meta">${c.meta.map((t, i) => `<span>${icon(['monitor', 'smartphone', 'store'][i])}${t}</span>`).join('')}</div>
+</div></section>
+<section class="hero-stats"><div class="wrap"><div class="stats">${c.stats.map(([b, s]) => `<div class="stat"><b>${b}</b><span>${s}</span></div>`).join('')}</div></div></section>
 
 <section class="sec sec-soft" aria-labelledby="h-svc"><div class="wrap">
   ${sechead(c.services, 'h-svc')}
@@ -290,12 +291,14 @@ add({
 
 <section class="sec" aria-labelledby="h-why"><div class="wrap">
   ${sechead(c.why, 'h-why')}
+  ${pic('etl-charts', 'sec-fig', '(max-width: 900px) 100vw, 1200px')}
   ${whyGrid(lang)}
   <p style="margin-top:28px"><a class="link" href="${P(lang, '/principles/')}">${u.nav.principles}${icon('arrowRight')}</a></p>
 </div></section>
 
 <section class="sec sec-soft" aria-labelledby="h-how"><div class="wrap">
   ${sechead(c.how, 'h-how')}
+  ${pic('etl-desk', 'sec-fig sec-fig-wide', '(max-width: 900px) 100vw, 1200px')}
   ${stepsGrid(lang)}
 </div></section>
 
