@@ -264,3 +264,44 @@ export function heroMockup(label, chips, center) {
     + T(92, 88, center[0], 16, 'tx', 750, 'middle') + T(92, 108, center[1], 11.5, 'tx2', 550, 'middle'));
   return svg(s, W, H, label);
 }
+
+// Hero for the ad revenue consulting positioning: an abstract revenue dashboard (no numbers, no claims).
+// chans: three channel names (home.meta), center: [brand, brandAlt]
+export function heroAdMockup(label, chans, center) {
+  const W = 720, H = 520;
+  let s = '';
+  // main dashboard card
+  let d = R(0, 0, 520, 360, 'f-bg s-frame shadow', 20);
+  d += R(24, 22, 30, 30, 'f-ink', 9)
+    + `<g fill="none" class="s-inv" stroke-width="2.4" stroke-linecap="round" transform="translate(24 22) scale(.94)"><path d="M13.6 18.4a4.2 4.2 0 0 1 0-5.9l2.6-2.6a4.2 4.2 0 0 1 5.9 5.9l-1.3 1.3"/><path d="M18.4 13.6a4.2 4.2 0 0 1 0 5.9l-2.6 2.6a4.2 4.2 0 0 1-5.9-5.9l1.3-1.3"/></g>`
+    + T(66, 36, center[0], 14, 'tx', 750) + T(66, 51, center[1], 10.5, 'tx3', 550)
+    + L(380, 30, 52, 'f-g1', 16) + L(440, 30, 52, 'f-acc3', 16);
+  // chart area
+  d += `<g class="s-line" stroke-width="1" fill="none">${[110, 150, 190, 230].map((y) => `<path d="M24 ${y}H496"/>`).join('')}</g>`;
+  const pts = [[24, 222], [80, 214], [136, 220], [192, 196], [248, 200], [304, 176], [360, 168], [416, 140], [472, 120], [496, 112]];
+  const line = pts.map(([x, y], i) => `${i ? 'L' : 'M'}${x} ${y}`).join('');
+  d += `<path d="${line}L496 236L24 236Z" class="f-acc3"/><path d="${line}" class="s-acc" stroke-width="3" stroke-linejoin="round" fill="none"/>`;
+  const base = pts.map(([x, y]) => `${x} ${Math.min(234, y + 34)}`).join('L');
+  d += `<path d="M${base}" class="s-t3" stroke-width="2" stroke-dasharray="4 6" fill="none"/>` + C(472, 120, 6, 'f-acc') + C(472, 120, 11, 'f-acc2" opacity=".35');
+  // channel rows
+  const cls = ['f-acc', 'f-ok', 'f-warn'];
+  chans.forEach((c, i) => {
+    const y = 262 + i * 30;
+    d += C(32, y + 6, 5, cls[i]) + T(46, y + 10, c, 11.5, 'tx2', 600) + L(250, y + 2, 220, 'f-g1', 9) + L(250, y + 2, [180, 120, 90][i], cls[i], 9);
+  });
+  s += G(16, 70, d);
+  // side card: donut
+  let k = R(0, 0, 196, 196, 'f-bg s-frame shadow', 20);
+  const arc = (r, a0, a1) => { const p = (a) => [98 + r * Math.cos(a), 104 + r * Math.sin(a)]; const [x0, y0] = p(a0), [x1, y1] = p(a1); return `M${x0.toFixed(1)} ${y0.toFixed(1)}A${r} ${r} 0 ${a1 - a0 > Math.PI ? 1 : 0} 1 ${x1.toFixed(1)} ${y1.toFixed(1)}`; };
+  const segs = [[0, 0.5, 'f-acc'], [0.5, 0.8, 'f-ok'], [0.8, 1, 'f-warn']];
+  const strokeOf = { 'f-acc': 'var(--mk-acc)', 'f-ok': 'var(--mk-ok)', 'f-warn': 'var(--mk-warn)' };
+  segs.forEach(([a, b, c]) => { k += `<path d="${arc(52, -Math.PI / 2 + a * 2 * Math.PI + 0.04, -Math.PI / 2 + b * 2 * Math.PI - 0.04)}" fill="none" stroke="${strokeOf[c]}" stroke-width="20"/>`; });
+  k += L(70, 28, 56, 'f-g2', 8) + C(98, 104, 30, 'f-bg') + L(78, 100, 40, 'f-t2', 8);
+  s += G(508, 22, k);
+  // small floating card: upward trend
+  let f = R(0, 0, 176, 84, 'f-bg s-frame shadow', 16) + R(16, 18, 36, 36, 'f-ok-soft', 10)
+    + `<path d="M24 46l8-8 6 5 9-11" fill="none" stroke="var(--mk-ok)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M41 32h6v6" fill="none" stroke="var(--mk-ok)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>`
+    + L(64, 24, 90, 'f-g2', 8) + L(64, 42, 60, 'f-t2', 8);
+  s += G(520, 400, f);
+  return svg(s, W, H, label);
+}

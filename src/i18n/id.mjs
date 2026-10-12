@@ -9,20 +9,20 @@ const ONE_TIME = 'Beli sekali · maksimal ₩10,000';
 export default {
   brand: 'EarnToLink',
   brandAlt: '언투링크',
-  slogan: 'Menghubungkan pasar dengan dunia.',
+  slogan: "Pendapatan iklan, dirancang dengan benar.",
   translationNote: 'Halaman ini adalah terjemahan. Jika berbeda dari aslinya dalam bahasa Korea, versi asli bahasa Korea yang berlaku.',
 
   ui: {
     skip: 'Lewati ke konten', menu: 'Menu', language: 'Bahasa', mainNav: 'Utama', breadcrumb: 'Jejak navigasi', toc: 'Daftar isi', homeAria: 'Beranda EarnToLink',
-    nav: { services: 'Layanan', products: 'Produk', about: 'Tentang', principles: 'Cara kerja kami', news: 'Berita', contact: 'Kontak' },
+    nav: { services: "Layanan", products: 'Produk', about: 'Tentang', principles: 'Cara kerja kami', news: 'Berita', contact: 'Kontak' },
     home: 'Beranda', privacy: 'Kebijakan Privasi', terms: 'Ketentuan', rss: 'RSS',
-    footer: { services: 'Layanan', products: 'Produk', company: 'Perusahaan', policy: 'Kebijakan' },
+    footer: { services: "Layanan", products: 'Produk', company: 'Perusahaan', policy: 'Kebijakan' },
     biz: { name: 'Nama usaha', rep: 'Perwakilan', no: 'No. registrasi usaha', tax: 'Jenis pajak', kinds: 'Bidang usaha', mail: 'Email' },
     rights: '© 2026 EarnToLink. Semua hak dilindungi.',
-    view: 'Detail', all: 'Semua produk', allServices: 'Semua layanan', email: 'Email', mailBtn: 'Kirim email', projectBtn: 'Mulai proyek',
+    view: 'Detail', all: 'Semua produk', allServices: "Semua layanan", email: 'Email', mailBtn: 'Kirim email', projectBtn: "Jadwalkan konsultasi",
     platform: 'Platform', status: 'Status', features: 'Fitur', specs: 'Spesifikasi', related: 'Produk lainnya', privacyNote: 'Privasi',
     productIllustration: 'Ilustrasi produk: ',
-    heroLabel: 'Ilustrasi EarnToLink yang terhubung dengan pasar dalam 14 bahasa',
+    heroLabel: 'Ilustrasi dasbor pendapatan iklan dari situs web, aplikasi, dan e-commerce',
     newsFeedTitle: 'Berita EarnToLink', newsFeedDesc: 'Berita dari EarnToLink (언투링크)',
     notFound: { title: 'Halaman tidak ditemukan', text: 'Alamat telah berubah atau halaman tidak ada.', home: 'Ke beranda' },
   },
@@ -41,121 +41,336 @@ export default {
   },
 
   home: {
-    title: 'EarnToLink (언투링크) | Menghubungkan pasar dengan dunia',
-    desc: 'EarnToLink menghubungkan pasar dengan dunia: pengembangan produk web, seluler dan desktop, transformasi AI dan otomatisasi, lokalisasi ke 14 bahasa, peluncuran di toko aplikasi global, integrasi dan operasional e-commerce.',
-    eyebrow: 'Perangkat lunak · Transformasi AI · Ekspansi global',
-    h1: 'Menghubungkan pasar<br>dengan dunia.',
-    lead: 'Dari perencanaan dan pengembangan hingga otomatisasi AI, lokalisasi dan peluncuran di toko aplikasi global, satu tim mendampingi produk Anda sampai tuntas.',
-    meta: ['Web · Seluler · Desktop', 'AI · Otomatisasi', '14 bahasa'],
-    stats: [['14', 'Bahasa situs web'], ['6', 'Bidang layanan'], ['5', 'Produk buatan sendiri'], ['4', 'Toko aplikasi tujuan rilis']],
-    services: { eyebrow: 'Layanan', title: 'Enam bidang layanan', text: 'Kami membangun, mengotomatisasi, membawanya ke dunia, dan menjaganya terus tumbuh.' },
-    why: { eyebrow: 'Mengapa EarnToLink', title: 'Dibangun untuk pasar global sejak hari pertama', text: 'Enam komitmen yang kami pegang di setiap proyek.' },
-    how: { eyebrow: 'Proses', title: 'Dari diskusi pertama hingga operasional', text: 'Enam langkah, masing-masing dikonfirmasi sebelum lanjut ke berikutnya.' },
-    apps: { eyebrow: 'Produk buatan sendiri', title: 'Produk yang kami bangun sendiri', text: 'Aplikasi milik kami sendiri, dibuat dengan standar yang sama seperti pekerjaan klien. Semuanya segera hadir.' },
-    co: { eyebrow: 'Perusahaan', title: 'EarnToLink', text: 'Usaha perorangan di Korea. Pengembangan dan penyediaan perangkat lunak aplikasi.' },
-    news: { eyebrow: 'Berita', title: 'Berita terbaru' },
+    "title": "EarnToLink | Konsultasi pendapatan iklan untuk situs web, aplikasi, dan platform e-commerce",
+    "desc": "EarnToLink adalah konsultan pendapatan iklan. Kami menilai dan merancang cara situs web, aplikasi, dan platform e-commerce menghasilkan uang dari iklan: pemilihan dan pengaturan platform, kepatuhan kebijakan dan privasi, retail media, serta operasional iklan berkelanjutan.",
+    "eyebrow": "Konsultasi platform pendapatan iklan untuk bisnis",
+    "h1": "Pendapatan iklan,<br>dirancang dengan benar.",
+    "lead": "Kami membantu situs web, aplikasi, dan platform e-commerce memperoleh pendapatan iklan yang stabil. Kami menilai kondisi Anda saat ini, memilih platform dan penempatan iklan yang tepat, lalu mendampingi Anda dalam tinjauan kebijakan dan operasional harian.",
+    "meta": [
+      "Situs web dan media",
+      "Aplikasi seluler",
+      "E-commerce dan retail media"
+    ],
+    "stats": [
+      [
+        "6",
+        "Bidang konsultasi"
+      ],
+      [
+        "3",
+        "Kanal pendapatan: web, aplikasi, e-commerce"
+      ],
+      [
+        "6",
+        "Tahapan di setiap proyek"
+      ],
+      [
+        "14",
+        "Bahasa situs web"
+      ]
+    ],
+    "services": {
+      "eyebrow": "Layanan",
+      "title": "Enam bidang konsultasi",
+      "text": "Dari penilaian, pengaturan platform, tinjauan kebijakan, hingga operasional. Pilih hanya bidang yang Anda perlukan."
+    },
+    "why": {
+      "eyebrow": "Mengapa EarnToLink",
+      "title": "Pendapatan dan kepercayaan, terlindungi bersama",
+      "text": "Enam prinsip yang kami pegang di setiap proyek."
+    },
+    "how": {
+      "eyebrow": "Cara kerja kami",
+      "title": "Dari diskusi awal hingga operasional berkelanjutan",
+      "text": "Enam tahap, masing-masing diperiksa dengan data sebelum kami melangkah ke tahap berikutnya."
+    },
+    "co": {
+      "eyebrow": "Perusahaan",
+      "title": "EarnToLink",
+      "text": "Usaha perorangan di Korea. Konsultasi pendapatan iklan dan pengembangan perangkat lunak."
+    },
+    "news": {
+      "eyebrow": "Berita",
+      "title": "Berita terbaru"
+    }
   },
 
   services: {
-    title: 'Layanan',
-    desc: 'Layanan EarnToLink: pengembangan produk, transformasi AI dan otomatisasi, lokalisasi, peluncuran di toko aplikasi global, e-commerce dan penjualan lintas negara, operasional dan pertumbuhan.',
-    eyebrow: 'Layanan', h1: 'Layanan', lead: 'Enam bidang. Pilih hanya yang Anda butuhkan.',
-    whoLabel: 'Cocok jika', scopeLabel: 'Yang kami kerjakan', deliverLabel: 'Hasil yang diserahkan', otherLabel: 'Layanan lainnya',
-    items: {
-      product: {
-        name: 'Pengembangan produk', short: 'Layanan web, aplikasi seluler, aplikasi desktop dan sistem internal, dari perencanaan hingga peluncuran.',
-        lead: 'Kami mengubah ide menjadi produk yang benar-benar dipakai orang. Perencanaan, desain layar, desain visual, pengembangan dan pengujian berjalan sebagai satu alur.',
-        who: ['Anda membangun layanan baru dari nol', 'Anda ingin meluncur kecil dulu untuk menguji pasar', 'Anda ingin memindahkan pekerjaan dari spreadsheet dan chat ke sistem yang sebenarnya'],
-        scope: [
-          ['Layanan web', 'Situs layanan, akun dan pembayaran, dasbor admin.'],
-          ['Aplikasi seluler', 'Aplikasi Android dan iOS, dibuat dari satu basis kode.'],
-          ['Aplikasi desktop', 'Aplikasi Windows dan macOS, termasuk alat untuk file dan disk.'],
-          ['Sistem internal', 'Manajemen kerja, penyelesaian transaksi, stok, dan alat pelanggan.'],
+    "title": "Layanan",
+    "desc": "Layanan EarnToLink: penilaian dan strategi pendapatan iklan, monetisasi situs web dan media, monetisasi aplikasi, retail media dan pengembangan platform iklan, kepatuhan kebijakan iklan dan privasi, serta operasional dan pelaporan iklan.",
+    "eyebrow": "Layanan",
+    "h1": "Layanan",
+    "lead": "Enam bidang. Pilih hanya yang Anda perlukan.",
+    "whoLabel": "Cocok jika",
+    "scopeLabel": "Yang kami kerjakan",
+    "deliverLabel": "Yang Anda terima",
+    "otherLabel": "Layanan lainnya",
+    "items": {
+      "strategy": {
+        "name": "Penilaian dan strategi pendapatan iklan",
+        "short": "Kami meninjau trafik, penempatan iklan, pengaturan platform, dan metrik pendapatan Anda, lalu menentukan arah model pendapatan.",
+        "lead": "Pertama, kami mencari tahu dari mana pendapatan iklan Anda berasal dan di mana letak kebocorannya. Angka dicatat pada satu acuan yang konsisten, lalu kami menyusun prioritas dan rencana tindakan.",
+        "who": [
+          "Anda memasang iklan tetapi hasilnya di bawah harapan",
+          "Anda sedang menimbang untuk berganti atau menambah platform iklan",
+          "Pendapatan iklan perlu masuk dalam rencana bisnis Anda"
         ],
-        deliver: ['Daftar fitur dan desain layar', 'Kode sumber dan pengaturan deployment', 'Pengujian otomatis', 'Panduan operasional'],
-      },
-      ax: {
-        name: 'Transformasi AI dan otomatisasi', short: 'Agen AI dan otomatisasi yang mengurangi pekerjaan berulang dan mengubah cara tim bekerja.',
-        lead: 'Kami menemukan pekerjaan yang berulang dan memindahkannya ke AI dan otomatisasi. Demo kecil yang berfungsi membuktikan efeknya sebelum pengembangan penuh.',
-        who: ['Tim Anda mengulang balasan dukungan, dokumen, atau pembersihan data yang sama', 'Anda ingin mencari dokumen dan data internal dengan AI', 'Orang menyalin informasi yang sama di antara beberapa alat'],
-        scope: [
-          ['Agen AI', 'Balasan awal, ringkasan, draf dan klasifikasi.'],
-          ['Otomatisasi dokumen dan data', 'Membaca formulir, merapikan tabel, membuat laporan.'],
-          ['Pencarian pengetahuan internal', 'Jawaban berdasarkan dokumen Anda sendiri (RAG).'],
-          ['Integrasi alat', 'Tautan otomatis antara email, chat, spreadsheet dan sistem internal.'],
+        "scope": [
+          [
+            "Tinjauan kondisi saat ini",
+            "Komposisi trafik, penempatan iklan, pengaturan platform, dan alur pendapatan."
+          ],
+          [
+            "Metrik utama",
+            "Acuan untuk RPM halaman, impression rate, fill rate, dan viewability."
+          ],
+          [
+            "Model pendapatan",
+            "Kombinasi yang tepat antara iklan, pendapatan afiliasi, langganan, dan iklan yang dijual langsung."
+          ],
+          [
+            "Rencana tindakan",
+            "Prioritas, jadwal, dan perkiraan dampak setiap perbaikan."
+          ]
         ],
-        deliver: ['Penilaian alur kerja', 'Demo yang berfungsi', 'Otomatisasi produksi dan panduan pengguna', 'Metrik untuk mengukur dampak'],
+        "deliver": [
+          "Laporan penilaian",
+          "Tabel acuan metrik",
+          "Rekomendasi model pendapatan",
+          "Rencana tindakan bertahap"
+        ]
       },
-      localization: {
-        name: 'Lokalisasi dan ekspansi global', short: 'Bawa layanan Anda ke 14 bahasa atau lebih dan mudah ditemukan di setiap negara.',
-        lead: 'Bukan sekadar terjemahan. Kami menyesuaikan struktur bahasa, format tanggal, angka dan mata uang, serta visibilitas di mesin pencari untuk tiap negara.',
-        who: ['Layanan Anda hanya tersedia dalam satu bahasa dan Anda ingin membukanya ke luar negeri', 'Anda sudah menerjemahkan, tetapi mesin pencari asing tidak menemukan Anda', 'Anda membutuhkan pembayaran dan format yang berbeda di tiap negara'],
-        scope: [
-          ['Struktur multibahasa', 'Ekstraksi string, pergantian bahasa, URL per bahasa.'],
-          ['SEO multibahasa', 'hreflang, sitemap per bahasa, pendaftaran ke mesin pencari.'],
-          ['Format lokal', 'Tanggal, angka, mata uang dan alamat.'],
-          ['QA terjemahan', 'Glosarium dan pemeriksaan otomatis untuk string yang hilang di tiap bahasa.'],
+      "web": {
+        "name": "Monetisasi situs web dan media",
+        "short": "Kesiapan persetujuan, desain penempatan iklan, serta keseimbangan antara kecepatan halaman dan pendapatan untuk blog, situs berita, dan situs informasi.",
+        "lead": "Alih-alih menambah jumlah iklan, kami mencari posisi yang tidak mengganggu pembaca. Kami menangani semuanya, dari kesiapan persetujuan dan desain penempatan hingga pengaturan programmatic.",
+        "who": [
+          "Anda sedang mempersiapkan peninjauan persetujuan platform iklan",
+          "Iklan memperlambat halaman atau menaikkan bounce rate",
+          "Anda ingin menjalankan beberapa jaringan iklan sekaligus"
         ],
-        deliver: ['Halaman dan URL per bahasa', 'Glosarium', 'Alat pemeriksa string per bahasa', 'Pendaftaran ke mesin pencari'],
-      },
-      launch: {
-        name: 'Peluncuran di toko aplikasi global', short: 'Peluncuran dan penanganan review di App Store, Google Play, Microsoft Store dan Mac App Store.',
-        lead: 'Kami menangani pendaftaran toko, tanggapan atas review, dan halaman toko dalam tiap bahasa, lalu terus merilis pembaruan setelah peluncuran.',
-        who: ['Anda sudah punya aplikasi tetapi pendaftaran toko macet', 'Aplikasi Anda ditolak saat review', 'Anda membutuhkan halaman toko untuk tiap negara'],
-        scope: [
-          ['Pendaftaran toko', 'Pengaturan akun developer, detail aplikasi, peringkat usia, label privasi.'],
-          ['Penanganan review', 'Pemeriksaan kebijakan, analisis penolakan, perbaikan dan pengajuan ulang.'],
-          ['Lokalisasi halaman toko', 'Deskripsi dan tangkapan layar per bahasa.'],
-          ['Pengaturan pembayaran', 'Pembelian dalam aplikasi, tingkat harga, harga per negara.'],
+        "scope": [
+          [
+            "Kesiapan persetujuan",
+            "Pemeriksaan struktur situs, halaman wajib, dan kualitas konten, kemudian pengajuan."
+          ],
+          [
+            "Desain penempatan",
+            "Posisi, ukuran, dan jarak iklan yang mengikuti alur konten Anda."
+          ],
+          [
+            "Kecepatan halaman",
+            "Lazy loading dan pencegahan layout shift agar halaman tetap cepat."
+          ],
+          [
+            "Pengaturan programmatic",
+            "Konfigurasi ad server dan header bidding, serta aturan price floor."
+          ]
         ],
-        deliver: ['Aplikasi Anda tayang di toko', 'Halaman toko per bahasa', 'Riwayat review', 'Prosedur rilis pembaruan'],
+        "deliver": [
+          "Daftar periksa persetujuan",
+          "Rencana penempatan",
+          "Pengaturan iklan dan panduan implementasi",
+          "Laporan sebelum dan sesudah"
+        ]
       },
-      commerce: {
-        name: 'E-commerce dan penjualan lintas negara', short: 'Hubungkan produk Anda dengan pelanggan di luar negeri lewat kanal penjualan dan alat operasional.',
-        lead: 'Kami membangun toko online, data produk multibahasa, serta integrasi pembayaran, pengiriman dan akuntansi yang dibutuhkan untuk berjualan ke luar negeri.',
-        who: ['Anda berjualan di dalam negeri dan ingin berjualan ke luar negeri', 'Anda mengedit data produk secara terpisah untuk setiap kanal', 'Anda mencocokkan pesanan, stok dan penyelesaian transaksi secara manual'],
-        scope: [
-          ['Kanal penjualan', 'Toko Anda sendiri terhubung dengan marketplace luar negeri.'],
-          ['Data produk multibahasa', 'Nama, deskripsi, opsi dan tabel ukuran per bahasa.'],
-          ['Sinkronisasi pesanan dan stok', 'Sinkronisasi otomatis pesanan dan inventaris di semua kanal.'],
-          ['Penyelesaian transaksi dan laporan', 'Total otomatis untuk penjualan, biaya dan pencairan.'],
+      "app": {
+        "name": "Monetisasi aplikasi",
+        "short": "Format iklan, mediasi, dan frekuensi tayang di aplikasi seluler, dirancang mengikuti cara pengguna memakainya.",
+        "lead": "Kami menentukan kapan dan di mana iklan banner, interstitial, dan rewarded tampil, serta meningkatkan pendapatan sambil menjaga retensi pengguna.",
+        "who": [
+          "Anda baru pertama kali menambahkan iklan ke aplikasi",
+          "Rating atau retensi turun setelah iklan dipasang",
+          "Anda ingin menggabungkan beberapa jaringan iklan lewat mediasi"
         ],
-        deliver: ['Kanal penjualan dan integrasi', 'Data produk multibahasa', 'Sinkronisasi pesanan dan stok', 'Laporan penyelesaian transaksi'],
-      },
-      operate: {
-        name: 'Operasional dan pertumbuhan', short: 'Setelah peluncuran: memperbaiki error, meningkatkan kecepatan, menambah fitur, memeriksa biaya.',
-        lead: 'Peluncuran hanyalah awal. Kami memantau metrik, mengurangi error, menambah apa yang dibutuhkan pengguna dan menjaga biaya infrastruktur tetap terkendali.',
-        who: ['Anda membutuhkan pihak yang mengambil alih layanan yang dibuat vendor lain', 'Error dan layar yang lambat terus berulang', 'Biaya server terus naik'],
-        scope: [
-          ['Penanganan error', 'Membaca log error, menemukan penyebab, merilis perbaikan.'],
-          ['Performa', 'Layar dan kueri yang lebih cepat.'],
-          ['Pertumbuhan fitur', 'Menambah dan memangkas fitur berdasarkan data penggunaan.'],
-          ['Tinjauan biaya', 'Peninjauan penggunaan cloud dan penghematan.'],
+        "scope": [
+          [
+            "Desain format iklan",
+            "Penempatan dan waktu tayang iklan banner, interstitial, rewarded, dan native."
+          ],
+          [
+            "Mediasi",
+            "Pengaturan prioritas dan bidding di antara jaringan iklan."
+          ],
+          [
+            "Frekuensi dan pengalaman",
+            "Batas frekuensi, perlindungan sesi pertama, dan pengguna berbayar tanpa iklan."
+          ],
+          [
+            "Iklan berdampingan dengan pembelian dalam aplikasi",
+            "Produk hapus iklan dan keterpaduan iklan rewarded dengan pembelian."
+          ]
         ],
-        deliver: ['Laporan operasional bulanan', 'Catatan penanganan error', 'Rilis perbaikan', 'Hasil tinjauan biaya'],
+        "deliver": [
+          "Peta penempatan iklan",
+          "Rencana pengaturan mediasi",
+          "Dokumen aturan frekuensi",
+          "Perbandingan retensi dan pendapatan"
+        ]
       },
-    },
+      "retail": {
+        "name": "Retail media dan pengembangan platform iklan",
+        "short": "Kami membantu marketplace dan platform membangun produk serta operasional iklan agar penjual dan merek dapat beriklan di platform Anda.",
+        "lead": "Kami mengubah trafik dan data platform Anda menjadi produk iklan, lalu bersama Anda merancang harga, penjualan, dan pelaporan kinerja.",
+        "who": [
+          "Anda ingin membuka bisnis iklan di marketplace atau platform Anda",
+          "Iklan penjual masih dijual dan ditagih secara manual",
+          "Pengiklan meminta laporan yang membuktikan hasil"
+        ],
+        "scope": [
+          [
+            "Desain produk iklan",
+            "Posisi yang dapat dijual, seperti teratas di pencarian, produk bersponsor, banner, dan email."
+          ],
+          [
+            "Harga dan penjualan",
+            "Produk berbasis lelang, harga tetap, dan durasi, lengkap dengan aturan harga."
+          ],
+          [
+            "Data dan pengukuran",
+            "Impression, klik, dan atribusi pembelian yang diukur sesuai aturan privasi."
+          ],
+          [
+            "Model operasional",
+            "Onboarding pengiklan, peninjauan iklan, penagihan, dan pelaporan kinerja."
+          ]
+        ],
+        "deliver": [
+          "Katalog produk iklan dan rate card",
+          "Model laba rugi bisnis iklan",
+          "Standar pengukuran dan templat laporan",
+          "Prosedur operasional"
+        ]
+      },
+      "policy": {
+        "name": "Kepatuhan kebijakan iklan dan privasi",
+        "short": "Tinjauan kebijakan, bantuan saat penolakan, manajemen persetujuan, ads.txt, dan kebijakan privasi.",
+        "lead": "Akun yang aman lebih penting daripada pendapatan. Kami menemukan risiko kebijakan sejak dini, dan bila pengajuan ditolak atau akun dibatasi, kami mencari penyebabnya lalu menanggapinya.",
+        "who": [
+          "Persetujuan iklan Anda ditolak atau akun Anda dibatasi",
+          "Anda memerlukan manajemen persetujuan untuk pengunjung dari wilayah lain",
+          "Kebijakan privasi Anda perlu diperbarui sebelum iklan tayang"
+        ],
+        "scope": [
+          [
+            "Tinjauan kebijakan",
+            "Risiko kebijakan pada konten, penempatan iklan, dan sumber trafik."
+          ],
+          [
+            "Penolakan dan pembatasan",
+            "Analisis penyebab, perbaikan, dan pengajuan tinjauan ulang."
+          ],
+          [
+            "Manajemen persetujuan",
+            "Pemberitahuan persetujuan per wilayah yang terhubung dengan pengaturan iklan Anda."
+          ],
+          [
+            "File dan dokumen wajib",
+            "ads.txt, app-ads.txt, kebijakan privasi, dan pemberitahuan cookie."
+          ]
+        ],
+        "deliver": [
+          "Daftar periksa kebijakan",
+          "Catatan tanggapan",
+          "Pengaturan manajemen persetujuan",
+          "File dan dokumen wajib"
+        ]
+      },
+      "ops": {
+        "name": "Operasional iklan dan konsultasi pelaporan",
+        "short": "Setiap bulan kami membaca metrik pendapatan, menjalankan pengujian, dan memperbaiki yang perlu diperbaiki, termasuk trafik tidak valid dan selisih pembayaran.",
+        "lead": "Pendapatan iklan bukan pengaturan sekali jadi. Kami meninjau metrik setiap bulan dan hanya mempertahankan perubahan yang terbukti lewat pengujian.",
+        "who": [
+          "Pendapatan iklan Anda naik turun tajam dari bulan ke bulan",
+          "Anda menggabungkan laporan dari beberapa platform secara manual",
+          "Belum ada orang di tim Anda yang memegang operasional iklan"
+        ],
+        "scope": [
+          [
+            "Tinjauan bulanan",
+            "Perubahan pendapatan, impression, harga, dan fill rate beserta penyebabnya."
+          ],
+          [
+            "Pengujian",
+            "Uji banding penempatan, format iklan, dan aturan harga."
+          ],
+          [
+            "Pelaporan terpadu",
+            "Pendapatan dari semua platform dalam satu laporan."
+          ],
+          [
+            "Pemeriksaan kualitas",
+            "Trafik tidak valid, kualitas iklan, dan selisih pembayaran."
+          ]
+        ],
+        "deliver": [
+          "Laporan operasional bulanan",
+          "Catatan pengujian",
+          "Laporan terpadu",
+          "Daftar perbaikan berikutnya"
+        ]
+      }
+    }
   },
 
   why: [
-    ['Multibahasa sejak awal', 'Struktur multibahasa dimasukkan pada tahap desain, sehingga menambah bahasa di kemudian hari tidak perlu membangun ulang.'],
-    ['Lingkup disepakati lebih dulu', 'Fitur, jadwal dan biaya ditetapkan secara tertulis sebelum pekerjaan dimulai. Setiap perubahan disepakati sebelum dikerjakan.'],
-    ['Kode dan akun milik Anda', 'Kode sumber, domain, serta akun toko dan cloud dibuat atas nama Anda dan diserahkan kepada Anda.'],
-    ['Pengujian termasuk dalam penyerahan', 'Pengujian otomatis untuk fitur inti dan pemeriksaan string yang hilang per bahasa sudah termasuk.'],
-    ['Progres mingguan', 'Setiap minggu Anda melihat layar yang berfungsi dan apa yang tersisa.'],
-    ['Hanya data yang diperlukan', 'Data pribadi dibatasi pada yang dibutuhkan fitur, dan diproses di perangkat sebisa mungkin.'],
+    [
+      "Pendapatan selaras dengan pengalaman pengguna",
+      "Alih-alih menambah iklan, kami mencari penempatan yang menjaga halaman tetap cepat dan perjalanan pengguna tetap lancar."
+    ],
+    [
+      "Berdasarkan pengukuran, bukan dugaan",
+      "Kami mencatat angka acuan sebelum mulai dan membandingkan setiap perubahan dengan dasar yang sama."
+    ],
+    [
+      "Saran yang independen",
+      "Kami tidak menerima komisi rujukan dari platform iklan, sehingga setiap pilihan kami bandingkan secara setara."
+    ],
+    [
+      "Kepatuhan kebijakan di atas segalanya",
+      "Kami meningkatkan pendapatan hanya dalam batas kebijakan iklan dan aturan privasi. Tanpa umpan klik, tanpa trafik tidak valid."
+    ],
+    [
+      "Akun dan data milik Anda",
+      "Akun iklan, data pembayaran, dan laporan dibuat serta disimpan atas nama Anda."
+    ],
+    [
+      "Pembaruan mingguan",
+      "Setiap minggu kami melaporkan apa yang berubah, bagaimana angkanya bergerak, dan langkah berikutnya."
+    ]
   ],
 
   steps: [
-    ['Konsultasi', 'Tujuan, pasar sasaran dan tenggat waktu.'],
-    ['Lingkup dan penawaran', 'Daftar fitur, jadwal dan biaya secara tertulis.'],
-    ['Demo', 'Layar dan alur inti berfungsi lebih dulu.'],
-    ['Bangun dan uji', 'Pembaruan mingguan, pengujian otomatis.'],
-    ['Lokalisasi dan peluncuran', 'Halaman per bahasa, pendaftaran toko dan mesin pencari.'],
-    ['Operasional dan perbaikan', 'Metrik, penanganan error, pertumbuhan.'],
+    [
+      "Diskusi awal",
+      "Layanan, skala trafik, dan tujuan Anda."
+    ],
+    [
+      "Penilaian",
+      "Penempatan, pengaturan, dan metrik pendapatan ditinjau, angka acuan dicatat."
+    ],
+    [
+      "Perancangan",
+      "Platform iklan, penempatan, dan rencana kepatuhan."
+    ],
+    [
+      "Pengaturan dan pengujian",
+      "Perubahan diterapkan dan dibandingkan sebelum dan sesudahnya."
+    ],
+    [
+      "Persetujuan dan peluncuran",
+      "Tinjauan kebijakan, manajemen persetujuan, dan file wajib."
+    ],
+    [
+      "Operasional",
+      "Tinjauan bulanan, pengujian, dan laporan."
+    ]
   ],
 
-  cta: { title: 'Mulai proyek', text: 'Kirim email kepada kami tentang apa yang ingin Anda bangun, pasar sasaran dan jadwal Anda.' },
+  cta: {
+    "title": "Diskusikan pendapatan iklan bersama kami",
+    "text": "Kirimkan email berisi situs web atau aplikasi Anda, trafik bulanan, dan masalah yang Anda hadapi."
+  },
 
   products: {
     title: 'Produk',
@@ -249,59 +464,151 @@ export default {
   },
 
   about: {
-    title: 'Tentang',
-    desc: 'Tentang EarnToLink (언투링크): usaha perangkat lunak yang menghubungkan pasar dengan dunia. Misi, layanan, prinsip dan rincian usaha.',
-    eyebrow: 'Tentang', h1: 'EarnToLink', lead: 'EarnToLink (언투링크) adalah usaha perangkat lunak yang menghubungkan pasar dengan dunia.',
-    mission: {
-      eyebrow: 'Misi', title: 'Menghubungkan pasar dengan dunia',
-      body: [
-        'Produk dan layanan yang bagus sering kali terkunci di satu negara dan satu bahasa. EarnToLink membangun perangkat lunak yang menjembatani kesenjangan itu.',
-        'Kami membangun produk, meringankan operasional dengan AI dan otomatisasi, lalu membawanya ke pasar global melalui banyak bahasa dan toko aplikasi. Setelah peluncuran, kami terus memperbaikinya berdasarkan data.',
-        'Kami juga membangun aplikasi sendiri dengan standar yang sama. Status ditampilkan apa adanya: produk yang belum dirilis ditandai segera hadir.',
-      ],
+    "title": "Tentang",
+    "desc": "Tentang EarnToLink: konsultan yang membantu situs web, aplikasi, dan platform e-commerce menghasilkan uang dari iklan. Misi, layanan, prinsip, dan informasi usaha.",
+    "eyebrow": "Tentang",
+    "h1": "EarnToLink",
+    "lead": "EarnToLink adalah konsultan pendapatan iklan yang merancang cara perusahaan memperoleh penghasilan dari iklan.",
+    "mission": {
+      "eyebrow": "Misi",
+      "title": "Iklan yang memperkuat bisnis",
+      "body": [
+        "Banyak bisnis memiliki konten dan layanan yang bagus, tetapi penghasilan dari iklannya kecil. Penempatannya kurang pas, pengaturannya sudah usang, atau ada masalah kebijakan yang menahan pendapatan.",
+        "EarnToLink mengukur posisi Anda saat ini, memilih platform dan penempatan iklan yang tepat, serta mendukung operasional harian sesuai kebijakan dan aturan privasi. Hasil setiap perubahan kami tunjukkan pada acuan yang sama.",
+        "Berbekal pengalaman kami sendiri membangun dan menjalankan situs web serta aplikasi, kami berpegang pada satu prinsip: monetisasi tidak boleh merusak pengalaman pengguna."
+      ]
     },
-    do: { eyebrow: 'Layanan', title: 'Yang kami kerjakan', text: 'Bidang usaha terdaftar: pengembangan dan penyediaan perangkat lunak aplikasi (utama), ritel e-commerce, perantara ritel e-commerce.' },
-    why: { eyebrow: 'Prinsip', title: 'Cara kerja kami' },
-    info: { eyebrow: 'Perusahaan', title: 'Rincian usaha' },
+    "do": {
+      "eyebrow": "Layanan",
+      "title": "Yang kami kerjakan",
+      "text": "Bidang usaha terdaftar: pengembangan dan penyediaan perangkat lunak aplikasi (utama), ritel e-commerce, perantara ritel e-commerce."
+    },
+    "why": {
+      "eyebrow": "Prinsip",
+      "title": "Prinsip kami"
+    },
+    "info": {
+      "eyebrow": "Perusahaan",
+      "title": "Informasi usaha"
+    }
   },
 
   principles: {
-    title: 'Cara kerja kami',
-    desc: 'Cara kerja EarnToLink: multibahasa sejak awal, lingkup disepakati lebih dulu, kode dan akun milik Anda, pengujian termasuk. Proses dan ketentuan kontrak.',
-    eyebrow: 'Cara kerja kami', h1: 'Cara kerja kami', lead: 'Prinsip, proses dan ketentuan kontrak.',
-    why: { eyebrow: 'Prinsip', title: 'Enam komitmen', text: 'Berlaku untuk setiap proyek.' },
-    steps: { eyebrow: 'Proses', title: 'Langkah', text: 'Dari konsultasi hingga operasional.' },
-    terms: { eyebrow: 'Kontrak', title: 'Ketentuan kontrak dan harga', rows: [
-      ['Proyek', 'Lingkup, jadwal, biaya dan syarat pembayaran ditetapkan dalam kontrak untuk setiap proyek'],
-      ['Perubahan lingkup', 'Perubahan dan biayanya disepakati sebelum pekerjaan dilanjutkan'],
-      ['Kepemilikan', 'Kode sumber dan akun dialihkan kepada klien setelah pembayaran selesai'],
-      ['Aplikasi kami', 'Beli sekali · maksimal ₩10,000 per aplikasi · tanpa langganan · dibayar melalui masing-masing toko aplikasi'],
-    ] },
+    "title": "Cara kerja kami",
+    "desc": "Cara kerja EarnToLink: pendapatan selaras dengan pengalaman pengguna, hasil yang terukur, saran independen, dan kepatuhan kebijakan. Tahapan dan ketentuan kontrak.",
+    "eyebrow": "Cara kerja kami",
+    "h1": "Cara kerja kami",
+    "lead": "Prinsip, tahapan, dan ketentuan kontrak.",
+    "why": {
+      "eyebrow": "Prinsip",
+      "title": "Enam prinsip",
+      "text": "Berlaku di setiap proyek."
+    },
+    "steps": {
+      "eyebrow": "Proses",
+      "title": "Tahapan",
+      "text": "Dari diskusi awal hingga operasional."
+    },
+    "terms": {
+      "eyebrow": "Kontrak",
+      "title": "Ketentuan kontrak",
+      "rows": [
+        [
+          "Proyek",
+          "Kontrak per proyek menetapkan ruang lingkup, jadwal, biaya, dan ketentuan pembayaran"
+        ],
+        [
+          "Perubahan lingkup",
+          "Perubahan dan biayanya disepakati sebelum pekerjaan dilanjutkan"
+        ],
+        [
+          "Kepemilikan",
+          "Akun iklan, laporan, dan dokumen pengaturan tetap atas nama Anda"
+        ],
+        [
+          "Biaya",
+          "Tanpa komisi rujukan dari platform iklan · biaya konsultasi dinyatakan dalam kontrak"
+        ]
+      ]
+    }
   },
 
   contact: {
-    title: 'Kontak',
-    desc: `Hubungi EarnToLink untuk proyek, produk, privasi, atau kemitraan: ${EMAIL}`,
-    eyebrow: 'Kontak', h1: 'Kontak', lead: 'Lewat email. Kami membalas dalam bahasa Korea atau Inggris.',
-    topics: [
-      ['code', 'Proyek', 'Pengembangan produk, otomatisasi AI, lokalisasi, peluncuran di toko aplikasi, e-commerce, operasional'],
-      ['package', 'Produk', 'Fitur, tanggal rilis dan bug pada aplikasi kami'],
-      ['receipt', 'Pembayaran', 'Pembayaran dan pengembalian dana aplikasi mengikuti kebijakan masing-masing toko aplikasi'],
-      ['shield', 'Privasi', 'Permintaan untuk mengakses, memperbaiki, menghapus, atau menghentikan pemrosesan'],
-      ['users', 'Kemitraan', 'Kolaborasi dan usulan lainnya'],
+    "title": "Kontak",
+    "desc": "Hubungi EarnToLink untuk konsultasi pendapatan iklan, produk, privasi, atau kemitraan. hello@earntolink.com",
+    "eyebrow": "Kontak",
+    "h1": "Kontak",
+    "lead": "Kami menerima pertanyaan lewat email dan membalas dalam bahasa Korea atau Inggris.",
+    "topics": [
+      [
+        "chart",
+        "Konsultasi",
+        "Penilaian pendapatan iklan, monetisasi web dan aplikasi, retail media, masalah kebijakan, saran operasional"
+      ],
+      [
+        "package",
+        "Produk",
+        "Fitur, tanggal rilis, dan bug pada aplikasi buatan kami sendiri"
+      ],
+      [
+        "receipt",
+        "Pembayaran",
+        "Pembayaran dan pengembalian dana aplikasi mengikuti kebijakan masing-masing toko aplikasi"
+      ],
+      [
+        "shield",
+        "Privasi",
+        "Permintaan akses, koreksi, penghapusan, atau penghentian pemrosesan data pribadi"
+      ],
+      [
+        "users",
+        "Kemitraan",
+        "Kolaborasi dan usulan lainnya"
+      ]
     ],
-    brief: { title: 'Sebaiknya disertakan dalam pertanyaan proyek', items: ['Apa yang ingin Anda bangun dan alasannya', 'Pasar dan bahasa sasaran', 'Jadwal yang diinginkan', 'Layanan atau materi referensi'] },
+    "brief": {
+      "title": "Informasi yang sebaiknya disertakan",
+      "items": [
+        "Apa yang Anda kelola (situs web, aplikasi, atau platform e-commerce) beserta alamatnya",
+        "Jumlah pengunjung bulanan atau pengguna aktif",
+        "Platform iklan yang Anda pakai saat ini dan masalah yang terlihat",
+        "Jangka waktu yang Anda inginkan"
+      ]
+    }
   },
 
   news: {
-    'business-areas': { title: 'Bidang layanan kami', summary: 'Pengembangan produk, transformasi AI, lokalisasi, peluncuran di toko aplikasi, e-commerce, operasional.',
-      body: ['Gambaran umum bidang layanan EarnToLink.', 'Ada enam: pengembangan produk, transformasi AI dan otomatisasi, lokalisasi dan ekspansi global, peluncuran di toko aplikasi global, e-commerce dan penjualan lintas negara, serta operasional dan pertumbuhan.', 'Pertanyaan proyek dikirim ke hello@earntolink.com.'] },
-    'earntolink-com-launch': { title: 'earntolink.com telah tayang', summary: 'Situs web EarnToLink telah tayang dalam 14 bahasa.',
-      body: ['Situs web EarnToLink, earntolink.com, kini telah tayang.', 'Situs ini memuat bidang layanan, produk buatan sendiri, rincian perusahaan, kebijakan privasi dan informasi kontak.', 'Tersedia dalam bahasa Korea, Inggris, Jepang, Mandarin (Sederhana dan Tradisional), Spanyol, Prancis, Jerman, Portugis, Italia, Vietnam, Indonesia, Thai dan Rusia.'] },
-    'product-lineup': { title: 'Produk buatan sendiri', summary: 'Dua aplikasi seluler dan tiga aplikasi desktop.',
-      body: ['Status terkini produk buatan sendiri.', 'Aplikasi seluler Roll Tidy dan Roll Flick serta aplikasi desktop Space Map, Dupeless dan Archive Fix segera hadir.'] },
+    "ad-consulting": {
+      "title": "EarnToLink berfokus pada konsultasi pendapatan iklan",
+      "summary": "Penilaian dan strategi, monetisasi web dan aplikasi, retail media, kepatuhan kebijakan, dan saran operasional.",
+      "body": [
+        "EarnToLink kini memfokuskan layanannya pada konsultasi pendapatan iklan.",
+        "Kami menawarkan enam layanan: penilaian dan strategi pendapatan iklan, monetisasi situs web dan media, monetisasi aplikasi, retail media dan pengembangan platform iklan, kepatuhan kebijakan iklan dan privasi, serta operasional dan konsultasi pelaporan iklan.",
+        "Untuk konsultasi, kirim email ke hello@earntolink.com."
+      ]
+    },
+    "earntolink-com-launch": {
+      "title": "earntolink.com telah tayang",
+      "summary": "Situs web EarnToLink telah tayang dalam 14 bahasa.",
+      "body": [
+        "Situs web EarnToLink, earntolink.com, kini telah tayang.",
+        "Situs ini memuat layanan, produk buatan sendiri, rincian perusahaan, kebijakan privasi, dan informasi kontak.",
+        "Tersedia dalam bahasa Korea, Inggris, Jepang, Mandarin (Sederhana dan Tradisional), Spanyol, Prancis, Jerman, Portugis, Italia, Vietnam, Indonesia, Thai dan Rusia."
+      ]
+    },
+    "product-lineup": {
+      "title": "Produk buatan sendiri",
+      "summary": "Dua aplikasi seluler dan tiga aplikasi desktop.",
+      "body": [
+        "Status terkini produk buatan sendiri.",
+        "Aplikasi seluler Roll Tidy dan Roll Flick serta aplikasi desktop Space Map, Dupeless dan Archive Fix segera hadir."
+      ]
+    }
   },
-  newsPage: { title: 'Berita', desc: 'Berita EarnToLink: bidang layanan, peluncuran situs web dan status produk.' },
+  newsPage: {
+    "title": "Berita",
+    "desc": "Berita EarnToLink: pembaruan layanan, peluncuran situs web, dan status produk."
+  },
 
   privacy: {
     title: 'Kebijakan Privasi',
@@ -330,8 +637,8 @@ export default {
     sections: [
       { id: 'purpose', h: '1. Tujuan', html: '<p>Ketentuan ini menetapkan syarat penggunaan earntolink.com, situs web yang dioperasikan oleh EarnToLink.</p>' },
       { id: 'content', h: '2. Hak atas konten', html: '<p>Hak atas teks, gambar dan kode di situs ini dimiliki oleh EarnToLink. Merek dagang pihak ketiga yang ditampilkan di sini adalah milik pemiliknya masing-masing.</p>' },
-      { id: 'accuracy', h: '3. Informasi produk dan layanan', html: '<p>Status produk, fitur dan deskripsi layanan akurat pada saat penulisan. Fitur, harga dan jadwal produk yang belum dirilis dapat berubah.</p>' },
-      { id: 'projects', h: '4. Kontrak proyek', html: '<p>Layanan pengembangan, otomatisasi, lokalisasi, peluncuran dan operasional mengikuti kontrak masing-masing proyek. Jika ketentuan ini berbeda dengan kontrak, kontrak yang berlaku.</p>' },
+      { id: 'accuracy', h: '3. Informasi produk dan layanan', html: "<p>Status produk, fitur, dan uraian layanan akurat pada saat penulisan. Fitur, harga, dan jadwal produk yang belum dirilis dapat berubah.</p>" },
+      { id: 'projects', h: '4. Kontrak proyek', html: "<p>Layanan penilaian, konsultasi, pengaturan iklan, dan saran operasional mengikuti kontrak untuk masing-masing proyek. Jika ketentuan ini berbeda dengan kontrak, kontrak yang berlaku. Pendapatan iklan bergantung pada pasar iklan dan kebijakan platform, dan perkiraan apa pun dalam penilaian atau proposal kami bukan merupakan jaminan.</p>" },
       { id: 'apps', h: '5. Penggunaan aplikasi', html: '<p>Setiap aplikasi juga tunduk pada ketentuan toko tempat aplikasi didistribusikan (App Store, Google Play, Microsoft Store dan lainnya) serta pemberitahuan aplikasi itu sendiri.</p>' },
       { id: 'links', h: '6. Tautan eksternal', html: '<p>Situs eksternal diatur oleh ketentuan dan kebijakannya masing-masing.</p>' },
       { id: 'liability', h: '7. Pembatasan tanggung jawab', html: '<p>Sejauh diizinkan oleh hukum, EarnToLink tidak bertanggung jawab atas kerugian tidak langsung yang timbul dari penggunaan situs ini.</p>' },
@@ -340,5 +647,13 @@ export default {
     ],
   },
 
-  og: { h: 'Menghubungkan pasar dengan dunia.', s: 'Pengembangan produk · Transformasi AI · Lokalisasi<br>Peluncuran di toko aplikasi · E-commerce · Operasional', tags: ['Web · Aplikasi · Desktop', 'AI · Otomatisasi', '14 bahasa'] },
+  og: {
+    "h": "Pendapatan iklan, dirancang dengan benar.",
+    "s": "Penilaian pendapatan iklan · Monetisasi web dan aplikasi<br>Retail media · Kepatuhan kebijakan · Operasional",
+    "tags": [
+      "Situs web dan media",
+      "Aplikasi seluler",
+      "E-commerce"
+    ]
+  },
 };

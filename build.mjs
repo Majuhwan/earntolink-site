@@ -4,9 +4,9 @@ import { mkdir, rm, writeFile, cp, readFile, readdir, access } from 'node:fs/pro
 import { readFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
-import { SITE, LANGS as ALL_LANGS, DEFAULT_LANG, SERVICES, WHY_ICONS, PRIN_ICONS, CATEGORIES, PRODUCTS, NEWS, APP_PAGES } from './src/data.mjs';
+import { SITE, LANGS as ALL_LANGS, DEFAULT_LANG, SERVICES, WHY_ICONS, PRIN_ICONS, CATEGORIES, PRODUCTS, NEWS, APP_PAGES, OLD_SERVICES, OLD_NEWS } from './src/data.mjs';
 import { icon, LOGO_MARK } from './src/icons.mjs';
-import { productMockup, heroMockup } from './src/mockups.mjs';
+import { productMockup, heroMockup, heroAdMockup } from './src/mockups.mjs';
 
 const ROOT = dirname(fileURLToPath(import.meta.url));
 const OUT = join(ROOT, 'site');
@@ -19,6 +19,7 @@ const T = {};
 const LANGS = [];
 for (const l of ALL_LANGS) {
   const f = join(ROOT, 'src/i18n', l.code + '.mjs');
+  if (process.env.ONLY_LANGS && !process.env.ONLY_LANGS.split(',').includes(l.code)) continue; // preview builds
   try { await access(f); } catch { continue; }
   T[l.code] = (await import(pathToFileURL(f).href)).default;
   LANGS.push(l);
@@ -48,7 +49,7 @@ function layout(lang, page, body) {
   const og = abs(`/assets/img/og-${lang}.png`);
   const title = page.title(lang);
   const desc = strip(page.desc(lang));
-  const navKeys = ['services', 'products', 'about', 'principles', 'news', 'contact'];
+  const navKeys = ['services', 'about', 'principles', 'news', 'contact'];
   const navHtml = navKeys.map((k) => `<a href="${P(lang, `/${k}/`)}"${page.section === k ? ' aria-current="page"' : ''}>${u.nav[k]}</a>`).join('');
   const ld = (page.jsonld ? page.jsonld(lang) : []).map((o) => `<script type="application/ld+json">${JSON.stringify(o)}</script>`).join('\n');
   const alt = page.noindex || page.single ? '' : LANGS.map((l) => `<link rel="alternate" hreflang="${l.hreflang}" href="${abs(P(l.code, page.path))}">`).join('\n')
@@ -275,9 +276,9 @@ add({
     <h1 class="h-display">${c.h1}</h1>
     <p class="lead">${c.lead}</p>
     <div class="btns"><a class="btn btn-primary" href="${P(lang, '/services/')}">${u.nav.services}${icon('arrowRight')}</a><a class="btn btn-secondary" href="${P(lang, '/contact/')}">${u.projectBtn}</a></div>
-    <div class="hero-meta">${c.meta.map((t, i) => `<span>${icon(['code', 'zap', 'globe'][i])}${t}</span>`).join('')}</div>
+    <div class="hero-meta">${c.meta.map((t, i) => `<span>${icon(['monitor', 'smartphone', 'store'][i])}${t}</span>`).join('')}</div>
   </div>
-  <div class="hero-art">${heroMockup(u.heroLabel, chips, [L.brand, L.brandAlt])}</div>
+  <div class="hero-art">${heroAdMockup(u.heroLabel, c.meta, [L.brand, L.brandAlt])}</div>
 </div>
 <div class="wrap" style="margin-top:72px"><div class="stats">${c.stats.map(([b, s]) => `<div class="stat"><b>${b}</b><span>${s}</span></div>`).join('')}</div></div>
 </section>
@@ -298,10 +299,6 @@ add({
   ${stepsGrid(lang)}
 </div></section>
 
-<section class="sec" aria-labelledby="h-apps"><div class="wrap">
-  ${sechead(c.apps, 'h-apps')}
-  <div class="pgrid">${PRODUCTS.map((p) => pcard(lang, p)).join('')}</div>
-</div></section>
 
 <section class="sec sec-soft" aria-labelledby="h-co"><div class="wrap split">
   <div><p class="eyebrow">${c.co.eyebrow}</p><h2 class="h-2" id="h-co" style="margin-top:14px">${c.co.title}</h2><p class="muted" style="margin-top:16px">${c.co.text}</p><p style="margin-top:24px"><a class="link" href="${P(lang, '/about/')}">${u.nav.about}${icon('arrowRight')}</a></p></div>
@@ -661,6 +658,16 @@ for (const page of pages) {
   await write('/404.html', layout('ko', nf, `<section class="nf"><div class="wrap"><p class="code">404</p><h1 class="h-1" style="margin:14px 0 12px">${T.ko.ui.notFound.title}</h1><p class="lead">${T.ko.ui.notFound.text}</p><p class="lead" lang="en">${en.ui.notFound.title}. ${en.ui.notFound.text}</p>
 <div class="btns" style="margin-top:32px">${LANGS.map((l) => `<a class="btn btn-secondary btn-sm" href="${P(l.code, '/')}" lang="${l.html}">${l.label}</a>`).join('')}</div></div></section>`));
   count++;
+}
+
+// Redirect stubs for retired URLs (noindex, not in sitemap)
+for (const l of LANGS) {
+  for (const [olds, to] of [[OLD_SERVICES.map((o) => `/services/${o}/`), '/services/'], [OLD_NEWS.map((o) => `/news/${o}/`), '/news/']]) {
+    for (const from of olds) {
+      const u = P(l.code, to);
+      await write(P(l.code, from), `<!doctype html><html lang="${l.html}"><head><meta charset="utf-8"><meta name="robots" content="noindex"><link rel="canonical" href="${abs(u)}"><meta http-equiv="refresh" content="0; url=${u}"><title>${esc(T[l.code].brand)}</title></head><body><h1><a href="${u}">${esc(to === '/news/' ? T[l.code].ui.nav.news : T[l.code].ui.nav.services)}</a></h1></body></html>`);
+    }
+  }
 }
 
 // sitemap (path unchanged: /sitemap.xml)

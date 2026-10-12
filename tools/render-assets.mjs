@@ -3,7 +3,7 @@
 import { writeFile, readFile, mkdir } from 'node:fs/promises';
 import { join, dirname } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
-import { heroMockup } from '../src/mockups.mjs';
+import { heroMockup, heroAdMockup } from '../src/mockups.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const IMG = join(ROOT, 'assets/img');
@@ -58,7 +58,7 @@ for (const l of LANGS) {
   .u{position:absolute;right:36px;bottom:24px;font-size:18px;font-weight:600;color:#636a77}
   </style></head><body><div class="og"><div class="l"><div class="b">${MARK().replace('<svg ', '<svg width="44" height="44" ')}<span>${o.name}</span><small>${o.alt}</small></div>
   <div class="h">${o.h}</div><div class="s">${o.s}</div><div class="t">${o.tags.map((t) => `<span>${t}</span>`).join('')}</div></div>
-  <div class="r">${heroMockup('', chips, [L.brand, L.brandAlt])}<div class="u">earntolink.com</div></div></div></body></html>`, { waitUntil: 'networkidle' });
+  <div class="r">${heroAdMockup('', L.home.meta, [L.brand, L.brandAlt])}<div class="u">earntolink.com</div></div></div></body></html>`, { waitUntil: 'networkidle' });
   await page.evaluate(() => document.fonts.ready);
   await page.screenshot({ path: join(IMG, `og-${l.code}.png`), clip: { x: 0, y: 0, width: 1200, height: 630 } });
 }

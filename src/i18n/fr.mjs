@@ -9,20 +9,20 @@ const ONE_TIME = 'Achat unique · ₩10,000 maximum';
 export default {
   brand: 'EarnToLink',
   brandAlt: '언투링크',
-  slogan: 'Relier les marchés et le monde.',
+  slogan: "Vos revenus publicitaires, bien pensés.",
   translationNote: 'Cette page est une traduction. En cas de divergence avec l’original coréen, l’original coréen prévaut.',
 
   ui: {
     skip: 'Aller au contenu', menu: 'Menu', language: 'Langue', mainNav: 'Principale', breadcrumb: 'Fil d’Ariane', toc: 'Sommaire', homeAria: 'Accueil EarnToLink',
-    nav: { services: 'Services', products: 'Produits', about: 'À propos', principles: 'Notre méthode', news: 'Actualités', contact: 'Contact' },
+    nav: { services: "Services", products: 'Produits', about: 'À propos', principles: 'Notre méthode', news: 'Actualités', contact: 'Contact' },
     home: 'Accueil', privacy: 'Politique de confidentialité', terms: 'Conditions d’utilisation', rss: 'RSS',
-    footer: { services: 'Services', products: 'Produits', company: 'Entreprise', policy: 'Politiques' },
+    footer: { services: "Services", products: 'Produits', company: 'Entreprise', policy: 'Politiques' },
     biz: { name: 'Nom commercial', rep: 'Représentant', no: 'N° d’enregistrement de l’entreprise', tax: 'Régime fiscal', kinds: 'Activité', mail: 'E-mail' },
     rights: '© 2026 EarnToLink. Tous droits réservés.',
-    view: 'Détails', all: 'Tous les produits', allServices: 'Tous les services', email: 'E-mail', mailBtn: 'Nous écrire', projectBtn: 'Lancer un projet',
+    view: 'Détails', all: 'Tous les produits', allServices: "Tous les services", email: 'E-mail', mailBtn: 'Nous écrire', projectBtn: "Prendre rendez-vous",
     platform: 'Plateforme', status: 'Statut', features: 'Fonctionnalités', specs: 'Caractéristiques', related: 'Autres produits', privacyNote: 'Confidentialité',
     productIllustration: 'Illustration du produit : ',
-    heroLabel: 'Illustration d’EarnToLink reliée à des marchés en 14 langues',
+    heroLabel: 'Illustration d’un tableau de bord des revenus publicitaires des sites web, des applications et du e-commerce',
     newsFeedTitle: 'Actualités EarnToLink', newsFeedDesc: 'Actualités d’EarnToLink (언투링크)',
     notFound: { title: 'Page introuvable', text: 'L’adresse a changé ou la page n’existe pas.', home: 'Retour à l’accueil' },
   },
@@ -41,121 +41,336 @@ export default {
   },
 
   home: {
-    title: 'EarnToLink (언투링크) | Relier les marchés et le monde',
-    desc: 'EarnToLink relie les marchés et le monde : développement de produits web, mobiles et de bureau, transformation par l’IA et automatisation, localisation en 14 langues, lancement sur les boutiques d’applications mondiales, intégration et exploitation e-commerce.',
-    eyebrow: 'Logiciels · Transformation par l’IA · Expansion internationale',
-    h1: 'Relier les marchés<br>et le monde.',
-    lead: 'De la conception et du développement à l’automatisation par l’IA, la localisation et le lancement sur les boutiques d’applications mondiales, une seule équipe accompagne votre produit jusqu’au bout.',
-    meta: ['Web · Mobile · Bureau', 'IA · Automatisation', '14 langues'],
-    stats: [['14', 'Langues du site'], ['6', 'Domaines de service'], ['5', 'Produits maison'], ['4', 'Boutiques d’applications ciblées']],
-    services: { eyebrow: 'Services', title: 'Six domaines de service', text: 'Nous construisons, automatisons, ouvrons au monde et faisons grandir.' },
-    why: { eyebrow: 'Pourquoi EarnToLink', title: 'Pensé pour les marchés mondiaux dès le premier jour', text: 'Six engagements tenus sur chaque projet.' },
-    how: { eyebrow: 'Processus', title: 'Du premier échange à l’exploitation', text: 'Six étapes, chacune validée avant la suivante.' },
-    apps: { eyebrow: 'Produits maison', title: 'Les produits que nous créons nous-mêmes', text: 'Nos propres applications, conçues avec la même exigence que le travail pour nos clients. Toutes bientôt disponibles.' },
-    co: { eyebrow: 'Entreprise', title: 'EarnToLink', text: 'Entreprise individuelle en Corée. Développement et fourniture de logiciels d’application.' },
-    news: { eyebrow: 'Actualités', title: 'Dernières actualités' },
+    "title": "EarnToLink | Conseil en revenus publicitaires pour sites web, applications et plateformes e-commerce",
+    "desc": "EarnToLink est un cabinet de conseil en revenus publicitaires. Nous analysons et structurons la façon dont les sites web, les applications et les plateformes e-commerce gagnent de l’argent grâce à la publicité : choix et paramétrage des plateformes, conformité aux règles et à la vie privée, retail media et pilotage publicitaire au quotidien.",
+    "eyebrow": "Conseil en revenus publicitaires pour les entreprises",
+    "h1": "Vos revenus publicitaires,<br>bien pensés.",
+    "lead": "Nous aidons les sites web, les applications et les plateformes e-commerce à tirer des revenus réguliers de la publicité. Nous faisons le point sur votre situation, choisissons les plateformes et les emplacements publicitaires adaptés, puis restons à vos côtés pour les revues de conformité et le pilotage quotidien.",
+    "meta": [
+      "Sites web et médias",
+      "Applications mobiles",
+      "E-commerce et retail media"
+    ],
+    "stats": [
+      [
+        "6",
+        "Domaines de conseil"
+      ],
+      [
+        "3",
+        "Canaux de revenus : web, application, e-commerce"
+      ],
+      [
+        "6",
+        "Étapes dans chaque mission"
+      ],
+      [
+        "14",
+        "Langues du site"
+      ]
+    ],
+    "services": {
+      "eyebrow": "Services",
+      "title": "Six domaines de conseil",
+      "text": "Du diagnostic au paramétrage des plateformes, des revues de conformité au pilotage. Ne retenez que ce dont vous avez besoin."
+    },
+    "why": {
+      "eyebrow": "Pourquoi EarnToLink",
+      "title": "Revenus et confiance, préservés ensemble",
+      "text": "Six principes appliqués à chaque mission."
+    },
+    "how": {
+      "eyebrow": "Notre méthode",
+      "title": "Du premier échange au pilotage continu",
+      "text": "Six étapes, chacune validée par les chiffres avant de passer à la suivante."
+    },
+    "co": {
+      "eyebrow": "Entreprise",
+      "title": "EarnToLink",
+      "text": "Entreprise individuelle. Conseil en revenus publicitaires et développement logiciel."
+    },
+    "news": {
+      "eyebrow": "Actualités",
+      "title": "Dernières actualités"
+    }
   },
 
   services: {
-    title: 'Services',
-    desc: 'Services d’EarnToLink : développement de produits, transformation par l’IA et automatisation, localisation, lancement sur les boutiques d’applications mondiales, e-commerce et vente transfrontalière, exploitation et croissance.',
-    eyebrow: 'Services', h1: 'Services', lead: 'Six domaines. Choisissez uniquement ceux dont vous avez besoin.',
-    whoLabel: 'Idéal si', scopeLabel: 'Ce que nous faisons', deliverLabel: 'Livrables', otherLabel: 'Autres services',
-    items: {
-      product: {
-        name: 'Développement de produits', short: 'Services web, applications mobiles, applications de bureau et systèmes internes, de la conception au lancement.',
-        lead: 'Nous transformons vos idées en produits réellement utilisés. Conception, maquettes d’écrans, design visuel, développement et tests forment un seul flux.',
-        who: ['Vous créez un nouveau service de zéro', 'Vous voulez d’abord lancer en petit pour tester le marché', 'Vous voulez sortir le travail des tableurs et de la messagerie pour un vrai système'],
-        scope: [
-          ['Services web', 'Sites de service, comptes et paiements, tableaux de bord d’administration.'],
-          ['Applications mobiles', 'Applications Android et iOS, construites à partir d’une seule base de code.'],
-          ['Applications de bureau', 'Applications Windows et macOS, y compris des outils de fichiers et de disque.'],
-          ['Systèmes internes', 'Outils de gestion du travail, de règlement, de stock et de relation client.'],
+    "title": "Services",
+    "desc": "Services d’EarnToLink : diagnostic et stratégie de revenus publicitaires, monétisation de sites et de médias, monétisation d’applications, retail media et développement de plateformes publicitaires, conformité aux règles publicitaires et à la vie privée, pilotage et reporting publicitaires.",
+    "eyebrow": "Services",
+    "h1": "Services",
+    "lead": "Six domaines. Choisissez uniquement ceux dont vous avez besoin.",
+    "whoLabel": "Pour vous si",
+    "scopeLabel": "Ce que nous faisons",
+    "deliverLabel": "Ce que vous recevez",
+    "otherLabel": "Autres services",
+    "items": {
+      "strategy": {
+        "name": "Diagnostic et stratégie de revenus publicitaires",
+        "short": "Nous passons en revue votre trafic, vos emplacements publicitaires, le paramétrage des plateformes et vos indicateurs de revenus, puis nous fixons le cap de votre modèle économique.",
+        "lead": "Nous commençons par identifier d’où viennent vos revenus publicitaires et où ils se perdent. Les chiffres sont consignés sur une même base de référence, puis nous définissons les priorités et un plan d’action.",
+        "who": [
+          "Vous diffusez de la publicité, mais gagnez moins que prévu",
+          "Vous hésitez à changer de plateforme publicitaire ou à en ajouter une",
+          "Vous devez intégrer les revenus publicitaires à votre plan d’affaires"
         ],
-        deliver: ['Liste des fonctionnalités et maquettes d’écrans', 'Code source et configuration du déploiement', 'Tests automatisés', 'Guide d’exploitation'],
-      },
-      ax: {
-        name: 'Transformation par l’IA et automatisation', short: 'Agents IA et automatisation pour réduire le travail répétitif et changer le fonctionnement des équipes.',
-        lead: 'Nous repérons les tâches qui se répètent et les confions à l’IA et à l’automatisation. Une petite démo fonctionnelle prouve l’effet avant le développement complet.',
-        who: ['Votre équipe répète les mêmes réponses au support, documents ou nettoyages de données', 'Vous voulez interroger vos documents et données internes avec l’IA', 'Des personnes recopient les mêmes informations entre plusieurs outils'],
-        scope: [
-          ['Agents IA', 'Réponses de premier niveau, résumés, brouillons et classification.'],
-          ['Automatisation des documents et des données', 'Lecture de formulaires, nettoyage de tableaux, génération de rapports.'],
-          ['Recherche dans les connaissances internes', 'Réponses fondées sur vos propres documents (RAG).'],
-          ['Intégration d’outils', 'Liens automatiques entre e-mail, messagerie, tableurs et systèmes internes.'],
+        "scope": [
+          [
+            "État des lieux",
+            "Sources de trafic, emplacements publicitaires, paramétrage des plateformes et circuit des revenus."
+          ],
+          [
+            "Indicateurs clés",
+            "Valeurs de référence du RPM de page, du taux d’impressions, du taux de remplissage et de la visibilité."
+          ],
+          [
+            "Modèle de revenus",
+            "Le bon dosage entre publicité, affiliation, abonnements et vente directe d’espaces."
+          ],
+          [
+            "Plan d’action",
+            "Priorités, calendrier et impact attendu de chaque amélioration."
+          ]
         ],
-        deliver: ['Analyse des flux de travail', 'Une démo fonctionnelle', 'Automatisation en production et guide utilisateur', 'Indicateurs pour mesurer l’effet'],
+        "deliver": [
+          "Rapport de diagnostic",
+          "Tableau des indicateurs de référence",
+          "Recommandations sur le modèle de revenus",
+          "Plan d’action par phases"
+        ]
       },
-      localization: {
-        name: 'Localisation et expansion internationale', short: 'Proposez votre service en 14 langues ou plus et soyez trouvé dans chaque pays.',
-        lead: 'Pas seulement de la traduction. Nous adaptons pays par pays la structure des langues, les formats de date, de nombre et de devise, et la visibilité dans les moteurs de recherche.',
-        who: ['Votre service n’existe que dans une langue et vous voulez l’ouvrir à l’étranger', 'Vous avez traduit, mais les moteurs de recherche étrangers ne vous trouvent pas', 'Vous avez besoin de paiements et de formats propres à chaque pays'],
-        scope: [
-          ['Structure multilingue', 'Extraction des chaînes, changement de langue, URL par langue.'],
-          ['SEO multilingue', 'hreflang, plans de site par langue, enregistrement auprès des moteurs de recherche.'],
-          ['Formats locaux', 'Dates, nombres, devises et adresses.'],
-          ['Contrôle qualité des traductions', 'Glossaires et vérifications automatiques des chaînes manquantes par langue.'],
+      "web": {
+        "name": "Monétisation de sites web et de médias",
+        "short": "Préparation à la validation, conception des emplacements publicitaires et équilibre entre vitesse des pages et revenus pour les blogs, les sites d’actualité et les sites d’information.",
+        "lead": "Plutôt que d’ajouter des publicités, nous cherchons les emplacements qui n’interrompent pas la lecture. Nous couvrons tout, de la préparation à la validation jusqu’à la conception des emplacements et au paramétrage programmatique.",
+        "who": [
+          "Vous préparez la validation de votre site par une plateforme publicitaire",
+          "La publicité a ralenti vos pages ou fait monter le taux de rebond",
+          "Vous souhaitez faire travailler plusieurs régies ensemble"
         ],
-        deliver: ['Pages et URL par langue', 'Glossaire', 'Outil de vérification des chaînes par langue', 'Enregistrement auprès des moteurs de recherche'],
-      },
-      launch: {
-        name: 'Lancement sur les boutiques d’applications mondiales', short: 'Lancement et gestion de la validation sur l’App Store, Google Play, Microsoft Store et Mac App Store.',
-        lead: 'Nous gérons l’inscription en boutique, les réponses à la validation et les fiches dans chaque langue, puis continuons à publier des mises à jour après le lancement.',
-        who: ['Vous avez une application mais l’inscription en boutique est bloquée', 'Votre application a été refusée à la validation', 'Vous avez besoin de fiches de boutique pour chaque pays'],
-        scope: [
-          ['Inscription en boutique', 'Création du compte développeur, informations de l’application, classification par âge, étiquettes de confidentialité.'],
-          ['Gestion de la validation', 'Vérification des règles, analyse des refus, correction et nouvelle soumission.'],
-          ['Localisation des fiches de boutique', 'Descriptions et captures d’écran par langue.'],
-          ['Configuration des paiements', 'Achats intégrés, paliers de prix, tarifs par pays.'],
+        "scope": [
+          [
+            "Préparation à la validation",
+            "Vérification de la structure du site, des pages obligatoires et de la qualité des contenus, puis dépôt de la demande."
+          ],
+          [
+            "Conception des emplacements",
+            "Positions, formats et espacements qui respectent le fil du contenu."
+          ],
+          [
+            "Vitesse des pages",
+            "Chargement différé et prévention des décalages de mise en page pour garder des pages rapides."
+          ],
+          [
+            "Paramétrage programmatique",
+            "Ad server, header bidding et règles de prix plancher."
+          ]
         ],
-        deliver: ['Votre application en ligne sur les boutiques', 'Fiches de boutique par langue', 'Historique des validations', 'Procédure de publication des mises à jour'],
+        "deliver": [
+          "Liste de contrôle pour la validation",
+          "Plan d’emplacements",
+          "Paramétrage publicitaire et guide de mise en œuvre",
+          "Rapport comparatif avant et après"
+        ]
       },
-      commerce: {
-        name: 'E-commerce et vente transfrontalière', short: 'Reliez vos produits à des clients à l’étranger avec des canaux de vente et des outils d’exploitation.',
-        lead: 'Nous construisons la boutique en ligne, les données produit multilingues et les intégrations de paiement, de livraison et de comptabilité nécessaires pour vendre à l’étranger.',
-        who: ['Vous vendez dans votre pays et voulez vendre à l’étranger', 'Vous modifiez les données produit séparément pour chaque canal', 'Vous rapprochez à la main commandes, stocks et règlements'],
-        scope: [
-          ['Canaux de vente', 'Votre propre boutique reliée aux places de marché étrangères.'],
-          ['Données produit multilingues', 'Noms, descriptions, options et guides des tailles par langue.'],
-          ['Synchronisation commandes et stocks', 'Synchronisation automatique des commandes et de l’inventaire entre les canaux.'],
-          ['Règlements et rapports', 'Totaux automatiques des ventes, commissions et versements.'],
+      "app": {
+        "name": "Monétisation d’applications",
+        "short": "Formats publicitaires, médiation et fréquence dans votre application mobile, pensés selon l’usage réel de vos utilisateurs.",
+        "lead": "Nous déterminons quand et où s’affichent les bannières, les interstitiels et les publicités récompensées, et nous faisons croître les revenus sans perdre de vue la rétention.",
+        "who": [
+          "Vous intégrez de la publicité à votre application pour la première fois",
+          "Les notes ou la rétention ont baissé depuis l’arrivée des publicités",
+          "Vous voulez combiner plusieurs régies grâce à la médiation"
         ],
-        deliver: ['Canaux de vente et intégrations', 'Données produit multilingues', 'Synchronisation commandes et stocks', 'Rapports de règlement'],
-      },
-      operate: {
-        name: 'Exploitation et croissance', short: 'Après le lancement : correction des erreurs, amélioration de la vitesse, ajout de fonctionnalités, contrôle des coûts.',
-        lead: 'Le lancement n’est qu’un début. Nous suivons les indicateurs, réduisons les erreurs, ajoutons ce dont les utilisateurs ont besoin et maîtrisons les coûts d’infrastructure.',
-        who: ['Vous cherchez quelqu’un pour reprendre un service créé par un autre prestataire', 'Les erreurs et les écrans lents reviennent sans cesse', 'Les coûts de serveur ne cessent d’augmenter'],
-        scope: [
-          ['Traitement des erreurs', 'Lecture des journaux d’erreurs, recherche des causes, publication des correctifs.'],
-          ['Performance', 'Écrans et requêtes plus rapides.'],
-          ['Évolution des fonctionnalités', 'Ajout et retrait de fonctionnalités selon les données d’usage.'],
-          ['Revue des coûts', 'Analyse de l’usage du cloud et économies.'],
+        "scope": [
+          [
+            "Conception des formats",
+            "Emplacement et moment d’affichage des bannières, interstitiels, publicités récompensées et publicités natives."
+          ],
+          [
+            "Médiation",
+            "Priorités et paramétrage des enchères entre les régies publicitaires."
+          ],
+          [
+            "Fréquence et expérience",
+            "Plafonds de fréquence, protection de la première session et utilisateurs payants sans publicité."
+          ],
+          [
+            "Publicité et achats intégrés",
+            "Offres de suppression des publicités et articulation entre publicités récompensées et achats."
+          ]
         ],
-        deliver: ['Rapport mensuel d’exploitation', 'Journal de traitement des erreurs', 'Versions d’amélioration', 'Résultats de la revue des coûts'],
+        "deliver": [
+          "Carte des emplacements publicitaires",
+          "Plan de paramétrage de la médiation",
+          "Document des règles de fréquence",
+          "Comparatif rétention et revenus"
+        ]
       },
-    },
+      "retail": {
+        "name": "Retail media et développement de plateformes publicitaires",
+        "short": "Nous aidons les places de marché et les plateformes à bâtir des offres et une organisation publicitaires, afin que vendeurs et marques puissent y faire de la publicité.",
+        "lead": "Nous transformons le trafic et les données de votre plateforme en offres publicitaires, et définissons avec vous la tarification, la vente et le reporting de performance.",
+        "who": [
+          "Vous voulez lancer une activité publicitaire sur votre place de marché ou votre plateforme",
+          "Vous vendez et facturez à la main la publicité de vos vendeurs",
+          "Les annonceurs réclament des rapports qui prouvent les résultats"
+        ],
+        "scope": [
+          [
+            "Conception des offres publicitaires",
+            "Espaces vendables : tête de recherche, produits sponsorisés, bannières et e-mailing."
+          ],
+          [
+            "Tarification et vente",
+            "Offres aux enchères, à prix fixe et à la durée, avec leurs règles de prix."
+          ],
+          [
+            "Données et mesure",
+            "Impressions, clics et attribution des achats mesurés dans le respect de la vie privée."
+          ],
+          [
+            "Modèle opérationnel",
+            "Accueil des annonceurs, validation des annonces, facturation et reporting de performance."
+          ]
+        ],
+        "deliver": [
+          "Catalogue des offres publicitaires et grille tarifaire",
+          "Modèle de rentabilité de l’activité publicitaire",
+          "Standards de mesure et modèles de rapports",
+          "Procédures opérationnelles"
+        ]
+      },
+      "policy": {
+        "name": "Conformité aux règles publicitaires et à la vie privée",
+        "short": "Revue des règles, traitement des refus, gestion du consentement, ads.txt et politiques de confidentialité.",
+        "lead": "Un compte en règle passe avant les revenus. Nous repérons tôt les risques de non-conformité et, lorsqu’une demande est refusée ou qu’un compte est limité, nous en cherchons la cause et y répondons.",
+        "who": [
+          "Votre demande de validation publicitaire a été refusée ou votre compte limité",
+          "Vous devez gérer le consentement de visiteurs d’autres régions",
+          "Votre politique de confidentialité doit être mise à jour avant la mise en ligne des publicités"
+        ],
+        "scope": [
+          [
+            "Revue des règles",
+            "Risques liés aux contenus, aux emplacements publicitaires et aux sources de trafic."
+          ],
+          [
+            "Refus et limitations",
+            "Analyse des causes, corrections et demande de réexamen."
+          ],
+          [
+            "Gestion du consentement",
+            "Bannières de consentement par région, reliées au paramétrage publicitaire."
+          ],
+          [
+            "Fichiers et documents obligatoires",
+            "ads.txt, app-ads.txt, politique de confidentialité et information sur les cookies."
+          ]
+        ],
+        "deliver": [
+          "Liste de contrôle des règles",
+          "Historique des réponses",
+          "Paramétrage de la gestion du consentement",
+          "Fichiers et documents obligatoires"
+        ]
+      },
+      "ops": {
+        "name": "Pilotage publicitaire et conseil en reporting",
+        "short": "Chaque mois, nous analysons les indicateurs de revenus, menons des tests et corrigeons ce qui doit l’être, y compris le trafic invalide et les écarts de paiement.",
+        "lead": "Les revenus publicitaires ne se règlent pas en un seul paramétrage. Nous examinons les indicateurs chaque mois et ne conservons que les changements validés par des tests.",
+        "who": [
+          "Vos revenus publicitaires varient fortement d’un mois à l’autre",
+          "Vous consolidez à la main les rapports de plusieurs plateformes",
+          "Personne dans votre équipe ne pilote la publicité"
+        ],
+        "scope": [
+          [
+            "Revue mensuelle",
+            "Évolution des revenus, des impressions, des prix et du taux de remplissage, et leurs causes."
+          ],
+          [
+            "Tests",
+            "Tests comparatifs d’emplacements, de formats publicitaires et de règles de prix."
+          ],
+          [
+            "Reporting unifié",
+            "Les revenus de toutes les plateformes réunis dans un seul rapport."
+          ],
+          [
+            "Contrôles qualité",
+            "Trafic invalide, qualité des publicités et écarts de paiement."
+          ]
+        ],
+        "deliver": [
+          "Rapport mensuel de pilotage",
+          "Journal des tests",
+          "Rapport unifié",
+          "Liste priorisée des améliorations"
+        ]
+      }
+    }
   },
 
   why: [
-    ['Multilingue dès le départ', 'La structure multilingue est prévue dès la conception, donc ajouter une langue plus tard n’oblige jamais à tout refaire.'],
-    ['Périmètre validé d’abord', 'Fonctionnalités, calendrier et coût sont fixés par écrit avant le début du travail. Tout changement est validé avant d’être réalisé.'],
-    ['Le code et les comptes vous appartiennent', 'Le code source, les domaines, les comptes de boutiques et de cloud sont créés à votre nom puis remis.'],
-    ['Les tests font partie de la livraison', 'Des tests automatisés des fonctionnalités clés et des vérifications des chaînes manquantes par langue sont inclus.'],
-    ['Avancement hebdomadaire', 'Chaque semaine, vous voyez des écrans fonctionnels et ce qui reste à faire.'],
-    ['Seulement les données nécessaires', 'Les données personnelles se limitent à ce que les fonctionnalités exigent, traitées sur l’appareil chaque fois que possible.'],
+    [
+      "Des revenus sans dégrader l’expérience",
+      "Plutôt que d’ajouter des publicités, nous cherchons les emplacements qui gardent les pages rapides et le parcours fluide."
+    ],
+    [
+      "Mesurer plutôt que supposer",
+      "Nous relevons les chiffres de départ avant de commencer et comparons chaque changement sur la même base."
+    ],
+    [
+      "Un conseil indépendant",
+      "Nous ne percevons aucune commission des plateformes publicitaires : les options sont comparées à armes égales."
+    ],
+    [
+      "La conformité d’abord",
+      "Nous ne développons les revenus que dans le respect des règles publicitaires et de la vie privée. Pas de clics provoqués, pas de trafic invalide."
+    ],
+    [
+      "Vos comptes, vos données",
+      "Les comptes publicitaires, les coordonnées de paiement et les rapports sont créés et conservés à votre nom."
+    ],
+    [
+      "Un point chaque semaine",
+      "Chaque semaine, nous vous indiquons ce qui a changé, l’évolution des chiffres et la suite prévue."
+    ]
   ],
 
   steps: [
-    ['Consultation', 'Objectifs, marchés cibles et échéances.'],
-    ['Périmètre et devis', 'Liste des fonctionnalités, calendrier et coût par écrit.'],
-    ['Démo', 'Les écrans et parcours essentiels fonctionnent en premier.'],
-    ['Développement et tests', 'Points hebdomadaires, tests automatisés.'],
-    ['Localisation et lancement', 'Pages par langue, enregistrement en boutique et auprès des moteurs de recherche.'],
-    ['Exploitation et amélioration', 'Indicateurs, traitement des erreurs, croissance.'],
+    [
+      "Premier échange",
+      "Votre service, votre volume de trafic et vos objectifs."
+    ],
+    [
+      "Diagnostic",
+      "Revue des emplacements, du paramétrage et des indicateurs de revenus, avec relevé des valeurs de référence."
+    ],
+    [
+      "Conception",
+      "Plateformes publicitaires, emplacements et plan de conformité."
+    ],
+    [
+      "Paramétrage et tests",
+      "Changements appliqués puis comparés avant et après."
+    ],
+    [
+      "Validation et lancement",
+      "Revues de conformité, gestion du consentement et fichiers obligatoires."
+    ],
+    [
+      "Pilotage",
+      "Revues mensuelles, tests et rapports."
+    ]
   ],
 
-  cta: { title: 'Lancer un projet', text: 'Écrivez-nous ce que vous voulez créer, vos marchés cibles et votre calendrier.' },
+  cta: {
+    "title": "Parlons de vos revenus publicitaires",
+    "text": "Écrivez-nous en indiquant votre site ou votre application, votre trafic mensuel et le problème que vous rencontrez."
+  },
 
   products: {
     title: 'Produits',
@@ -249,59 +464,151 @@ export default {
   },
 
   about: {
-    title: 'À propos',
-    desc: 'À propos d’EarnToLink (언투링크) : une entreprise de logiciels qui relie les marchés et le monde. Mission, services, principes et informations sur l’entreprise.',
-    eyebrow: 'À propos', h1: 'EarnToLink', lead: 'EarnToLink (언투링크) est une entreprise de logiciels qui relie les marchés et le monde.',
-    mission: {
-      eyebrow: 'Mission', title: 'Relier les marchés et le monde',
-      body: [
-        'De bons produits et services restent souvent enfermés dans un seul pays et une seule langue. EarnToLink crée les logiciels qui comblent cet écart.',
-        'Nous créons des produits, allégeons l’exploitation grâce à l’IA et à l’automatisation, et les amenons sur les marchés mondiaux par de nombreuses langues et boutiques d’applications. Après le lancement, nous continuons à les améliorer à partir des données.',
-        'Nous créons nos propres applications avec la même exigence. Le statut est indiqué tel qu’il est : les produits pas encore publiés sont signalés comme bientôt disponibles.',
-      ],
+    "title": "À propos",
+    "desc": "À propos d’EarnToLink : un cabinet de conseil qui aide les sites web, les applications et les plateformes e-commerce à gagner de l’argent grâce à la publicité. Mission, services, principes et informations légales.",
+    "eyebrow": "À propos",
+    "h1": "EarnToLink",
+    "lead": "EarnToLink est un cabinet de conseil en revenus publicitaires qui conçoit la façon dont les entreprises tirent profit de la publicité.",
+    "mission": {
+      "eyebrow": "Mission",
+      "title": "Une publicité qui renforce l’activité",
+      "body": [
+        "De nombreuses entreprises proposent de bons contenus et de bons services, mais gagnent peu avec la publicité. Les emplacements ne conviennent pas, le paramétrage est dépassé ou un problème de conformité freine les revenus.",
+        "EarnToLink mesure votre point de départ, choisit les plateformes et les emplacements publicitaires adaptés, et accompagne le pilotage quotidien dans le respect des règles publicitaires et de la vie privée. Le résultat de chaque changement vous est présenté sur la même base de référence.",
+        "Forts de notre propre expérience de création et d’exploitation de sites web et d’applications, nous défendons un principe : la monétisation ne doit jamais dégrader l’expérience des utilisateurs."
+      ]
     },
-    do: { eyebrow: 'Services', title: 'Ce que nous faisons', text: 'Activités enregistrées : développement et fourniture de logiciels d’application (principale), vente au détail en commerce électronique, courtage de vente au détail en commerce électronique.' },
-    why: { eyebrow: 'Principes', title: 'Notre méthode' },
-    info: { eyebrow: 'Entreprise', title: 'Informations sur l’entreprise' },
+    "do": {
+      "eyebrow": "Services",
+      "title": "Ce que nous faisons",
+      "text": "Activités déclarées : développement et fourniture de logiciels d’application (principale), vente au détail par e-commerce et intermédiation de vente au détail par e-commerce."
+    },
+    "why": {
+      "eyebrow": "Principes",
+      "title": "Nos principes"
+    },
+    "info": {
+      "eyebrow": "Entreprise",
+      "title": "Informations sur l’entreprise"
+    }
   },
 
   principles: {
-    title: 'Notre méthode',
-    desc: 'La méthode d’EarnToLink : multilingue dès le départ, périmètre validé d’abord, code et comptes à vous, tests inclus. Processus et conditions contractuelles.',
-    eyebrow: 'Notre méthode', h1: 'Notre méthode', lead: 'Principes, processus et conditions contractuelles.',
-    why: { eyebrow: 'Principes', title: 'Six engagements', text: 'Appliqués à chaque projet.' },
-    steps: { eyebrow: 'Processus', title: 'Étapes', text: 'De la consultation à l’exploitation.' },
-    terms: { eyebrow: 'Contrats', title: 'Conditions contractuelles et tarifaires', rows: [
-      ['Projets', 'Périmètre, calendrier, coût et modalités de paiement fixés par contrat pour chaque projet'],
-      ['Changements de périmètre', 'Les changements et leur coût sont validés avant la poursuite du travail'],
-      ['Propriété', 'Code source et comptes transférés au client une fois le paiement complet effectué'],
-      ['Nos applications', 'Achat unique · ₩10,000 maximum par application · sans abonnement · paiement via chaque boutique d’applications'],
-    ] },
+    "title": "Notre méthode",
+    "desc": "La méthode d’EarnToLink : revenus et expérience utilisateur en équilibre, résultats mesurés, conseil indépendant et conformité. Étapes et conditions contractuelles.",
+    "eyebrow": "Notre méthode",
+    "h1": "Notre méthode",
+    "lead": "Principes, étapes et conditions contractuelles.",
+    "why": {
+      "eyebrow": "Principes",
+      "title": "Six principes",
+      "text": "Appliqués à chaque mission."
+    },
+    "steps": {
+      "eyebrow": "Déroulement",
+      "title": "Étapes",
+      "text": "Du premier échange au pilotage."
+    },
+    "terms": {
+      "eyebrow": "Contrat",
+      "title": "Conditions contractuelles",
+      "rows": [
+        [
+          "Missions",
+          "Chaque mission fait l’objet d’un contrat qui précise le périmètre, le calendrier, les honoraires et les modalités de paiement"
+        ],
+        [
+          "Évolution du périmètre",
+          "Les modifications et leur coût sont convenus avant de poursuivre le travail"
+        ],
+        [
+          "Propriété",
+          "Les comptes publicitaires, les rapports et les documents de paramétrage restent à votre nom"
+        ],
+        [
+          "Honoraires",
+          "Aucune commission des plateformes publicitaires · les honoraires de conseil sont indiqués au contrat"
+        ]
+      ]
+    }
   },
 
   contact: {
-    title: 'Contact',
-    desc: `Contactez EarnToLink pour des projets, des produits, la confidentialité ou des partenariats : ${EMAIL}`,
-    eyebrow: 'Contact', h1: 'Contact', lead: 'Par e-mail. Nous répondons en coréen ou en anglais.',
-    topics: [
-      ['code', 'Projets', 'Développement de produits, automatisation par l’IA, localisation, lancement en boutique d’applications, e-commerce, exploitation'],
-      ['package', 'Produits', 'Fonctionnalités, dates de sortie et bugs de nos applications'],
-      ['receipt', 'Paiements', 'Les paiements et remboursements des applications suivent la politique de chaque boutique d’applications'],
-      ['shield', 'Confidentialité', 'Demandes d’accès, de rectification, de suppression ou d’arrêt du traitement'],
-      ['users', 'Partenariats', 'Collaborations et autres propositions'],
+    "title": "Contact",
+    "desc": "Contactez EarnToLink pour du conseil en revenus publicitaires, nos produits, la confidentialité ou un partenariat. hello@earntolink.com",
+    "eyebrow": "Contact",
+    "h1": "Contact",
+    "lead": "Nous traitons les demandes par e-mail et répondons en coréen ou en anglais.",
+    "topics": [
+      [
+        "chart",
+        "Conseil",
+        "Diagnostic de revenus publicitaires, monétisation de sites et d’applications, retail media, questions de conformité, conseil en pilotage"
+      ],
+      [
+        "package",
+        "Produits",
+        "Fonctionnalités, dates de sortie et anomalies de nos propres applications"
+      ],
+      [
+        "receipt",
+        "Paiements",
+        "Les paiements et remboursements des applications suivent la politique de chaque boutique d’applications"
+      ],
+      [
+        "shield",
+        "Confidentialité",
+        "Demandes d’accès, de rectification, de suppression ou de limitation du traitement des données personnelles"
+      ],
+      [
+        "users",
+        "Partenariats",
+        "Propositions de collaboration et autres propositions"
+      ]
     ],
-    brief: { title: 'À indiquer dans une demande de projet', items: ['Ce que vous voulez créer et pourquoi', 'Marchés et langues cibles', 'Calendrier souhaité', 'Services ou documents de référence'] },
+    "brief": {
+      "title": "Informations utiles à nous transmettre",
+      "items": [
+        "Ce que vous exploitez (site web, application ou plateforme e-commerce) et son adresse",
+        "Nombre de visiteurs mensuels ou d’utilisateurs actifs",
+        "Les plateformes publicitaires utilisées aujourd’hui et les difficultés rencontrées",
+        "Le calendrier souhaité"
+      ]
+    }
   },
 
   news: {
-    'business-areas': { title: 'Nos domaines de service', summary: 'Développement de produits, transformation par l’IA, localisation, lancement en boutique d’applications, e-commerce, exploitation.',
-      body: ['Présentation des domaines de service d’EarnToLink.', 'Ils sont au nombre de six : développement de produits, transformation par l’IA et automatisation, localisation et expansion internationale, lancement sur les boutiques d’applications mondiales, e-commerce et vente transfrontalière, exploitation et croissance.', 'Les demandes de projet sont à envoyer à hello@earntolink.com.'] },
-    'earntolink-com-launch': { title: 'earntolink.com est en ligne', summary: 'Le site d’EarnToLink est en ligne en 14 langues.',
-      body: ['Le site d’EarnToLink, earntolink.com, est désormais en ligne.', 'Il présente nos domaines de service, nos produits maison, les informations sur l’entreprise, la politique de confidentialité et les coordonnées.', 'Il est disponible en coréen, anglais, japonais, chinois (simplifié et traditionnel), espagnol, français, allemand, portugais, italien, vietnamien, indonésien, thaï et russe.'] },
-    'product-lineup': { title: 'Nos produits maison', summary: 'Deux applications mobiles et trois applications de bureau.',
-      body: ['L’état actuel de nos produits maison.', 'Les applications mobiles Roll Tidy et Roll Flick et les applications de bureau Space Map, Dupeless et Archive Fix sont bientôt disponibles.'] },
+    "ad-consulting": {
+      "title": "EarnToLink se recentre sur le conseil en revenus publicitaires",
+      "summary": "Diagnostic et stratégie, monétisation de sites et d’applications, retail media, conformité et conseil en pilotage.",
+      "body": [
+        "EarnToLink a recentré ses services sur le conseil en revenus publicitaires.",
+        "Nous proposons désormais six services : diagnostic et stratégie de revenus publicitaires, monétisation de sites web et de médias, monétisation d’applications, retail media et développement de plateformes publicitaires, conformité aux règles publicitaires et à la vie privée, pilotage publicitaire et conseil en reporting.",
+        "Pour prendre rendez-vous, écrivez à hello@earntolink.com."
+      ]
+    },
+    "earntolink-com-launch": {
+      "title": "earntolink.com est en ligne",
+      "summary": "Le site d’EarnToLink est en ligne en 14 langues.",
+      "body": [
+        "Le site d’EarnToLink, earntolink.com, est désormais en ligne.",
+        "Il présente nos services, nos produits maison, les informations sur l’entreprise, la politique de confidentialité et les coordonnées.",
+        "Il est disponible en coréen, anglais, japonais, chinois (simplifié et traditionnel), espagnol, français, allemand, portugais, italien, vietnamien, indonésien, thaï et russe."
+      ]
+    },
+    "product-lineup": {
+      "title": "Nos produits maison",
+      "summary": "Deux applications mobiles et trois applications de bureau.",
+      "body": [
+        "L’état actuel de nos produits maison.",
+        "Les applications mobiles Roll Tidy et Roll Flick et les applications de bureau Space Map, Dupeless et Archive Fix sont bientôt disponibles."
+      ]
+    }
   },
-  newsPage: { title: 'Actualités', desc: 'Actualités d’EarnToLink : domaines de service, lancement du site et état des produits.' },
+  newsPage: {
+    "title": "Actualités",
+    "desc": "Actualités d’EarnToLink : évolution des services, lancement du site et état des produits."
+  },
 
   privacy: {
     title: 'Politique de confidentialité',
@@ -330,8 +637,8 @@ export default {
     sections: [
       { id: 'purpose', h: '1. Objet', html: '<p>Ces conditions fixent les modalités d’utilisation de earntolink.com, le site web exploité par EarnToLink.</p>' },
       { id: 'content', h: '2. Droits sur le contenu', html: '<p>Les droits sur les textes, images et codes de ce site appartiennent à EarnToLink. Les marques de tiers affichées ici appartiennent à leurs propriétaires.</p>' },
-      { id: 'accuracy', h: '3. Informations sur les produits et services', html: '<p>Le statut des produits, les fonctionnalités et les descriptions de services sont exacts à la date de rédaction. Les fonctionnalités, prix et calendriers des produits pas encore publiés peuvent changer.</p>' },
-      { id: 'projects', h: '4. Contrats de projet', html: '<p>Les services de développement, d’automatisation, de localisation, de lancement et d’exploitation suivent le contrat de chaque projet. En cas de différence entre ces conditions et un contrat, le contrat prévaut.</p>' },
+      { id: 'accuracy', h: '3. Informations sur les produits et services', html: "<p>L’état des produits, leurs fonctionnalités et la description des services sont exacts à la date de rédaction. Les fonctionnalités, les prix et les calendriers des produits non encore sortis peuvent évoluer.</p>" },
+      { id: 'projects', h: '4. Contrats de projet', html: "<p>Les prestations de diagnostic, de conseil, de paramétrage publicitaire et de conseil en pilotage sont régies par le contrat propre à chaque mission. En cas de divergence entre les présentes conditions et un contrat, le contrat prévaut. Les revenus publicitaires dépendent du marché publicitaire et des règles des plateformes ; les estimations figurant dans nos diagnostics ou nos propositions ne constituent pas une garantie.</p>" },
       { id: 'apps', h: '5. Utilisation des applications', html: '<p>Chaque application est également soumise aux conditions de la boutique par laquelle elle est distribuée (App Store, Google Play, Microsoft Store et autres) et à ses propres mentions.</p>' },
       { id: 'links', h: '6. Liens externes', html: '<p>Les sites externes sont régis par leurs propres conditions et politiques.</p>' },
       { id: 'liability', h: '7. Limitation de responsabilité', html: '<p>Dans la mesure permise par la loi, EarnToLink n’est pas responsable des dommages indirects résultant de l’utilisation de ce site.</p>' },
@@ -340,5 +647,13 @@ export default {
     ],
   },
 
-  og: { h: 'Relier les marchés et le monde.', s: 'Développement de produits · Transformation par l’IA · Localisation<br>Lancement en boutique d’applications · E-commerce · Exploitation', tags: ['Web · App · Bureau', 'IA · Automatisation', '14 langues'] },
+  og: {
+    "h": "Vos revenus publicitaires, bien pensés.",
+    "s": "Diagnostic de revenus publicitaires · Monétisation web et applications<br>Retail media · Conformité · Pilotage",
+    "tags": [
+      "Sites web et médias",
+      "Applications mobiles",
+      "E-commerce"
+    ]
+  },
 };

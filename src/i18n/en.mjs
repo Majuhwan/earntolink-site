@@ -9,20 +9,20 @@ const ONE_TIME = 'One-time purchase · ₩10,000 or less';
 export default {
   brand: 'EarnToLink',
   brandAlt: '언투링크',
-  slogan: 'Connecting markets and the world.',
+  slogan: "Ad revenue, designed properly.",
   translationNote: 'This page is a translation. If it differs from the Korean original, the Korean original prevails.',
 
   ui: {
     skip: 'Skip to content', menu: 'Menu', language: 'Language', mainNav: 'Main', breadcrumb: 'Breadcrumb', toc: 'Contents', homeAria: 'EarnToLink home',
-    nav: { services: 'Services', products: 'Products', about: 'About', principles: 'How we work', news: 'News', contact: 'Contact' },
+    nav: { services: "Services", products: 'Products', about: 'About', principles: 'How we work', news: 'News', contact: 'Contact' },
     home: 'Home', privacy: 'Privacy Policy', terms: 'Terms', rss: 'RSS',
-    footer: { services: 'Services', products: 'Products', company: 'Company', policy: 'Policies' },
+    footer: { services: "Services", products: 'Products', company: 'Company', policy: 'Policies' },
     biz: { name: 'Business name', rep: 'Representative', no: 'Business registration no.', tax: 'Tax type', kinds: 'Business', mail: 'Email' },
     rights: '© 2026 EarnToLink. All rights reserved.',
-    view: 'Details', all: 'All products', allServices: 'All services', email: 'Email', mailBtn: 'Email us', projectBtn: 'Start a project',
+    view: 'Details', all: 'All products', allServices: "All services", email: 'Email', mailBtn: 'Email us', projectBtn: "Book a consultation",
     platform: 'Platform', status: 'Status', features: 'Features', specs: 'Specifications', related: 'Other products', privacyNote: 'Privacy',
     productIllustration: 'Product illustration: ',
-    heroLabel: 'Illustration of EarnToLink connected to markets in 14 languages',
+    heroLabel: 'Illustration of a dashboard showing ad revenue across websites, apps and commerce',
     newsFeedTitle: 'EarnToLink News', newsFeedDesc: 'News from EarnToLink (언투링크)',
     notFound: { title: 'Page not found', text: 'The address has changed or the page does not exist.', home: 'Go home' },
   },
@@ -41,121 +41,336 @@ export default {
   },
 
   home: {
-    title: 'EarnToLink (언투링크) | Connecting markets and the world',
-    desc: 'EarnToLink connects markets and the world: web, mobile and desktop product development, AI transformation and automation, localization into 14 languages, global app store launches, commerce integration and operations.',
-    eyebrow: 'Software · AI transformation · Global expansion',
-    h1: 'Connecting markets<br>and the world.',
-    lead: 'From planning and development to AI automation, localization and global app store launches, one team carries your product all the way.',
-    meta: ['Web · Mobile · Desktop', 'AI · Automation', '14 languages'],
-    stats: [['14', 'Website languages'], ['6', 'Service areas'], ['5', 'In-house products'], ['4', 'App stores we ship to']],
-    services: { eyebrow: 'Services', title: 'Six service areas', text: 'We build, automate, take it to the world, and keep it growing.' },
-    why: { eyebrow: 'Why EarnToLink', title: 'Built for global markets from day one', text: 'Six commitments we keep on every project.' },
-    how: { eyebrow: 'Process', title: 'From first call to operations', text: 'Six steps, each one confirmed before the next.' },
-    apps: { eyebrow: 'In-house products', title: 'Products we build ourselves', text: 'Our own apps, built to the same standard as client work. All coming soon.' },
-    co: { eyebrow: 'Company', title: 'EarnToLink', text: 'Sole proprietorship in Korea. Application software development and supply.' },
-    news: { eyebrow: 'News', title: 'Latest news' },
+    "title": "EarnToLink | Ad revenue consulting for websites, apps and commerce platforms",
+    "desc": "EarnToLink is an ad revenue consulting firm. We assess and design how websites, apps and commerce platforms earn from advertising: platform choice and setup, policy and privacy compliance, retail media and ongoing ad operations.",
+    "eyebrow": "Ad revenue platform consulting for businesses",
+    "h1": "Ad revenue,<br>designed properly.",
+    "lead": "We help websites, apps and commerce platforms earn steady revenue from advertising. We assess what you have today, choose the right ad platforms and placements, and stay with you through policy reviews and day-to-day operations.",
+    "meta": [
+      "Websites and media",
+      "Mobile apps",
+      "Commerce and retail media"
+    ],
+    "stats": [
+      [
+        "6",
+        "Consulting areas"
+      ],
+      [
+        "3",
+        "Revenue channels: web, app, commerce"
+      ],
+      [
+        "6",
+        "Steps in every engagement"
+      ],
+      [
+        "14",
+        "Website languages"
+      ]
+    ],
+    "services": {
+      "eyebrow": "Services",
+      "title": "Six areas of consulting",
+      "text": "From assessment to platform setup, policy reviews and operations. Choose only the areas you need."
+    },
+    "why": {
+      "eyebrow": "Why EarnToLink",
+      "title": "Revenue and trust, protected together",
+      "text": "Six principles we keep on every engagement."
+    },
+    "how": {
+      "eyebrow": "How we work",
+      "title": "From first call to ongoing operations",
+      "text": "Six steps, each one checked against the numbers before we move on."
+    },
+    "co": {
+      "eyebrow": "Company",
+      "title": "EarnToLink",
+      "text": "Sole proprietorship. Ad revenue consulting and software development."
+    },
+    "news": {
+      "eyebrow": "News",
+      "title": "Latest news"
+    }
   },
 
   services: {
-    title: 'Services',
-    desc: 'EarnToLink services: product development, AI transformation and automation, localization, global app store launches, commerce and cross-border sales, operations and growth.',
-    eyebrow: 'Services', h1: 'Services', lead: 'Six areas. Pick only the ones you need.',
-    whoLabel: 'A good fit when', scopeLabel: 'What we do', deliverLabel: 'Deliverables', otherLabel: 'Other services',
-    items: {
-      product: {
-        name: 'Product development', short: 'Web services, mobile apps, desktop apps and internal systems, from planning to launch.',
-        lead: 'We turn ideas into products people actually use. Planning, screen design, visual design, development and testing run as one flow.',
-        who: ['You are building a new service from scratch', 'You want to launch small first and test the market', 'You want to move work out of spreadsheets and chat into a real system'],
-        scope: [
-          ['Web services', 'Service websites, accounts and payments, admin dashboards.'],
-          ['Mobile apps', 'Android and iOS apps, built from one codebase.'],
-          ['Desktop apps', 'Windows and macOS apps, including file and disk tools.'],
-          ['Internal systems', 'Work management, settlement, inventory and customer tools.'],
+    "title": "Services",
+    "desc": "EarnToLink services: ad revenue assessment and strategy, website and media monetization, app monetization, retail media and ad platform development, ad policy and privacy compliance, ad operations and reporting.",
+    "eyebrow": "Services",
+    "h1": "Services",
+    "lead": "Six areas. Choose only the ones you need.",
+    "whoLabel": "A good fit when",
+    "scopeLabel": "What we do",
+    "deliverLabel": "What you receive",
+    "otherLabel": "Other services",
+    "items": {
+      "strategy": {
+        "name": "Ad revenue assessment and strategy",
+        "short": "We review your traffic, ad placements, platform settings and revenue metrics, and set the direction for your revenue model.",
+        "lead": "First we find out where your ad revenue comes from and where it leaks. We record the numbers on one consistent baseline, then set priorities and an action plan.",
+        "who": [
+          "You run ads but earn less than expected",
+          "You are deciding whether to switch or add ad platforms",
+          "Ad revenue needs to go into your business plan"
         ],
-        deliver: ['Feature list and screen designs', 'Source code and deployment setup', 'Automated tests', 'Operations guide'],
-      },
-      ax: {
-        name: 'AI transformation and automation', short: 'AI agents and automation that cut repetitive work and change how teams operate.',
-        lead: 'We find the work that repeats and move it to AI and automation. A small working demo proves the effect before full development.',
-        who: ['Your team repeats the same support replies, documents or data cleanup', 'You want to search internal documents and data with AI', 'People copy the same information between several tools'],
-        scope: [
-          ['AI agents', 'First-line replies, summaries, drafts and classification.'],
-          ['Document and data automation', 'Reading forms, cleaning tables, generating reports.'],
-          ['Internal knowledge search', 'Answers grounded in your own documents (RAG).'],
-          ['Tool integration', 'Automatic links between email, chat, spreadsheets and internal systems.'],
+        "scope": [
+          [
+            "Current-state review",
+            "Traffic mix, ad placements, platform settings and revenue flow."
+          ],
+          [
+            "Key metrics",
+            "Baselines for page RPM, impression rate, fill rate and viewability."
+          ],
+          [
+            "Revenue model",
+            "The right mix of ads, affiliate income, subscriptions and direct-sold ads."
+          ],
+          [
+            "Action plan",
+            "Priorities, timeline and expected impact of each improvement."
+          ]
         ],
-        deliver: ['Workflow assessment', 'A working demo', 'Production automation and user guide', 'Metrics to measure the effect'],
+        "deliver": [
+          "Assessment report",
+          "Metric baseline table",
+          "Revenue model recommendations",
+          "Phased action plan"
+        ]
       },
-      localization: {
-        name: 'Localization and global expansion', short: 'Take your service into 14 or more languages and get found in each country.',
-        lead: 'Not just translation. We change the language structure, date, number and currency formats, and search visibility country by country.',
-        who: ['Your service exists only in one language and you want to open it abroad', 'You translated, but foreign search engines do not find you', 'You need payment and formats that differ by country'],
-        scope: [
-          ['Multilingual structure', 'String extraction, language switching, per-language URLs.'],
-          ['Multilingual SEO', 'hreflang, per-language sitemaps, search engine registration.'],
-          ['Local formats', 'Dates, numbers, currencies and addresses.'],
-          ['Translation QA', 'Glossaries and automatic checks for missing strings per language.'],
+      "web": {
+        "name": "Website and media monetization",
+        "short": "Approval readiness, ad placement design and the balance between page speed and revenue for blogs, news and information sites.",
+        "lead": "Rather than adding more ads, we look for places that do not interrupt reading. We cover everything from approval readiness to placement design and programmatic setup.",
+        "who": [
+          "You are preparing for an ad platform approval review",
+          "Ads have slowed your pages or increased bounce rates",
+          "You want to run several ad networks together"
         ],
-        deliver: ['Pages and URLs per language', 'Glossary', 'String check tool per language', 'Search engine registration'],
-      },
-      launch: {
-        name: 'Global app store launch', short: 'Launch and review handling on the App Store, Google Play, Microsoft Store and Mac App Store.',
-        lead: 'We handle store registration, review responses and store pages in each language, then keep shipping updates after launch.',
-        who: ['You have an app but store registration is stuck', 'Your app was rejected in review', 'You need store pages for each country'],
-        scope: [
-          ['Store registration', 'Developer account setup, app details, age ratings, privacy labels.'],
-          ['Review handling', 'Policy checks, rejection analysis, fix and resubmit.'],
-          ['Store page localization', 'Descriptions and screenshots per language.'],
-          ['Payments setup', 'In-app purchases, price tiers, pricing by country.'],
+        "scope": [
+          [
+            "Approval readiness",
+            "Site structure, required pages and content quality checks, then the application."
+          ],
+          [
+            "Placement design",
+            "Ad positions, sizes and spacing that follow the flow of your content."
+          ],
+          [
+            "Page speed",
+            "Lazy loading and layout-shift prevention to keep pages fast."
+          ],
+          [
+            "Programmatic setup",
+            "Ad server and header bidding configuration, price floor rules."
+          ]
         ],
-        deliver: ['Your app live on the stores', 'Store pages per language', 'Review history', 'Update release procedure'],
+        "deliver": [
+          "Approval checklist",
+          "Placement plan",
+          "Ad settings and implementation guide",
+          "Before-and-after report"
+        ]
       },
-      commerce: {
-        name: 'Commerce and cross-border sales', short: 'Connect your products to customers abroad with sales channels and operations tools.',
-        lead: 'We build the online store, multilingual product data and payment, shipping and accounting integrations that selling abroad needs.',
-        who: ['You sell at home and want to sell abroad', 'You edit product data separately for every channel', 'You reconcile orders, stock and settlements by hand'],
-        scope: [
-          ['Sales channels', 'Your own store connected to overseas marketplaces.'],
-          ['Multilingual product data', 'Names, descriptions, options and size charts per language.'],
-          ['Order and stock sync', 'Automatic sync of orders and inventory across channels.'],
-          ['Settlement and reports', 'Automatic totals for sales, fees and payouts.'],
+      "app": {
+        "name": "App monetization",
+        "short": "Ad formats, mediation and frequency in your mobile app, designed around how people use it.",
+        "lead": "We decide when and where banner, interstitial and rewarded ads appear, and grow revenue while keeping an eye on retention.",
+        "who": [
+          "You are adding ads to an app for the first time",
+          "Ratings or retention dropped after ads went in",
+          "You want to combine several ad networks through mediation"
         ],
-        deliver: ['Sales channels and integrations', 'Multilingual product data', 'Order and stock sync', 'Settlement reports'],
-      },
-      operate: {
-        name: 'Operations and growth', short: 'After launch: fixing errors, improving speed, adding features, checking costs.',
-        lead: 'Launch is the start. We watch the metrics, cut errors, add what users need and keep infrastructure costs in check.',
-        who: ['You need someone to take over a service another vendor built', 'Errors and slow screens keep coming back', 'Server costs keep rising'],
-        scope: [
-          ['Error response', 'Reading error logs, finding causes, shipping fixes.'],
-          ['Performance', 'Faster screens and queries.'],
-          ['Feature growth', 'Adding and trimming features based on usage data.'],
-          ['Cost review', 'Cloud usage review and savings.'],
+        "scope": [
+          [
+            "Ad format design",
+            "Placement and timing of banner, interstitial, rewarded and native ads."
+          ],
+          [
+            "Mediation",
+            "Priority and bidding settings across ad networks."
+          ],
+          [
+            "Frequency and experience",
+            "Frequency caps, first-session protection and ad-free paying users."
+          ],
+          [
+            "Ads alongside in-app purchases",
+            "Remove-ads products and how rewarded ads and purchases fit together."
+          ]
         ],
-        deliver: ['Monthly operations report', 'Error response log', 'Improvement releases', 'Cost review results'],
+        "deliver": [
+          "Ad placement map",
+          "Mediation setup plan",
+          "Frequency rules document",
+          "Retention and revenue comparison"
+        ]
       },
-    },
+      "retail": {
+        "name": "Retail media and ad platform development",
+        "short": "We help marketplaces and platforms build ad products and operations so sellers and brands can advertise with them.",
+        "lead": "We turn your platform's traffic and data into advertising products, and shape pricing, sales and performance reporting with you.",
+        "who": [
+          "You want to open an advertising business on your marketplace or platform",
+          "You sell and invoice seller ads by hand",
+          "Advertisers ask for reports that prove results"
+        ],
+        "scope": [
+          [
+            "Ad product design",
+            "Sellable placements such as top-of-search, sponsored products, banners and email."
+          ],
+          [
+            "Pricing and sales",
+            "Auction, fixed-price and time-based products, with pricing rules."
+          ],
+          [
+            "Data and measurement",
+            "Impressions, clicks and purchase attribution measured within privacy rules."
+          ],
+          [
+            "Operating model",
+            "Advertiser onboarding, ad review, billing and performance reporting."
+          ]
+        ],
+        "deliver": [
+          "Ad product catalogue and rate card",
+          "Ad business P&L model",
+          "Measurement standards and report templates",
+          "Operating procedures"
+        ]
+      },
+      "policy": {
+        "name": "Ad policy and privacy compliance",
+        "short": "Policy reviews, help with rejections, consent management, ads.txt and privacy policies.",
+        "lead": "A safe account comes before revenue. We find policy risks early, and when an application is rejected or an account is limited, we find the cause and respond.",
+        "who": [
+          "Your ad approval was rejected or your account was limited",
+          "You need consent management for visitors from other regions",
+          "Your privacy policy must be updated before ads go live"
+        ],
+        "scope": [
+          [
+            "Policy review",
+            "Policy risks in content, ad placement and traffic sources."
+          ],
+          [
+            "Rejections and limits",
+            "Cause analysis, fixes and review requests."
+          ],
+          [
+            "Consent management",
+            "Regional consent notices linked to your ad settings."
+          ],
+          [
+            "Required files and documents",
+            "ads.txt, app-ads.txt, privacy policy and cookie notice."
+          ]
+        ],
+        "deliver": [
+          "Policy checklist",
+          "Response record",
+          "Consent management setup",
+          "Required files and documents"
+        ]
+      },
+      "ops": {
+        "name": "Ad operations and reporting advisory",
+        "short": "Every month we read the revenue metrics, run tests and fix what needs fixing, including invalid traffic and payout gaps.",
+        "lead": "Ad revenue is not a one-time setup. We review the metrics every month and keep only the changes that tests have proven.",
+        "who": [
+          "Your ad revenue swings sharply from month to month",
+          "You combine reports from several platforms by hand",
+          "Nobody on your team owns ad operations"
+        ],
+        "scope": [
+          [
+            "Monthly review",
+            "Changes in revenue, impressions, pricing and fill rate, and why they happened."
+          ],
+          [
+            "Testing",
+            "Comparison tests of placements, ad formats and price rules."
+          ],
+          [
+            "Unified reporting",
+            "Revenue from every platform in one report."
+          ],
+          [
+            "Quality checks",
+            "Invalid traffic, ad quality and payout discrepancies."
+          ]
+        ],
+        "deliver": [
+          "Monthly operations report",
+          "Test log",
+          "Unified report",
+          "Improvement backlog"
+        ]
+      }
+    }
   },
 
   why: [
-    ['Multilingual from the start', 'Multilingual structure goes in at the design stage, so adding a language later never means rebuilding.'],
-    ['Scope agreed first', 'Features, schedule and cost are fixed in writing before work starts. Any change is agreed before it is built.'],
-    ['You own the code and accounts', 'Source code, domains, store and cloud accounts are created in your name and handed over.'],
-    ['Tests are part of delivery', 'Automated tests for core features and missing-string checks per language are included.'],
-    ['Weekly progress', 'Every week you see working screens and what is left.'],
-    ['Only the data needed', 'Personal data is limited to what features need, processed on the device wherever possible.'],
+    [
+      "Revenue balanced with user experience",
+      "Instead of adding more ads, we find placements that keep pages fast and journeys smooth."
+    ],
+    [
+      "Measured, not guessed",
+      "We record baseline numbers before we start and compare every change on the same basis."
+    ],
+    [
+      "Independent advice",
+      "We take no referral fees from ad platforms, so we compare the options on equal terms."
+    ],
+    [
+      "Policy compliance first",
+      "We grow revenue only within ad policies and privacy rules. No click baiting, no invalid traffic."
+    ],
+    [
+      "Your accounts, your data",
+      "Ad accounts, payment details and reports are created and kept in your name."
+    ],
+    [
+      "Weekly updates",
+      "Every week we share what changed, how the numbers moved and what comes next."
+    ]
   ],
 
   steps: [
-    ['Consultation', 'Goals, target markets and deadlines.'],
-    ['Scope and quote', 'Feature list, schedule and cost in writing.'],
-    ['Demo', 'Core screens and flows working first.'],
-    ['Build and test', 'Weekly updates, automated tests.'],
-    ['Localize and launch', 'Pages per language, store and search registration.'],
-    ['Operate and improve', 'Metrics, error response, growth.'],
+    [
+      "First call",
+      "Your service, traffic size and goals."
+    ],
+    [
+      "Assessment",
+      "Placements, settings and revenue metrics reviewed, baselines recorded."
+    ],
+    [
+      "Design",
+      "Ad platforms, placements and a compliance plan."
+    ],
+    [
+      "Setup and testing",
+      "Changes applied and compared before and after."
+    ],
+    [
+      "Approval and launch",
+      "Policy reviews, consent management and required files."
+    ],
+    [
+      "Operations",
+      "Monthly reviews, tests and reports."
+    ]
   ],
 
-  cta: { title: 'Start a project', text: 'Email us what you want to build, your target markets and your timeline.' },
+  cta: {
+    "title": "Talk to us about ad revenue",
+    "text": "Email us your website or app, your monthly traffic and the problem you are facing."
+  },
 
   products: {
     title: 'Products',
@@ -249,59 +464,151 @@ export default {
   },
 
   about: {
-    title: 'About',
-    desc: 'About EarnToLink (언투링크): a software business that connects markets and the world. Mission, services, principles and business details.',
-    eyebrow: 'About', h1: 'EarnToLink', lead: 'EarnToLink (언투링크) is a software business that connects markets and the world.',
-    mission: {
-      eyebrow: 'Mission', title: 'Connecting markets and the world',
-      body: [
-        'Good products and services often stay locked inside one country and one language. EarnToLink builds the software that bridges that gap.',
-        'We build products, make operations lighter with AI and automation, and bring them to global markets through many languages and app stores. After launch we keep improving them from the data.',
-        'We build our own apps to the same standard. Status is shown as it is: products not yet released are marked coming soon.',
-      ],
+    "title": "About",
+    "desc": "About EarnToLink: a consulting business that helps websites, apps and commerce platforms earn from advertising. Mission, services, principles and business details.",
+    "eyebrow": "About",
+    "h1": "EarnToLink",
+    "lead": "EarnToLink is an ad revenue consulting business that designs how companies earn from advertising.",
+    "mission": {
+      "eyebrow": "Mission",
+      "title": "Advertising that strengthens the business",
+      "body": [
+        "Many businesses build good content and services yet earn little from ads. Placements do not fit, settings are out of date, or a policy problem is holding revenue back.",
+        "EarnToLink measures where you stand, chooses the right ad platforms and placements, and supports day-to-day operations within policy and privacy rules. We show you the results of every change on the same baseline.",
+        "Drawing on our own experience of building and running websites and apps, we hold to one principle: monetization must not spoil the user experience."
+      ]
     },
-    do: { eyebrow: 'Services', title: 'What we do', text: 'Registered business: application software development and supply (primary), e-commerce retail, e-commerce retail brokerage.' },
-    why: { eyebrow: 'Principles', title: 'How we work' },
-    info: { eyebrow: 'Company', title: 'Business details' },
+    "do": {
+      "eyebrow": "Services",
+      "title": "What we do",
+      "text": "Registered business types: application software development and supply (main), e-commerce retail, e-commerce retail brokerage."
+    },
+    "why": {
+      "eyebrow": "Principles",
+      "title": "Our principles"
+    },
+    "info": {
+      "eyebrow": "Company",
+      "title": "Business information"
+    }
   },
 
   principles: {
-    title: 'How we work',
-    desc: 'How EarnToLink works: multilingual from the start, scope agreed first, you own the code and accounts, tests included. Process and contract terms.',
-    eyebrow: 'How we work', h1: 'How we work', lead: 'Principles, process and contract terms.',
-    why: { eyebrow: 'Principles', title: 'Six commitments', text: 'Applied to every project.' },
-    steps: { eyebrow: 'Process', title: 'Steps', text: 'From consultation to operations.' },
-    terms: { eyebrow: 'Contracts', title: 'Contract and pricing terms', rows: [
-      ['Projects', 'Scope, schedule, cost and payment terms fixed in a contract for each project'],
-      ['Scope changes', 'Changes and their cost are agreed before work proceeds'],
-      ['Ownership', 'Source code and accounts transferred to the client once payment is complete'],
-      ['Our apps', 'One-time purchase · ₩10,000 or less per app · no subscription · paid through each app store'],
-    ] },
+    "title": "How we work",
+    "desc": "How EarnToLink works: revenue balanced with user experience, measured results, independent advice and policy compliance. Steps and contract terms.",
+    "eyebrow": "How we work",
+    "h1": "How we work",
+    "lead": "Principles, steps and contract terms.",
+    "why": {
+      "eyebrow": "Principles",
+      "title": "Six principles",
+      "text": "Applied to every engagement."
+    },
+    "steps": {
+      "eyebrow": "Process",
+      "title": "Steps",
+      "text": "From first call to operations."
+    },
+    "terms": {
+      "eyebrow": "Contracts",
+      "title": "Contract terms",
+      "rows": [
+        [
+          "Projects",
+          "A contract for each project sets the scope, schedule, fee and payment terms"
+        ],
+        [
+          "Scope changes",
+          "Changes and their cost are agreed before work continues"
+        ],
+        [
+          "Ownership",
+          "Ad accounts, reports and setup documents stay in your name"
+        ],
+        [
+          "Fees",
+          "No referral fees from ad platforms · advisory fees are stated in the contract"
+        ]
+      ]
+    }
   },
 
   contact: {
-    title: 'Contact',
-    desc: `Contact EarnToLink about projects, products, privacy or partnerships: ${EMAIL}`,
-    eyebrow: 'Contact', h1: 'Contact', lead: 'By email. We reply in Korean or English.',
-    topics: [
-      ['code', 'Projects', 'Product development, AI automation, localization, app store launch, commerce, operations'],
-      ['package', 'Products', 'Features, release dates and bugs in our apps'],
-      ['receipt', 'Payments', 'App payments and refunds follow each app store\'s policy'],
-      ['shield', 'Privacy', 'Requests to access, correct, delete or stop processing'],
-      ['users', 'Partnerships', 'Collaboration and other proposals'],
+    "title": "Contact",
+    "desc": "Contact EarnToLink about ad revenue consulting, products, privacy or partnerships. hello@earntolink.com",
+    "eyebrow": "Contact",
+    "h1": "Contact",
+    "lead": "We take enquiries by email and reply in Korean or English.",
+    "topics": [
+      [
+        "chart",
+        "Consulting",
+        "Ad revenue assessment, web and app monetization, retail media, policy issues, operations advice"
+      ],
+      [
+        "package",
+        "Products",
+        "Features, release dates and bugs in our own apps"
+      ],
+      [
+        "receipt",
+        "Payments",
+        "App payments and refunds follow each app store's policy"
+      ],
+      [
+        "shield",
+        "Privacy",
+        "Requests to access, correct, delete or stop processing personal data"
+      ],
+      [
+        "users",
+        "Partnerships",
+        "Collaboration and other proposals"
+      ]
     ],
-    brief: { title: 'Helpful to include in a project inquiry', items: ['What you want to build and why', 'Target markets and languages', 'Preferred timeline', 'Reference services or materials'] },
+    "brief": {
+      "title": "Helpful details to include",
+      "items": [
+        "What you run (website, app or commerce platform) and its address",
+        "Monthly visitors or active users",
+        "The ad platforms you use now and the problems you see",
+        "Your preferred timeline"
+      ]
+    }
   },
 
   news: {
-    'business-areas': { title: 'Our service areas', summary: 'Product development, AI transformation, localization, app store launch, commerce, operations.',
-      body: ['An overview of EarnToLink service areas.', 'There are six: product development, AI transformation and automation, localization and global expansion, global app store launch, commerce and cross-border sales, and operations and growth.', 'Project inquiries go to hello@earntolink.com.'] },
-    'earntolink-com-launch': { title: 'earntolink.com is live', summary: 'The EarnToLink website is live in 14 languages.',
-      body: ['The EarnToLink website, earntolink.com, is now live.', 'It covers our service areas, in-house products, company details, privacy policy and contact information.', 'It is available in Korean, English, Japanese, Chinese (Simplified and Traditional), Spanish, French, German, Portuguese, Italian, Vietnamese, Indonesian, Thai and Russian.'] },
-    'product-lineup': { title: 'Our in-house products', summary: 'Two mobile apps and three desktop apps.',
-      body: ['The current status of our in-house products.', 'The mobile apps Roll Tidy and Roll Flick and the desktop apps Space Map, Dupeless and Archive Fix are coming soon.'] },
+    "ad-consulting": {
+      "title": "EarnToLink refocuses on ad revenue consulting",
+      "summary": "Assessment and strategy, web and app monetization, retail media, policy compliance and operations advice.",
+      "body": [
+        "EarnToLink has refocused its services on ad revenue consulting.",
+        "We now offer six services: ad revenue assessment and strategy, website and media monetization, app monetization, retail media and ad platform development, ad policy and privacy compliance, and ad operations and reporting advisory.",
+        "For consultations, email hello@earntolink.com."
+      ]
+    },
+    "earntolink-com-launch": {
+      "title": "earntolink.com is live",
+      "summary": "The EarnToLink website is now available in 14 languages.",
+      "body": [
+        "The EarnToLink website, earntolink.com, is now live.",
+        "It covers our services, our own products, company details, our privacy policy and how to contact us.",
+        "It is available in Korean, English, Japanese, Chinese (Simplified and Traditional), Spanish, French, German, Portuguese, Italian, Vietnamese, Indonesian, Thai and Russian."
+      ]
+    },
+    "product-lineup": {
+      "title": "Our own products",
+      "summary": "Two mobile apps and three desktop apps.",
+      "body": [
+        "An update on our own products.",
+        "The mobile apps Roll Tidy and Roll Flick and the desktop apps Space Map, Dupeless and Archive Fix are being prepared for release."
+      ]
+    }
   },
-  newsPage: { title: 'News', desc: 'EarnToLink news: service areas, website launch and product status.' },
+  newsPage: {
+    "title": "News",
+    "desc": "EarnToLink news: service update, website launch and product status."
+  },
 
   privacy: {
     title: 'Privacy Policy',
@@ -330,8 +637,8 @@ export default {
     sections: [
       { id: 'purpose', h: '1. Purpose', html: '<p>These terms set the conditions for using earntolink.com, the website operated by EarnToLink.</p>' },
       { id: 'content', h: '2. Content rights', html: '<p>Rights to the text, images and code on this site belong to EarnToLink. Third-party trademarks shown here belong to their owners.</p>' },
-      { id: 'accuracy', h: '3. Product and service information', html: '<p>Product status, features and service descriptions are accurate as of writing. Features, prices and schedules of products not yet released may change.</p>' },
-      { id: 'projects', h: '4. Project contracts', html: '<p>Development, automation, localization, launch and operations services follow the contract for each project. If these terms and a contract differ, the contract prevails.</p>' },
+      { id: 'accuracy', h: '3. Product and service information', html: "<p>Product status, features and service descriptions are accurate as of writing. Features, prices and schedules of products not yet released may change.</p>" },
+      { id: 'projects', h: '4. Project contracts', html: "<p>Assessment, consulting, ad setup and operations advisory services follow the contract for each project. If these terms and a contract differ, the contract prevails. Ad revenue depends on the ad market and platform policies, and any estimates in our assessments or proposals are not guarantees.</p>" },
       { id: 'apps', h: '5. Use of apps', html: '<p>Each app is also subject to the terms of the store it is distributed through (App Store, Google Play, Microsoft Store and others) and its own notices.</p>' },
       { id: 'links', h: '6. External links', html: '<p>External sites are governed by their own terms and policies.</p>' },
       { id: 'liability', h: '7. Limitation of liability', html: '<p>To the extent permitted by law, EarnToLink is not liable for indirect damages arising from use of this site.</p>' },
@@ -340,5 +647,13 @@ export default {
     ],
   },
 
-  og: { h: 'Connecting markets and the world.', s: 'Product development · AI transformation · Localization<br>App store launch · Commerce · Operations', tags: ['Web · App · Desktop', 'AI · Automation', '14 languages'] },
+  og: {
+    "h": "Ad revenue, designed properly.",
+    "s": "Ad revenue assessment · Web and app monetization<br>Retail media · Policy compliance · Operations",
+    "tags": [
+      "Websites and media",
+      "Mobile apps",
+      "Commerce"
+    ]
+  },
 };

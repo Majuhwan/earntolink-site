@@ -9,20 +9,20 @@ const ONE_TIME = 'Mua một lần · tối đa ₩10,000';
 export default {
   brand: 'EarnToLink',
   brandAlt: '언투링크',
-  slogan: 'Kết nối thị trường với thế giới.',
+  slogan: "Doanh thu quảng cáo, thiết kế bài bản.",
   translationNote: 'Trang này là bản dịch. Nếu có khác biệt so với bản gốc tiếng Hàn, bản gốc tiếng Hàn được ưu tiên áp dụng.',
 
   ui: {
     skip: 'Chuyển đến nội dung', menu: 'Menu', language: 'Ngôn ngữ', mainNav: 'Chính', breadcrumb: 'Đường dẫn', toc: 'Mục lục', homeAria: 'Trang chủ EarnToLink',
-    nav: { services: 'Dịch vụ', products: 'Sản phẩm', about: 'Giới thiệu', principles: 'Cách chúng tôi làm việc', news: 'Tin tức', contact: 'Liên hệ' },
+    nav: { services: "Dịch vụ", products: 'Sản phẩm', about: 'Giới thiệu', principles: 'Cách chúng tôi làm việc', news: 'Tin tức', contact: 'Liên hệ' },
     home: 'Trang chủ', privacy: 'Chính sách quyền riêng tư', terms: 'Điều khoản', rss: 'RSS',
-    footer: { services: 'Dịch vụ', products: 'Sản phẩm', company: 'Công ty', policy: 'Chính sách' },
+    footer: { services: "Dịch vụ", products: 'Sản phẩm', company: 'Công ty', policy: 'Chính sách' },
     biz: { name: 'Tên doanh nghiệp', rep: 'Người đại diện', no: 'Mã số đăng ký kinh doanh', tax: 'Loại thuế', kinds: 'Ngành nghề', mail: 'Email' },
     rights: '© 2026 EarnToLink. Bảo lưu mọi quyền.',
-    view: 'Chi tiết', all: 'Tất cả sản phẩm', allServices: 'Tất cả dịch vụ', email: 'Email', mailBtn: 'Gửi email cho chúng tôi', projectBtn: 'Bắt đầu dự án',
+    view: 'Chi tiết', all: 'Tất cả sản phẩm', allServices: "Tất cả dịch vụ", email: 'Email', mailBtn: 'Gửi email cho chúng tôi', projectBtn: "Đặt lịch tư vấn",
     platform: 'Nền tảng', status: 'Trạng thái', features: 'Tính năng', specs: 'Thông số', related: 'Sản phẩm khác', privacyNote: 'Quyền riêng tư',
     productIllustration: 'Hình minh họa sản phẩm: ',
-    heroLabel: 'Hình minh họa EarnToLink kết nối với các thị trường bằng 14 ngôn ngữ',
+    heroLabel: 'Hình minh họa bảng điều khiển doanh thu quảng cáo từ website, ứng dụng và thương mại điện tử',
     newsFeedTitle: 'Tin tức EarnToLink', newsFeedDesc: 'Tin tức từ EarnToLink (언투링크)',
     notFound: { title: 'Không tìm thấy trang', text: 'Địa chỉ đã thay đổi hoặc trang không tồn tại.', home: 'Về trang chủ' },
   },
@@ -41,121 +41,336 @@ export default {
   },
 
   home: {
-    title: 'EarnToLink (언투링크) | Kết nối thị trường với thế giới',
-    desc: 'EarnToLink kết nối thị trường với thế giới: phát triển sản phẩm web, di động và máy tính, chuyển đổi AI và tự động hóa, bản địa hóa sang 14 ngôn ngữ, ra mắt trên các kho ứng dụng toàn cầu, tích hợp và vận hành thương mại.',
-    eyebrow: 'Phần mềm · Chuyển đổi AI · Mở rộng toàn cầu',
-    h1: 'Kết nối thị trường<br>với thế giới.',
-    lead: 'Từ lên kế hoạch, phát triển đến tự động hóa AI, bản địa hóa và ra mắt trên các kho ứng dụng toàn cầu, một đội ngũ đồng hành cùng sản phẩm của bạn đến cùng.',
-    meta: ['Web · Di động · Máy tính', 'AI · Tự động hóa', '14 ngôn ngữ'],
-    stats: [['14', 'Ngôn ngữ website'], ['6', 'Lĩnh vực dịch vụ'], ['5', 'Sản phẩm tự phát triển'], ['4', 'Kho ứng dụng phát hành']],
-    services: { eyebrow: 'Dịch vụ', title: 'Sáu lĩnh vực dịch vụ', text: 'Chúng tôi xây dựng, tự động hóa, đưa ra thế giới và giúp sản phẩm tiếp tục phát triển.' },
-    why: { eyebrow: 'Vì sao chọn EarnToLink', title: 'Hướng đến thị trường toàn cầu ngay từ đầu', text: 'Sáu cam kết chúng tôi giữ trong mọi dự án.' },
-    how: { eyebrow: 'Quy trình', title: 'Từ buổi trao đổi đầu tiên đến vận hành', text: 'Sáu bước, mỗi bước được xác nhận trước khi sang bước tiếp theo.' },
-    apps: { eyebrow: 'Sản phẩm tự phát triển', title: 'Sản phẩm do chúng tôi tự xây dựng', text: 'Các ứng dụng của riêng chúng tôi, làm theo cùng tiêu chuẩn với dự án cho khách hàng. Tất cả sắp ra mắt.' },
-    co: { eyebrow: 'Công ty', title: 'EarnToLink', text: 'Doanh nghiệp cá nhân tại Hàn Quốc. Phát triển và cung cấp phần mềm ứng dụng.' },
-    news: { eyebrow: 'Tin tức', title: 'Tin mới nhất' },
+    "title": "EarnToLink | Tư vấn doanh thu quảng cáo cho website, ứng dụng và nền tảng thương mại",
+    "desc": "EarnToLink là đơn vị tư vấn doanh thu quảng cáo. Chúng tôi đánh giá và thiết kế cách website, ứng dụng và nền tảng thương mại tạo thu nhập từ quảng cáo: lựa chọn và cấu hình nền tảng, tuân thủ chính sách và quyền riêng tư, retail media và vận hành quảng cáo thường xuyên.",
+    "eyebrow": "Tư vấn nền tảng doanh thu quảng cáo cho doanh nghiệp",
+    "h1": "Doanh thu quảng cáo,<br>thiết kế bài bản.",
+    "lead": "Chúng tôi giúp website, ứng dụng và nền tảng thương mại tạo nguồn thu ổn định từ quảng cáo. Chúng tôi đánh giá hiện trạng của Quý khách, chọn nền tảng và vị trí quảng cáo phù hợp, rồi đồng hành qua các đợt rà soát chính sách và công tác vận hành hằng ngày.",
+    "meta": [
+      "Website và truyền thông",
+      "Ứng dụng di động",
+      "Thương mại và retail media"
+    ],
+    "stats": [
+      [
+        "6",
+        "Lĩnh vực tư vấn"
+      ],
+      [
+        "3",
+        "Kênh doanh thu: web, ứng dụng, thương mại"
+      ],
+      [
+        "6",
+        "Bước trong mỗi dự án"
+      ],
+      [
+        "14",
+        "Ngôn ngữ của website"
+      ]
+    ],
+    "services": {
+      "eyebrow": "Dịch vụ",
+      "title": "Sáu lĩnh vực tư vấn",
+      "text": "Từ đánh giá, cấu hình nền tảng đến rà soát chính sách và vận hành. Quý khách chỉ cần chọn phần mình cần."
+    },
+    "why": {
+      "eyebrow": "Vì sao chọn EarnToLink",
+      "title": "Doanh thu và uy tín, cùng được bảo vệ",
+      "text": "Sáu nguyên tắc chúng tôi giữ trong mọi dự án."
+    },
+    "how": {
+      "eyebrow": "Quy trình",
+      "title": "Từ cuộc trao đổi đầu tiên đến vận hành lâu dài",
+      "text": "Sáu bước, mỗi bước đều được đối chiếu với số liệu trước khi sang bước tiếp theo."
+    },
+    "co": {
+      "eyebrow": "Công ty",
+      "title": "EarnToLink",
+      "text": "Doanh nghiệp cá nhân tại Hàn Quốc. Tư vấn doanh thu quảng cáo và phát triển phần mềm."
+    },
+    "news": {
+      "eyebrow": "Tin tức",
+      "title": "Tin mới nhất"
+    }
   },
 
   services: {
-    title: 'Dịch vụ',
-    desc: 'Dịch vụ của EarnToLink: phát triển sản phẩm, chuyển đổi AI và tự động hóa, bản địa hóa, ra mắt trên kho ứng dụng toàn cầu, thương mại và bán hàng xuyên biên giới, vận hành và tăng trưởng.',
-    eyebrow: 'Dịch vụ', h1: 'Dịch vụ', lead: 'Sáu lĩnh vực. Chỉ chọn những gì bạn cần.',
-    whoLabel: 'Phù hợp khi', scopeLabel: 'Chúng tôi làm gì', deliverLabel: 'Sản phẩm bàn giao', otherLabel: 'Dịch vụ khác',
-    items: {
-      product: {
-        name: 'Phát triển sản phẩm', short: 'Dịch vụ web, ứng dụng di động, ứng dụng máy tính và hệ thống nội bộ, từ lên kế hoạch đến ra mắt.',
-        lead: 'Chúng tôi biến ý tưởng thành sản phẩm mà người dùng thực sự dùng. Lên kế hoạch, thiết kế màn hình, thiết kế hình ảnh, phát triển và kiểm thử diễn ra như một quy trình liền mạch.',
-        who: ['Bạn đang xây dựng một dịch vụ mới từ đầu', 'Bạn muốn ra mắt quy mô nhỏ trước để thử thị trường', 'Bạn muốn chuyển công việc từ bảng tính và chat sang một hệ thống thực thụ'],
-        scope: [
-          ['Dịch vụ web', 'Website dịch vụ, tài khoản và thanh toán, trang quản trị.'],
-          ['Ứng dụng di động', 'Ứng dụng Android và iOS, xây dựng từ một mã nguồn chung.'],
-          ['Ứng dụng máy tính', 'Ứng dụng Windows và macOS, gồm cả công cụ về tệp và ổ đĩa.'],
-          ['Hệ thống nội bộ', 'Quản lý công việc, quyết toán, kho hàng và công cụ chăm sóc khách hàng.'],
+    "title": "Dịch vụ",
+    "desc": "Dịch vụ của EarnToLink: đánh giá và chiến lược doanh thu quảng cáo, kiếm tiền cho website và truyền thông, kiếm tiền cho ứng dụng, retail media và phát triển nền tảng quảng cáo, tuân thủ chính sách quảng cáo và quyền riêng tư, vận hành và báo cáo quảng cáo.",
+    "eyebrow": "Dịch vụ",
+    "h1": "Dịch vụ",
+    "lead": "Sáu lĩnh vực. Quý khách chỉ chọn phần cần thiết.",
+    "whoLabel": "Phù hợp khi",
+    "scopeLabel": "Chúng tôi làm gì",
+    "deliverLabel": "Quý khách nhận được",
+    "otherLabel": "Dịch vụ khác",
+    "items": {
+      "strategy": {
+        "name": "Đánh giá và chiến lược doanh thu quảng cáo",
+        "short": "Rà soát lưu lượng truy cập, vị trí quảng cáo, cấu hình nền tảng và chỉ số doanh thu, từ đó định hướng mô hình doanh thu.",
+        "lead": "Trước hết, chúng tôi xác định doanh thu quảng cáo đến từ đâu và thất thoát ở đâu. Số liệu được ghi nhận trên một mốc chuẩn thống nhất, sau đó chúng tôi xếp thứ tự ưu tiên và lập kế hoạch hành động.",
+        "who": [
+          "Quý khách đang chạy quảng cáo nhưng thu nhập thấp hơn kỳ vọng",
+          "Quý khách đang cân nhắc đổi hoặc bổ sung nền tảng quảng cáo",
+          "Doanh thu quảng cáo cần được đưa vào kế hoạch kinh doanh"
         ],
-        deliver: ['Danh sách tính năng và thiết kế màn hình', 'Mã nguồn và cấu hình triển khai', 'Kiểm thử tự động', 'Hướng dẫn vận hành'],
-      },
-      ax: {
-        name: 'Chuyển đổi AI và tự động hóa', short: 'Tác tử AI và tự động hóa giúp giảm công việc lặp lại và thay đổi cách đội ngũ vận hành.',
-        lead: 'Chúng tôi tìm ra những công việc lặp lại và chuyển sang AI và tự động hóa. Một bản demo nhỏ hoạt động được sẽ chứng minh hiệu quả trước khi phát triển đầy đủ.',
-        who: ['Đội ngũ của bạn lặp lại cùng những câu trả lời hỗ trợ, tài liệu hoặc việc làm sạch dữ liệu', 'Bạn muốn tìm kiếm tài liệu và dữ liệu nội bộ bằng AI', 'Mọi người phải sao chép cùng một thông tin giữa nhiều công cụ'],
-        scope: [
-          ['Tác tử AI', 'Trả lời bước đầu, tóm tắt, soạn thảo và phân loại.'],
-          ['Tự động hóa tài liệu và dữ liệu', 'Đọc biểu mẫu, làm sạch bảng dữ liệu, tạo báo cáo.'],
-          ['Tìm kiếm tri thức nội bộ', 'Câu trả lời dựa trên chính tài liệu của bạn (RAG).'],
-          ['Tích hợp công cụ', 'Liên kết tự động giữa email, chat, bảng tính và hệ thống nội bộ.'],
+        "scope": [
+          [
+            "Rà soát hiện trạng",
+            "Cơ cấu lưu lượng, vị trí quảng cáo, cấu hình nền tảng và dòng doanh thu."
+          ],
+          [
+            "Chỉ số then chốt",
+            "Mốc chuẩn cho RPM trang, tỷ lệ hiển thị, tỷ lệ lấp đầy và khả năng hiển thị."
+          ],
+          [
+            "Mô hình doanh thu",
+            "Cách phối hợp phù hợp giữa quảng cáo, tiếp thị liên kết, gói đăng ký và quảng cáo bán trực tiếp."
+          ],
+          [
+            "Kế hoạch hành động",
+            "Thứ tự ưu tiên, tiến độ và tác động dự kiến của từng hạng mục cải thiện."
+          ]
         ],
-        deliver: ['Đánh giá quy trình làm việc', 'Một bản demo hoạt động được', 'Tự động hóa vận hành thực tế và hướng dẫn sử dụng', 'Chỉ số để đo hiệu quả'],
+        "deliver": [
+          "Báo cáo đánh giá",
+          "Bảng mốc chuẩn các chỉ số",
+          "Đề xuất mô hình doanh thu",
+          "Kế hoạch hành động theo giai đoạn"
+        ]
       },
-      localization: {
-        name: 'Bản địa hóa và mở rộng toàn cầu', short: 'Đưa dịch vụ của bạn sang từ 14 ngôn ngữ trở lên và được tìm thấy ở từng quốc gia.',
-        lead: 'Không chỉ là dịch thuật. Chúng tôi điều chỉnh cấu trúc ngôn ngữ, định dạng ngày, số và tiền tệ, cùng khả năng hiển thị trên công cụ tìm kiếm theo từng quốc gia.',
-        who: ['Dịch vụ của bạn chỉ có một ngôn ngữ và bạn muốn mở ra nước ngoài', 'Bạn đã dịch nhưng công cụ tìm kiếm nước ngoài không tìm thấy bạn', 'Bạn cần thanh toán và định dạng khác nhau theo từng quốc gia'],
-        scope: [
-          ['Cấu trúc đa ngôn ngữ', 'Trích xuất chuỗi văn bản, chuyển đổi ngôn ngữ, URL theo từng ngôn ngữ.'],
-          ['SEO đa ngôn ngữ', 'hreflang, sitemap theo từng ngôn ngữ, đăng ký với công cụ tìm kiếm.'],
-          ['Định dạng địa phương', 'Ngày, số, tiền tệ và địa chỉ.'],
-          ['Kiểm soát chất lượng bản dịch', 'Bảng thuật ngữ và kiểm tra tự động các chuỗi bị thiếu theo từng ngôn ngữ.'],
+      "web": {
+        "name": "Kiếm tiền cho website và truyền thông",
+        "short": "Chuẩn bị hồ sơ xét duyệt, thiết kế vị trí quảng cáo và cân bằng giữa tốc độ tải trang với doanh thu cho blog, trang tin và trang thông tin.",
+        "lead": "Thay vì thêm nhiều quảng cáo hơn, chúng tôi tìm những vị trí không làm gián đoạn việc đọc. Chúng tôi phụ trách toàn bộ từ chuẩn bị xét duyệt, thiết kế vị trí đến cấu hình programmatic.",
+        "who": [
+          "Quý khách đang chuẩn bị cho đợt xét duyệt của nền tảng quảng cáo",
+          "Quảng cáo làm trang tải chậm hơn hoặc tăng tỷ lệ thoát",
+          "Quý khách muốn chạy song song nhiều mạng quảng cáo"
         ],
-        deliver: ['Trang và URL theo từng ngôn ngữ', 'Bảng thuật ngữ', 'Công cụ kiểm tra chuỗi theo từng ngôn ngữ', 'Đăng ký với công cụ tìm kiếm'],
-      },
-      launch: {
-        name: 'Ra mắt trên kho ứng dụng toàn cầu', short: 'Ra mắt và xử lý quy trình duyệt trên App Store, Google Play, Microsoft Store và Mac App Store.',
-        lead: 'Chúng tôi lo việc đăng ký lên kho ứng dụng, phản hồi kết quả duyệt và trang cửa hàng bằng từng ngôn ngữ, rồi tiếp tục phát hành bản cập nhật sau khi ra mắt.',
-        who: ['Bạn đã có ứng dụng nhưng việc đăng ký lên kho ứng dụng bị kẹt', 'Ứng dụng của bạn bị từ chối khi duyệt', 'Bạn cần trang cửa hàng cho từng quốc gia'],
-        scope: [
-          ['Đăng ký lên kho ứng dụng', 'Thiết lập tài khoản nhà phát triển, thông tin ứng dụng, xếp hạng độ tuổi, nhãn quyền riêng tư.'],
-          ['Xử lý quy trình duyệt', 'Kiểm tra chính sách, phân tích lý do bị từ chối, sửa và gửi lại.'],
-          ['Bản địa hóa trang cửa hàng', 'Mô tả và ảnh chụp màn hình theo từng ngôn ngữ.'],
-          ['Thiết lập thanh toán', 'Mua hàng trong ứng dụng, bậc giá, định giá theo quốc gia.'],
+        "scope": [
+          [
+            "Chuẩn bị xét duyệt",
+            "Kiểm tra cấu trúc site, các trang bắt buộc và chất lượng nội dung, sau đó nộp đăng ký."
+          ],
+          [
+            "Thiết kế vị trí",
+            "Vị trí, kích thước và khoảng cách quảng cáo theo mạch nội dung."
+          ],
+          [
+            "Tốc độ tải trang",
+            "Lazy loading và chống dịch chuyển bố cục để trang luôn nhanh."
+          ],
+          [
+            "Cấu hình programmatic",
+            "Thiết lập ad server, header bidding và quy tắc giá sàn."
+          ]
         ],
-        deliver: ['Ứng dụng của bạn được đăng trên các kho ứng dụng', 'Trang cửa hàng theo từng ngôn ngữ', 'Lịch sử duyệt', 'Quy trình phát hành bản cập nhật'],
+        "deliver": [
+          "Danh mục kiểm tra xét duyệt",
+          "Kế hoạch vị trí quảng cáo",
+          "Cấu hình quảng cáo và hướng dẫn triển khai",
+          "Báo cáo so sánh trước và sau"
+        ]
       },
-      commerce: {
-        name: 'Thương mại và bán hàng xuyên biên giới', short: 'Kết nối sản phẩm của bạn với khách hàng ở nước ngoài bằng kênh bán hàng và công cụ vận hành.',
-        lead: 'Chúng tôi xây dựng cửa hàng trực tuyến, dữ liệu sản phẩm đa ngôn ngữ cùng các tích hợp thanh toán, vận chuyển và kế toán mà việc bán hàng ra nước ngoài cần.',
-        who: ['Bạn đang bán trong nước và muốn bán ra nước ngoài', 'Bạn phải chỉnh sửa dữ liệu sản phẩm riêng cho từng kênh', 'Bạn đối chiếu đơn hàng, tồn kho và quyết toán thủ công'],
-        scope: [
-          ['Kênh bán hàng', 'Cửa hàng riêng của bạn được kết nối với các sàn thương mại điện tử nước ngoài.'],
-          ['Dữ liệu sản phẩm đa ngôn ngữ', 'Tên, mô tả, tùy chọn và bảng kích cỡ theo từng ngôn ngữ.'],
-          ['Đồng bộ đơn hàng và tồn kho', 'Tự động đồng bộ đơn hàng và hàng tồn kho giữa các kênh.'],
-          ['Quyết toán và báo cáo', 'Tự động tổng hợp doanh thu, phí và các khoản chi trả.'],
+      "app": {
+        "name": "Kiếm tiền cho ứng dụng",
+        "short": "Định dạng quảng cáo, mediation và tần suất hiển thị trong ứng dụng di động, thiết kế theo cách người dùng thực sự sử dụng.",
+        "lead": "Chúng tôi xác định thời điểm và vị trí xuất hiện của quảng cáo banner, interstitial và rewarded, đồng thời tăng doanh thu mà vẫn theo dõi sát tỷ lệ giữ chân người dùng.",
+        "who": [
+          "Quý khách lần đầu đưa quảng cáo vào ứng dụng",
+          "Điểm đánh giá hoặc tỷ lệ giữ chân giảm sau khi có quảng cáo",
+          "Quý khách muốn kết hợp nhiều mạng quảng cáo qua mediation"
         ],
-        deliver: ['Kênh bán hàng và các tích hợp', 'Dữ liệu sản phẩm đa ngôn ngữ', 'Đồng bộ đơn hàng và tồn kho', 'Báo cáo quyết toán'],
-      },
-      operate: {
-        name: 'Vận hành và tăng trưởng', short: 'Sau khi ra mắt: sửa lỗi, cải thiện tốc độ, thêm tính năng, rà soát chi phí.',
-        lead: 'Ra mắt chỉ là bắt đầu. Chúng tôi theo dõi các chỉ số, giảm lỗi, bổ sung những gì người dùng cần và kiểm soát chi phí hạ tầng.',
-        who: ['Bạn cần người tiếp quản một dịch vụ do đơn vị khác xây dựng', 'Lỗi và màn hình chậm cứ lặp lại', 'Chi phí máy chủ liên tục tăng'],
-        scope: [
-          ['Xử lý lỗi', 'Đọc nhật ký lỗi, tìm nguyên nhân, phát hành bản sửa.'],
-          ['Hiệu năng', 'Màn hình và truy vấn nhanh hơn.'],
-          ['Phát triển tính năng', 'Thêm và lược bớt tính năng dựa trên dữ liệu sử dụng.'],
-          ['Rà soát chi phí', 'Xem xét việc sử dụng đám mây và tiết kiệm chi phí.'],
+        "scope": [
+          [
+            "Thiết kế định dạng quảng cáo",
+            "Vị trí và thời điểm hiển thị của quảng cáo banner, interstitial, rewarded và native."
+          ],
+          [
+            "Mediation",
+            "Thiết lập thứ tự ưu tiên và đấu giá giữa các mạng quảng cáo."
+          ],
+          [
+            "Tần suất và trải nghiệm",
+            "Giới hạn tần suất, bảo vệ phiên đầu tiên và không hiển thị quảng cáo cho người dùng trả phí."
+          ],
+          [
+            "Quảng cáo song hành với mua hàng trong ứng dụng",
+            "Gói gỡ quảng cáo và cách kết hợp giữa quảng cáo rewarded với giao dịch mua."
+          ]
         ],
-        deliver: ['Báo cáo vận hành hằng tháng', 'Nhật ký xử lý lỗi', 'Các bản phát hành cải tiến', 'Kết quả rà soát chi phí'],
+        "deliver": [
+          "Sơ đồ vị trí quảng cáo",
+          "Kế hoạch thiết lập mediation",
+          "Tài liệu quy tắc tần suất",
+          "Bảng so sánh tỷ lệ giữ chân và doanh thu"
+        ]
       },
-    },
+      "retail": {
+        "name": "Retail media và phát triển nền tảng quảng cáo",
+        "short": "Hỗ trợ sàn thương mại và các nền tảng xây dựng sản phẩm cùng bộ máy vận hành quảng cáo để người bán và thương hiệu có thể quảng cáo trên nền tảng.",
+        "lead": "Chúng tôi biến lưu lượng và dữ liệu của nền tảng thành sản phẩm quảng cáo, đồng thời cùng Quý khách xây dựng chính sách giá, cách thức bán hàng và báo cáo hiệu quả.",
+        "who": [
+          "Quý khách muốn mở mảng kinh doanh quảng cáo trên sàn hoặc nền tảng của mình",
+          "Quý khách đang bán và xuất hóa đơn quảng cáo cho người bán bằng thủ công",
+          "Nhà quảng cáo yêu cầu báo cáo chứng minh hiệu quả"
+        ],
+        "scope": [
+          [
+            "Thiết kế sản phẩm quảng cáo",
+            "Các vị trí có thể bán như đầu trang tìm kiếm, sản phẩm được tài trợ, banner và email."
+          ],
+          [
+            "Định giá và bán hàng",
+            "Sản phẩm đấu giá, giá cố định và theo thời gian, kèm quy tắc định giá."
+          ],
+          [
+            "Dữ liệu và đo lường",
+            "Lượt hiển thị, lượt nhấp và ghi nhận chuyển đổi mua hàng, đo lường trong khuôn khổ quy định về quyền riêng tư."
+          ],
+          [
+            "Mô hình vận hành",
+            "Tiếp nhận nhà quảng cáo, duyệt quảng cáo, thanh toán và báo cáo hiệu quả."
+          ]
+        ],
+        "deliver": [
+          "Danh mục sản phẩm quảng cáo và bảng giá",
+          "Mô hình lãi lỗ của mảng quảng cáo",
+          "Tiêu chuẩn đo lường và mẫu báo cáo",
+          "Quy trình vận hành"
+        ]
+      },
+      "policy": {
+        "name": "Tuân thủ chính sách quảng cáo và quyền riêng tư",
+        "short": "Rà soát chính sách, hỗ trợ khi bị từ chối, quản lý sự đồng ý, ads.txt và chính sách quyền riêng tư.",
+        "lead": "Một tài khoản an toàn quan trọng hơn doanh thu. Chúng tôi phát hiện sớm rủi ro về chính sách, và khi đơn đăng ký bị từ chối hoặc tài khoản bị hạn chế, chúng tôi xác định nguyên nhân và phản hồi.",
+        "who": [
+          "Đơn xét duyệt quảng cáo của Quý khách bị từ chối hoặc tài khoản bị hạn chế",
+          "Quý khách cần quản lý sự đồng ý cho khách truy cập từ các khu vực khác",
+          "Chính sách quyền riêng tư cần cập nhật trước khi quảng cáo chạy chính thức"
+        ],
+        "scope": [
+          [
+            "Rà soát chính sách",
+            "Rủi ro chính sách trong nội dung, vị trí quảng cáo và nguồn lưu lượng."
+          ],
+          [
+            "Từ chối và hạn chế",
+            "Phân tích nguyên nhân, khắc phục và gửi yêu cầu xem xét lại."
+          ],
+          [
+            "Quản lý sự đồng ý",
+            "Thông báo đồng ý theo khu vực, liên kết với cấu hình quảng cáo."
+          ],
+          [
+            "Tệp và tài liệu bắt buộc",
+            "ads.txt, app-ads.txt, chính sách quyền riêng tư và thông báo cookie."
+          ]
+        ],
+        "deliver": [
+          "Danh mục kiểm tra chính sách",
+          "Hồ sơ phản hồi",
+          "Thiết lập quản lý sự đồng ý",
+          "Tệp và tài liệu bắt buộc"
+        ]
+      },
+      "ops": {
+        "name": "Vận hành và tư vấn báo cáo quảng cáo",
+        "short": "Mỗi tháng chúng tôi đọc chỉ số doanh thu, chạy thử nghiệm và xử lý những điểm cần sửa, kể cả lưu lượng không hợp lệ và chênh lệch thanh toán.",
+        "lead": "Doanh thu quảng cáo không phải là thiết lập một lần rồi thôi. Chúng tôi rà soát chỉ số hằng tháng và chỉ giữ lại những thay đổi đã được thử nghiệm chứng minh hiệu quả.",
+        "who": [
+          "Doanh thu quảng cáo của Quý khách biến động mạnh theo từng tháng",
+          "Quý khách đang tổng hợp báo cáo của nhiều nền tảng bằng thủ công",
+          "Chưa có ai trong đội ngũ phụ trách vận hành quảng cáo"
+        ],
+        "scope": [
+          [
+            "Rà soát hằng tháng",
+            "Biến động của doanh thu, lượt hiển thị, đơn giá và tỷ lệ lấp đầy, cùng nguyên nhân."
+          ],
+          [
+            "Thử nghiệm",
+            "Thử nghiệm so sánh vị trí, định dạng quảng cáo và quy tắc giá."
+          ],
+          [
+            "Báo cáo hợp nhất",
+            "Doanh thu từ mọi nền tảng trong một báo cáo duy nhất."
+          ],
+          [
+            "Kiểm tra chất lượng",
+            "Lưu lượng không hợp lệ, chất lượng quảng cáo và chênh lệch thanh toán."
+          ]
+        ],
+        "deliver": [
+          "Báo cáo vận hành hằng tháng",
+          "Nhật ký thử nghiệm",
+          "Báo cáo hợp nhất",
+          "Danh sách hạng mục cần cải thiện"
+        ]
+      }
+    }
   },
 
   why: [
-    ['Đa ngôn ngữ ngay từ đầu', 'Cấu trúc đa ngôn ngữ được đưa vào từ giai đoạn thiết kế, nên thêm ngôn ngữ về sau không bao giờ phải xây dựng lại.'],
-    ['Thống nhất phạm vi trước', 'Tính năng, tiến độ và chi phí được chốt bằng văn bản trước khi bắt đầu. Mọi thay đổi đều được thống nhất trước khi thực hiện.'],
-    ['Bạn sở hữu mã nguồn và tài khoản', 'Mã nguồn, tên miền, tài khoản kho ứng dụng và đám mây được tạo dưới tên bạn và bàn giao cho bạn.'],
-    ['Kiểm thử nằm trong bàn giao', 'Đã bao gồm kiểm thử tự động cho các tính năng cốt lõi và kiểm tra chuỗi bị thiếu theo từng ngôn ngữ.'],
-    ['Tiến độ hằng tuần', 'Mỗi tuần bạn được xem các màn hình đang hoạt động và phần việc còn lại.'],
-    ['Chỉ dữ liệu cần thiết', 'Dữ liệu cá nhân được giới hạn ở mức các tính năng cần, và xử lý trên thiết bị bất cứ khi nào có thể.'],
+    [
+      "Doanh thu hài hòa với trải nghiệm người dùng",
+      "Thay vì thêm quảng cáo, chúng tôi tìm những vị trí giữ cho trang nhanh và hành trình của người dùng liền mạch."
+    ],
+    [
+      "Đo lường, không phỏng đoán",
+      "Chúng tôi ghi nhận số liệu mốc chuẩn trước khi bắt đầu và so sánh mọi thay đổi trên cùng một cơ sở."
+    ],
+    [
+      "Tư vấn độc lập",
+      "Chúng tôi không nhận hoa hồng giới thiệu từ nền tảng quảng cáo, nên các phương án luôn được so sánh công bằng."
+    ],
+    [
+      "Tuân thủ chính sách trước hết",
+      "Chúng tôi chỉ tăng doanh thu trong khuôn khổ chính sách quảng cáo và quy định về quyền riêng tư. Không câu nhấp chuột, không lưu lượng không hợp lệ."
+    ],
+    [
+      "Tài khoản và dữ liệu thuộc về Quý khách",
+      "Tài khoản quảng cáo, thông tin thanh toán và báo cáo đều được tạo và lưu giữ dưới tên Quý khách."
+    ],
+    [
+      "Cập nhật hằng tuần",
+      "Mỗi tuần chúng tôi gửi báo cáo về những gì đã thay đổi, số liệu biến động ra sao và bước tiếp theo."
+    ]
   ],
 
   steps: [
-    ['Tư vấn', 'Mục tiêu, thị trường mục tiêu và thời hạn.'],
-    ['Phạm vi và báo giá', 'Danh sách tính năng, tiến độ và chi phí bằng văn bản.'],
-    ['Demo', 'Các màn hình và luồng cốt lõi chạy được trước tiên.'],
-    ['Xây dựng và kiểm thử', 'Cập nhật hằng tuần, kiểm thử tự động.'],
-    ['Bản địa hóa và ra mắt', 'Trang theo từng ngôn ngữ, đăng ký kho ứng dụng và công cụ tìm kiếm.'],
-    ['Vận hành và cải tiến', 'Chỉ số, xử lý lỗi, tăng trưởng.'],
+    [
+      "Trao đổi ban đầu",
+      "Dịch vụ, quy mô lưu lượng và mục tiêu của Quý khách."
+    ],
+    [
+      "Đánh giá",
+      "Rà soát vị trí quảng cáo, cấu hình và chỉ số doanh thu, ghi nhận mốc chuẩn."
+    ],
+    [
+      "Thiết kế",
+      "Nền tảng quảng cáo, vị trí hiển thị và kế hoạch tuân thủ."
+    ],
+    [
+      "Thiết lập và thử nghiệm",
+      "Áp dụng thay đổi và so sánh trước và sau."
+    ],
+    [
+      "Xét duyệt và triển khai",
+      "Rà soát chính sách, quản lý sự đồng ý và các tệp bắt buộc."
+    ],
+    [
+      "Vận hành",
+      "Rà soát hằng tháng, thử nghiệm và báo cáo."
+    ]
   ],
 
-  cta: { title: 'Bắt đầu dự án', text: 'Hãy gửi email cho chúng tôi về điều bạn muốn xây dựng, thị trường mục tiêu và mốc thời gian.' },
+  cta: {
+    "title": "Trao đổi với chúng tôi về doanh thu quảng cáo",
+    "text": "Vui lòng gửi email cho chúng tôi website hoặc ứng dụng của Quý khách, lưu lượng hằng tháng và vấn đề đang gặp phải."
+  },
 
   products: {
     title: 'Sản phẩm',
@@ -249,59 +464,151 @@ export default {
   },
 
   about: {
-    title: 'Giới thiệu',
-    desc: 'Giới thiệu về EarnToLink (언투링크): doanh nghiệp phần mềm kết nối thị trường với thế giới. Sứ mệnh, dịch vụ, nguyên tắc và thông tin doanh nghiệp.',
-    eyebrow: 'Giới thiệu', h1: 'EarnToLink', lead: 'EarnToLink (언투링크) là doanh nghiệp phần mềm kết nối thị trường với thế giới.',
-    mission: {
-      eyebrow: 'Sứ mệnh', title: 'Kết nối thị trường với thế giới',
-      body: [
-        'Những sản phẩm và dịch vụ tốt thường bị giữ lại trong một quốc gia và một ngôn ngữ. EarnToLink xây dựng phần mềm để thu hẹp khoảng cách đó.',
-        'Chúng tôi xây dựng sản phẩm, giúp vận hành nhẹ nhàng hơn bằng AI và tự động hóa, rồi đưa chúng đến thị trường toàn cầu qua nhiều ngôn ngữ và kho ứng dụng. Sau khi ra mắt, chúng tôi tiếp tục cải thiện dựa trên dữ liệu.',
-        'Chúng tôi cũng xây dựng ứng dụng của riêng mình theo cùng tiêu chuẩn. Trạng thái được hiển thị đúng như thực tế: sản phẩm chưa phát hành được ghi là sắp ra mắt.',
-      ],
+    "title": "Giới thiệu",
+    "desc": "Giới thiệu EarnToLink: đơn vị tư vấn giúp website, ứng dụng và nền tảng thương mại tạo thu nhập từ quảng cáo. Sứ mệnh, dịch vụ, nguyên tắc và thông tin doanh nghiệp.",
+    "eyebrow": "Giới thiệu",
+    "h1": "EarnToLink",
+    "lead": "EarnToLink là đơn vị tư vấn doanh thu quảng cáo, giúp doanh nghiệp thiết kế cách tạo thu nhập từ quảng cáo.",
+    "mission": {
+      "eyebrow": "Sứ mệnh",
+      "title": "Quảng cáo làm doanh nghiệp vững mạnh hơn",
+      "body": [
+        "Nhiều doanh nghiệp xây dựng được nội dung và dịch vụ tốt nhưng thu nhập từ quảng cáo vẫn thấp. Vị trí quảng cáo chưa phù hợp, cấu hình đã lỗi thời, hoặc một vấn đề chính sách đang kìm hãm doanh thu.",
+        "EarnToLink đo lường vị thế hiện tại của Quý khách, chọn nền tảng và vị trí quảng cáo phù hợp, đồng thời hỗ trợ vận hành hằng ngày trong khuôn khổ chính sách và quy định về quyền riêng tư. Kết quả của mỗi thay đổi đều được trình bày trên cùng một mốc chuẩn.",
+        "Dựa trên kinh nghiệm tự xây dựng và vận hành website, ứng dụng, chúng tôi giữ một nguyên tắc: kiếm tiền không được làm hỏng trải nghiệm người dùng."
+      ]
     },
-    do: { eyebrow: 'Dịch vụ', title: 'Chúng tôi làm gì', text: 'Ngành nghề đã đăng ký: phát triển và cung cấp phần mềm ứng dụng (chính), bán lẻ thương mại điện tử, môi giới bán lẻ thương mại điện tử.' },
-    why: { eyebrow: 'Nguyên tắc', title: 'Cách chúng tôi làm việc' },
-    info: { eyebrow: 'Công ty', title: 'Thông tin doanh nghiệp' },
+    "do": {
+      "eyebrow": "Dịch vụ",
+      "title": "Chúng tôi làm gì",
+      "text": "Ngành nghề đã đăng ký: phát triển và cung cấp phần mềm ứng dụng (chính), bán lẻ thương mại điện tử, môi giới bán lẻ thương mại điện tử."
+    },
+    "why": {
+      "eyebrow": "Nguyên tắc",
+      "title": "Nguyên tắc của chúng tôi"
+    },
+    "info": {
+      "eyebrow": "Công ty",
+      "title": "Thông tin doanh nghiệp"
+    }
   },
 
   principles: {
-    title: 'Cách chúng tôi làm việc',
-    desc: 'Cách EarnToLink làm việc: đa ngôn ngữ ngay từ đầu, thống nhất phạm vi trước, bạn sở hữu mã nguồn và tài khoản, đã bao gồm kiểm thử. Quy trình và điều khoản hợp đồng.',
-    eyebrow: 'Cách chúng tôi làm việc', h1: 'Cách chúng tôi làm việc', lead: 'Nguyên tắc, quy trình và điều khoản hợp đồng.',
-    why: { eyebrow: 'Nguyên tắc', title: 'Sáu cam kết', text: 'Áp dụng cho mọi dự án.' },
-    steps: { eyebrow: 'Quy trình', title: 'Các bước', text: 'Từ tư vấn đến vận hành.' },
-    terms: { eyebrow: 'Hợp đồng', title: 'Điều khoản hợp đồng và giá', rows: [
-      ['Dự án', 'Phạm vi, tiến độ, chi phí và điều kiện thanh toán được chốt trong hợp đồng cho từng dự án'],
-      ['Thay đổi phạm vi', 'Thay đổi và chi phí phát sinh được thống nhất trước khi tiếp tục công việc'],
-      ['Quyền sở hữu', 'Mã nguồn và tài khoản được chuyển giao cho khách hàng sau khi thanh toán hoàn tất'],
-      ['Ứng dụng của chúng tôi', 'Mua một lần · tối đa ₩10,000 mỗi ứng dụng · không đăng ký định kỳ · thanh toán qua từng kho ứng dụng'],
-    ] },
+    "title": "Cách chúng tôi làm việc",
+    "desc": "Cách EarnToLink làm việc: doanh thu hài hòa với trải nghiệm người dùng, kết quả đo lường được, tư vấn độc lập và tuân thủ chính sách. Các bước và điều khoản hợp đồng.",
+    "eyebrow": "Cách chúng tôi làm việc",
+    "h1": "Cách chúng tôi làm việc",
+    "lead": "Nguyên tắc, quy trình và điều khoản hợp đồng.",
+    "why": {
+      "eyebrow": "Nguyên tắc",
+      "title": "Sáu nguyên tắc",
+      "text": "Áp dụng cho mọi dự án."
+    },
+    "steps": {
+      "eyebrow": "Quy trình",
+      "title": "Các bước",
+      "text": "Từ cuộc trao đổi đầu tiên đến vận hành."
+    },
+    "terms": {
+      "eyebrow": "Hợp đồng",
+      "title": "Điều khoản hợp đồng",
+      "rows": [
+        [
+          "Dự án",
+          "Mỗi dự án có hợp đồng riêng quy định phạm vi, tiến độ, chi phí và điều kiện thanh toán"
+        ],
+        [
+          "Thay đổi phạm vi",
+          "Thay đổi và chi phí phát sinh được thống nhất trước khi tiếp tục công việc"
+        ],
+        [
+          "Quyền sở hữu",
+          "Tài khoản quảng cáo, báo cáo và tài liệu thiết lập đứng tên Quý khách"
+        ],
+        [
+          "Phí",
+          "Không nhận hoa hồng giới thiệu từ nền tảng quảng cáo · phí tư vấn được nêu rõ trong hợp đồng"
+        ]
+      ]
+    }
   },
 
   contact: {
-    title: 'Liên hệ',
-    desc: `Liên hệ EarnToLink về dự án, sản phẩm, quyền riêng tư hoặc hợp tác: ${EMAIL}`,
-    eyebrow: 'Liên hệ', h1: 'Liên hệ', lead: 'Qua email. Chúng tôi trả lời bằng tiếng Hàn hoặc tiếng Anh.',
-    topics: [
-      ['code', 'Dự án', 'Phát triển sản phẩm, tự động hóa AI, bản địa hóa, ra mắt trên kho ứng dụng, thương mại, vận hành'],
-      ['package', 'Sản phẩm', 'Tính năng, ngày phát hành và lỗi trong ứng dụng của chúng tôi'],
-      ['receipt', 'Thanh toán', 'Thanh toán và hoàn tiền của ứng dụng tuân theo chính sách của từng kho ứng dụng'],
-      ['shield', 'Quyền riêng tư', 'Yêu cầu truy cập, chỉnh sửa, xóa hoặc ngừng xử lý'],
-      ['users', 'Hợp tác', 'Cộng tác và các đề xuất khác'],
+    "title": "Liên hệ",
+    "desc": "Liên hệ EarnToLink về tư vấn doanh thu quảng cáo, sản phẩm, quyền riêng tư hoặc hợp tác. hello@earntolink.com",
+    "eyebrow": "Liên hệ",
+    "h1": "Liên hệ",
+    "lead": "Chúng tôi tiếp nhận yêu cầu qua email và phản hồi bằng tiếng Hàn hoặc tiếng Anh.",
+    "topics": [
+      [
+        "chart",
+        "Tư vấn",
+        "Đánh giá doanh thu quảng cáo, kiếm tiền cho web và ứng dụng, retail media, vấn đề chính sách, tư vấn vận hành"
+      ],
+      [
+        "package",
+        "Sản phẩm",
+        "Tính năng, ngày phát hành và lỗi của các ứng dụng do chúng tôi tự phát triển"
+      ],
+      [
+        "receipt",
+        "Thanh toán",
+        "Thanh toán và hoàn tiền trong ứng dụng tuân theo chính sách của từng kho ứng dụng"
+      ],
+      [
+        "shield",
+        "Quyền riêng tư",
+        "Yêu cầu truy cập, chỉnh sửa, xóa hoặc ngừng xử lý dữ liệu cá nhân"
+      ],
+      [
+        "users",
+        "Hợp tác",
+        "Đề xuất hợp tác và các đề xuất khác"
+      ]
     ],
-    brief: { title: 'Nên có trong yêu cầu về dự án', items: ['Điều bạn muốn xây dựng và lý do', 'Thị trường và ngôn ngữ mục tiêu', 'Mốc thời gian mong muốn', 'Dịch vụ hoặc tài liệu tham khảo'] },
+    "brief": {
+      "title": "Thông tin nên cung cấp",
+      "items": [
+        "Quý khách đang vận hành gì (website, ứng dụng hay nền tảng thương mại) và địa chỉ",
+        "Số lượt truy cập hoặc người dùng hoạt động mỗi tháng",
+        "Các nền tảng quảng cáo đang sử dụng và vấn đề đang gặp",
+        "Thời gian mong muốn"
+      ]
+    }
   },
 
   news: {
-    'business-areas': { title: 'Các lĩnh vực dịch vụ của chúng tôi', summary: 'Phát triển sản phẩm, chuyển đổi AI, bản địa hóa, ra mắt trên kho ứng dụng, thương mại, vận hành.',
-      body: ['Tổng quan về các lĩnh vực dịch vụ của EarnToLink.', 'Có sáu lĩnh vực: phát triển sản phẩm, chuyển đổi AI và tự động hóa, bản địa hóa và mở rộng toàn cầu, ra mắt trên kho ứng dụng toàn cầu, thương mại và bán hàng xuyên biên giới, vận hành và tăng trưởng.', 'Yêu cầu về dự án xin gửi đến hello@earntolink.com.'] },
-    'earntolink-com-launch': { title: 'earntolink.com đã hoạt động', summary: 'Website EarnToLink đã hoạt động với 14 ngôn ngữ.',
-      body: ['Website EarnToLink, earntolink.com, đã chính thức hoạt động.', 'Website giới thiệu các lĩnh vực dịch vụ, sản phẩm tự phát triển, thông tin công ty, chính sách quyền riêng tư và thông tin liên hệ.', 'Website có các ngôn ngữ: tiếng Hàn, Anh, Nhật, Trung (giản thể và phồn thể), Tây Ban Nha, Pháp, Đức, Bồ Đào Nha, Ý, Việt, Indonesia, Thái và Nga.'] },
-    'product-lineup': { title: 'Sản phẩm tự phát triển của chúng tôi', summary: 'Hai ứng dụng di động và ba ứng dụng máy tính.',
-      body: ['Tình trạng hiện tại của các sản phẩm tự phát triển.', 'Các ứng dụng di động Roll Tidy và Roll Flick cùng các ứng dụng máy tính Space Map, Dupeless và Archive Fix sắp ra mắt.'] },
+    "ad-consulting": {
+      "title": "EarnToLink tập trung vào tư vấn doanh thu quảng cáo",
+      "summary": "Đánh giá và chiến lược, kiếm tiền cho web và ứng dụng, retail media, tuân thủ chính sách và tư vấn vận hành.",
+      "body": [
+        "EarnToLink đã tập trung dịch vụ của mình vào tư vấn doanh thu quảng cáo.",
+        "Hiện chúng tôi cung cấp sáu dịch vụ: đánh giá và chiến lược doanh thu quảng cáo, kiếm tiền cho website và truyền thông, kiếm tiền cho ứng dụng, retail media và phát triển nền tảng quảng cáo, tuân thủ chính sách quảng cáo và quyền riêng tư, vận hành và tư vấn báo cáo quảng cáo.",
+        "Để được tư vấn, xin gửi email đến hello@earntolink.com."
+      ]
+    },
+    "earntolink-com-launch": {
+      "title": "earntolink.com đã hoạt động",
+      "summary": "Website EarnToLink đã hoạt động với 14 ngôn ngữ.",
+      "body": [
+        "Website EarnToLink, earntolink.com, đã chính thức hoạt động.",
+        "Website giới thiệu các dịch vụ, sản phẩm tự phát triển, thông tin công ty, chính sách quyền riêng tư và thông tin liên hệ.",
+        "Website có các ngôn ngữ: tiếng Hàn, Anh, Nhật, Trung (giản thể và phồn thể), Tây Ban Nha, Pháp, Đức, Bồ Đào Nha, Ý, Việt, Indonesia, Thái và Nga."
+      ]
+    },
+    "product-lineup": {
+      "title": "Sản phẩm tự phát triển của chúng tôi",
+      "summary": "Hai ứng dụng di động và ba ứng dụng máy tính.",
+      "body": [
+        "Tình trạng hiện tại của các sản phẩm tự phát triển.",
+        "Các ứng dụng di động Roll Tidy và Roll Flick cùng các ứng dụng máy tính Space Map, Dupeless và Archive Fix sắp ra mắt."
+      ]
+    }
   },
-  newsPage: { title: 'Tin tức', desc: 'Tin tức EarnToLink: lĩnh vực dịch vụ, ra mắt website và tình trạng sản phẩm.' },
+  newsPage: {
+    "title": "Tin tức",
+    "desc": "Tin tức EarnToLink: cập nhật dịch vụ, ra mắt website và tình trạng sản phẩm."
+  },
 
   privacy: {
     title: 'Chính sách quyền riêng tư',
@@ -330,8 +637,8 @@ export default {
     sections: [
       { id: 'purpose', h: '1. Mục đích', html: '<p>Các điều khoản này quy định điều kiện sử dụng earntolink.com, website do EarnToLink vận hành.</p>' },
       { id: 'content', h: '2. Quyền đối với nội dung', html: '<p>Quyền đối với văn bản, hình ảnh và mã trên trang này thuộc về EarnToLink. Nhãn hiệu của bên thứ ba hiển thị tại đây thuộc về chủ sở hữu của chúng.</p>' },
-      { id: 'accuracy', h: '3. Thông tin sản phẩm và dịch vụ', html: '<p>Trạng thái sản phẩm, tính năng và mô tả dịch vụ chính xác tại thời điểm biên soạn. Tính năng, giá và lịch trình của các sản phẩm chưa phát hành có thể thay đổi.</p>' },
-      { id: 'projects', h: '4. Hợp đồng dự án', html: '<p>Các dịch vụ phát triển, tự động hóa, bản địa hóa, ra mắt và vận hành tuân theo hợp đồng của từng dự án. Nếu các điều khoản này khác với hợp đồng, hợp đồng được ưu tiên áp dụng.</p>' },
+      { id: 'accuracy', h: '3. Thông tin sản phẩm và dịch vụ', html: "<p>Tình trạng sản phẩm, tính năng và mô tả dịch vụ chính xác tại thời điểm biên soạn. Tính năng, giá và lịch trình của các sản phẩm chưa phát hành có thể thay đổi.</p>" },
+      { id: 'projects', h: '4. Hợp đồng dự án', html: "<p>Các dịch vụ đánh giá, tư vấn, thiết lập quảng cáo và tư vấn vận hành được thực hiện theo hợp đồng của từng dự án. Nếu các điều khoản này khác với hợp đồng thì hợp đồng được ưu tiên áp dụng. Doanh thu quảng cáo phụ thuộc vào thị trường quảng cáo và chính sách của nền tảng; mọi ước tính trong báo cáo đánh giá hoặc đề xuất của chúng tôi không phải là cam kết.</p>" },
       { id: 'apps', h: '5. Sử dụng ứng dụng', html: '<p>Mỗi ứng dụng còn chịu sự điều chỉnh của điều khoản của kho ứng dụng phân phối nó (App Store, Google Play, Microsoft Store và các kho khác) cùng các thông báo riêng của ứng dụng.</p>' },
       { id: 'links', h: '6. Liên kết bên ngoài', html: '<p>Các trang bên ngoài tuân theo điều khoản và chính sách riêng của chúng.</p>' },
       { id: 'liability', h: '7. Giới hạn trách nhiệm', html: '<p>Trong phạm vi pháp luật cho phép, EarnToLink không chịu trách nhiệm đối với các thiệt hại gián tiếp phát sinh từ việc sử dụng trang này.</p>' },
@@ -340,5 +647,13 @@ export default {
     ],
   },
 
-  og: { h: 'Kết nối thị trường với thế giới.', s: 'Phát triển sản phẩm · Chuyển đổi AI · Bản địa hóa<br>Ra mắt kho ứng dụng · Thương mại · Vận hành', tags: ['Web · Ứng dụng · Máy tính', 'AI · Tự động hóa', '14 ngôn ngữ'] },
+  og: {
+    "h": "Doanh thu quảng cáo, thiết kế bài bản.",
+    "s": "Đánh giá doanh thu quảng cáo · Kiếm tiền cho web và ứng dụng<br>Retail media · Tuân thủ chính sách · Vận hành",
+    "tags": [
+      "Website và truyền thông",
+      "Ứng dụng di động",
+      "Thương mại"
+    ]
+  },
 };

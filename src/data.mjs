@@ -3,7 +3,7 @@
 
 export const SITE = {
   origin: 'https://earntolink.com',
-  updated: '2026-10-10',
+  updated: '2026-10-12',
   email: 'hello@earntolink.com',
   bizNo: '310-59-00749',
 };
@@ -29,16 +29,19 @@ export const DEFAULT_LANG = 'en'; // x-default
 
 // Business areas. Text: i18n.services.items[id]
 export const SERVICES = [
-  { id: 'product', icon: 'code', scopeIcons: ['globe', 'smartphone', 'monitor', 'settings'] },
-  { id: 'ax', icon: 'zap', scopeIcons: ['users', 'file', 'search', 'refresh'] },
-  { id: 'localization', icon: 'globe', scopeIcons: ['type', 'search', 'coins', 'check'] },
-  { id: 'launch', icon: 'package', scopeIcons: ['smartphone', 'shield', 'images', 'receipt'] },
-  { id: 'commerce', icon: 'truck', scopeIcons: ['store', 'type', 'receipt', 'chart'] },
-  { id: 'operate', icon: 'chart', scopeIcons: ['alert', 'cpu', 'chart', 'coins'] },
+  { id: 'strategy', icon: 'chart', scopeIcons: ['search', 'chart', 'coins', 'file'] },
+  { id: 'web', icon: 'monitor', scopeIcons: ['check', 'grid', 'zap', 'layers'] },
+  { id: 'app', icon: 'smartphone', scopeIcons: ['layers', 'filter', 'users', 'gift'] },
+  { id: 'retail', icon: 'store', scopeIcons: ['tag', 'coins', 'chart', 'receipt'] },
+  { id: 'policy', icon: 'shield', scopeIcons: ['search', 'refresh', 'check', 'file'] },
+  { id: 'ops', icon: 'settings', scopeIcons: ['calendar', 'test', 'chart', 'eye'] },
 ];
+// Old ids (before 2026-10-12): build writes noindex redirect stubs to the new index pages
+export const OLD_SERVICES = ['product', 'ax', 'localization', 'launch', 'commerce', 'operate'];
+export const OLD_NEWS = ['business-areas'];
 
 // Why EarnToLink. Text: i18n.why[i] = [title, text]
-export const WHY_ICONS = ['globe', 'receipt', 'key', 'test', 'calendar', 'shield'];
+export const WHY_ICONS = ['users', 'chart', 'ban', 'shield', 'key', 'calendar'];
 // Product principles. Text: i18n.products.principles[i]
 export const PRIN_ICONS = ['shield', 'ban', 'receipt', 'undo'];
 
@@ -63,7 +66,7 @@ export const PRODUCTS = [
 
 // Text: i18n.news[slug]
 export const NEWS = [
-  { slug: 'business-areas', date: '2026-10-10' },
+  { slug: 'ad-consulting', date: '2026-10-12' },
   { slug: 'earntolink-com-launch', date: '2026-10-10' },
   { slug: 'product-lineup', date: '2026-10-10' },
 ];
