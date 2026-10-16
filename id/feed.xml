@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Berita EarnToLink</title>
+    <link>https://earntolink.com/id/news/</link>
+    <atom:link href="https://earntolink.com/id/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>Berita dari EarnToLink (언투링크)</description>
+    <language>id-ID</language>
+    <lastBuildDate>Sun, 11 Oct 2026 15:00:00 GMT</lastBuildDate>
+    <item>
+      <title>EarnToLink berfokus pada konsultasi pendapatan iklan</title>
+      <link>https://earntolink.com/id/news/ad-consulting/</link>
+      <guid isPermaLink="true">https://earntolink.com/id/news/ad-consulting/</guid>
+      <pubDate>Sun, 11 Oct 2026 15:00:00 GMT</pubDate>
+      <description>EarnToLink kini memfokuskan layanannya pada konsultasi pendapatan iklan. Kami menawarkan enam layanan: penilaian dan strategi pendapatan iklan, monetisasi situs web dan media, monetisasi aplikasi, retail media dan pengembangan platform iklan, kepatuhan kebijakan iklan dan privasi, serta operasional dan konsultasi pelaporan iklan. Untuk konsultasi, kirim email ke hello@earntolink.com.</description>
+    </item>
+    <item>
+      <title>earntolink.com telah tayang</title>
+      <link>https://earntolink.com/id/news/earntolink-com-launch/</link>
+      <guid isPermaLink="true">https://earntolink.com/id/news/earntolink-com-launch/</guid>
+      <pubDate>Fri, 09 Oct 2026 15:00:00 GMT</pubDate>
+      <description>Situs web EarnToLink, earntolink.com, kini telah tayang. Situs ini memuat layanan, produk buatan sendiri, rincian perusahaan, kebijakan privasi, dan informasi kontak. Tersedia dalam bahasa Korea, Inggris, Jepang, Mandarin (Sederhana dan Tradisional), Spanyol, Prancis, Jerman, Portugis, Italia, Vietnam, Indonesia, Thai dan Rusia.</description>
+    </item>
+    <item>
+      <title>Produk buatan sendiri</title>
+      <link>https://earntolink.com/id/news/product-lineup/</link>
+      <guid isPermaLink="true">https://earntolink.com/id/news/product-lineup/</guid>
+      <pubDate>Fri, 09 Oct 2026 15:00:00 GMT</pubDate>
+      <description>Status terkini produk buatan sendiri. Aplikasi seluler Roll Tidy dan Roll Flick serta aplikasi desktop Space Map, Dupeless dan Archive Fix segera hadir.</description>
+    </item>
+  </channel>
+</rss>

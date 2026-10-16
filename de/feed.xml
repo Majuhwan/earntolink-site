@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>EarnToLink Neuigkeiten</title>
+    <link>https://earntolink.com/de/news/</link>
+    <atom:link href="https://earntolink.com/de/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>Neuigkeiten von EarnToLink (언투링크)</description>
+    <language>de-DE</language>
+    <lastBuildDate>Sun, 11 Oct 2026 15:00:00 GMT</lastBuildDate>
+    <item>
+      <title>EarnToLink richtet sich auf Beratung für Werbeeinnahmen aus</title>
+      <link>https://earntolink.com/de/news/ad-consulting/</link>
+      <guid isPermaLink="true">https://earntolink.com/de/news/ad-consulting/</guid>
+      <pubDate>Sun, 11 Oct 2026 15:00:00 GMT</pubDate>
+      <description>EarnToLink hat sein Leistungsangebot auf die Beratung für Werbeeinnahmen ausgerichtet. Wir bieten jetzt sechs Leistungen an: Erlösanalyse und Strategie, Monetarisierung von Websites und Medien, App-Monetarisierung, Retail Media und Aufbau von Werbeplattformen, Werberichtlinien und Datenschutz sowie Werbebetrieb und Reporting-Beratung. Für Beratungsanfragen schreiben Sie an hello@earntolink.com.</description>
+    </item>
+    <item>
+      <title>earntolink.com ist online</title>
+      <link>https://earntolink.com/de/news/earntolink-com-launch/</link>
+      <guid isPermaLink="true">https://earntolink.com/de/news/earntolink-com-launch/</guid>
+      <pubDate>Fri, 09 Oct 2026 15:00:00 GMT</pubDate>
+      <description>Die Website von EarnToLink, earntolink.com, ist jetzt online. Sie enthält unsere Leistungen, eigenen Produkte, Unternehmensdaten, die Datenschutzerklärung und Kontaktdaten. Sie ist verfügbar auf Koreanisch, Englisch, Japanisch, Chinesisch (vereinfacht und traditionell), Spanisch, Französisch, Deutsch, Portugiesisch, Italienisch, Vietnamesisch, Indonesisch, Thailändisch und Russisch.</description>
+    </item>
+    <item>
+      <title>Unsere eigenen Produkte</title>
+      <link>https://earntolink.com/de/news/product-lineup/</link>
+      <guid isPermaLink="true">https://earntolink.com/de/news/product-lineup/</guid>
+      <pubDate>Fri, 09 Oct 2026 15:00:00 GMT</pubDate>
+      <description>Der aktuelle Stand unserer eigenen Produkte. Die mobilen Apps Roll Tidy und Roll Flick sowie die Desktop-Apps Space Map, Dupeless und Archive Fix sind demnächst verfügbar.</description>
+    </item>
+  </channel>
+</rss>
