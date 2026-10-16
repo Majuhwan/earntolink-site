@@ -9,7 +9,7 @@ const ONE_TIME = 'Beli sekali · maksimal ₩10,000';
 export default {
   brand: 'EarnToLink',
   brandAlt: '언투링크',
-  slogan: "Mitra pertumbuhan untuk bisnis iklan Anda",
+  slogan: "Konsultasi pendapatan iklan untuk situs web, aplikasi, dan e-commerce",
   translationNote: 'Halaman ini adalah terjemahan. Jika berbeda dari aslinya dalam bahasa Korea, versi asli bahasa Korea yang berlaku.',
 
   ui: {
@@ -43,8 +43,8 @@ export default {
   home: {
     "title": "EarnToLink | Konsultasi pendapatan iklan untuk situs web, aplikasi, dan platform e-commerce",
     "desc": "EarnToLink adalah konsultan pendapatan iklan. Kami menilai dan merancang cara situs web, aplikasi, dan platform e-commerce menghasilkan uang dari iklan: pemilihan dan pengaturan platform, kepatuhan kebijakan dan privasi, retail media, serta operasional iklan berkelanjutan.",
-    "eyebrow": "Konsultasi platform pendapatan iklan untuk bisnis",
-    "h1": "Mitra pertumbuhan<br>untuk bisnis iklan Anda",
+    "eyebrow": "EarnToLink",
+    "h1": "Konsultasi pendapatan iklan<br>untuk situs web, aplikasi, dan e-commerce",
     "lead": "Kami membantu situs web, aplikasi, dan platform e-commerce memperoleh pendapatan iklan yang stabil. Kami menilai kondisi Anda saat ini, memilih platform dan penempatan iklan yang tepat, lalu mendampingi Anda dalam tinjauan kebijakan dan operasional harian.",
     "meta": [
       "Situs web dan media",

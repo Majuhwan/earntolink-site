@@ -9,7 +9,7 @@ const ONE_TIME = 'Pago único · ₩10,000 o menos';
 export default {
   brand: 'EarnToLink',
   brandAlt: '언투링크',
-  slogan: "Su socio de crecimiento en ingresos publicitarios",
+  slogan: "Consultoría de ingresos publicitarios para sitios web, apps y comercio",
   translationNote: 'Esta página es una traducción. Si difiere del original en coreano, prevalece el original en coreano.',
 
   ui: {
@@ -43,8 +43,8 @@ export default {
   home: {
     "title": "EarnToLink | Consultoría de ingresos publicitarios para sitios web, apps y plataformas de comercio",
     "desc": "EarnToLink es una consultoría de ingresos publicitarios. Evaluamos y diseñamos cómo generan ingresos con publicidad los sitios web, las apps y las plataformas de comercio: elección y configuración de plataformas, cumplimiento de políticas y privacidad, retail media y operación publicitaria continua.",
-    "eyebrow": "Consultoría de ingresos publicitarios para empresas",
-    "h1": "Su socio de crecimiento<br>en ingresos publicitarios",
+    "eyebrow": "EarnToLink",
+    "h1": "Consultoría de ingresos publicitarios<br>para sitios web, apps y comercio",
     "lead": "Ayudamos a sitios web, apps y plataformas de comercio a obtener ingresos estables con la publicidad. Analizamos su situación actual, elegimos las plataformas y los espacios publicitarios adecuados, y le acompañamos en las revisiones de políticas y en la operación diaria.",
     "meta": [
       "Sitios web y medios",

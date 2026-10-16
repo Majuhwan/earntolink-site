@@ -9,7 +9,7 @@ const ONE_TIME = 'Mua một lần · tối đa ₩10,000';
 export default {
   brand: 'EarnToLink',
   brandAlt: '언투링크',
-  slogan: "Đối tác tăng trưởng cho doanh thu quảng cáo",
+  slogan: "Tư vấn doanh thu quảng cáo cho website, ứng dụng và thương mại điện tử",
   translationNote: 'Trang này là bản dịch. Nếu có khác biệt so với bản gốc tiếng Hàn, bản gốc tiếng Hàn được ưu tiên áp dụng.',
 
   ui: {
@@ -43,8 +43,8 @@ export default {
   home: {
     "title": "EarnToLink | Tư vấn doanh thu quảng cáo cho website, ứng dụng và nền tảng thương mại",
     "desc": "EarnToLink là đơn vị tư vấn doanh thu quảng cáo. Chúng tôi đánh giá và thiết kế cách website, ứng dụng và nền tảng thương mại tạo thu nhập từ quảng cáo: lựa chọn và cấu hình nền tảng, tuân thủ chính sách và quyền riêng tư, retail media và vận hành quảng cáo thường xuyên.",
-    "eyebrow": "Tư vấn nền tảng doanh thu quảng cáo cho doanh nghiệp",
-    "h1": "Đối tác tăng trưởng<br>cho doanh thu quảng cáo",
+    "eyebrow": "EarnToLink",
+    "h1": "Tư vấn doanh thu quảng cáo<br>cho website, ứng dụng và thương mại điện tử",
     "lead": "Chúng tôi giúp website, ứng dụng và nền tảng thương mại tạo nguồn thu ổn định từ quảng cáo. Chúng tôi đánh giá hiện trạng của Quý khách, chọn nền tảng và vị trí quảng cáo phù hợp, rồi đồng hành qua các đợt rà soát chính sách và công tác vận hành hằng ngày.",
     "meta": [
       "Website và truyền thông",

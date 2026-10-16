@@ -9,7 +9,7 @@ const ONE_TIME = '一次性购买 · ₩10,000 以内';
 export default {
   brand: 'EarnToLink',
   brandAlt: '언투링크',
-  slogan: "广告业务的增长伙伴",
+  slogan: "网站、应用与电商的广告变现咨询",
   translationNote: '本页为译文。如与韩语原文有出入,以韩语原文为准。',
 
   ui: {
@@ -43,8 +43,8 @@ export default {
   home: {
     "title": "EarnToLink | 网站、应用与电商平台的广告变现咨询",
     "desc": "EarnToLink 是一家广告变现咨询公司,帮助网站、应用和电商平台设计广告收入模式:广告平台的选择与接入、政策与隐私合规、零售媒体,以及日常广告运营。",
-    "eyebrow": "面向企业的广告变现咨询",
-    "h1": "广告业务的<br>增长伙伴",
+    "eyebrow": "EarnToLink",
+    "h1": "网站、应用与电商的<br>广告变现咨询",
     "lead": "我们帮助网站、应用和电商平台获得稳定的广告收入。先诊断现状,再选定合适的广告平台与广告位,并在政策审核和日常运营中持续陪伴。",
     "meta": [
       "网站与媒体",

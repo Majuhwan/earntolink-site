@@ -9,7 +9,7 @@ const ONE_TIME = '一次性買斷 · ₩10,000 以下';
 export default {
   brand: 'EarnToLink',
   brandAlt: '언투링크',
-  slogan: "廣告事業的成長夥伴",
+  slogan: "網站、應用程式與電商的廣告變現顧問",
   translationNote: '本頁為翻譯版本。若與韓文原文有所出入，以韓文原文為準。',
 
   ui: {
@@ -43,8 +43,8 @@ export default {
   home: {
     "title": "EarnToLink | 網站、App 與電商平台的廣告變現顧問",
     "desc": "EarnToLink 是專營廣告變現的顧問公司，協助網站、App 與電商平台規劃廣告收益：廣告平台的選擇與串接、政策與隱私合規、零售媒體，以及日常廣告營運。",
-    "eyebrow": "企業廣告變現顧問",
-    "h1": "廣告事業的<br>成長夥伴",
+    "eyebrow": "EarnToLink",
+    "h1": "網站、應用程式與電商的<br>廣告變現顧問",
     "lead": "我們協助網站、App 與電商平台穩定取得廣告收入。先盤點現況，再挑選合適的廣告平台與版位，並在政策審查與日常營運中全程陪跑。",
     "meta": [
       "網站與媒體",
