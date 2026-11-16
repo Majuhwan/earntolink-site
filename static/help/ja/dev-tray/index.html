@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dev Tray · ヘルプ</title>
+<meta name="description" content="Dev Tray · ヘルプ">
+<link rel="canonical" href="https://earntolink.com/help/ja/dev-tray/">
+<link rel="alternate" hreflang="en" href="https://earntolink.com/help/en/dev-tray/">
+<link rel="alternate" hreflang="ko" href="https://earntolink.com/help/ko/dev-tray/">
+<link rel="alternate" hreflang="ja" href="https://earntolink.com/help/ja/dev-tray/">
+<link rel="alternate" hreflang="zh-Hans" href="https://earntolink.com/help/zh/dev-tray/">
+<link rel="alternate" hreflang="zh-Hant" href="https://earntolink.com/help/zh-Hant/dev-tray/">
+<link rel="alternate" hreflang="de" href="https://earntolink.com/help/de/dev-tray/">
+<link rel="alternate" hreflang="fr" href="https://earntolink.com/help/fr/dev-tray/">
+<link rel="alternate" hreflang="es" href="https://earntolink.com/help/es/dev-tray/">
+<link rel="alternate" hreflang="pt-BR" href="https://earntolink.com/help/pt/dev-tray/">
+<link rel="alternate" hreflang="it" href="https://earntolink.com/help/it/dev-tray/">
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../../ja/">EarnToLink ヘルプ</a>
+<nav><a href="../../ja/">すべてのアプリ</a><a href="../../ja/support/">サポート</a></nav>
+</div></header>
+<main class="wrap">
+<p class="crumb"><a href="../">すべてのアプリ</a></p>
+<h1>Dev Tray <span class="sub">ヘルプ</span></h1>
+<p><a class="btn" href="https://apps.microsoft.com/detail/9PK75HLBW84Z">Microsoft Store から入手</a></p>
+<nav class="toc"><a href="#how">使い方</a><a href="#features">機能</a><a href="#faq">よく寄せられる質問</a><a href="#trouble">トラブルシューティング</a><a href="#contact">お問い合わせ</a></nav>
+<section id="how"><h2>使い方</h2>
+<article class="topic" id="json"><h3>JSON を整形・検証する</h3><ol>
+<li>サイドバーで JSON を選択し、入力欄に貼り付けます。</li>
+<li>[整形] または [圧縮] を選択します。</li>
+<li>JSON にエラーがあると、エラーの行と列が表示されます。</li>
+<li>[コピー] を選択して結果をコピーします。</li>
+</ol></article>
+<article class="topic" id="encode"><h3>Base64・URL・HTML のエンコードとデコード</h3><ol>
+<li>サイドバーで Base64、URL エンコード、HTML のいずれかを選択します。</li>
+<li>[エンコード] または [デコード] を選択し、入力欄に貼り付けます。</li>
+<li>URL やトークンで使う Base64 は [URLセーフ] をオンにします。</li>
+</ol></article>
+<article class="topic" id="hash"><h3>テキストのハッシュとチェックサムの比較</h3><ol>
+<li>[ハッシュ] を選択してテキストを入力します。MD5、SHA-1、SHA-256、SHA-512 がすぐに表示されます。</li>
+<li>[比較するハッシュ] に期待値を貼り付けます。一致する行に [一致] が表示されます。</li>
+<li>Pro: [HMAC] をオンにしてキーを入力すると、HMAC-SHA256 と HMAC-SHA512 が表示されます。</li>
+</ol></article>
+<article class="topic" id="files"><h3>ダウンロードしたファイルの確認 (Pro)</h3><ol>
+<li>[ハッシュ] で [ファイルのハッシュ] を選択し、ファイルを 1 つ以上選びます。サイズの制限はありません。</li>
+<li>配布サイトで公開されているチェックサムを [比較するハッシュ] に貼り付けます。</li>
+</ol></article>
+<article class="topic" id="jwt"><h3>JWT の内容を見る</h3><ol>
+<li>[JWT] を選択してトークンを貼り付けます。</li>
+<li>ヘッダーとペイロードが表示されます。exp があれば有効期限も表示されます。</li>
+<li>署名は検証しません。</li>
+</ol></article>
+<article class="topic" id="time"><h3>Unix タイムスタンプの変換</h3><ol>
+<li>[タイムスタンプ] を選択し、秒・ミリ秒または ISO 8601 の日付を入力します。[現在] で現在時刻が入ります。</li>
+<li>Unix 秒・ミリ秒、UTC、ローカル時刻が表示されます。</li>
+</ol></article>
+<article class="topic" id="uuid"><h3>UUID を生成する</h3><ol>
+<li>[UUID] を選択し、− と + で個数 (1～100) を決めて [生成] を選択します。</li>
+<li>[コピー] で一覧全体をコピーします。</li>
+</ol></article>
+<article class="topic" id="regex"><h3>正規表現をテストする</h3><ol>
+<li>[正規表現] を選択してパターンを入力し、入力欄にテキストを貼り付けます。</li>
+<li>一致した文字列とグループが件数とともに表示されます。</li>
+<li>Pro: [置換] をオンにして $1 などの置換文字列を入力すると、結果をプレビューできます。複数行・改行一致オプションもあります。</li>
+</ol></article>
+</section>
+<section id="features"><h2>機能</h2><ul><li>JSON の整形・圧縮・検証、エラー位置を表示</li><li>Base64・URL・HTML のエンコード/デコード</li><li>MD5・SHA-1・SHA-256・SHA-512 とチェックサム比較</li><li>JWT デコード、UUID、Unix 時刻の変換</li><li>オフライン — データは PC の外に出ません</li><li>無料: 9 種類のツールすべて · Pro: 正規表現の置換、ファイルのハッシュ、HMAC</li></ul></section>
+<section id="faq"><h2>よく寄せられる質問</h2>
+<details id="q-pro"><summary>Pro とは何ですか?</summary><p>Pro は Microsoft Store で 1 回購入するアドオンで、サブスクリプションではありません。同じ Microsoft アカウントでサインインした Windows PC で使用できます。</p></details>
+<details id="q-restore"><summary>別の PC や再インストール後に Pro を使うには?</summary><p>購入に使用したアカウントで Microsoft Store にサインインし、[ヘルプ] &gt; [購入の復元] を選択します。</p></details>
+<details id="q-refund"><summary>返金を受けるには?</summary><p>支払いと返金は Microsoft が処理します。account.microsoft.com の [注文履歴] で注文を選択し、返金をリクエストします。Microsoft の返金ポリシーが適用されます。</p></details>
+<details id="q-offline"><summary>インターネット接続は必要ですか? データは送信されますか?</summary><p>いいえ。ファイルと入力内容はこの PC でのみ処理され、送信されることはありません。アカウント、広告、トラッキングはありません。インターネットは Microsoft Store での購入と更新にのみ使用します。</p></details>
+<details id="q-update"><summary>アプリを更新するには?</summary><p>更新は Microsoft Store が自動でインストールします。今すぐ確認するには、Microsoft Store の [ライブラリ] で [更新プログラムを取得する] を選択します。</p></details></section>
+<section id="trouble"><h2>トラブルシューティング</h2>
+<details id="q-invalid"><summary>入力が無効と表示されます。</summary><p>メッセージ横の 行:列 の位置を確認してください。末尾のカンマ、単一引用符、コメントは JSON では使用できず、よくある原因です。</p></details>
+<details id="q-binary"><summary>Base64 のデコード結果が文字ではなく 16 進数で表示されます。</summary><p>デコードしたデータが画像や圧縮データなど UTF-8 テキストではない場合です。内容を失わないよう 16 進数で表示します。</p></details>
+<details id="q-proLocked"><summary>Pro を購入したのに機能がロックされたままです。</summary><p>[ヘルプ] &gt; [購入の復元] を選択します。Microsoft Store に購入したアカウントでサインインしているか確認してください。購入直後は確認に数分かかることがあります。</p></details>
+<details id="q-language"><summary>アプリの言語を変更するには?</summary><p>アプリは Windows の表示言語に従います。[設定] &gt; [時刻と言語] &gt; [言語と地域] で変更し、アプリを再起動します。</p></details>
+<details id="q-reset"><summary>アプリが起動しない、または応答しません。</summary><p>アプリを閉じて開き直します。解決しない場合は、[設定] &gt; [アプリ] &gt; [インストールされているアプリ] でこのアプリの [詳細オプション] を開き、[修復] を選択します。[リセット] を選ぶとアプリの設定も消去されます。</p></details></section>
+<section id="contact" class="contact"><h2>お問い合わせ</h2><p>アプリ名とバージョンを記載して hello@earntolink.com にメールを送信してください。アプリの [ヘルプ] &gt; [お問い合わせ] を使うと、この情報が自動で入ります。</p><p><a class="btn" href="mailto:hello@earntolink.com?subject=%5BDev%20Tray%5D%20Support">メールを送信</a> <a href="privacy/">プライバシー ポリシー</a></p></section>
+
+</main>
+<footer class="foot"><div class="wrap">
+<p class="langs"><a href="../../en/dev-tray/" hreflang="en">English</a> · <a href="../../ko/dev-tray/" hreflang="ko">한국어</a> · <span aria-current="true">日本語</span> · <a href="../../zh/dev-tray/" hreflang="zh-Hans">简体中文</a> · <a href="../../zh-Hant/dev-tray/" hreflang="zh-Hant">繁體中文</a> · <a href="../../de/dev-tray/" hreflang="de">Deutsch</a> · <a href="../../fr/dev-tray/" hreflang="fr">Français</a> · <a href="../../es/dev-tray/" hreflang="es">Español</a> · <a href="../../pt/dev-tray/" hreflang="pt-BR">Português</a> · <a href="../../it/dev-tray/" hreflang="it">Italiano</a></p>
+<p>© 2026 EarnToLink · <a href="mailto:hello@earntolink.com?subject=Support">hello@earntolink.com</a></p>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dev Tray · 帮助</title>
+<meta name="description" content="Dev Tray · 帮助">
+<link rel="canonical" href="https://earntolink.com/help/zh/dev-tray/">
+<link rel="alternate" hreflang="en" href="https://earntolink.com/help/en/dev-tray/">
+<link rel="alternate" hreflang="ko" href="https://earntolink.com/help/ko/dev-tray/">
+<link rel="alternate" hreflang="ja" href="https://earntolink.com/help/ja/dev-tray/">
+<link rel="alternate" hreflang="zh-Hans" href="https://earntolink.com/help/zh/dev-tray/">
+<link rel="alternate" hreflang="zh-Hant" href="https://earntolink.com/help/zh-Hant/dev-tray/">
+<link rel="alternate" hreflang="de" href="https://earntolink.com/help/de/dev-tray/">
+<link rel="alternate" hreflang="fr" href="https://earntolink.com/help/fr/dev-tray/">
+<link rel="alternate" hreflang="es" href="https://earntolink.com/help/es/dev-tray/">
+<link rel="alternate" hreflang="pt-BR" href="https://earntolink.com/help/pt/dev-tray/">
+<link rel="alternate" hreflang="it" href="https://earntolink.com/help/it/dev-tray/">
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../../zh/">EarnToLink 帮助</a>
+<nav><a href="../../zh/">所有应用</a><a href="../../zh/support/">支持</a></nav>
+</div></header>
+<main class="wrap">
+<p class="crumb"><a href="../">所有应用</a></p>
+<h1>Dev Tray <span class="sub">帮助</span></h1>
+<p><a class="btn" href="https://apps.microsoft.com/detail/9PK75HLBW84Z">从 Microsoft Store 获取</a></p>
+<nav class="toc"><a href="#how">使用方法</a><a href="#features">功能</a><a href="#faq">常见问题</a><a href="#trouble">疑难解答</a><a href="#contact">联系支持</a></nav>
+<section id="how"><h2>使用方法</h2>
+<article class="topic" id="json"><h3>格式化和验证 JSON</h3><ol>
+<li>在侧栏中选择 JSON，将文本粘贴到输入框。</li>
+<li>选择“格式化”或“压缩”。</li>
+<li>如果 JSON 无效，会显示错误所在的行和列。</li>
+<li>选择“复制”以复制结果。</li>
+</ol></article>
+<article class="topic" id="encode"><h3>Base64、URL 和 HTML 编码与解码</h3><ol>
+<li>在侧栏中选择 Base64、URL 编码或 HTML。</li>
+<li>选择“编码”或“解码”，然后将文本粘贴到输入框。</li>
+<li>用于 URL 或令牌的 Base64，请打开“URL 安全”。</li>
+</ol></article>
+<article class="topic" id="hash"><h3>文本哈希与校验和比较</h3><ol>
+<li>选择“哈希”并输入文本。MD5、SHA-1、SHA-256 和 SHA-512 会立即显示。</li>
+<li>将预期值粘贴到“要比较的哈希”。匹配的行会标记“匹配”。</li>
+<li>Pro：打开 HMAC 并输入密钥，即可得到 HMAC-SHA256 和 HMAC-SHA512。</li>
+</ol></article>
+<article class="topic" id="files"><h3>验证下载的文件 (Pro)</h3><ol>
+<li>在“哈希”中选择“文件哈希”，然后选择一个或多个文件。不限大小。</li>
+<li>将下载站点公布的校验和粘贴到“要比较的哈希”。</li>
+</ol></article>
+<article class="topic" id="jwt"><h3>查看 JWT 内容</h3><ol>
+<li>选择 JWT 并粘贴令牌。</li>
+<li>将显示标头和载荷。如果令牌包含 exp，还会显示过期时间。</li>
+<li>不验证签名。</li>
+</ol></article>
+<article class="topic" id="time"><h3>转换 Unix 时间戳</h3><ol>
+<li>选择“时间戳”，输入秒、毫秒或 ISO 8601 日期。选择“现在”会填入当前时间。</li>
+<li>将显示 Unix 秒、毫秒、UTC 和本地时间。</li>
+</ol></article>
+<article class="topic" id="uuid"><h3>生成 UUID</h3><ol>
+<li>选择 UUID，用 − 和 + 设置数量（1–100），然后选择“生成”。</li>
+<li>选择“复制”可复制整个列表。</li>
+</ol></article>
+<article class="topic" id="regex"><h3>测试正则表达式</h3><ol>
+<li>选择“正则表达式”，输入模式，并将测试文本粘贴到输入框。</li>
+<li>匹配项和捕获组会与匹配数一起列出。</li>
+<li>Pro：打开“替换”并输入 $1 等替换内容即可预览结果。另有多行和点匹配换行选项。</li>
+</ol></article>
+</section>
+<section id="features"><h2>功能</h2><ul><li>JSON 格式化、压缩与验证，显示错误位置</li><li>Base64、URL、HTML 编码/解码</li><li>MD5、SHA-1、SHA-256、SHA-512 及校验和比较</li><li>JWT 解码、UUID 和 Unix 时间转换</li><li>离线 — 数据不会离开电脑</li><li>免费：9 个工具全部 · Pro：正则替换、文件哈希、HMAC</li></ul></section>
+<section id="faq"><h2>常见问题</h2>
+<details id="q-pro"><summary>什么是 Pro？</summary><p>Pro 是在 Microsoft Store 中一次性购买的附加组件，不是订阅。可在使用同一 Microsoft 帐户登录的 Windows 电脑上使用。</p></details>
+<details id="q-restore"><summary>如何在其他电脑上或重新安装后恢复 Pro？</summary><p>使用购买时的帐户登录 Microsoft Store，然后选择“帮助”&gt;“恢复购买”。</p></details>
+<details id="q-refund"><summary>如何申请退款？</summary><p>付款和退款由 Microsoft 处理。前往 account.microsoft.com &gt;“订单历史记录”，选择订单并申请退款。适用 Microsoft 退款政策。</p></details>
+<details id="q-offline"><summary>需要联网吗？我的数据会被发送吗？</summary><p>不需要。文件和输入内容仅在此电脑上处理，不会上传。没有帐户、广告或跟踪。仅在 Microsoft Store 购买和更新时使用网络。</p></details>
+<details id="q-update"><summary>如何更新应用？</summary><p>Microsoft Store 会自动安装更新。要立即检查，请打开 Microsoft Store &gt;“库”，然后选择“获取更新”。</p></details></section>
+<section id="trouble"><h2>疑难解答</h2>
+<details id="q-invalid"><summary>显示输入无效。</summary><p>检查消息旁边的“行:列”位置。常见原因是末尾逗号、单引号和注释，JSON 不允许这些内容。</p></details>
+<details id="q-binary"><summary>Base64 解码结果显示为十六进制字节而不是文本。</summary><p>解码后的数据不是 UTF-8 文本（例如图像或压缩数据）。为避免丢失内容，以十六进制显示字节。</p></details>
+<details id="q-proLocked"><summary>已购买 Pro，但功能仍被锁定。</summary><p>选择“帮助”&gt;“恢复购买”。请确认 Microsoft Store 已使用购买时的帐户登录。刚购买后，确认可能需要几分钟。</p></details>
+<details id="q-language"><summary>如何更改应用语言？</summary><p>应用跟随 Windows 显示语言。在“设置”&gt;“时间和语言”&gt;“语言和区域”中更改，然后重新启动应用。</p></details>
+<details id="q-reset"><summary>应用无法启动或无响应。</summary><p>关闭并重新打开应用。如果问题仍存在，请前往“设置”&gt;“应用”&gt;“安装的应用”，打开此应用的“高级选项”并选择“修复”。“重置”会同时清除应用设置。</p></details></section>
+<section id="contact" class="contact"><h2>联系支持</h2><p>请发送邮件至 hello@earntolink.com，并注明应用名称和版本。在应用中使用“帮助”&gt;“联系支持”会自动填入这些信息。</p><p><a class="btn" href="mailto:hello@earntolink.com?subject=%5BDev%20Tray%5D%20Support">发送邮件</a> <a href="privacy/">隐私政策</a></p></section>
+
+</main>
+<footer class="foot"><div class="wrap">
+<p class="langs"><a href="../../en/dev-tray/" hreflang="en">English</a> · <a href="../../ko/dev-tray/" hreflang="ko">한국어</a> · <a href="../../ja/dev-tray/" hreflang="ja">日本語</a> · <span aria-current="true">简体中文</span> · <a href="../../zh-Hant/dev-tray/" hreflang="zh-Hant">繁體中文</a> · <a href="../../de/dev-tray/" hreflang="de">Deutsch</a> · <a href="../../fr/dev-tray/" hreflang="fr">Français</a> · <a href="../../es/dev-tray/" hreflang="es">Español</a> · <a href="../../pt/dev-tray/" hreflang="pt-BR">Português</a> · <a href="../../it/dev-tray/" hreflang="it">Italiano</a></p>
+<p>© 2026 EarnToLink · <a href="mailto:hello@earntolink.com?subject=Support">hello@earntolink.com</a></p>
+</div></footer>
+</body>
+</html>

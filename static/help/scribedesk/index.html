@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scribedesk</title>
+<link rel="stylesheet" href="../style.css">
+<script>
+(function () {
+  var n = (navigator.languages && navigator.languages[0]) || navigator.language || 'en';
+  n = n.toLowerCase();
+  var l = 'en';
+  if (n.indexOf('zh') === 0) l = (n.indexOf('hant') > 0 || /-(tw|hk|mo)/.test(n)) ? 'zh-Hant' : 'zh';
+  else { var c = n.split('-')[0]; if (['ko','ja','de','fr','es','pt','it'].indexOf(c) >= 0) l = c; }
+  location.replace('../' + l + '/scribedesk/');
+})();
+</script>
+</head>
+<body><main class="wrap"><h1>Scribedesk</h1><ul class="plain">
+<li><a href="../en/scribedesk/" hreflang="en">English</a></li>
+<li><a href="../ko/scribedesk/" hreflang="ko">한국어</a></li>
+<li><a href="../ja/scribedesk/" hreflang="ja">日本語</a></li>
+<li><a href="../zh/scribedesk/" hreflang="zh-Hans">简体中文</a></li>
+<li><a href="../zh-Hant/scribedesk/" hreflang="zh-Hant">繁體中文</a></li>
+<li><a href="../de/scribedesk/" hreflang="de">Deutsch</a></li>
+<li><a href="../fr/scribedesk/" hreflang="fr">Français</a></li>
+<li><a href="../es/scribedesk/" hreflang="es">Español</a></li>
+<li><a href="../pt/scribedesk/" hreflang="pt-BR">Português</a></li>
+<li><a href="../it/scribedesk/" hreflang="it">Italiano</a></li>
+</ul></main></body>
+</html>
