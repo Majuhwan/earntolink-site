@@ -35,11 +35,15 @@
 <li>Quando un’app si connette per la prima volta, una notifica consente di autorizzarla o bloccarla.</li>
 </ol></article>
 <article class="topic" id="block"><h3>Bloccare o consentire un’app</h3><ol>
-<li>Seleziona un’app e scegli Blocca o Consenti. Le regole del Firewall di Windows Defender iniziano con ETLNW- e Windows chiede l’autorizzazione ogni volta.</li>
+<li>Seleziona un’app e scegli Blocca o Consenti. Le regole del Firewall di Windows Defender iniziano con ETLNW- e Windows chiede l’autorizzazione una volta, alla prima modifica dopo l’apertura dell’app.</li>
 <li>La versione gratuita blocca fino a 5 app alla volta; le autorizzazioni sono illimitate.</li>
 </ol></article>
+<article class="topic" id="blocklog"><h3>Vedere i tentativi di connessione bloccati</h3><ol>
+<li>Attiva il registro dei tentativi bloccati nelle Impostazioni. Finché è attivo, Windows registra le connessioni scartate dal firewall (controllo di sicurezza "Connessione piattaforma filtro", errori) e la cronologia mostra i tentativi delle app bloccate.</li>
+<li>Disattivandolo o chiudendo l’app, l’impostazione di controllo di Windows torna esattamente com’era. Se l’app si è chiusa in modo imprevisto, le Impostazioni mostrano Ripristina. Sui PC molto attivi il registro di sicurezza si riempie più in fretta mentre è attivo.</li>
+</ol></article>
 </section>
-<section id="features"><h2>Funzioni</h2><ul><li>Connessioni in tempo reale per app: percorso, editore, indirizzo, porta, host</li><li>Avviso con Consenti / Blocca alla prima connessione di una nuova app</li><li>Blocca o consenti app con regole di Windows Defender Firewall</li><li>Senza diritti di amministratore; una richiesta UAC per gruppo di modifiche</li><li>Blocco totale e profili Lavoro / Gioco (Pro)</li><li>Cronologia per app, esportazione CSV (Pro), app nell’area di notifica</li></ul></section>
+<section id="features"><h2>Funzioni</h2><ul><li>Connessioni in tempo reale per app: percorso, editore, indirizzo, porta, host</li><li>Avviso con Consenti / Blocca alla prima connessione di una nuova app</li><li>Blocca o consenti app con regole di Windows Defender Firewall</li><li>Senza diritti di amministratore; una richiesta UAC per sessione</li><li>Registro facoltativo dei tentativi bloccati (controllo di Windows)</li><li>Blocco totale e profili Lavoro / Gioco (Pro)</li><li>Cronologia per app, esportazione CSV (Pro), app nell’area di notifica</li></ul></section>
 <section id="faq"><h2>Domande frequenti</h2>
 <details id="q-pro"><summary>Che cos’è Pro?</summary><p>Pro è un componente aggiuntivo con acquisto una tantum su Microsoft Store, non un abbonamento. Funziona sui PC Windows con lo stesso account Microsoft.</p></details>
 <details id="q-restore"><summary>Come ripristino Pro su un altro PC o dopo la reinstallazione?</summary><p>Accedi a Microsoft Store con l’account dell’acquisto, quindi seleziona Guida &gt; Ripristina acquisto.</p></details>

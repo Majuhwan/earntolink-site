@@ -35,11 +35,15 @@
 <li>初めてのアプリが外部に接続すると、通知から許可またはブロックできます。</li>
 </ol></article>
 <article class="topic" id="block"><h3>アプリをブロック・許可する</h3><ol>
-<li>アプリを選択して [ブロック] または [許可] を選びます。ルールは名前が ETLNW- で始まる Windows Defender ファイアウォール ルールで、変更のたびに Windows の確認が表示されます。</li>
+<li>アプリを選択して [ブロック] または [許可] を選びます。ルールは名前が ETLNW- で始まる Windows Defender ファイアウォール ルールで、アプリを開いてから最初の変更時に Windows の確認が 1 回表示されます。</li>
 <li>無料版は同時に 5 個までブロックでき、許可は無制限です。</li>
 </ol></article>
+<article class="topic" id="blocklog"><h3>ブロックされた接続の試行を見る</h3><ol>
+<li>設定でブロック記録をオンにします。オンの間、Windows はファイアウォールが遮断した接続を監査ログに記録し(セキュリティ監査「フィルタリング プラットフォームの接続」の失敗)、履歴にブロックしたアプリの試行が表示されます。</li>
+<li>オフにするかアプリを閉じると、Windows の監査設定を元の値どおりに戻します。アプリが異常終了して戻せなかった場合は、設定に「元に戻す」が表示されます。接続の多い PC では、オンの間セキュリティ ログが早く埋まります。</li>
+</ol></article>
 </section>
-<section id="features"><h2>機能</h2><ul><li>アプリ別のリアルタイム接続: パス、発行元、アドレス、ポート、ホスト、状態</li><li>新しいアプリの初回接続を通知、その場で許可・ブロック</li><li>Windows Defender ファイアウォールの規則でアプリをブロック・許可</li><li>管理者権限なしで動作、複数の変更を 1 回の UAC で適用</li><li>ロックダウン モードと仕事・ゲームのプロファイル(Pro)</li><li>アプリ別の接続履歴、CSV 書き出し(Pro)、通知領域アプリ</li></ul></section>
+<section id="features"><h2>機能</h2><ul><li>アプリ別のリアルタイム接続: パス、発行元、アドレス、ポート、ホスト、状態</li><li>新しいアプリの初回接続を通知、その場で許可・ブロック</li><li>Windows Defender ファイアウォールの規則でアプリをブロック・許可</li><li>管理者権限なしで動作、UAC の確認はアプリを開くごとに 1 回</li><li>ブロックされた接続の記録(任意、Windows の監査)</li><li>ロックダウン モードと仕事・ゲームのプロファイル(Pro)</li><li>アプリ別の接続履歴、CSV 書き出し(Pro)、通知領域アプリ</li></ul></section>
 <section id="faq"><h2>よく寄せられる質問</h2>
 <details id="q-pro"><summary>Pro とは何ですか?</summary><p>Pro は Microsoft Store で 1 回購入するアドオンで、サブスクリプションではありません。同じ Microsoft アカウントでサインインした Windows PC で使用できます。</p></details>
 <details id="q-restore"><summary>別の PC や再インストール後に Pro を使うには?</summary><p>購入に使用したアカウントで Microsoft Store にサインインし、[ヘルプ] &gt; [購入の復元] を選択します。</p></details>

@@ -35,11 +35,15 @@
 <li>新應用程式首次對外連線時，可在通知中直接允許或封鎖。</li>
 </ol></article>
 <article class="topic" id="block"><h3>封鎖或允許應用程式</h3><ol>
-<li>選取應用程式並選擇「封鎖」或「允許」。規則是名稱以 ETLNW- 開頭的 Windows Defender 防火牆規則，每次變更 Windows 都會要求權限。</li>
+<li>選取應用程式並選擇「封鎖」或「允許」。規則是名稱以 ETLNW- 開頭的 Windows Defender 防火牆規則，開啟應用程式後第一次變更時 Windows 會要求一次權限。</li>
 <li>免費版最多同時封鎖 5 個應用程式，允許不限數量。</li>
 </ol></article>
+<article class="topic" id="blocklog"><h3>查看被封鎖的連線嘗試</h3><ol>
+<li>在設定中開啟封鎖紀錄。開啟期間，Windows 會稽核防火牆封鎖的連線（安全性稽核「篩選平台連線」失敗），歷史紀錄中會列出已封鎖應用程式的嘗試。</li>
+<li>關閉此項或結束應用程式時，會將 Windows 稽核設定還原為原本的值。如果應用程式意外結束而未能還原，設定中會顯示「還原」。連線較多的電腦上，開啟期間安全性記錄會更快寫滿。</li>
+</ol></article>
 </section>
-<section id="features"><h2>功能</h2><ul><li>依應用程式的即時連線：路徑、發行者、位址、連接埠、主機、狀態</li><li>新應用程式首次連線時提醒，可直接允許或封鎖</li><li>用 Windows Defender 防火牆規則封鎖或允許應用程式</li><li>不需系統管理員權限執行，多項變更只需一次 UAC 確認</li><li>鎖定模式與工作 / 遊戲設定檔（Pro）</li><li>依應用程式的連線紀錄、CSV 匯出（Pro）、系統匣應用程式</li></ul></section>
+<section id="features"><h2>功能</h2><ul><li>依應用程式的即時連線：路徑、發行者、位址、連接埠、主機、狀態</li><li>新應用程式首次連線時提醒，可直接允許或封鎖</li><li>用 Windows Defender 防火牆規則封鎖或允許應用程式</li><li>不需系統管理員權限執行，每次開啟應用程式只需一次 UAC 確認</li><li>可選：記錄被封鎖的連線嘗試（Windows 稽核）</li><li>鎖定模式與工作 / 遊戲設定檔（Pro）</li><li>依應用程式的連線紀錄、CSV 匯出（Pro）、系統匣應用程式</li></ul></section>
 <section id="faq"><h2>常見問題</h2>
 <details id="q-pro"><summary>什麼是 Pro？</summary><p>Pro 是在 Microsoft Store 中一次性購買的附加元件，不是訂閱。可在使用同一 Microsoft 帳戶登入的 Windows 電腦上使用。</p></details>
 <details id="q-restore"><summary>如何在其他電腦上或重新安裝後還原 Pro？</summary><p>使用購買時的帳戶登入 Microsoft Store，然後選取「說明」&gt;「還原購買」。</p></details>

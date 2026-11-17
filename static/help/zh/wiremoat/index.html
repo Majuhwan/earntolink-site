@@ -35,11 +35,15 @@
 <li>新应用首次对外连接时，可在通知中直接允许或阻止。</li>
 </ol></article>
 <article class="topic" id="block"><h3>阻止或允许应用</h3><ol>
-<li>选择应用并选择“阻止”或“允许”。规则是名称以 ETLNW- 开头的 Windows Defender 防火墙规则，每次更改 Windows 都会请求权限。</li>
+<li>选择应用并选择“阻止”或“允许”。规则是名称以 ETLNW- 开头的 Windows Defender 防火墙规则，打开应用后第一次更改时 Windows 会请求一次权限。</li>
 <li>免费版最多同时阻止 5 个应用，允许不限数量。</li>
 </ol></article>
+<article class="topic" id="blocklog"><h3>查看被拦截的连接尝试</h3><ol>
+<li>在设置中开启拦截记录。开启期间，Windows 会审核防火墙拦截的连接（安全审核“筛选平台连接”失败），历史记录中会列出已阻止应用的尝试。</li>
+<li>关闭此项或退出应用时，会将 Windows 审核设置恢复为原来的值。如果应用意外退出而未能恢复，设置中会显示“恢复”。连接较多的电脑上，开启期间安全日志会更快写满。</li>
+</ol></article>
 </section>
-<section id="features"><h2>功能</h2><ul><li>按应用的实时连接：路径、发布者、地址、端口、主机、状态</li><li>新应用首次连接时提醒，可直接允许或阻止</li><li>用 Windows Defender 防火墙规则阻止或允许应用</li><li>无需管理员权限运行，多项更改只需一次 UAC 确认</li><li>锁定模式和工作 / 游戏配置文件（Pro）</li><li>按应用的连接历史、CSV 导出（Pro）、托盘应用</li></ul></section>
+<section id="features"><h2>功能</h2><ul><li>按应用的实时连接：路径、发布者、地址、端口、主机、状态</li><li>新应用首次连接时提醒，可直接允许或阻止</li><li>用 Windows Defender 防火墙规则阻止或允许应用</li><li>无需管理员权限运行，每次打开应用只需一次 UAC 确认</li><li>可选：记录被拦截的连接尝试（Windows 审核）</li><li>锁定模式和工作 / 游戏配置文件（Pro）</li><li>按应用的连接历史、CSV 导出（Pro）、托盘应用</li></ul></section>
 <section id="faq"><h2>常见问题</h2>
 <details id="q-pro"><summary>什么是 Pro？</summary><p>Pro 是在 Microsoft Store 中一次性购买的附加组件，不是订阅。可在使用同一 Microsoft 帐户登录的 Windows 电脑上使用。</p></details>
 <details id="q-restore"><summary>如何在其他电脑上或重新安装后恢复 Pro？</summary><p>使用购买时的帐户登录 Microsoft Store，然后选择“帮助”&gt;“恢复购买”。</p></details>

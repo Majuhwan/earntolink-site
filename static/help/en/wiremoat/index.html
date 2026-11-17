@@ -35,11 +35,15 @@
 <li>When an app connects out for the first time, a notification lets you allow or block it.</li>
 </ol></article>
 <article class="topic" id="block"><h3>Block or allow an app</h3><ol>
-<li>Select an app and choose Block or Allow. Rules are Windows Defender Firewall rules named ETLNW-, and Windows asks for permission each time.</li>
+<li>Select an app and choose Block or Allow. Rules are Windows Defender Firewall rules named ETLNW-, and Windows asks for permission once, at the first change after you open the app.</li>
 <li>The free version blocks up to 5 apps at once; allowing has no limit.</li>
 </ol></article>
+<article class="topic" id="blocklog"><h3>See blocked connection attempts</h3><ol>
+<li>Turn on Blocked-attempt log in Settings. While it is on, Windows audits connections its firewall drops (security auditing, "Filtering Platform Connection" failures), and History lists the attempts of apps you blocked.</li>
+<li>Turning it off or closing the app puts the Windows audit setting back exactly as it was. If the app ended unexpectedly and could not do this, Settings shows Restore. On busy PCs the Security log fills faster while the log is on.</li>
+</ol></article>
 </section>
-<section id="features"><h2>Features</h2><ul><li>Live connections per app: path, publisher, address, port, host, state</li><li>Alert with Allow / Block when a new app makes its first connection</li><li>Block or allow apps with Windows Defender Firewall rules</li><li>Runs without admin rights; one UAC prompt per set of changes</li><li>Lockdown mode and Work / Game profiles (Pro)</li><li>Connection history per app, CSV export (Pro), tray app</li></ul></section>
+<section id="features"><h2>Features</h2><ul><li>Live connections per app: path, publisher, address, port, host, state</li><li>Alert with Allow / Block when a new app makes its first connection</li><li>Block or allow apps with Windows Defender Firewall rules</li><li>Runs without admin rights; one UAC prompt per app session</li><li>Optional log of blocked connection attempts (Windows auditing)</li><li>Lockdown mode and Work / Game profiles (Pro)</li><li>Connection history per app, CSV export (Pro), tray app</li></ul></section>
 <section id="faq"><h2>FAQ</h2>
 <details id="q-pro"><summary>What is Pro?</summary><p>Pro is a one-time add-on purchase in the Microsoft Store, not a subscription. It works on Windows PCs signed in with the same Microsoft account.</p></details>
 <details id="q-restore"><summary>How do I get Pro back on another PC or after reinstalling?</summary><p>Sign in to the Microsoft Store with the account used for the purchase, then select Help &gt; Restore purchase.</p></details>

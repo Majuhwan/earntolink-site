@@ -35,11 +35,15 @@
 <li>Verbindet sich eine App erstmals nach außen, können Sie sie per Benachrichtigung zulassen oder blockieren.</li>
 </ol></article>
 <article class="topic" id="block"><h3>App blockieren oder zulassen</h3><ol>
-<li>Wählen Sie eine App und Blockieren oder Zulassen. Es entstehen Windows Defender Firewall-Regeln mit dem Präfix ETLNW-; Windows fragt jedes Mal nach.</li>
+<li>Wählen Sie eine App und Blockieren oder Zulassen. Es entstehen Windows Defender Firewall-Regeln mit dem Präfix ETLNW-; Windows fragt einmal, bei der ersten Änderung nach dem Öffnen der App.</li>
 <li>Kostenlos lassen sich bis zu 5 Apps gleichzeitig blockieren; Zulassen ist unbegrenzt.</li>
 </ol></article>
+<article class="topic" id="blocklog"><h3>Blockierte Verbindungsversuche sehen</h3><ol>
+<li>Schalten Sie in den Einstellungen das Protokoll blockierter Versuche ein. Solange es aktiv ist, protokolliert Windows von der Firewall verworfene Verbindungen (Sicherheitsüberwachung „Filterplattformverbindung“, Fehler), und der Verlauf zeigt die Versuche gesperrter Apps.</li>
+<li>Beim Ausschalten oder Beenden der App wird die Windows-Überwachungseinstellung genau wiederhergestellt. Wurde die App unerwartet beendet, zeigen die Einstellungen „Wiederherstellen“. Auf stark genutzten PCs füllt sich das Sicherheitsprotokoll währenddessen schneller.</li>
+</ol></article>
 </section>
-<section id="features"><h2>Funktionen</h2><ul><li>Live-Verbindungen pro App: Pfad, Herausgeber, Adresse, Port, Host, Status</li><li>Hinweis mit Zulassen / Sperren bei der ersten Verbindung einer neuen App</li><li>Apps mit Regeln der Windows Defender Firewall sperren oder zulassen</li><li>Läuft ohne Adminrechte; eine UAC-Abfrage pro Satz an Änderungen</li><li>Sperrmodus und Profile für Arbeit / Spiel (Pro)</li><li>Verbindungsverlauf pro App, CSV-Export (Pro), Infobereich-App</li></ul></section>
+<section id="features"><h2>Funktionen</h2><ul><li>Live-Verbindungen pro App: Pfad, Herausgeber, Adresse, Port, Host, Status</li><li>Hinweis mit Zulassen / Sperren bei der ersten Verbindung einer neuen App</li><li>Apps mit Regeln der Windows Defender Firewall sperren oder zulassen</li><li>Läuft ohne Adminrechte; eine UAC-Abfrage pro App-Sitzung</li><li>Optionales Protokoll blockierter Verbindungsversuche (Windows-Überwachung)</li><li>Sperrmodus und Profile für Arbeit / Spiel (Pro)</li><li>Verbindungsverlauf pro App, CSV-Export (Pro), Infobereich-App</li></ul></section>
 <section id="faq"><h2>Häufige Fragen</h2>
 <details id="q-pro"><summary>Was ist Pro?</summary><p>Pro ist ein einmaliger Add-on-Kauf im Microsoft Store, kein Abonnement. Es gilt auf Windows-PCs, die mit demselben Microsoft-Konto angemeldet sind.</p></details>
 <details id="q-restore"><summary>Wie erhalte ich Pro auf einem anderen PC oder nach einer Neuinstallation zurück?</summary><p>Melden Sie sich mit dem Kaufkonto im Microsoft Store an und wählen Sie dann Hilfe &gt; Kauf wiederherstellen.</p></details>

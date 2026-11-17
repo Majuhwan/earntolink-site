@@ -35,11 +35,15 @@
 <li>Lorsqu’une application se connecte pour la première fois, une notification permet de l’autoriser ou de la bloquer.</li>
 </ol></article>
 <article class="topic" id="block"><h3>Bloquer ou autoriser une application</h3><ol>
-<li>Sélectionnez une application et choisissez Bloquer ou Autoriser. Les règles du Pare-feu Windows Defender commencent par ETLNW- ; Windows demande l’autorisation à chaque fois.</li>
+<li>Sélectionnez une application et choisissez Bloquer ou Autoriser. Les règles du Pare-feu Windows Defender commencent par ETLNW- ; Windows demande l’autorisation une fois, à la première modification après l’ouverture de l’application.</li>
 <li>La version gratuite bloque jusqu’à 5 applications à la fois ; les autorisations sont illimitées.</li>
 </ol></article>
+<article class="topic" id="blocklog"><h3>Voir les tentatives de connexion bloquées</h3><ol>
+<li>Activez le journal des tentatives bloquées dans Paramètres. Tant qu’il est activé, Windows audite les connexions rejetées par le pare-feu (audit de sécurité « Connexion de la plateforme de filtrage », échecs) et l’historique affiche les tentatives des applications bloquées.</li>
+<li>À la désactivation ou à la fermeture de l’application, le réglage d’audit de Windows est rétabli à l’identique. Si l’application s’est arrêtée de façon inattendue, Paramètres propose Rétablir. Sur un PC très actif, le journal Sécurité se remplit plus vite pendant ce temps.</li>
+</ol></article>
 </section>
-<section id="features"><h2>Fonctionnalités</h2><ul><li>Connexions en direct par app : chemin, éditeur, adresse, port, hôte, état</li><li>Alerte avec Autoriser / Bloquer à la première connexion d’une app</li><li>Blocage ou autorisation des apps via le Pare-feu Windows Defender</li><li>Sans droits administrateur ; une seule demande UAC par lot</li><li>Mode verrouillage et profils Travail / Jeu (Pro)</li><li>Historique par app, export CSV (Pro), app de zone de notification</li></ul></section>
+<section id="features"><h2>Fonctionnalités</h2><ul><li>Connexions en direct par app : chemin, éditeur, adresse, port, hôte, état</li><li>Alerte avec Autoriser / Bloquer à la première connexion d’une app</li><li>Blocage ou autorisation des apps via le Pare-feu Windows Defender</li><li>Sans droits administrateur ; une seule demande UAC par session</li><li>Journal facultatif des tentatives bloquées (audit Windows)</li><li>Mode verrouillage et profils Travail / Jeu (Pro)</li><li>Historique par app, export CSV (Pro), app de zone de notification</li></ul></section>
 <section id="faq"><h2>Questions fréquentes</h2>
 <details id="q-pro"><summary>Qu’est-ce que Pro ?</summary><p>Pro est un module complémentaire acheté une seule fois dans le Microsoft Store, sans abonnement. Il fonctionne sur les PC Windows connectés au même compte Microsoft.</p></details>
 <details id="q-restore"><summary>Comment récupérer Pro sur un autre PC ou après une réinstallation ?</summary><p>Connectez-vous au Microsoft Store avec le compte de l’achat, puis sélectionnez Aide &gt; Restaurer l’achat.</p></details>

@@ -35,11 +35,15 @@
 <li>Cuando una aplicación se conecta por primera vez, una notificación permite permitirla o bloquearla.</li>
 </ol></article>
 <article class="topic" id="block"><h3>Bloquear o permitir una aplicación</h3><ol>
-<li>Seleccione una aplicación y elija Bloquear o Permitir. Las reglas del Firewall de Windows Defender empiezan por ETLNW- y Windows pide permiso cada vez.</li>
+<li>Seleccione una aplicación y elija Bloquear o Permitir. Las reglas del Firewall de Windows Defender empiezan por ETLNW- y Windows pide permiso una vez, en el primer cambio después de abrir la aplicación.</li>
 <li>La versión gratuita bloquea hasta 5 aplicaciones a la vez; permitir no tiene límite.</li>
 </ol></article>
+<article class="topic" id="blocklog"><h3>Ver los intentos de conexión bloqueados</h3><ol>
+<li>Active el registro de intentos bloqueados en Configuración. Mientras está activado, Windows audita las conexiones que bloquea el firewall (auditoría de seguridad «Conexión de plataforma de filtrado», errores) y el historial muestra los intentos de las aplicaciones bloqueadas.</li>
+<li>Al desactivarlo o cerrar la aplicación, la configuración de auditoría de Windows vuelve exactamente a como estaba. Si la aplicación se cerró de forma inesperada, Configuración muestra Restaurar. En equipos con mucho tráfico, el registro de seguridad se llena antes mientras está activado.</li>
+</ol></article>
 </section>
-<section id="features"><h2>Funciones</h2><ul><li>Conexiones en directo por app: ruta, editor, dirección, puerto, host, estado</li><li>Aviso con Permitir / Bloquear en la primera conexión de una app nueva</li><li>Bloquea o permite apps con reglas del Firewall de Windows Defender</li><li>Sin permisos de administrador; un solo aviso UAC por grupo de cambios</li><li>Bloqueo total y perfiles Trabajo / Juego (Pro)</li><li>Historial por app, exportación CSV (Pro), app de la bandeja</li></ul></section>
+<section id="features"><h2>Funciones</h2><ul><li>Conexiones en directo por app: ruta, editor, dirección, puerto, host, estado</li><li>Aviso con Permitir / Bloquear en la primera conexión de una app nueva</li><li>Bloquea o permite apps con reglas del Firewall de Windows Defender</li><li>Sin permisos de administrador; un solo aviso UAC por sesión</li><li>Registro opcional de intentos bloqueados (auditoría de Windows)</li><li>Bloqueo total y perfiles Trabajo / Juego (Pro)</li><li>Historial por app, exportación CSV (Pro), app de la bandeja</li></ul></section>
 <section id="faq"><h2>Preguntas frecuentes</h2>
 <details id="q-pro"><summary>¿Qué es Pro?</summary><p>Pro es un complemento de compra única en Microsoft Store, no una suscripción. Funciona en los PC con Windows que usen la misma cuenta Microsoft.</p></details>
 <details id="q-restore"><summary>¿Cómo recupero Pro en otro PC o tras reinstalar?</summary><p>Inicie sesión en Microsoft Store con la cuenta de la compra y seleccione Ayuda &gt; Restaurar compra.</p></details>
