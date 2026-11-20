@@ -29,27 +29,40 @@
 <p><a class="btn" href="https://apps.microsoft.com/detail/9PF55L6KXWR0">从 Microsoft Store 获取</a></p>
 <nav class="toc"><a href="#how">使用方法</a><a href="#features">功能</a><a href="#faq">常见问题</a><a href="#trouble">疑难解答</a><a href="#contact">联系支持</a></nav>
 <section id="how"><h2>使用方法</h2>
-<article class="topic" id="merge"><h3>合并 PDF</h3><ol>
-<li>选择“合并”，添加 PDF 文件或将其拖入窗口。</li>
-<li>拖动页面调整顺序，按需旋转或删除页面。</li>
-<li>保存。免费版一次最多合并 3 个 PDF。</li>
+<article class="topic" id="merge"><h3>合并和整理 PDF</h3><ol>
+<li>选择“合并与整理”，添加 PDF 或整个文件夹（… 菜单），或拖入窗口。每个 PDF 都有自己的页面缩略图区域。</li>
+<li>拖动页面调整顺序或移到另一个文档。放下时按住 Ctrl 为复制。Shift/Ctrl+单击可选择多页一起拖动。拖到“用所选页新建文档”即可新建文档。</li>
+<li>旋转（旋转按钮）或删除（Delete）页面。Ctrl+Z 撤销、Ctrl+Y 重做，最多 100 步。</li>
+<li>选择保存方式：一个 PDF，或每个文档分别保存（每个区域一个文件），然后保存。免费：每次最多 3 个源 PDF；Pro：不限。页面中的链接、注释和表单字段会保留。</li>
 </ol></article>
 <article class="topic" id="split"><h3>拆分 PDF</h3><ol>
-<li>选择“拆分”并打开 PDF。</li>
-<li>可按每页、每 N 页或 1-3, 5, 8-10 等范围拆分。会先预览将要生成的文件。</li>
-<li>结果以“报告 (2).pdf”这样的新名称保存。免费版一次最多 10 个文件。</li>
+<li>选择“拆分”并打开 PDF（或在资源管理器中右键 → Split with PDF Binder）。</li>
+<li>免费预设：每页、每 N 页或 1-3, 5, 8- 等范围（每次最多 10 个文件）。Pro 预设：按书签（1–3 级）、按文件大小（如 10 MB）或按空白分隔页（空白页会去掉）。</li>
+<li>列表显示将生成的文件。文件名默认为 {name}_{range}（如 Report_1-3.pdf）；Pro 可用 {name} {n} {range} {from} {to} {pages} {bookmark} {date} 自定义规则。不会覆盖已有文件（Report (2).pdf）。</li>
+</ol></article>
+<article class="topic" id="options"><h3>书签与输出选项（Pro）</h3><ol>
+<li>书签：“保留”会把原书签移到新页面位置；“每个文件一个”会为每个合并的文件添加书签，并把原书签放在其下。拆分时勾选“书签 · 保留”可让每部分带上书签。</li>
+<li>输出选项：压缩（轻度、推荐、强力，仅在文件变小时采用）、使用 {n} 和 {total} 的页码或页眉/页脚文字、水印文字、用 Windows OCR 生成可搜索文字（使用 Windows 已安装的 OCR 语言）、打开密码（AES-256）。</li>
+<li>所有选项都可免费选择并标有 Pro；只有在保存时才会询问 Pro，购买后会立即继续保存。</li>
+</ol></article>
+<article class="topic" id="automate"><h3>资源管理器、监视文件夹和命令行</h3><ol>
+<li>资源管理器（免费）：选中 PDF，右键 → Merge with PDF Binder 或 Split with PDF Binder。Windows 11 中位于“显示更多选项”内；“打开方式 → PDF Binder”也可以。这样打开的文件会进入已打开的窗口。</li>
+<li>监视文件夹（Pro）：在“自动化”中选择要监视的文件夹和另一个结果文件夹，选择操作（按当前拆分设置拆分、应用输出选项或合并同时到达的文件）并开始。PDF Binder 打开期间运行，不更改原文件。</li>
+<li>命令行（Pro）：pdfbinder merge &lt;文件或文件夹&gt; -o out.pdf [--bookmarks perfile]，pdfbinder split in.pdf --bookmarks 1 | --size 10 | --blank | --every 2 | --ranges "1-3,5" [-o 文件夹] [--name "{n} {bookmark}"]，另有 --compress、--numbers、--watermark、--ocr、--password。运行 pdfbinder help 查看全部选项。退出码：0 成功，1 用法错误，2 失败，3 需要 Pro。</li>
 </ol></article>
 </section>
-<section id="features"><h2>功能</h2><ul><li>合并 PDF，拖动调整页面顺序（免费：每次最多 3 个）</li><li>旋转和删除页面</li><li>按页、每 N 页或页码范围拆分（免费：每次最多 10 个文件）</li><li>支持带密码的 PDF</li><li>离线，不上传，无广告</li><li>免费：页面整理不限，最多合并 3 个 PDF，最多拆分为 10 个文件 · Pro：无限制</li></ul></section>
+<section id="features"><h2>功能</h2><ul><li>所有打开的 PDF 以页面缩略图显示在同一视图</li><li>拖动页面排序或移到其他文档，Ctrl+拖动复制</li><li>撤销与重做（Ctrl+Z / Ctrl+Y），旋转和删除页面</li><li>合并 PDF（免费：每次最多 3 个）或分别保存每个文档</li><li>按每页、每 N 页或范围拆分（免费：每次最多 10 个文件）</li><li>保留页面中的链接、注释和表单字段</li><li>资源管理器右键：Merge / Split with PDF Binder</li><li>Pro：不限数量合并、整个文件夹、拆分文件数不限</li><li>Pro：按书签、文件大小或空白分隔页拆分</li><li>Pro：保留书签，并为每个合并的文件添加书签</li><li>Pro：输出文件名 {name}、{n}、{bookmark}、{date}</li><li>Pro：压缩、密码保护、页码、水印</li><li>Pro：图片转 PDF、页面转图片、可搜索 PDF（Windows OCR）</li><li>Pro：监视文件夹和命令行（pdfbinder.exe）</li><li>离线、不上传、无账户、无广告，Pro 一次性购买</li></ul></section>
 <section id="faq"><h2>常见问题</h2>
 <details id="q-pro"><summary>什么是 Pro？</summary><p>Pro 是在 Microsoft Store 中一次性购买的附加组件，不是订阅。可在使用同一 Microsoft 帐户登录的 Windows 电脑上使用。</p></details>
 <details id="q-restore"><summary>如何在其他电脑上或重新安装后恢复 Pro？</summary><p>使用购买时的帐户登录 Microsoft Store，然后选择“帮助”&gt;“恢复购买”。</p></details>
 <details id="q-refund"><summary>如何申请退款？</summary><p>付款和退款由 Microsoft 处理。前往 account.microsoft.com &gt;“订单历史记录”，选择订单并申请退款。适用 Microsoft 退款政策。</p></details>
 <details id="q-offline"><summary>需要联网吗？我的数据会被发送吗？</summary><p>不需要。文件和输入内容仅在此电脑上处理，不会上传。没有帐户、广告或跟踪。仅在 Microsoft Store 购买和更新时使用网络。</p></details>
-<details id="q-formats"><summary>支持哪些文件格式？</summary><p>PDF（受密码保护的 PDF 需输入密码打开）。结果保存为新的 PDF 文件。</p></details>
+<details id="q-formats"><summary>支持哪些文件格式？</summary><p>PDF（受密码保护的 PDF 需输入密码打开）。Pro 还可将图片（JPG、PNG、TIFF、HEIC…）作为页面加入。结果始终保存为新文件，原文件不会被更改。</p></details>
 <details id="q-update"><summary>如何更新应用？</summary><p>Microsoft Store 会自动安装更新。要立即检查，请打开 Microsoft Store &gt;“库”，然后选择“获取更新”。</p></details></section>
 <section id="trouble"><h2>疑难解答</h2>
-<details id="q-password"><summary>PDF 要求输入密码。</summary><p>输入打开 PDF 的密码。不知道密码的文件无法打开。</p></details>
+<details id="q-password"><summary>PDF 要求输入密码。</summary><p>输入打开 PDF 的密码。不知道密码的文件无法打开。保存的结果没有密码（在输出选项中设置密码需 Pro）。</p></details>
+<details id="q-links"><summary>合并后的 PDF 中的链接无法跳转。</summary><p>网页链接和指向页面的链接会保留，并跟随页面到新位置。指向已删除页面的链接无处可去。使用其他文件“命名目标”的链接可能失效；书签（Pro）会重建，始终指向正确页面。</p></details>
+<details id="q-ocr"><summary>OCR 后找不到文字或语言不对。</summary><p>PDF Binder 使用 Windows 内置的文字识别及已安装的 OCR 语言。请在 Windows 设置 → 时间和语言 → 语言和区域中添加该语言（光学字符识别）。已有文字的页面会跳过。</p></details>
 <details id="q-fileOpen"><summary>文件无法打开。</summary><p>文件可能正在被其他应用使用、已损坏或格式不受支持。关闭正在使用该文件的应用后重试。支持的格式见上方问题。</p></details>
 <details id="q-save"><summary>无法保存或导出。</summary><p>文件夹可能为只读，或磁盘空间不足。请选择其他文件夹，例如“文档”。如果在 Windows 安全中心开启了“受控制文件夹的访问权限”，请允许此应用。</p></details>
 <details id="q-proLocked"><summary>已购买 Pro，但功能仍被锁定。</summary><p>选择“帮助”&gt;“恢复购买”。请确认 Microsoft Store 已使用购买时的帐户登录。刚购买后，确认可能需要几分钟。</p></details>

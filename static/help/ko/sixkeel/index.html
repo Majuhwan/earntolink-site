@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sixkeel · 도움말</title>
+<meta name="description" content="Sixkeel · 도움말">
+<link rel="canonical" href="https://earntolink.com/help/ko/sixkeel/">
+<link rel="alternate" hreflang="en" href="https://earntolink.com/help/en/sixkeel/">
+<link rel="alternate" hreflang="ko" href="https://earntolink.com/help/ko/sixkeel/">
+<link rel="alternate" hreflang="ja" href="https://earntolink.com/help/ja/sixkeel/">
+<link rel="alternate" hreflang="zh-Hans" href="https://earntolink.com/help/zh/sixkeel/">
+<link rel="alternate" hreflang="zh-Hant" href="https://earntolink.com/help/zh-Hant/sixkeel/">
+<link rel="alternate" hreflang="de" href="https://earntolink.com/help/de/sixkeel/">
+<link rel="alternate" hreflang="fr" href="https://earntolink.com/help/fr/sixkeel/">
+<link rel="alternate" hreflang="es" href="https://earntolink.com/help/es/sixkeel/">
+<link rel="alternate" hreflang="pt-BR" href="https://earntolink.com/help/pt/sixkeel/">
+<link rel="alternate" hreflang="it" href="https://earntolink.com/help/it/sixkeel/">
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../../ko/">EarnToLink 도움말</a>
+<nav><a href="../../ko/">모든 앱</a><a href="../../ko/support/">지원</a></nav>
+</div></header>
+<main class="wrap">
+<p class="crumb"><a href="../">모든 앱</a></p>
+<h1>Sixkeel <span class="sub">도움말</span></h1>
+<p class="tagline">2단계 인증 코드</p>
+<p><a class="btn" href="https://apps.microsoft.com/detail/9NPS5452B21Q">Microsoft Store에서 받기</a></p>
+<nav class="toc"><a href="#how">사용법</a><a href="#features">기능</a><a href="#faq">자주 묻는 질문</a><a href="#trouble">문제 해결</a><a href="#contact">문의하기</a></nav>
+<section id="how"><h2>사용법</h2>
+<article class="topic" id="add"><h3>계정 추가</h3><ol>
+<li>웹 사이트에서 인증 앱을 쓰는 2단계 인증을 켭니다. 사이트에 QR 코드와 키가 표시됩니다.</li>
+<li>Sixkeel에서 추가를 선택합니다. 저장한 QR 그림은 이미지 파일이나 클립보드, 화면에 보이는 QR 코드는 화면 영역(Pro), otpauth:// 링크는 설정 링크, 키를 직접 칠 때는 키 직접 입력을 고릅니다.</li>
+<li>Sixkeel에 표시된 6자리 코드를 웹 사이트에 입력해 마칩니다.</li>
+</ol></article>
+<article class="topic" id="copy"><h3>코드 복사</h3><ol>
+<li>코드나 복사 단추를 선택합니다. 원은 남은 초를 나타내고, 아래에 다음 코드가 보입니다.</li>
+<li>복사한 코드는 클립보드 기록·클라우드 클립보드에 남지 않고 30초 뒤 지워집니다(설정 &gt; 클립보드 지우기).</li>
+</ol></article>
+<article class="topic" id="lock"><h3>암호·Windows Hello로 잠그기</h3><ol>
+<li>계정은 항상 이 PC의 Windows 사용자 기준으로 암호화됩니다. 설정 &gt; 암호 설정에서 암호를 추가하면 코드를 열 때 암호가 필요합니다.</li>
+<li>암호를 설정한 뒤 Windows Hello(Pro)를 켜면 얼굴·지문·PIN으로 잠금을 풉니다. 자동 잠금은 정한 시간이 지나거나 Windows가 잠길 때 잠급니다.</li>
+</ol></article>
+<article class="topic" id="backup"><h3>백업과 복원</h3><ol>
+<li>백업 &gt; 백업 내보내기는 백업 암호로 암호화한 .sixkeel 파일 하나를 저장합니다(scrypt + AES-256-GCM). USB 드라이브나 다른 PC에 보관합니다.</li>
+<li>복원은 .sixkeel 파일을 읽어 목록에 없는 계정을 추가합니다. 폴더로 버전을 남기는 자동 백업은 Pro 기능입니다.</li>
+</ol></article>
+<article class="topic" id="import"><h3>다른 인증 앱에서 옮기기</h3><ol>
+<li>다른 앱에서 계정을 파일(Aegis·2FAS·andOTP)이나 내보내기 QR 코드로 내보냅니다.</li>
+<li>가져오기 &gt; 파일 선택(Pro)으로 파일을 읽습니다. 암호화된 파일은 그 암호를 묻습니다. 내보내기 QR 코드는 추가 &gt; 이미지 파일이나 화면 영역을 씁니다.</li>
+</ol></article>
+</section>
+<section id="features"><h2>기능</h2><ul><li>계정 수 제한 없음, 시간 기반·카운터 기반 코드</li><li>QR 그림·클립보드·설정 링크·키로 추가</li><li>이 PC에 암호화 저장, 선택 암호, 자동 잠금</li><li>복사한 코드는 클립보드 기록에 남지 않고 지워짐</li><li>암호화 백업·복원, 인터넷 연결 없음</li><li>Windows Hello, 화면 영역 QR, 가져오기, 폴더, 자동 백업(Pro)</li></ul></section>
+<section id="faq"><h2>자주 묻는 질문</h2>
+<details id="q-pro"><summary>Pro는 무엇입니까?</summary><p>Pro는 Microsoft Store에서 한 번 구매하는 추가 기능이며 구독이 아닙니다. 같은 Microsoft 계정으로 로그인한 Windows PC에서 사용합니다.</p></details>
+<details id="q-restore"><summary>다른 PC나 다시 설치한 뒤 Pro를 쓰려면 어떻게 합니까?</summary><p>구매에 사용한 계정으로 Microsoft Store에 로그인한 뒤 도움말 &gt; 구매 복원을 선택합니다.</p></details>
+<details id="q-refund"><summary>환불은 어떻게 받습니까?</summary><p>결제와 환불은 Microsoft가 처리합니다. account.microsoft.com &gt; 주문 기록에서 주문을 선택하고 환불을 요청합니다. Microsoft 환불 정책이 적용됩니다.</p></details>
+<details id="q-offline"><summary>인터넷 연결이 필요합니까? 내 데이터가 전송됩니까?</summary><p>아니요. 파일과 입력한 내용은 이 PC에서만 처리하며 외부로 보내지 않습니다. 계정, 광고, 추적이 없습니다. 인터넷은 Microsoft Store 구매와 업데이트에만 사용합니다.</p></details>
+<details id="q-update"><summary>앱은 어떻게 업데이트합니까?</summary><p>Microsoft Store가 업데이트를 자동으로 설치합니다. 바로 확인하려면 Microsoft Store &gt; 라이브러리에서 업데이트 받기를 선택합니다.</p></details></section>
+<section id="trouble"><h2>문제 해결</h2>
+<details id="q-rejected"><summary>웹 사이트가 코드를 거부합니다.</summary><p>시간 기반 코드는 PC 시계가 맞아야 합니다. Windows 설정 &gt; 시간 및 언어 &gt; 날짜 및 시간에서 자동으로 시간 설정을 켜고 지금 동기화를 선택합니다. 코드가 곧 바뀔 때는 다음 코드를 기다립니다.</p></details>
+<details id="q-noqr"><summary>QR 코드를 찾지 못합니다.</summary><p>코드 전체가 보이는 선명한 이미지를 쓰거나, 화면 영역으로 코드만 선택합니다. 그래도 안 되면 웹 사이트가 QR 코드 옆에 보여 주는 키를 키 직접 입력으로 넣습니다.</p></details>
+<details id="q-forgot"><summary>암호를 잊었습니다.</summary><p>암호는 어디에도 저장되지 않으므로 찾거나 초기화할 수 없습니다. Windows Hello를 켜 두었다면 Windows Hello로 잠금을 풀고 새 암호를 설정합니다. 아니면 백업을 복원해야 합니다.</p></details>
+<details id="q-proLocked"><summary>Pro를 구매했는데 기능이 잠겨 있습니다.</summary><p>도움말 &gt; 구매 복원을 선택합니다. Microsoft Store에 구매한 계정으로 로그인되어 있는지 확인합니다. 구매 직후에는 확인에 몇 분 걸릴 수 있습니다.</p></details>
+<details id="q-language"><summary>앱 언어를 바꾸려면 어떻게 합니까?</summary><p>앱은 Windows 표시 언어를 따릅니다. 설정 &gt; 시간 및 언어 &gt; 언어 및 지역에서 바꾼 뒤 앱을 다시 시작합니다.</p></details>
+<details id="q-mail"><summary>문의하기에서 메일 앱이 열리지 않습니다.</summary><p>기본 메일 앱이 없으면 정보 복사를 선택하고, 사용하는 메일 서비스에서 hello@earntolink.com(으)로 보냅니다.</p></details></section>
+<section id="contact" class="contact"><h2>문의하기</h2><p>앱 이름과 버전을 적어 hello@earntolink.com(으)로 메일을 보내십시오. 앱의 도움말 &gt; 문의하기를 사용하면 이 정보가 자동으로 들어갑니다.</p><p><a class="btn" href="mailto:hello@earntolink.com?subject=%5BSixkeel%5D%20Support">메일 보내기</a> <a href="privacy/">개인정보 처리방침</a></p></section>
+
+</main>
+<footer class="foot"><div class="wrap">
+<p class="langs"><a href="../../en/sixkeel/" hreflang="en">English</a> · <span aria-current="true">한국어</span> · <a href="../../ja/sixkeel/" hreflang="ja">日本語</a> · <a href="../../zh/sixkeel/" hreflang="zh-Hans">简体中文</a> · <a href="../../zh-Hant/sixkeel/" hreflang="zh-Hant">繁體中文</a> · <a href="../../de/sixkeel/" hreflang="de">Deutsch</a> · <a href="../../fr/sixkeel/" hreflang="fr">Français</a> · <a href="../../es/sixkeel/" hreflang="es">Español</a> · <a href="../../pt/sixkeel/" hreflang="pt-BR">Português</a> · <a href="../../it/sixkeel/" hreflang="it">Italiano</a></p>
+<p>© 2026 EarnToLink · <a href="mailto:hello@earntolink.com?subject=Support">hello@earntolink.com</a></p>
+</div></footer>
+</body>
+</html>

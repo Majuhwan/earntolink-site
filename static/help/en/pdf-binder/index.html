@@ -29,27 +29,40 @@
 <p><a class="btn" href="https://apps.microsoft.com/detail/9PF55L6KXWR0">Get it from Microsoft Store</a></p>
 <nav class="toc"><a href="#how">How-to</a><a href="#features">Features</a><a href="#faq">FAQ</a><a href="#trouble">Troubleshooting</a><a href="#contact">Contact support</a></nav>
 <section id="how"><h2>How-to</h2>
-<article class="topic" id="merge"><h3>Merge PDFs</h3><ol>
-<li>Select Merge and add PDF files, or drag them into the window.</li>
-<li>Drag pages to reorder them. Rotate or remove pages as needed.</li>
-<li>Save. The free version merges up to 3 PDFs at a time.</li>
+<article class="topic" id="merge"><h3>Merge and arrange PDFs</h3><ol>
+<li>Select Merge &amp; arrange and add PDFs, a whole folder (… menu), or drag them into the window. Every PDF appears as its own section of page thumbnails.</li>
+<li>Drag pages to reorder them or into another document. Hold Ctrl while dropping to copy. Shift/Ctrl+click selects several pages; drag them together. Drop on “New document from selection” to start a new document.</li>
+<li>Rotate (R button) or remove (Delete) pages. Ctrl+Z undoes and Ctrl+Y redoes, up to 100 steps.</li>
+<li>Choose Save as: One PDF, or Each document (one file per section), then Save. Free: up to 3 source PDFs at a time; Pro: any number. Links, comments and form fields inside the pages are kept.</li>
 </ol></article>
 <article class="topic" id="split"><h3>Split a PDF</h3><ol>
-<li>Select Split and open a PDF.</li>
-<li>Split every page, every N pages, or by ranges such as 1-3, 5, 8-10. The files to be created are previewed first.</li>
-<li>Results are saved with new names such as Report (2).pdf. The free version creates up to 10 files at a time.</li>
+<li>Select Split and open a PDF (or right-click it in File Explorer → Split with PDF Binder).</li>
+<li>Free presets: every page, every N pages, or ranges such as 1-3, 5, 8- (up to 10 files per split). Pro presets: by bookmarks (level 1–3), by file size (e.g. 10 MB) or at blank separator pages, which are left out.</li>
+<li>The list shows the files you will get. File names use {name}_{range} by default (e.g. Report_1-3.pdf); with Pro you can write your own rule with {name} {n} {range} {from} {to} {pages} {bookmark} {date}. Existing files are never overwritten (Report (2).pdf).</li>
+</ol></article>
+<article class="topic" id="options"><h3>Bookmarks and output options (Pro)</h3><ol>
+<li>Bookmarks: Keep moves the original bookmarks to the new page positions; One per file adds a bookmark for each merged file with its own bookmarks below it. When splitting, tick Bookmarks · Keep to carry the bookmarks of each part.</li>
+<li>Output options: compress (Light, Recommended, Strong – kept only if the file gets smaller), page numbers or header/footer text with {n} and {total}, watermark text, searchable text with Windows OCR (uses the OCR languages installed in Windows), and an open password (AES-256).</li>
+<li>You can choose every option for free and see it marked Pro; you are asked about Pro only when you save, and the job continues right after the purchase.</li>
+</ol></article>
+<article class="topic" id="automate"><h3>File Explorer, watch folder and command line</h3><ol>
+<li>File Explorer (free): select PDFs, right-click and choose Merge with PDF Binder or Split with PDF Binder. On Windows 11 these are under Show more options; Open with → PDF Binder also works. Files opened this way go to the window that is already open.</li>
+<li>Watch folder (Pro): in Automate, choose a folder to watch and a different folder for results, pick an action (split with the current split settings, apply output options, or merge files that arrive together) and start. It works while PDF Binder is open; originals are not changed.</li>
+<li>Command line (Pro): pdfbinder merge &lt;files or folders&gt; -o out.pdf [--bookmarks perfile], pdfbinder split in.pdf --bookmarks 1 | --size 10 | --blank | --every 2 | --ranges "1-3,5" [-o folder] [--name "{n} {bookmark}"], plus --compress, --numbers, --watermark, --ocr, --password. Run pdfbinder help for all options. Exit codes: 0 ok, 1 usage, 2 failed, 3 Pro required.</li>
 </ol></article>
 </section>
-<section id="features"><h2>Features</h2><ul><li>Merge PDFs and reorder pages by dragging (free: up to 3 PDFs at a time)</li><li>Rotate and remove pages</li><li>Split by page, every N pages or ranges (free: up to 10 files per split)</li><li>Opens password-protected PDFs</li><li>Offline, no uploads, no ads</li><li>Free: organize pages without limits, merge up to 3 PDFs, split into up to 10 files · Pro: no limits</li></ul></section>
+<section id="features"><h2>Features</h2><ul><li>All open PDFs as page thumbnails in one view</li><li>Drag pages to reorder or move them between documents, Ctrl+drag to copy</li><li>Undo and redo (Ctrl+Z / Ctrl+Y), rotate and remove pages</li><li>Merge PDFs (free: up to 3 at a time) or save each document separately</li><li>Split by page, every N pages or ranges (free: up to 10 files per split)</li><li>Keeps links, comments and form fields inside the pages</li><li>File Explorer right-click: Merge / Split with PDF Binder</li><li>Pro: unlimited merging, whole folders, unlimited split files</li><li>Pro: split by bookmarks, by file size or at blank separator pages</li><li>Pro: keep bookmarks and add a bookmark for each merged file</li><li>Pro: output names with {name}, {n}, {bookmark}, {date}</li><li>Pro: compress, password-protect, page numbers, watermark</li><li>Pro: images to PDF, pages to images, searchable PDF (Windows OCR)</li><li>Pro: watch folder and command line (pdfbinder.exe)</li><li>Offline, nothing uploaded, no account, no ads, one-time Pro</li></ul></section>
 <section id="faq"><h2>FAQ</h2>
 <details id="q-pro"><summary>What is Pro?</summary><p>Pro is a one-time add-on purchase in the Microsoft Store, not a subscription. It works on Windows PCs signed in with the same Microsoft account.</p></details>
 <details id="q-restore"><summary>How do I get Pro back on another PC or after reinstalling?</summary><p>Sign in to the Microsoft Store with the account used for the purchase, then select Help &gt; Restore purchase.</p></details>
 <details id="q-refund"><summary>How do I get a refund?</summary><p>Payments and refunds are handled by Microsoft. Go to account.microsoft.com &gt; Order history, select the order, and request a refund. Microsoft’s refund policy applies.</p></details>
 <details id="q-offline"><summary>Does the app need the internet? Is my data sent anywhere?</summary><p>No. Files and input are processed only on this PC and are never uploaded. There are no accounts, ads, or tracking. The internet is used only for Microsoft Store purchases and updates.</p></details>
-<details id="q-formats"><summary>Which file formats are supported?</summary><p>PDF, including password-protected PDFs (you enter the password). Results are saved as new PDF files.</p></details>
+<details id="q-formats"><summary>Which file formats are supported?</summary><p>PDF, including password-protected PDFs (you enter the password). Pro also adds images (JPG, PNG, TIFF, HEIC…) as pages. Results are always saved as new files; originals are never changed.</p></details>
 <details id="q-update"><summary>How do I update the app?</summary><p>The Microsoft Store installs updates automatically. To check now, open Microsoft Store &gt; Library and select Get updates.</p></details></section>
 <section id="trouble"><h2>Troubleshooting</h2>
-<details id="q-password"><summary>A PDF asks for a password.</summary><p>Enter the password used to open the PDF. Files whose password you don’t know can’t be opened.</p></details>
+<details id="q-password"><summary>A PDF asks for a password.</summary><p>Enter the password used to open the PDF. Files whose password you don’t know can’t be opened. The saved result has no password unless you set one in Output options (Pro).</p></details>
+<details id="q-links"><summary>A link inside the merged PDF does not jump anymore.</summary><p>Web links and links that point to a page are kept and follow the page to its new position. A link to a page you removed has nowhere to go. Links that use named destinations from another file can stop working; bookmarks (Pro) are rebuilt and always point to the right page.</p></details>
+<details id="q-ocr"><summary>Searchable text (OCR) finds nothing or the wrong language.</summary><p>PDF Binder uses the text recognition built into Windows and the OCR languages installed there. Add the language in Windows Settings → Time &amp; language → Language &amp; region (Optical character recognition). Pages that already contain text are skipped.</p></details>
 <details id="q-fileOpen"><summary>A file won’t open.</summary><p>The file may be open in another app, damaged, or in an unsupported format. Close other apps that use it and try again. See the supported formats above.</p></details>
 <details id="q-save"><summary>The app can’t save or export.</summary><p>The folder may be read-only or the disk may be full. Choose another folder, such as Documents. If Controlled folder access is on in Windows Security, allow this app.</p></details>
 <details id="q-proLocked"><summary>I bought Pro, but features are still locked.</summary><p>Select Help &gt; Restore purchase. Make sure the Microsoft Store is signed in with the account used for the purchase. Right after buying, confirmation can take a few minutes.</p></details>
