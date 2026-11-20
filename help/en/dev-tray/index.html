@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dev Tray · Help</title>
+<meta name="description" content="Dev Tray · Help">
+<link rel="canonical" href="https://earntolink.com/help/en/dev-tray/">
+<link rel="alternate" hreflang="en" href="https://earntolink.com/help/en/dev-tray/">
+<link rel="alternate" hreflang="ko" href="https://earntolink.com/help/ko/dev-tray/">
+<link rel="alternate" hreflang="ja" href="https://earntolink.com/help/ja/dev-tray/">
+<link rel="alternate" hreflang="zh-Hans" href="https://earntolink.com/help/zh/dev-tray/">
+<link rel="alternate" hreflang="zh-Hant" href="https://earntolink.com/help/zh-Hant/dev-tray/">
+<link rel="alternate" hreflang="de" href="https://earntolink.com/help/de/dev-tray/">
+<link rel="alternate" hreflang="fr" href="https://earntolink.com/help/fr/dev-tray/">
+<link rel="alternate" hreflang="es" href="https://earntolink.com/help/es/dev-tray/">
+<link rel="alternate" hreflang="pt-BR" href="https://earntolink.com/help/pt/dev-tray/">
+<link rel="alternate" hreflang="it" href="https://earntolink.com/help/it/dev-tray/">
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../../en/">EarnToLink Help</a>
+<nav><a href="../../en/">All apps</a><a href="../../en/support/">Support</a></nav>
+</div></header>
+<main class="wrap">
+<p class="crumb"><a href="../">All apps</a></p>
+<h1>Dev Tray <span class="sub">Help</span></h1>
+<p><a class="btn" href="https://apps.microsoft.com/detail/9PK75HLBW84Z">Get it from Microsoft Store</a></p>
+<nav class="toc"><a href="#how">How-to</a><a href="#features">Features</a><a href="#faq">FAQ</a><a href="#trouble">Troubleshooting</a><a href="#contact">Contact support</a></nav>
+<section id="how"><h2>How-to</h2>
+<article class="topic" id="json"><h3>Format and validate JSON</h3><ol>
+<li>Select JSON in the sidebar and paste text into Input.</li>
+<li>Select Format or Minify.</li>
+<li>If the JSON is invalid, the line and column of the error are shown.</li>
+<li>Select Copy to copy the result.</li>
+</ol></article>
+<article class="topic" id="encode"><h3>Encode and decode Base64, URL, and HTML</h3><ol>
+<li>Select Base64, URL encode, or HTML in the sidebar.</li>
+<li>Select Encode or Decode, then paste text into Input.</li>
+<li>For Base64 used in URLs or tokens, turn on URL-safe.</li>
+</ol></article>
+<article class="topic" id="hash"><h3>Hash text and compare checksums</h3><ol>
+<li>Select Hash and type or paste text. MD5, SHA-1, SHA-256, and SHA-512 appear immediately.</li>
+<li>Paste an expected value into Compare with hash. The matching row is marked Match.</li>
+<li>Pro: turn on HMAC and enter a key to get HMAC-SHA256 and HMAC-SHA512.</li>
+</ol></article>
+<article class="topic" id="files"><h3>Verify downloaded files (Pro)</h3><ol>
+<li>In Hash, select Hash files and choose one or more files. There is no size limit.</li>
+<li>Paste the checksum published by the download site into Compare with hash.</li>
+</ol></article>
+<article class="topic" id="jwt"><h3>Read a JWT</h3><ol>
+<li>Select JWT and paste the token.</li>
+<li>The header and payload are shown. If the token has exp, the expiry time is shown.</li>
+<li>The signature is not verified.</li>
+</ol></article>
+<article class="topic" id="time"><h3>Convert Unix timestamps</h3><ol>
+<li>Select Timestamp and enter seconds, milliseconds, or an ISO 8601 date. Now inserts the current time.</li>
+<li>Unix seconds, milliseconds, UTC, and local time are shown.</li>
+</ol></article>
+<article class="topic" id="uuid"><h3>Generate UUIDs</h3><ol>
+<li>Select UUID, set the count (1–100) with − and +, then select Generate.</li>
+<li>Select Copy to copy the whole list.</li>
+</ol></article>
+<article class="topic" id="regex"><h3>Test regular expressions</h3><ol>
+<li>Select Regex, enter a pattern, and paste test text into Input.</li>
+<li>Matches and capture groups are listed with the match count.</li>
+<li>Pro: turn on Replace and enter a replacement such as $1 to preview the result. Multiline and dot-all options are also available.</li>
+</ol></article>
+</section>
+<section id="features"><h2>Features</h2><ul><li>JSON format, minify and validate with error position</li><li>Base64, URL and HTML encode/decode</li><li>MD5, SHA-1, SHA-256, SHA-512 and checksum compare</li><li>JWT decoder, UUID and Unix time converter</li><li>Offline – nothing leaves your PC</li><li>Free: all nine tools · Pro: regex replace, file hashing, HMAC</li></ul></section>
+<section id="faq"><h2>FAQ</h2>
+<details id="q-pro"><summary>What is Pro?</summary><p>Pro is a one-time add-on purchase in the Microsoft Store, not a subscription. It works on Windows PCs signed in with the same Microsoft account.</p></details>
+<details id="q-restore"><summary>How do I get Pro back on another PC or after reinstalling?</summary><p>Sign in to the Microsoft Store with the account used for the purchase, then select Help &gt; Restore purchase.</p></details>
+<details id="q-refund"><summary>How do I get a refund?</summary><p>Payments and refunds are handled by Microsoft. Go to account.microsoft.com &gt; Order history, select the order, and request a refund. Microsoft’s refund policy applies.</p></details>
+<details id="q-offline"><summary>Does the app need the internet? Is my data sent anywhere?</summary><p>No. Files and input are processed only on this PC and are never uploaded. There are no accounts, ads, or tracking. The internet is used only for Microsoft Store purchases and updates.</p></details>
+<details id="q-update"><summary>How do I update the app?</summary><p>The Microsoft Store installs updates automatically. To check now, open Microsoft Store &gt; Library and select Get updates.</p></details></section>
+<section id="trouble"><h2>Troubleshooting</h2>
+<details id="q-invalid"><summary>Invalid input is shown.</summary><p>Check the line:column position next to the message. Common causes are trailing commas, single quotes, and comments, which JSON does not allow.</p></details>
+<details id="q-binary"><summary>Base64 decoding shows hex bytes instead of text.</summary><p>The decoded data is not UTF-8 text, such as an image or compressed data. The bytes are shown as hex so nothing is lost.</p></details>
+<details id="q-proLocked"><summary>I bought Pro, but features are still locked.</summary><p>Select Help &gt; Restore purchase. Make sure the Microsoft Store is signed in with the account used for the purchase. Right after buying, confirmation can take a few minutes.</p></details>
+<details id="q-language"><summary>How do I change the app language?</summary><p>The app follows the Windows display language. Change it in Settings &gt; Time &amp; language &gt; Language &amp; region, then restart the app.</p></details>
+<details id="q-reset"><summary>The app doesn’t start or stops responding.</summary><p>Close and reopen the app. If it continues, go to Settings &gt; Apps &gt; Installed apps, open the app’s Advanced options, and select Repair. Reset also clears app settings.</p></details></section>
+<section id="contact" class="contact"><h2>Contact support</h2><p>Email hello@earntolink.com with the app name and version. In the app, Help &gt; Contact support adds this information automatically.</p><p><a class="btn" href="mailto:hello@earntolink.com?subject=%5BDev%20Tray%5D%20Support">Send email</a> <a href="privacy/">Privacy policy</a></p></section>
+
+</main>
+<footer class="foot"><div class="wrap">
+<p class="langs"><span aria-current="true">English</span> · <a href="../../ko/dev-tray/" hreflang="ko">한국어</a> · <a href="../../ja/dev-tray/" hreflang="ja">日本語</a> · <a href="../../zh/dev-tray/" hreflang="zh-Hans">简体中文</a> · <a href="../../zh-Hant/dev-tray/" hreflang="zh-Hant">繁體中文</a> · <a href="../../de/dev-tray/" hreflang="de">Deutsch</a> · <a href="../../fr/dev-tray/" hreflang="fr">Français</a> · <a href="../../es/dev-tray/" hreflang="es">Español</a> · <a href="../../pt/dev-tray/" hreflang="pt-BR">Português</a> · <a href="../../it/dev-tray/" hreflang="it">Italiano</a></p>
+<p>© 2026 EarnToLink · <a href="mailto:hello@earntolink.com?subject=Support">hello@earntolink.com</a></p>
+</div></footer>
+</body>
+</html>

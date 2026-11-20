@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>EarnToLink 动态</title>
+    <link>https://earntolink.com/zh-cn/news/</link>
+    <atom:link href="https://earntolink.com/zh-cn/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>EarnToLink(언투링크)的最新动态</description>
+    <language>zh-CN</language>
+    <lastBuildDate>Sun, 11 Oct 2026 15:00:00 GMT</lastBuildDate>
+    <item>
+      <title>EarnToLink 聚焦广告变现咨询</title>
+      <link>https://earntolink.com/zh-cn/news/ad-consulting/</link>
+      <guid isPermaLink="true">https://earntolink.com/zh-cn/news/ad-consulting/</guid>
+      <pubDate>Sun, 11 Oct 2026 15:00:00 GMT</pubDate>
+      <description>EarnToLink 已将业务重心调整为广告变现咨询。 现提供六项服务:广告收益诊断与策略、网站与媒体变现、应用变现、零售媒体与广告平台开发、广告政策与隐私合规,以及广告运营与数据报告。 如需咨询,请发送邮件至 hello@earntolink.com。</description>
+    </item>
+    <item>
+      <title>earntolink.com 正式上线</title>
+      <link>https://earntolink.com/zh-cn/news/earntolink-com-launch/</link>
+      <guid isPermaLink="true">https://earntolink.com/zh-cn/news/earntolink-com-launch/</guid>
+      <pubDate>Fri, 09 Oct 2026 15:00:00 GMT</pubDate>
+      <description>EarnToLink 网站 earntolink.com 现已上线。 网站介绍了我们的服务领域、自研产品、公司信息、隐私政策和联系方式。 提供韩语、英语、日语、中文(简体和繁体)、西班牙语、法语、德语、葡萄牙语、意大利语、越南语、印度尼西亚语、泰语和俄语版本。</description>
+    </item>
+    <item>
+      <title>我们的自研产品</title>
+      <link>https://earntolink.com/zh-cn/news/product-lineup/</link>
+      <guid isPermaLink="true">https://earntolink.com/zh-cn/news/product-lineup/</guid>
+      <pubDate>Fri, 09 Oct 2026 15:00:00 GMT</pubDate>
+      <description>自研产品的当前状态。 移动应用 Roll Tidy 和 Roll Flick,以及桌面应用 Space Map、Dupeless 和 Archive Fix,均即将推出。</description>
+    </item>
+  </channel>
+</rss>

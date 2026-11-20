@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ladlewise</title>
+<link rel="stylesheet" href="../style.css">
+<script>
+(function () {
+  var n = (navigator.languages && navigator.languages[0]) || navigator.language || 'en';
+  n = n.toLowerCase();
+  var l = 'en';
+  if (n.indexOf('zh') === 0) l = (n.indexOf('hant') > 0 || /-(tw|hk|mo)/.test(n)) ? 'zh-Hant' : 'zh';
+  else { var c = n.split('-')[0]; if (['ko','ja','de','fr','es','pt','it'].indexOf(c) >= 0) l = c; }
+  location.replace('../' + l + '/ladlewise/');
+})();
+</script>
+</head>
+<body><main class="wrap"><h1>Ladlewise</h1><ul class="plain">
+<li><a href="../en/ladlewise/" hreflang="en">English</a></li>
+<li><a href="../ko/ladlewise/" hreflang="ko">한국어</a></li>
+<li><a href="../ja/ladlewise/" hreflang="ja">日本語</a></li>
+<li><a href="../zh/ladlewise/" hreflang="zh-Hans">简体中文</a></li>
+<li><a href="../zh-Hant/ladlewise/" hreflang="zh-Hant">繁體中文</a></li>
+<li><a href="../de/ladlewise/" hreflang="de">Deutsch</a></li>
+<li><a href="../fr/ladlewise/" hreflang="fr">Français</a></li>
+<li><a href="../es/ladlewise/" hreflang="es">Español</a></li>
+<li><a href="../pt/ladlewise/" hreflang="pt-BR">Português</a></li>
+<li><a href="../it/ladlewise/" hreflang="it">Italiano</a></li>
+</ul></main></body>
+</html>

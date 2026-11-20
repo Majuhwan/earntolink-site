@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>EarnToLink News</title>
+    <link>https://earntolink.com/en/news/</link>
+    <atom:link href="https://earntolink.com/en/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>News from EarnToLink (언투링크)</description>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 11 Oct 2026 15:00:00 GMT</lastBuildDate>
+    <item>
+      <title>EarnToLink refocuses on ad revenue consulting</title>
+      <link>https://earntolink.com/en/news/ad-consulting/</link>
+      <guid isPermaLink="true">https://earntolink.com/en/news/ad-consulting/</guid>
+      <pubDate>Sun, 11 Oct 2026 15:00:00 GMT</pubDate>
+      <description>EarnToLink has refocused its services on ad revenue consulting. We now offer six services: ad revenue assessment and strategy, website and media monetization, app monetization, retail media and ad platform development, ad policy and privacy compliance, and ad operations and reporting advisory. For consultations, email hello@earntolink.com.</description>
+    </item>
+    <item>
+      <title>earntolink.com is live</title>
+      <link>https://earntolink.com/en/news/earntolink-com-launch/</link>
+      <guid isPermaLink="true">https://earntolink.com/en/news/earntolink-com-launch/</guid>
+      <pubDate>Fri, 09 Oct 2026 15:00:00 GMT</pubDate>
+      <description>The EarnToLink website, earntolink.com, is now live. It covers our services, our own products, company details, our privacy policy and how to contact us. It is available in Korean, English, Japanese, Chinese (Simplified and Traditional), Spanish, French, German, Portuguese, Italian, Vietnamese, Indonesian, Thai and Russian.</description>
+    </item>
+    <item>
+      <title>Our own products</title>
+      <link>https://earntolink.com/en/news/product-lineup/</link>
+      <guid isPermaLink="true">https://earntolink.com/en/news/product-lineup/</guid>
+      <pubDate>Fri, 09 Oct 2026 15:00:00 GMT</pubDate>
+      <description>An update on our own products. The mobile apps Roll Tidy and Roll Flick and the desktop apps Space Map, Dupeless and Archive Fix are being prepared for release.</description>
+    </item>
+  </channel>
+</rss>

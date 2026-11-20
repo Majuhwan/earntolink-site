@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sixkeel · Help</title>
+<meta name="description" content="Sixkeel · Help">
+<link rel="canonical" href="https://earntolink.com/help/en/sixkeel/">
+<link rel="alternate" hreflang="en" href="https://earntolink.com/help/en/sixkeel/">
+<link rel="alternate" hreflang="ko" href="https://earntolink.com/help/ko/sixkeel/">
+<link rel="alternate" hreflang="ja" href="https://earntolink.com/help/ja/sixkeel/">
+<link rel="alternate" hreflang="zh-Hans" href="https://earntolink.com/help/zh/sixkeel/">
+<link rel="alternate" hreflang="zh-Hant" href="https://earntolink.com/help/zh-Hant/sixkeel/">
+<link rel="alternate" hreflang="de" href="https://earntolink.com/help/de/sixkeel/">
+<link rel="alternate" hreflang="fr" href="https://earntolink.com/help/fr/sixkeel/">
+<link rel="alternate" hreflang="es" href="https://earntolink.com/help/es/sixkeel/">
+<link rel="alternate" hreflang="pt-BR" href="https://earntolink.com/help/pt/sixkeel/">
+<link rel="alternate" hreflang="it" href="https://earntolink.com/help/it/sixkeel/">
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../../en/">EarnToLink Help</a>
+<nav><a href="../../en/">All apps</a><a href="../../en/support/">Support</a></nav>
+</div></header>
+<main class="wrap">
+<p class="crumb"><a href="../">All apps</a></p>
+<h1>Sixkeel <span class="sub">Help</span></h1>
+<p class="tagline">Two-step verification codes</p>
+<p><a class="btn" href="https://apps.microsoft.com/detail/9NPS5452B21Q">Get it from Microsoft Store</a></p>
+<nav class="toc"><a href="#how">How-to</a><a href="#features">Features</a><a href="#faq">FAQ</a><a href="#trouble">Troubleshooting</a><a href="#contact">Contact support</a></nav>
+<section id="how"><h2>How-to</h2>
+<article class="topic" id="add"><h3>Add an account</h3><ol>
+<li>On the website, turn on two-step verification with an authenticator app. The site shows a QR code and a key.</li>
+<li>In Sixkeel select Add. Choose Image file or Clipboard for a saved QR picture, Screen area to read the QR code shown on screen (Pro), Setup link for an otpauth:// link, or Enter key to type the key.</li>
+<li>Type the 6-digit code shown in Sixkeel on the website to finish.</li>
+</ol></article>
+<article class="topic" id="copy"><h3>Copy a code</h3><ol>
+<li>Select the code or the copy button. The ring shows the seconds left; the next code is shown below.</li>
+<li>The copied code is kept out of clipboard history and cloud clipboard, and is cleared after 30 seconds (Settings &gt; Clear clipboard).</li>
+</ol></article>
+<article class="topic" id="lock"><h3>Lock with a password or Windows Hello</h3><ol>
+<li>Accounts are always encrypted on this PC for your Windows user. Settings &gt; Set password adds a password that is needed to open the codes.</li>
+<li>With a password set, turn on Windows Hello (Pro) to unlock with face, fingerprint or PIN. Auto-lock locks after the chosen minutes and when Windows locks.</li>
+</ol></article>
+<article class="topic" id="backup"><h3>Back up and restore</h3><ol>
+<li>Backup &gt; Export backup saves one .sixkeel file encrypted with a backup password (scrypt + AES-256-GCM). Keep it on a USB drive or another PC.</li>
+<li>Restore reads a .sixkeel file and adds the accounts that are not in the list yet. Automatic backups to a folder with versions are part of Pro.</li>
+</ol></article>
+<article class="topic" id="import"><h3>Move from another authenticator app</h3><ol>
+<li>In the other app, export the accounts as a file (Aegis, 2FAS, andOTP) or as export QR codes.</li>
+<li>Import &gt; Choose file (Pro) reads the file; encrypted files ask for their password. For export QR codes use Add &gt; Image file or Screen area.</li>
+</ol></article>
+</section>
+<section id="features"><h2>Features</h2><ul><li>Unlimited accounts, time-based and counter-based codes</li><li>Add from a QR picture, the clipboard, a setup link or a key</li><li>Encrypted on this PC, optional password, auto-lock</li><li>Copied codes stay out of clipboard history and are cleared</li><li>Encrypted backup and restore, no internet connection</li><li>Windows Hello, screen-area QR, import, folders, automatic backups (Pro)</li></ul></section>
+<section id="faq"><h2>FAQ</h2>
+<details id="q-pro"><summary>What is Pro?</summary><p>Pro is a one-time add-on purchase in the Microsoft Store, not a subscription. It works on Windows PCs signed in with the same Microsoft account.</p></details>
+<details id="q-restore"><summary>How do I get Pro back on another PC or after reinstalling?</summary><p>Sign in to the Microsoft Store with the account used for the purchase, then select Help &gt; Restore purchase.</p></details>
+<details id="q-refund"><summary>How do I get a refund?</summary><p>Payments and refunds are handled by Microsoft. Go to account.microsoft.com &gt; Order history, select the order, and request a refund. Microsoft’s refund policy applies.</p></details>
+<details id="q-offline"><summary>Does the app need the internet? Is my data sent anywhere?</summary><p>No. Files and input are processed only on this PC and are never uploaded. There are no accounts, ads, or tracking. The internet is used only for Microsoft Store purchases and updates.</p></details>
+<details id="q-update"><summary>How do I update the app?</summary><p>The Microsoft Store installs updates automatically. To check now, open Microsoft Store &gt; Library and select Get updates.</p></details></section>
+<section id="trouble"><h2>Troubleshooting</h2>
+<details id="q-rejected"><summary>The website rejects the code.</summary><p>Time-based codes need the PC clock to be right. In Windows Settings &gt; Time &amp; language &gt; Date &amp; time, turn on Set time automatically and select Sync now. If the code is about to change, wait for the next one.</p></details>
+<details id="q-noqr"><summary>The QR code isn’t found.</summary><p>Use a sharp image with the whole code visible, or select only the code with Screen area. If it still fails, use the key the website shows next to the QR code (Enter key).</p></details>
+<details id="q-forgot"><summary>I forgot the password.</summary><p>The password can’t be recovered or reset; it is not stored anywhere. If Windows Hello is on, unlock with Windows Hello and set a new password. Otherwise restore a backup on a new vault.</p></details>
+<details id="q-proLocked"><summary>I bought Pro, but features are still locked.</summary><p>Select Help &gt; Restore purchase. Make sure the Microsoft Store is signed in with the account used for the purchase. Right after buying, confirmation can take a few minutes.</p></details>
+<details id="q-language"><summary>How do I change the app language?</summary><p>The app follows the Windows display language. Change it in Settings &gt; Time &amp; language &gt; Language &amp; region, then restart the app.</p></details>
+<details id="q-mail"><summary>Contact support doesn’t open my email app.</summary><p>If no default email app is set, select Copy info and send the text to hello@earntolink.com from any email service.</p></details></section>
+<section id="contact" class="contact"><h2>Contact support</h2><p>Email hello@earntolink.com with the app name and version. In the app, Help &gt; Contact support adds this information automatically.</p><p><a class="btn" href="mailto:hello@earntolink.com?subject=%5BSixkeel%5D%20Support">Send email</a> <a href="privacy/">Privacy policy</a></p></section>
+
+</main>
+<footer class="foot"><div class="wrap">
+<p class="langs"><span aria-current="true">English</span> · <a href="../../ko/sixkeel/" hreflang="ko">한국어</a> · <a href="../../ja/sixkeel/" hreflang="ja">日本語</a> · <a href="../../zh/sixkeel/" hreflang="zh-Hans">简体中文</a> · <a href="../../zh-Hant/sixkeel/" hreflang="zh-Hant">繁體中文</a> · <a href="../../de/sixkeel/" hreflang="de">Deutsch</a> · <a href="../../fr/sixkeel/" hreflang="fr">Français</a> · <a href="../../es/sixkeel/" hreflang="es">Español</a> · <a href="../../pt/sixkeel/" hreflang="pt-BR">Português</a> · <a href="../../it/sixkeel/" hreflang="it">Italiano</a></p>
+<p>© 2026 EarnToLink · <a href="mailto:hello@earntolink.com?subject=Support">hello@earntolink.com</a></p>
+</div></footer>
+</body>
+</html>

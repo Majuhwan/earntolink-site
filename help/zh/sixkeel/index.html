@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sixkeel · 帮助</title>
+<meta name="description" content="Sixkeel · 帮助">
+<link rel="canonical" href="https://earntolink.com/help/zh/sixkeel/">
+<link rel="alternate" hreflang="en" href="https://earntolink.com/help/en/sixkeel/">
+<link rel="alternate" hreflang="ko" href="https://earntolink.com/help/ko/sixkeel/">
+<link rel="alternate" hreflang="ja" href="https://earntolink.com/help/ja/sixkeel/">
+<link rel="alternate" hreflang="zh-Hans" href="https://earntolink.com/help/zh/sixkeel/">
+<link rel="alternate" hreflang="zh-Hant" href="https://earntolink.com/help/zh-Hant/sixkeel/">
+<link rel="alternate" hreflang="de" href="https://earntolink.com/help/de/sixkeel/">
+<link rel="alternate" hreflang="fr" href="https://earntolink.com/help/fr/sixkeel/">
+<link rel="alternate" hreflang="es" href="https://earntolink.com/help/es/sixkeel/">
+<link rel="alternate" hreflang="pt-BR" href="https://earntolink.com/help/pt/sixkeel/">
+<link rel="alternate" hreflang="it" href="https://earntolink.com/help/it/sixkeel/">
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../../zh/">EarnToLink 帮助</a>
+<nav><a href="../../zh/">所有应用</a><a href="../../zh/support/">支持</a></nav>
+</div></header>
+<main class="wrap">
+<p class="crumb"><a href="../">所有应用</a></p>
+<h1>Sixkeel <span class="sub">帮助</span></h1>
+<p class="tagline">两步验证码</p>
+<p><a class="btn" href="https://apps.microsoft.com/detail/9NPS5452B21Q">从 Microsoft Store 获取</a></p>
+<nav class="toc"><a href="#how">使用方法</a><a href="#features">功能</a><a href="#faq">常见问题</a><a href="#trouble">疑难解答</a><a href="#contact">联系支持</a></nav>
+<section id="how"><h2>使用方法</h2>
+<article class="topic" id="add"><h3>添加账户</h3><ol>
+<li>在网站上开启使用验证器应用的两步验证。网站会显示二维码和密钥。</li>
+<li>在 Sixkeel 中选择“添加”。已保存的二维码图片选“图像文件”或“剪贴板”，屏幕上的二维码选“屏幕区域”(Pro)，otpauth:// 链接选“设置链接”，手动输入选“输入密钥”。</li>
+<li>在网站上输入 Sixkeel 显示的 6 位验证码完成设置。</li>
+</ol></article>
+<article class="topic" id="copy"><h3>复制验证码</h3><ol>
+<li>选择验证码或复制按钮。圆环显示剩余秒数，下方显示下一个验证码。</li>
+<li>复制的验证码不会进入剪贴板历史和云剪贴板，30 秒后清除（设置 &gt; 清除剪贴板）。</li>
+</ol></article>
+<article class="topic" id="lock"><h3>使用密码或 Windows Hello 锁定</h3><ol>
+<li>账户始终按此电脑的 Windows 用户加密。在“设置 &gt; 设置密码”中添加密码后，打开验证码需要密码。</li>
+<li>设置密码后，开启 Windows Hello (Pro) 即可用面部、指纹或 PIN 解锁。自动锁定会在所选时间后以及 Windows 锁定时生效。</li>
+</ol></article>
+<article class="topic" id="backup"><h3>备份和还原</h3><ol>
+<li>“备份 &gt; 导出备份”会保存一个用备份密码加密的 .sixkeel 文件（scrypt + AES-256-GCM）。请保存在 U 盘或另一台电脑上。</li>
+<li>“还原”会读取 .sixkeel 文件并添加列表中没有的账户。自动按版本备份到文件夹属于 Pro 功能。</li>
+</ol></article>
+<article class="topic" id="import"><h3>从其他验证器应用迁移</h3><ol>
+<li>在其他应用中将账户导出为文件（Aegis、2FAS、andOTP）或导出二维码。</li>
+<li>“导入 &gt; 选择文件”(Pro) 读取文件；加密文件会要求输入密码。导出二维码请使用“添加 &gt; 图像文件”或“屏幕区域”。</li>
+</ol></article>
+</section>
+<section id="features"><h2>功能</h2><ul><li>账户数量不限，支持基于时间和基于计数器的验证码</li><li>通过二维码图片、剪贴板、设置链接或密钥添加</li><li>加密保存在本机，可选密码，自动锁定</li><li>复制的验证码不进入剪贴板历史并会自动清除</li><li>加密备份和还原，不连接网络</li><li>Windows Hello、屏幕区域二维码、导入、文件夹、自动备份（Pro）</li></ul></section>
+<section id="faq"><h2>常见问题</h2>
+<details id="q-pro"><summary>什么是 Pro？</summary><p>Pro 是在 Microsoft Store 中一次性购买的附加组件，不是订阅。可在使用同一 Microsoft 帐户登录的 Windows 电脑上使用。</p></details>
+<details id="q-restore"><summary>如何在其他电脑上或重新安装后恢复 Pro？</summary><p>使用购买时的帐户登录 Microsoft Store，然后选择“帮助”&gt;“恢复购买”。</p></details>
+<details id="q-refund"><summary>如何申请退款？</summary><p>付款和退款由 Microsoft 处理。前往 account.microsoft.com &gt;“订单历史记录”，选择订单并申请退款。适用 Microsoft 退款政策。</p></details>
+<details id="q-offline"><summary>需要联网吗？我的数据会被发送吗？</summary><p>不需要。文件和输入内容仅在此电脑上处理，不会上传。没有帐户、广告或跟踪。仅在 Microsoft Store 购买和更新时使用网络。</p></details>
+<details id="q-update"><summary>如何更新应用？</summary><p>Microsoft Store 会自动安装更新。要立即检查，请打开 Microsoft Store &gt;“库”，然后选择“获取更新”。</p></details></section>
+<section id="trouble"><h2>疑难解答</h2>
+<details id="q-rejected"><summary>网站拒绝验证码。</summary><p>基于时间的验证码需要电脑时钟准确。在 Windows“设置 &gt; 时间和语言 &gt; 日期和时间”中打开“自动设置时间”并选择“立即同步”。验证码即将更换时请等待下一个。</p></details>
+<details id="q-noqr"><summary>找不到二维码。</summary><p>使用能看到完整二维码的清晰图像，或用“屏幕区域”只选择二维码。仍然失败时，用“输入密钥”输入网站在二维码旁显示的密钥。</p></details>
+<details id="q-forgot"><summary>忘记了密码。</summary><p>密码不会保存在任何地方，因此无法找回或重置。若已开启 Windows Hello，请用它解锁后设置新密码；否则请还原备份。</p></details>
+<details id="q-proLocked"><summary>已购买 Pro，但功能仍被锁定。</summary><p>选择“帮助”&gt;“恢复购买”。请确认 Microsoft Store 已使用购买时的帐户登录。刚购买后，确认可能需要几分钟。</p></details>
+<details id="q-language"><summary>如何更改应用语言？</summary><p>应用跟随 Windows 显示语言。在“设置”&gt;“时间和语言”&gt;“语言和区域”中更改，然后重新启动应用。</p></details>
+<details id="q-mail"><summary>“联系支持”无法打开邮件应用。</summary><p>如果没有设置默认邮件应用，请选择“复制信息”，并通过任意邮件服务发送至 hello@earntolink.com。</p></details></section>
+<section id="contact" class="contact"><h2>联系支持</h2><p>请发送邮件至 hello@earntolink.com，并注明应用名称和版本。在应用中使用“帮助”&gt;“联系支持”会自动填入这些信息。</p><p><a class="btn" href="mailto:hello@earntolink.com?subject=%5BSixkeel%5D%20Support">发送邮件</a> <a href="privacy/">隐私政策</a></p></section>
+
+</main>
+<footer class="foot"><div class="wrap">
+<p class="langs"><a href="../../en/sixkeel/" hreflang="en">English</a> · <a href="../../ko/sixkeel/" hreflang="ko">한국어</a> · <a href="../../ja/sixkeel/" hreflang="ja">日本語</a> · <span aria-current="true">简体中文</span> · <a href="../../zh-Hant/sixkeel/" hreflang="zh-Hant">繁體中文</a> · <a href="../../de/sixkeel/" hreflang="de">Deutsch</a> · <a href="../../fr/sixkeel/" hreflang="fr">Français</a> · <a href="../../es/sixkeel/" hreflang="es">Español</a> · <a href="../../pt/sixkeel/" hreflang="pt-BR">Português</a> · <a href="../../it/sixkeel/" hreflang="it">Italiano</a></p>
+<p>© 2026 EarnToLink · <a href="mailto:hello@earntolink.com?subject=Support">hello@earntolink.com</a></p>
+</div></footer>
+</body>
+</html>

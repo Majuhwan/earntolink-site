@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>언투링크 소식</title>
+    <link>https://earntolink.com/news/</link>
+    <atom:link href="https://earntolink.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>언투링크(EarnToLink) 소식</description>
+    <language>ko-KR</language>
+    <lastBuildDate>Sun, 11 Oct 2026 15:00:00 GMT</lastBuildDate>
+    <item>
+      <title>광고 수익화 컨설팅으로 서비스 개편</title>
+      <link>https://earntolink.com/news/ad-consulting/</link>
+      <guid isPermaLink="true">https://earntolink.com/news/ad-consulting/</guid>
+      <pubDate>Sun, 11 Oct 2026 15:00:00 GMT</pubDate>
+      <description>언투링크가 광고 수익화 컨설팅으로 서비스를 개편했습니다. 광고 수익화 진단 · 전략, 웹 · 미디어 광고 수익화, 앱 광고 수익화, 리테일 미디어 · 광고 플랫폼 구축, 광고 정책 · 개인정보 대응, 광고 운영 · 리포팅 자문의 여섯 가지입니다. 상담 문의는 hello@earntolink.com으로 받습니다.</description>
+    </item>
+    <item>
+      <title>earntolink.com 공개</title>
+      <link>https://earntolink.com/news/earntolink-com-launch/</link>
+      <guid isPermaLink="true">https://earntolink.com/news/earntolink-com-launch/</guid>
+      <pubDate>Fri, 09 Oct 2026 15:00:00 GMT</pubDate>
+      <description>언투링크 웹사이트 earntolink.com을 공개했습니다. 서비스, 자체 제품, 회사 정보, 개인정보처리방침, 문의처를 안내합니다. 한국어, 영어, 일본어, 중국어(간체 · 번체), 스페인어, 프랑스어, 독일어, 포르투갈어, 이탈리아어, 베트남어, 인도네시아어, 태국어, 러시아어로 제공합니다.</description>
+    </item>
+    <item>
+      <title>자체 제품 안내</title>
+      <link>https://earntolink.com/news/product-lineup/</link>
+      <guid isPermaLink="true">https://earntolink.com/news/product-lineup/</guid>
+      <pubDate>Fri, 09 Oct 2026 15:00:00 GMT</pubDate>
+      <description>자체 제품 현황입니다. 모바일 앱 정리 싹, 넘겨 정리와 데스크톱 앱 용량 지도, 중복 싹, 한글 압축은 출시 준비 중입니다.</description>
+    </item>
+  </channel>
+</rss>

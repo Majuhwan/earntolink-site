@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ข่าวสาร EarnToLink</title>
+    <link>https://earntolink.com/th/news/</link>
+    <atom:link href="https://earntolink.com/th/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>ข่าวสารจาก EarnToLink (언투링크)</description>
+    <language>th-TH</language>
+    <lastBuildDate>Sun, 11 Oct 2026 15:00:00 GMT</lastBuildDate>
+    <item>
+      <title>EarnToLink มุ่งเน้นการให้คำปรึกษารายได้จากโฆษณา</title>
+      <link>https://earntolink.com/th/news/ad-consulting/</link>
+      <guid isPermaLink="true">https://earntolink.com/th/news/ad-consulting/</guid>
+      <pubDate>Sun, 11 Oct 2026 15:00:00 GMT</pubDate>
+      <description>EarnToLink ปรับบริการมุ่งเน้นที่การให้คำปรึกษาด้านรายได้จากโฆษณา ปัจจุบันเรามีหกบริการ ได้แก่ การประเมินและกลยุทธ์รายได้จากโฆษณา การสร้างรายได้จากเว็บไซต์และสื่อ การสร้างรายได้จากแอป รีเทลมีเดียและการพัฒนาแพลตฟอร์มโฆษณา การปฏิบัติตามนโยบายโฆษณาและความเป็นส่วนตัว และการดำเนินงานและที่ปรึกษาด้านรายงานโฆษณา หากต้องการปรึกษา กรุณาส่งอีเมลถึง hello@earntolink.com</description>
+    </item>
+    <item>
+      <title>earntolink.com เปิดให้บริการแล้ว</title>
+      <link>https://earntolink.com/th/news/earntolink-com-launch/</link>
+      <guid isPermaLink="true">https://earntolink.com/th/news/earntolink-com-launch/</guid>
+      <pubDate>Fri, 09 Oct 2026 15:00:00 GMT</pubDate>
+      <description>เว็บไซต์ EarnToLink คือ earntolink.com เปิดให้บริการแล้ว ครอบคลุมด้านบริการ ผลิตภัณฑ์ของเราเอง ข้อมูลบริษัท นโยบายความเป็นส่วนตัว และข้อมูลติดต่อ มีให้เลือกในภาษาเกาหลี อังกฤษ ญี่ปุ่น จีน (ตัวย่อและตัวเต็ม) สเปน ฝรั่งเศส เยอรมัน โปรตุเกส อิตาลี เวียดนาม อินโดนีเซีย ไทย และรัสเซีย</description>
+    </item>
+    <item>
+      <title>ผลิตภัณฑ์ของเราเอง</title>
+      <link>https://earntolink.com/th/news/product-lineup/</link>
+      <guid isPermaLink="true">https://earntolink.com/th/news/product-lineup/</guid>
+      <pubDate>Fri, 09 Oct 2026 15:00:00 GMT</pubDate>
+      <description>สถานะปัจจุบันของผลิตภัณฑ์ของเราเอง แอปมือถือ Roll Tidy และ Roll Flick และแอปเดสก์ท็อป Space Map, Dupeless และ Archive Fix จะเปิดตัวเร็วๆ นี้</description>
+    </item>
+  </channel>
+</rss>

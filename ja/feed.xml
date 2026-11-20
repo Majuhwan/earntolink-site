@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>EarnToLink お知らせ</title>
+    <link>https://earntolink.com/ja/news/</link>
+    <atom:link href="https://earntolink.com/ja/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>EarnToLink(언투링크)からのお知らせ</description>
+    <language>ja-JP</language>
+    <lastBuildDate>Sun, 11 Oct 2026 15:00:00 GMT</lastBuildDate>
+    <item>
+      <title>EarnToLink、広告収益化コンサルティングに事業を集約</title>
+      <link>https://earntolink.com/ja/news/ad-consulting/</link>
+      <guid isPermaLink="true">https://earntolink.com/ja/news/ad-consulting/</guid>
+      <pubDate>Sun, 11 Oct 2026 15:00:00 GMT</pubDate>
+      <description>EarnToLinkは、サービスの軸を広告収益化コンサルティングに集約しました。 広告収益の診断・戦略設計、ウェブサイト・メディアの収益化、アプリ収益化、リテールメディア・広告プラットフォーム開発、広告ポリシー・プライバシー対応、広告運用・レポート支援の6つのサービスを提供します。 ご相談は hello@earntolink.com までメールでお寄せください。</description>
+    </item>
+    <item>
+      <title>earntolink.comを公開しました</title>
+      <link>https://earntolink.com/ja/news/earntolink-com-launch/</link>
+      <guid isPermaLink="true">https://earntolink.com/ja/news/earntolink-com-launch/</guid>
+      <pubDate>Fri, 09 Oct 2026 15:00:00 GMT</pubDate>
+      <description>EarnToLinkのウェブサイト earntolink.com を公開しました。 サービス領域、自社プロダクト、会社情報、プライバシーポリシー、お問い合わせ先を掲載しています。 韓国語、英語、日本語、中国語(簡体字・繁体字)、スペイン語、フランス語、ドイツ語、ポルトガル語、イタリア語、ベトナム語、インドネシア語、タイ語、ロシア語でご覧いただけます。</description>
+    </item>
+    <item>
+      <title>自社プロダクト</title>
+      <link>https://earntolink.com/ja/news/product-lineup/</link>
+      <guid isPermaLink="true">https://earntolink.com/ja/news/product-lineup/</guid>
+      <pubDate>Fri, 09 Oct 2026 15:00:00 GMT</pubDate>
+      <description>自社プロダクトの現在の状況です。 モバイルアプリのRoll TidyとRoll Flick、デスクトップアプリのSpace Map、Dupeless、Archive Fixは近日公開予定です。</description>
+    </item>
+  </channel>
+</rss>

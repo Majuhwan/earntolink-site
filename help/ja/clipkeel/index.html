@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clipkeel · ヘルプ</title>
+<meta name="description" content="Clipkeel · ヘルプ">
+<link rel="canonical" href="https://earntolink.com/help/ja/clipkeel/">
+<link rel="alternate" hreflang="en" href="https://earntolink.com/help/en/clipkeel/">
+<link rel="alternate" hreflang="ko" href="https://earntolink.com/help/ko/clipkeel/">
+<link rel="alternate" hreflang="ja" href="https://earntolink.com/help/ja/clipkeel/">
+<link rel="alternate" hreflang="zh-Hans" href="https://earntolink.com/help/zh/clipkeel/">
+<link rel="alternate" hreflang="zh-Hant" href="https://earntolink.com/help/zh-Hant/clipkeel/">
+<link rel="alternate" hreflang="de" href="https://earntolink.com/help/de/clipkeel/">
+<link rel="alternate" hreflang="fr" href="https://earntolink.com/help/fr/clipkeel/">
+<link rel="alternate" hreflang="es" href="https://earntolink.com/help/es/clipkeel/">
+<link rel="alternate" hreflang="pt-BR" href="https://earntolink.com/help/pt/clipkeel/">
+<link rel="alternate" hreflang="it" href="https://earntolink.com/help/it/clipkeel/">
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../../ja/">EarnToLink ヘルプ</a>
+<nav><a href="../../ja/">すべてのアプリ</a><a href="../../ja/support/">サポート</a></nav>
+</div></header>
+<main class="wrap">
+<p class="crumb"><a href="../">すべてのアプリ</a></p>
+<h1>Clipkeel <span class="sub">ヘルプ</span></h1>
+<p><a class="btn" href="https://apps.microsoft.com/detail/9N99FD840P48">Microsoft Store から入手</a></p>
+<nav class="toc"><a href="#how">使い方</a><a href="#features">機能</a><a href="#faq">よく寄せられる質問</a><a href="#trouble">トラブルシューティング</a><a href="#contact">お問い合わせ</a></nav>
+<section id="how"><h2>使い方</h2>
+<article class="topic" id="cut"><h3>無劣化でカットする</h3><ol>
+<li>動画を開くか、ウィンドウにドラッグします。すぐに開き、キーフレームはタイムラインにオレンジの目盛りで表示されます。</li>
+<li>開始位置に移動し (矢印: 1 フレーム、Ctrl+矢印: キーフレーム)、I を押してから終了位置で O を押します。I/O ごとに区間が追加され、タイムラインで端をドラッグして調整します。</li>
+<li>エクスポートで残す/削除、1 つのファイル/区間ごと、形式を選んでエクスポートします。映像と音声は再エンコードせずコピーされます。スマート カットなしでは各区間は開始前のキーフレームから始まります (斜線表示)。</li>
+</ol></article>
+<article class="topic" id="smart"><h3>フレーム単位のスマート カット (Pro)</h3><ol>
+<li>エクスポートでスマート カットをオンにします。カット位置と最寄りのキーフレームの間のフレームだけを同じコーデックの Windows エンコーダーで再エンコードし、それ以外はそのままコピーします。</li>
+<li>スマート カットは H.264・HEVC 動画 (8 ビット 4:2:0) で動作します。HEVC には Windows の HEVC エンコーダー (HEVC ビデオ拡張機能またはグラフィックス カードのエンコーダー) が必要です。ない場合はキーフレームでカットして保存し、通知を表示します。</li>
+</ol></article>
+<article class="topic" id="tracks"><h3>トラック・オーディオ・フレーム</h3><ol>
+<li>トラックで、結果に不要なオーディオ・字幕トラックのチェックを外します。オーディオをエクスポートは、チェックしたトラックを再エンコードせずに個別のファイルとして保存します。</li>
+<li>フレームを保存は、再生位置の正確なフレームを PNG で保存します。結合は、コーデック・画面サイズ・オーディオ トラックが同じファイルをつなぎます。</li>
+</ol></article>
+<article class="topic" id="pro"><h3>シーン・チャプター・リスト・一括処理 (Pro)</h3><ol>
+<li>シーンで分割は、動画のシーンの切り替わりごとに区間を作ります。チャプターは結合したファイルに区間ごとのチャプターを追加します。リストのインポート・エクスポートは CSV (開始・終了・名前) とチャプター テキスト (00:00 名前) を読み書きします。</li>
+<li>一括処理は、複数ファイルの先頭と末尾から同じ秒数を無劣化でカットします。</li>
+</ol></article>
+<article class="topic" id="project"><h3>作業を保存</h3><ol>
+<li>プロジェクトを保存は、区間・トラック・オプションを動画の横の .clipkeel.json に書き込みます。プロジェクトを開くで後から続けられます。元のファイルは変更されず、結果は新しいファイルになります。</li>
+</ol></article>
+</section>
+<section id="features"><h2>機能</h2><ul><li>再エンコードなしの無劣化カット、透かしなし (無料)</li><li>タイムラインにキーフレーム表示、フレーム単位の移動</li><li>区間を残す/削除、1 ファイルまたは区間ごと</li><li>トラック・MP4/MKV/MOV・結合・音声トラック・PNG (無料)</li><li>Windows エンコーダーによるフレーム単位のスマート カット (Pro)</li><li>一括処理・シーン分割・チャプター・区間リスト (Pro)</li></ul></section>
+<section id="faq"><h2>よく寄せられる質問</h2>
+<details id="q-pro"><summary>Pro とは何ですか?</summary><p>Pro は Microsoft Store で 1 回購入するアドオンで、サブスクリプションではありません。同じ Microsoft アカウントでサインインした Windows PC で使用できます。</p></details>
+<details id="q-restore"><summary>別の PC や再インストール後に Pro を使うには?</summary><p>購入に使用したアカウントで Microsoft Store にサインインし、[ヘルプ] &gt; [購入の復元] を選択します。</p></details>
+<details id="q-refund"><summary>返金を受けるには?</summary><p>支払いと返金は Microsoft が処理します。account.microsoft.com の [注文履歴] で注文を選択し、返金をリクエストします。Microsoft の返金ポリシーが適用されます。</p></details>
+<details id="q-offline"><summary>インターネット接続は必要ですか? データは送信されますか?</summary><p>いいえ。ファイルと入力内容はこの PC でのみ処理され、送信されることはありません。アカウント、広告、トラッキングはありません。インターネットは Microsoft Store での購入と更新にのみ使用します。</p></details>
+<details id="q-update"><summary>アプリを更新するには?</summary><p>更新は Microsoft Store が自動でインストールします。今すぐ確認するには、Microsoft Store の [ライブラリ] で [更新プログラムを取得する] を選択します。</p></details></section>
+<section id="trouble"><h2>トラブルシューティング</h2>
+<details id="q-start"><summary>結果が開始位置より少し前から始まります。</summary><p>無劣化カットはキーフレームからしか始められないため、開始位置の前のキーフレームから始まります (タイムラインの斜線部分)。開始をキーフレームに移動するか (Ctrl+矢印)、スマート カット (Pro) を使ってください。</p></details>
+<details id="q-preview"><summary>プレビューで動画が再生されません。</summary><p>再生には Windows にインストールされたビデオ コーデックを使います。停止中のフレームは常に表示され、Windows で再生できないファイルもカットできます。HEVC・AV1 の再生には Microsoft Store から対応する拡張機能をインストールしてください。</p></details>
+<details id="q-merge"><summary>結合でファイルをつなげないと表示されます。</summary><p>再エンコードなしでつなぐには、すべてのファイルのビデオ コーデック・画面サイズ・オーディオ トラックが同じである必要があります (同じカメラ・同じ設定)。異なるファイルは先に動画編集ソフトで変換してください。</p></details>
+<details id="q-proLocked"><summary>Pro を購入したのに機能がロックされたままです。</summary><p>[ヘルプ] &gt; [購入の復元] を選択します。Microsoft Store に購入したアカウントでサインインしているか確認してください。購入直後は確認に数分かかることがあります。</p></details>
+<details id="q-language"><summary>アプリの言語を変更するには?</summary><p>アプリは Windows の表示言語に従います。[設定] &gt; [時刻と言語] &gt; [言語と地域] で変更し、アプリを再起動します。</p></details>
+<details id="q-mail"><summary>[お問い合わせ] でメール アプリが開きません。</summary><p>既定のメール アプリがない場合は、[情報をコピー] を選択し、お使いのメール サービスから hello@earntolink.com に送信してください。</p></details>
+<details id="q-reset"><summary>アプリが起動しない、または応答しません。</summary><p>アプリを閉じて開き直します。解決しない場合は、[設定] &gt; [アプリ] &gt; [インストールされているアプリ] でこのアプリの [詳細オプション] を開き、[修復] を選択します。[リセット] を選ぶとアプリの設定も消去されます。</p></details></section>
+<section id="contact" class="contact"><h2>お問い合わせ</h2><p>アプリ名とバージョンを記載して hello@earntolink.com にメールを送信してください。アプリの [ヘルプ] &gt; [お問い合わせ] を使うと、この情報が自動で入ります。</p><p><a class="btn" href="mailto:hello@earntolink.com?subject=%5BClipkeel%5D%20Support">メールを送信</a> <a href="privacy/">プライバシー ポリシー</a></p></section>
+
+</main>
+<footer class="foot"><div class="wrap">
+<p class="langs"><a href="../../en/clipkeel/" hreflang="en">English</a> · <a href="../../ko/clipkeel/" hreflang="ko">한국어</a> · <span aria-current="true">日本語</span> · <a href="../../zh/clipkeel/" hreflang="zh-Hans">简体中文</a> · <a href="../../zh-Hant/clipkeel/" hreflang="zh-Hant">繁體中文</a> · <a href="../../de/clipkeel/" hreflang="de">Deutsch</a> · <a href="../../fr/clipkeel/" hreflang="fr">Français</a> · <a href="../../es/clipkeel/" hreflang="es">Español</a> · <a href="../../pt/clipkeel/" hreflang="pt-BR">Português</a> · <a href="../../it/clipkeel/" hreflang="it">Italiano</a></p>
+<p>© 2026 EarnToLink · <a href="mailto:hello@earntolink.com?subject=Support">hello@earntolink.com</a></p>
+</div></footer>
+</body>
+</html>

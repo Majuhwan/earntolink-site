@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tin tức EarnToLink</title>
+    <link>https://earntolink.com/vi/news/</link>
+    <atom:link href="https://earntolink.com/vi/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>Tin tức từ EarnToLink (언투링크)</description>
+    <language>vi-VN</language>
+    <lastBuildDate>Sun, 11 Oct 2026 15:00:00 GMT</lastBuildDate>
+    <item>
+      <title>EarnToLink tập trung vào tư vấn doanh thu quảng cáo</title>
+      <link>https://earntolink.com/vi/news/ad-consulting/</link>
+      <guid isPermaLink="true">https://earntolink.com/vi/news/ad-consulting/</guid>
+      <pubDate>Sun, 11 Oct 2026 15:00:00 GMT</pubDate>
+      <description>EarnToLink đã tập trung dịch vụ của mình vào tư vấn doanh thu quảng cáo. Hiện chúng tôi cung cấp sáu dịch vụ: đánh giá và chiến lược doanh thu quảng cáo, kiếm tiền cho website và truyền thông, kiếm tiền cho ứng dụng, retail media và phát triển nền tảng quảng cáo, tuân thủ chính sách quảng cáo và quyền riêng tư, vận hành và tư vấn báo cáo quảng cáo. Để được tư vấn, xin gửi email đến hello@earntolink.com.</description>
+    </item>
+    <item>
+      <title>earntolink.com đã hoạt động</title>
+      <link>https://earntolink.com/vi/news/earntolink-com-launch/</link>
+      <guid isPermaLink="true">https://earntolink.com/vi/news/earntolink-com-launch/</guid>
+      <pubDate>Fri, 09 Oct 2026 15:00:00 GMT</pubDate>
+      <description>Website EarnToLink, earntolink.com, đã chính thức hoạt động. Website giới thiệu các dịch vụ, sản phẩm tự phát triển, thông tin công ty, chính sách quyền riêng tư và thông tin liên hệ. Website có các ngôn ngữ: tiếng Hàn, Anh, Nhật, Trung (giản thể và phồn thể), Tây Ban Nha, Pháp, Đức, Bồ Đào Nha, Ý, Việt, Indonesia, Thái và Nga.</description>
+    </item>
+    <item>
+      <title>Sản phẩm tự phát triển của chúng tôi</title>
+      <link>https://earntolink.com/vi/news/product-lineup/</link>
+      <guid isPermaLink="true">https://earntolink.com/vi/news/product-lineup/</guid>
+      <pubDate>Fri, 09 Oct 2026 15:00:00 GMT</pubDate>
+      <description>Tình trạng hiện tại của các sản phẩm tự phát triển. Các ứng dụng di động Roll Tidy và Roll Flick cùng các ứng dụng máy tính Space Map, Dupeless và Archive Fix sắp ra mắt.</description>
+    </item>
+  </channel>
+</rss>

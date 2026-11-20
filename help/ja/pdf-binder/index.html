@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PDF Binder · ヘルプ</title>
+<meta name="description" content="PDF Binder · ヘルプ">
+<link rel="canonical" href="https://earntolink.com/help/ja/pdf-binder/">
+<link rel="alternate" hreflang="en" href="https://earntolink.com/help/en/pdf-binder/">
+<link rel="alternate" hreflang="ko" href="https://earntolink.com/help/ko/pdf-binder/">
+<link rel="alternate" hreflang="ja" href="https://earntolink.com/help/ja/pdf-binder/">
+<link rel="alternate" hreflang="zh-Hans" href="https://earntolink.com/help/zh/pdf-binder/">
+<link rel="alternate" hreflang="zh-Hant" href="https://earntolink.com/help/zh-Hant/pdf-binder/">
+<link rel="alternate" hreflang="de" href="https://earntolink.com/help/de/pdf-binder/">
+<link rel="alternate" hreflang="fr" href="https://earntolink.com/help/fr/pdf-binder/">
+<link rel="alternate" hreflang="es" href="https://earntolink.com/help/es/pdf-binder/">
+<link rel="alternate" hreflang="pt-BR" href="https://earntolink.com/help/pt/pdf-binder/">
+<link rel="alternate" hreflang="it" href="https://earntolink.com/help/it/pdf-binder/">
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../../ja/">EarnToLink ヘルプ</a>
+<nav><a href="../../ja/">すべてのアプリ</a><a href="../../ja/support/">サポート</a></nav>
+</div></header>
+<main class="wrap">
+<p class="crumb"><a href="../">すべてのアプリ</a></p>
+<h1>PDF Binder <span class="sub">ヘルプ</span></h1>
+<p><a class="btn" href="https://apps.microsoft.com/detail/9PF55L6KXWR0">Microsoft Store から入手</a></p>
+<nav class="toc"><a href="#how">使い方</a><a href="#features">機能</a><a href="#faq">よく寄せられる質問</a><a href="#trouble">トラブルシューティング</a><a href="#contact">お問い合わせ</a></nav>
+<section id="how"><h2>使い方</h2>
+<article class="topic" id="merge"><h3>PDF を結合・整理する</h3><ol>
+<li>[結合と整理] を選び、PDF やフォルダー(… メニュー)を追加するか、ウィンドウにドラッグします。PDF ごとにページサムネイルの区画ができます。</li>
+<li>ページをドラッグして並べ替えたり、別の文書へ移動します。Ctrl を押しながらドロップするとコピーします。Shift/Ctrl+クリックで複数選択してまとめてドラッグ。「選択から新しい文書」にドロップすると新しい文書になります。</li>
+<li>ページを回転(回転ボタン)・削除(Delete)。Ctrl+Z で元に戻し、Ctrl+Y でやり直し — 100 ステップまで。</li>
+<li>保存方法を選びます:1 つの PDF、または文書ごと(区画ごとに 1 ファイル)。そして保存。無料:一度に元の PDF 3 個まで、Pro:無制限。ページ内のリンク・注釈・フォームフィールドは保持されます。</li>
+</ol></article>
+<article class="topic" id="split"><h3>PDF を分割する</h3><ol>
+<li>[分割] を選び PDF を開きます(またはエクスプローラーで右クリック → Split with PDF Binder)。</li>
+<li>無料プリセット:1 ページずつ、N ページごと、1-3, 5, 8- のような範囲(1 回 10 ファイルまで)。Pro プリセット:しおり(1〜3 階層)、ファイルサイズ(例:10 MB)、白紙の区切りページ(白紙は除外)。</li>
+<li>一覧に作成されるファイルが表示されます。ファイル名は既定で {name}_{range}(例:Report_1-3.pdf)。Pro では {name} {n} {range} {from} {to} {pages} {bookmark} {date} で独自のルールを作れます。既存ファイルは上書きしません(Report (2).pdf)。</li>
+</ol></article>
+<article class="topic" id="options"><h3>しおりと出力オプション(Pro)</h3><ol>
+<li>しおり:「保持」は元のしおりを新しいページ位置へ移し、「ファイルごと」は結合したファイルごとにしおりを作り、その下に元のしおりを置きます。分割時は「しおり · 保持」をオンにすると各部分にしおりが付きます。</li>
+<li>出力オプション:圧縮(軽め・おすすめ・強め — 小さくなる場合のみ)、{n} と {total} を使ったページ番号やヘッダー/フッター文字、透かし文字、Windows OCR による検索可能な文字(Windows にインストールされた OCR 言語を使用)、開くパスワード(AES-256)。</li>
+<li>すべてのオプションは無料で選択でき、Pro の印が付きます。Pro は保存時にのみ確認され、購入後そのまま保存を続けます。</li>
+</ol></article>
+<article class="topic" id="automate"><h3>エクスプローラー・監視フォルダー・コマンドライン</h3><ol>
+<li>エクスプローラー(無料):PDF を選び右クリック → Merge with PDF Binder または Split with PDF Binder。Windows 11 では「その他のオプションを確認」の中にあります。「プログラムから開く → PDF Binder」も使えます。開いたファイルは既に開いているウィンドウに送られます。</li>
+<li>監視フォルダー(Pro):[自動化] で監視するフォルダーと別の結果フォルダーを選び、処理(現在の分割設定で分割、出力オプションを適用、同時に届いたファイルを結合)を選んで開始します。PDF Binder を開いている間動作し、元のファイルは変更しません。</li>
+<li>コマンドライン(Pro):pdfbinder merge &lt;ファイル・フォルダー&gt; -o out.pdf [--bookmarks perfile]、pdfbinder split in.pdf --bookmarks 1 | --size 10 | --blank | --every 2 | --ranges "1-3,5" [-o フォルダー] [--name "{n} {bookmark}"]、さらに --compress、--numbers、--watermark、--ocr、--password。すべてのオプションは pdfbinder help。終了コード:0 成功、1 使い方、2 失敗、3 Pro が必要。</li>
+</ol></article>
+</section>
+<section id="features"><h2>機能</h2><ul><li>開いた PDF をすべて 1 画面のページサムネイルで</li><li>ドラッグで並べ替え・文書間で移動、Ctrl+ドラッグでコピー</li><li>元に戻す・やり直し(Ctrl+Z / Ctrl+Y)、回転・削除</li><li>PDF を結合(無料:一度に 3 個まで)または文書ごとに保存</li><li>1 ページずつ・N ページごと・範囲で分割(無料:1 回 10 ファイルまで)</li><li>ページ内のリンク・注釈・フォームフィールドを保持</li><li>エクスプローラーの右クリック:Merge / Split with PDF Binder</li><li>Pro:無制限の結合・フォルダーごと・分割ファイル数無制限</li><li>Pro:しおり・ファイルサイズ・白紙区切りで分割</li><li>Pro:しおりを保持、結合したファイルごとにしおり</li><li>Pro:出力名ルール {name}、{n}、{bookmark}、{date}</li><li>Pro:圧縮・パスワード保護・ページ番号・透かし</li><li>Pro:画像 → PDF、ページ → 画像、検索可能 PDF(Windows OCR)</li><li>Pro:監視フォルダーとコマンドライン(pdfbinder.exe)</li><li>オフライン、アップロード・アカウント・広告なし、Pro は買い切り</li></ul></section>
+<section id="faq"><h2>よく寄せられる質問</h2>
+<details id="q-pro"><summary>Pro とは何ですか?</summary><p>Pro は Microsoft Store で 1 回購入するアドオンで、サブスクリプションではありません。同じ Microsoft アカウントでサインインした Windows PC で使用できます。</p></details>
+<details id="q-restore"><summary>別の PC や再インストール後に Pro を使うには?</summary><p>購入に使用したアカウントで Microsoft Store にサインインし、[ヘルプ] &gt; [購入の復元] を選択します。</p></details>
+<details id="q-refund"><summary>返金を受けるには?</summary><p>支払いと返金は Microsoft が処理します。account.microsoft.com の [注文履歴] で注文を選択し、返金をリクエストします。Microsoft の返金ポリシーが適用されます。</p></details>
+<details id="q-offline"><summary>インターネット接続は必要ですか? データは送信されますか?</summary><p>いいえ。ファイルと入力内容はこの PC でのみ処理され、送信されることはありません。アカウント、広告、トラッキングはありません。インターネットは Microsoft Store での購入と更新にのみ使用します。</p></details>
+<details id="q-formats"><summary>対応しているファイル形式は?</summary><p>PDF(パスワード付き PDF はパスワードを入力して開きます)。Pro では画像(JPG、PNG、TIFF、HEIC…)もページとして追加できます。結果は常に新しいファイルとして保存され、元のファイルは変更されません。</p></details>
+<details id="q-update"><summary>アプリを更新するには?</summary><p>更新は Microsoft Store が自動でインストールします。今すぐ確認するには、Microsoft Store の [ライブラリ] で [更新プログラムを取得する] を選択します。</p></details></section>
+<section id="trouble"><h2>トラブルシューティング</h2>
+<details id="q-password"><summary>PDF でパスワードを求められます。</summary><p>PDF を開くためのパスワードを入力します。パスワードがわからないファイルは開けません。保存結果にはパスワードは付きません(出力オプションで設定する場合は Pro)。</p></details>
+<details id="q-links"><summary>結合した PDF 内のリンクが移動しません。</summary><p>Web リンクとページを指すリンクは保持され、ページの新しい位置に追従します。削除したページへのリンクは移動先がありません。他のファイルの「名前付き移動先」を使うリンクは動作しない場合があります。しおり(Pro)は作り直され、常に正しいページを指します。</p></details>
+<details id="q-ocr"><summary>検索可能(OCR)にしても文字が認識されない、または言語が違います。</summary><p>PDF Binder は Windows 標準の文字認識と、インストール済みの OCR 言語を使います。Windows の設定 → 時刻と言語 → 言語と地域で言語(光学式文字認識)を追加してください。既に文字があるページはスキップします。</p></details>
+<details id="q-fileOpen"><summary>ファイルが開きません。</summary><p>ファイルが別のアプリで開かれている、破損している、または対応していない形式の可能性があります。ファイルを使用しているアプリを閉じて再試行してください。対応形式は上の質問をご覧ください。</p></details>
+<details id="q-save"><summary>保存またはエクスポートできません。</summary><p>フォルダーが読み取り専用か、ディスクの空き容量が不足している可能性があります。ドキュメントなど別のフォルダーを選択してください。Windows セキュリティの [コントロールされたフォルダー アクセス] がオンの場合は、このアプリを許可します。</p></details>
+<details id="q-proLocked"><summary>Pro を購入したのに機能がロックされたままです。</summary><p>[ヘルプ] &gt; [購入の復元] を選択します。Microsoft Store に購入したアカウントでサインインしているか確認してください。購入直後は確認に数分かかることがあります。</p></details>
+<details id="q-reset"><summary>アプリが起動しない、または応答しません。</summary><p>アプリを閉じて開き直します。解決しない場合は、[設定] &gt; [アプリ] &gt; [インストールされているアプリ] でこのアプリの [詳細オプション] を開き、[修復] を選択します。[リセット] を選ぶとアプリの設定も消去されます。</p></details></section>
+<section id="contact" class="contact"><h2>お問い合わせ</h2><p>アプリ名とバージョンを記載して hello@earntolink.com にメールを送信してください。アプリの [ヘルプ] &gt; [お問い合わせ] を使うと、この情報が自動で入ります。</p><p><a class="btn" href="mailto:hello@earntolink.com?subject=%5BPDF%20Binder%5D%20Support">メールを送信</a> <a href="privacy/">プライバシー ポリシー</a></p></section>
+
+</main>
+<footer class="foot"><div class="wrap">
+<p class="langs"><a href="../../en/pdf-binder/" hreflang="en">English</a> · <a href="../../ko/pdf-binder/" hreflang="ko">한국어</a> · <span aria-current="true">日本語</span> · <a href="../../zh/pdf-binder/" hreflang="zh-Hans">简体中文</a> · <a href="../../zh-Hant/pdf-binder/" hreflang="zh-Hant">繁體中文</a> · <a href="../../de/pdf-binder/" hreflang="de">Deutsch</a> · <a href="../../fr/pdf-binder/" hreflang="fr">Français</a> · <a href="../../es/pdf-binder/" hreflang="es">Español</a> · <a href="../../pt/pdf-binder/" hreflang="pt-BR">Português</a> · <a href="../../it/pdf-binder/" hreflang="it">Italiano</a></p>
+<p>© 2026 EarnToLink · <a href="mailto:hello@earntolink.com?subject=Support">hello@earntolink.com</a></p>
+</div></footer>
+</body>
+</html>
