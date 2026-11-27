@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nixtrail</title>
+<link rel="stylesheet" href="../style.css">
+<script>
+(function () {
+  var n = (navigator.languages && navigator.languages[0]) || navigator.language || 'en';
+  n = n.toLowerCase();
+  var l = 'en';
+  if (n.indexOf('zh') === 0) l = (n.indexOf('hant') > 0 || /-(tw|hk|mo)/.test(n)) ? 'zh-Hant' : 'zh';
+  else { var c = n.split('-')[0]; if (['ko','ja','de','fr','es','pt','it'].indexOf(c) >= 0) l = c; }
+  location.replace('../' + l + '/nixtrail/');
+})();
+</script>
+</head>
+<body><main class="wrap"><h1>Nixtrail</h1><ul class="plain">
+<li><a href="../en/nixtrail/" hreflang="en">English</a></li>
+<li><a href="../ko/nixtrail/" hreflang="ko">한국어</a></li>
+<li><a href="../ja/nixtrail/" hreflang="ja">日本語</a></li>
+<li><a href="../zh/nixtrail/" hreflang="zh-Hans">简体中文</a></li>
+<li><a href="../zh-Hant/nixtrail/" hreflang="zh-Hant">繁體中文</a></li>
+<li><a href="../de/nixtrail/" hreflang="de">Deutsch</a></li>
+<li><a href="../fr/nixtrail/" hreflang="fr">Français</a></li>
+<li><a href="../es/nixtrail/" hreflang="es">Español</a></li>
+<li><a href="../pt/nixtrail/" hreflang="pt-BR">Português</a></li>
+<li><a href="../it/nixtrail/" hreflang="it">Italiano</a></li>
+</ul></main></body>
+</html>

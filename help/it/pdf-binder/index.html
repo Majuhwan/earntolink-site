@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PDF Binder · Guida</title>
+<meta name="description" content="PDF Binder · Guida">
+<link rel="canonical" href="https://earntolink.com/help/it/pdf-binder/">
+<link rel="alternate" hreflang="en" href="https://earntolink.com/help/en/pdf-binder/">
+<link rel="alternate" hreflang="ko" href="https://earntolink.com/help/ko/pdf-binder/">
+<link rel="alternate" hreflang="ja" href="https://earntolink.com/help/ja/pdf-binder/">
+<link rel="alternate" hreflang="zh-Hans" href="https://earntolink.com/help/zh/pdf-binder/">
+<link rel="alternate" hreflang="zh-Hant" href="https://earntolink.com/help/zh-Hant/pdf-binder/">
+<link rel="alternate" hreflang="de" href="https://earntolink.com/help/de/pdf-binder/">
+<link rel="alternate" hreflang="fr" href="https://earntolink.com/help/fr/pdf-binder/">
+<link rel="alternate" hreflang="es" href="https://earntolink.com/help/es/pdf-binder/">
+<link rel="alternate" hreflang="pt-BR" href="https://earntolink.com/help/pt/pdf-binder/">
+<link rel="alternate" hreflang="it" href="https://earntolink.com/help/it/pdf-binder/">
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../../it/">Guida EarnToLink</a>
+<nav><a href="../../it/">Tutte le app</a><a href="../../it/support/">Assistenza</a></nav>
+</div></header>
+<main class="wrap">
+<p class="crumb"><a href="../">Tutte le app</a></p>
+<h1>PDF Binder <span class="sub">Guida</span></h1>
+<p><a class="btn" href="https://apps.microsoft.com/detail/9PF55L6KXWR0">Scarica da Microsoft Store</a></p>
+<nav class="toc"><a href="#how">Guide</a><a href="#features">Funzioni</a><a href="#faq">Domande frequenti</a><a href="#trouble">Risoluzione dei problemi</a><a href="#contact">Contatta l’assistenza</a></nav>
+<section id="how"><h2>Guide</h2>
+<article class="topic" id="merge"><h3>Unire e organizzare PDF</h3><ol>
+<li>Scegli Unisci e organizza e aggiungi PDF o una cartella (menu …), oppure trascinali nella finestra. Ogni PDF appare come sezione di miniature.</li>
+<li>Trascina le pagine per riordinarle o spostarle in un altro documento. Tieni premuto Ctrl al rilascio per copiare. Maiusc/Ctrl+clic seleziona più pagine da trascinare insieme. Rilasciale su «Nuovo documento dalla selezione» per crearne uno.</li>
+<li>Ruota (pulsante Ruota) o rimuovi (Canc) le pagine. Ctrl+Z annulla e Ctrl+Y ripete, fino a 100 passaggi.</li>
+<li>Scegli Salva come: Un PDF o Ogni documento (un file per sezione), poi salva. Gratis: fino a 3 PDF di origine alla volta; Pro: senza limiti. Link, commenti e campi modulo vengono mantenuti.</li>
+</ol></article>
+<article class="topic" id="split"><h3>Dividere un PDF</h3><ol>
+<li>Seleziona Dividi e apri un PDF (o clic destro in Esplora file → Split with PDF Binder).</li>
+<li>Preimpostazioni gratuite: ogni pagina, ogni N pagine o intervalli come 1-3, 5, 8- (fino a 10 file per divisione). Preimpostazioni Pro: per segnalibri (livello 1–3), per dimensione (es. 10 MB) o alle pagine bianche separatrici, che vengono tolte.</li>
+<li>L’elenco mostra i file che verranno creati. Il nome predefinito è {name}_{range} (es. Report_1-3.pdf); con Pro puoi creare la tua regola con {name} {n} {range} {from} {to} {pages} {bookmark} {date}. I file esistenti non vengono mai sovrascritti (Report (2).pdf).</li>
+</ol></article>
+<article class="topic" id="options"><h3>Segnalibri e opzioni di output (Pro)</h3><ol>
+<li>Segnalibri: Mantieni sposta i segnalibri nelle nuove posizioni; Uno per file aggiunge un segnalibro per ogni file unito con i suoi segnalibri sotto. Quando dividi, spunta «Segnalibri · Mantieni».</li>
+<li>Opzioni di output: comprimi (Leggera, Consigliata, Forte – solo se il file diventa più piccolo), numeri di pagina o testo di intestazione/piè con {n} e {total}, filigrana, testo ricercabile con l’OCR di Windows (lingue OCR installate) e password di apertura (AES-256).</li>
+<li>Puoi scegliere tutte le opzioni gratis e vederle segnate come Pro; Pro viene chiesto solo al salvataggio e il lavoro continua subito dopo l’acquisto.</li>
+</ol></article>
+<article class="topic" id="automate"><h3>Esplora file, cartella monitorata e riga di comando</h3><ol>
+<li>Esplora file (gratis): seleziona i PDF, clic destro → Merge with PDF Binder o Split with PDF Binder. In Windows 11 si trovano in «Mostra altre opzioni»; anche «Apri con → PDF Binder» funziona. I file vanno nella finestra già aperta.</li>
+<li>Cartella monitorata (Pro): in Automatizza scegli una cartella da monitorare e un’altra per i risultati, un’azione (dividi con le impostazioni attuali, applica le opzioni di output o unisci i file arrivati insieme) e avvia. Funziona finché PDF Binder è aperto; gli originali non cambiano.</li>
+<li>Riga di comando (Pro): pdfbinder merge &lt;file o cartelle&gt; -o out.pdf [--bookmarks perfile], pdfbinder split in.pdf --bookmarks 1 | --size 10 | --blank | --every 2 | --ranges "1-3,5" [-o cartella] [--name "{n} {bookmark}"], più --compress, --numbers, --watermark, --ocr, --password. Tutte le opzioni: pdfbinder help. Codici di uscita: 0 ok, 1 uso, 2 errore, 3 serve Pro.</li>
+</ol></article>
+</section>
+<section id="features"><h2>Funzioni</h2><ul><li>Tutti i PDF aperti come miniature in un’unica vista</li><li>Trascina le pagine per riordinarle o spostarle, Ctrl+trascina per copiare</li><li>Annulla e ripeti (Ctrl+Z / Ctrl+Y), ruota e rimuovi pagine</li><li>Unisci PDF (gratis: fino a 3 alla volta) o salva ogni documento</li><li>Dividi per pagina, ogni N pagine o intervalli (gratis: fino a 10 file)</li><li>Mantiene link, commenti e campi modulo</li><li>Clic destro in Esplora file: Merge / Split with PDF Binder</li><li>Pro: unione illimitata, cartelle intere, divisioni illimitate</li><li>Pro: dividi per segnalibri, per dimensione o alle pagine bianche</li><li>Pro: mantieni i segnalibri e uno per ogni file unito</li><li>Pro: nomi di output con {name}, {n}, {bookmark}, {date}</li><li>Pro: comprimi, proteggi con password, numera pagine, filigrana</li><li>Pro: immagini in PDF, pagine in immagini, PDF ricercabile (OCR di Windows)</li><li>Pro: cartella monitorata e riga di comando (pdfbinder.exe)</li><li>Offline, niente caricamenti, account o pubblicità, Pro con acquisto unico</li></ul></section>
+<section id="faq"><h2>Domande frequenti</h2>
+<details id="q-pro"><summary>Che cos’è Pro?</summary><p>Pro è un componente aggiuntivo con acquisto una tantum su Microsoft Store, non un abbonamento. Funziona sui PC Windows con lo stesso account Microsoft.</p></details>
+<details id="q-restore"><summary>Come ripristino Pro su un altro PC o dopo la reinstallazione?</summary><p>Accedi a Microsoft Store con l’account dell’acquisto, quindi seleziona Guida &gt; Ripristina acquisto.</p></details>
+<details id="q-refund"><summary>Come ottengo un rimborso?</summary><p>Pagamenti e rimborsi sono gestiti da Microsoft. Vai su account.microsoft.com &gt; Cronologia ordini, seleziona l’ordine e richiedi il rimborso. Si applica la politica di rimborso di Microsoft.</p></details>
+<details id="q-offline"><summary>L’app richiede Internet? I miei dati vengono inviati?</summary><p>No. File e dati vengono elaborati solo su questo PC e non vengono mai caricati. Nessun account, pubblicità o tracciamento. Internet serve solo per acquisti e aggiornamenti di Microsoft Store.</p></details>
+<details id="q-formats"><summary>Quali formati di file sono supportati?</summary><p>PDF, inclusi quelli protetti da password (inserendola). Pro aggiunge anche immagini (JPG, PNG, TIFF, HEIC…) come pagine. I risultati sono sempre nuovi file; gli originali non vengono modificati.</p></details>
+<details id="q-update"><summary>Come aggiorno l’app?</summary><p>Microsoft Store installa gli aggiornamenti automaticamente. Per controllare subito, apri Microsoft Store &gt; Raccolta e seleziona Ottieni aggiornamenti.</p></details></section>
+<section id="trouble"><h2>Risoluzione dei problemi</h2>
+<details id="q-password"><summary>Un PDF richiede una password.</summary><p>Inserisci la password di apertura. I file di cui non conosci la password non si possono aprire. Il risultato non ha password, a meno che tu non la imposti nelle opzioni di output (Pro).</p></details>
+<details id="q-links"><summary>Un link nel PDF unito non funziona più.</summary><p>I link web e quelli verso una pagina vengono mantenuti e seguono la pagina. Un link a una pagina rimossa non ha destinazione. I link con destinazioni con nome di un altro file possono smettere di funzionare; i segnalibri (Pro) vengono ricostruiti e puntano sempre alla pagina giusta.</p></details>
+<details id="q-ocr"><summary>Il testo ricercabile (OCR) non trova nulla o la lingua è sbagliata.</summary><p>PDF Binder usa il riconoscimento testo di Windows e le lingue OCR installate. Aggiungi la lingua in Impostazioni → Data/ora e lingua → Lingua e area geografica (riconoscimento ottico dei caratteri). Le pagine che contengono già testo vengono saltate.</p></details>
+<details id="q-fileOpen"><summary>Un file non si apre.</summary><p>Il file potrebbe essere aperto in un’altra app, danneggiato o in un formato non supportato. Chiudi le app che lo usano e riprova. Vedi i formati supportati sopra.</p></details>
+<details id="q-save"><summary>Impossibile salvare o esportare.</summary><p>La cartella potrebbe essere di sola lettura o il disco pieno. Scegli un’altra cartella, ad esempio Documenti. Se l’accesso controllato alle cartelle è attivo in Sicurezza di Windows, consenti questa app.</p></details>
+<details id="q-proLocked"><summary>Ho acquistato Pro, ma le funzioni sono ancora bloccate.</summary><p>Seleziona Guida &gt; Ripristina acquisto. Verifica che Microsoft Store sia connesso con l’account dell’acquisto. Subito dopo l’acquisto, la conferma può richiedere alcuni minuti.</p></details>
+<details id="q-reset"><summary>L’app non si avvia o non risponde.</summary><p>Chiudi e riapri l’app. Se il problema continua, vai in Impostazioni &gt; App &gt; App installate &gt; Opzioni avanzate dell’app e seleziona Ripristina. Reimposta cancella anche le impostazioni dell’app.</p></details></section>
+<section id="contact" class="contact"><h2>Contatta l’assistenza</h2><p>Scrivi a hello@earntolink.com indicando nome e versione dell’app. Nell’app, Guida &gt; Contatta l’assistenza aggiunge queste informazioni automaticamente.</p><p><a class="btn" href="mailto:hello@earntolink.com?subject=%5BPDF%20Binder%5D%20Support">Invia e-mail</a> <a href="privacy/">Informativa sulla privacy</a></p></section>
+
+</main>
+<footer class="foot"><div class="wrap">
+<p class="langs"><a href="../../en/pdf-binder/" hreflang="en">English</a> · <a href="../../ko/pdf-binder/" hreflang="ko">한국어</a> · <a href="../../ja/pdf-binder/" hreflang="ja">日本語</a> · <a href="../../zh/pdf-binder/" hreflang="zh-Hans">简体中文</a> · <a href="../../zh-Hant/pdf-binder/" hreflang="zh-Hant">繁體中文</a> · <a href="../../de/pdf-binder/" hreflang="de">Deutsch</a> · <a href="../../fr/pdf-binder/" hreflang="fr">Français</a> · <a href="../../es/pdf-binder/" hreflang="es">Español</a> · <a href="../../pt/pdf-binder/" hreflang="pt-BR">Português</a> · <span aria-current="true">Italiano</span></p>
+<p>© 2026 EarnToLink · <a href="mailto:hello@earntolink.com?subject=Support">hello@earntolink.com</a></p>
+</div></footer>
+</body>
+</html>

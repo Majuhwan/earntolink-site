@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pipette theme support | EarnToLink</title>
+<meta name="description" content="Contact EarnToLink for help with the Pipette Shopify theme. We aim to reply within 1-2 business days.">
+<link rel="canonical" href="https://earntolink.com/themes/pipette/support/">
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="top"><div class="wrap"><a class="brand" href="/themes/pipette/">Pipette theme</a><nav><a href="/themes/pipette/">Documentation</a><a href="/themes/pipette/support/" aria-current="page">Support</a><a href="/">EarnToLink</a></nav></div></header>
+<main class="wrap">
+<h1>Pipette support</h1>
+<p>We aim to reply within 1-2 business days (Monday to Friday, Korea Standard Time). You get a confirmation email with a request number right after you send the form.</p>
+
+<form id="support-form" class="form" action="https://support.earntolink.com/v1/requests" method="post" enctype="multipart/form-data" novalidate>
+<input type="hidden" name="theme" value="pipette">
+<div class="hp" aria-hidden="true"><label for="f-website">Website</label><input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+<div class="field"><label for="f-name">Name</label><p class="hint" id="h-name">First and last name</p><input id="f-name" name="name" type="text" autocomplete="name" maxlength="100" required aria-describedby="h-name e-name"><p class="err" id="e-name"></p></div>
+<div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" maxlength="254" required aria-describedby="e-email"><p class="err" id="e-email"></p></div>
+<div class="field"><label for="f-store">Store URL</label><p class="hint" id="h-store">Example: https://your-store.myshopify.com</p><input id="f-store" name="store_url" type="text" inputmode="url" autocomplete="url" autocapitalize="off" spellcheck="false" maxlength="200" placeholder="https://your-store.myshopify.com" required aria-describedby="h-store e-store"><p class="err" id="e-store"></p></div>
+<div class="field"><label for="f-subject">Subject <span class="opt">optional</span></label><input id="f-subject" name="subject" type="text" maxlength="150" aria-describedby="e-subject"><p class="err" id="e-subject"></p></div>
+<div class="field"><label for="f-version">Theme version <span class="opt">optional</span></label><p class="hint" id="h-version">Shown in Online Store &gt; Themes, for example 1.0.0</p><input id="f-version" name="theme_version" type="text" maxlength="20" aria-describedby="h-version"></div>
+<div class="field"><label for="f-message">Description of the problem</label><p class="hint" id="h-message">What you expected, what happened, and the page where it happens</p><textarea id="f-message" name="message" rows="7" maxlength="5000" required aria-describedby="h-message e-message"></textarea><p class="err" id="e-message"></p></div>
+<div class="field"><label for="f-files">Screenshots <span class="opt">optional</span></label><p class="hint" id="h-files">Up to 3 images, 5 MB each (PNG, JPG, WebP, GIF)</p><input id="f-files" name="files" type="file" accept="image/png,image/jpeg,image/webp,image/gif" multiple aria-describedby="h-files e-files"><ul class="files" id="file-list"></ul><p class="err" id="e-files"></p></div>
+<p class="err" id="e-form" role="alert"></p>
+<button class="btn" type="submit" id="f-submit">Send request</button>
+<p class="note">We use these details only to answer this request. <a href="/en/privacy/">Privacy</a></p>
+</form>
+
+<div id="sent" class="box sent" hidden tabindex="-1">
+<h2>Request received</h2>
+<p>Request number: <strong id="sent-ref"></strong></p>
+<p id="sent-mail"></p>
+<p><a href="./">Send another request</a></p>
+</div>
+
+<h2>What support covers</h2>
+<ul><li>Questions about theme settings, sections and features</li><li>Bugs in the theme (layout, broken links, logic errors), fixed in a theme update</li><li>Help with the setup steps in the <a href="../">documentation</a></li></ul>
+<h2>Not covered</h2>
+<ul><li>Custom code changes, or code you added</li><li>Third-party apps</li><li>Store design or content work</li></ul>
+<p>Before editing theme code, duplicate your theme. For custom work, consider hiring a <a href="https://www.shopify.com/partners/directory" rel="nofollow">Shopify Partner</a>.</p>
+</main>
+<footer class="foot"><div class="wrap">Pipette is a Shopify theme by EarnToLink. Email: <a href="mailto:hello@earntolink.com">hello@earntolink.com</a></div></footer>
+<script src="form.js" defer></script>
+</body>
+</html>
